@@ -1,0 +1,373 @@
+{
+ "scanned_files": 151,
+ "hits": 57,
+ "by_classification": {
+  "COMMENT_OR_DOCSTRING": 47,
+  "SOURCE_SPECIFIC_CONFIG": 10
+ },
+ "not_allowed": [],
+ "ranking_logic": [],
+ "source_specific_config": {
+  "backend/app/pipelines/ingestion/job_postings.py": "column layout presets of supplied export files",
+  "backend/app/services/evidence_metadata.py": "human-readable names of the column layout presets",
+  "backend/app/knowledge_engine/jobs.py": "posting identity: URL id patterns of named job boards",
+  "backend/app/api/v1/ingestion.py": "default column layout preset name",
+  "flutter_app/lib/screens/ingestion_screen.dart": "column layout preset names"
+ },
+ "structural_checks": {
+  "document_roles_from_data": true,
+  "discipline_is_free_text": true,
+  "validation_packages_by_discipline": [
+   "data/evaluation/semantic_gold/computer-science-and-engineering/v1"
+  ]
+ },
+ "known_limitations": [
+  "discipline identity is an exact string: two spellings of one discipline are analysed as two disciplines (the upload form offers the disciplines already seen to avoid this)",
+  "the industry taxonomy loader reads ESCO; another taxonomy needs a loader (the taxonomy source is recorded per mapping and a concept can exist without any taxonomy mapping)",
+  "the reference-vocabulary scope (core_reference.applies_to_discipline) is data; a discipline without one simply has no reference vocabulary"
+ ],
+ "hits_detail": [
+  {
+   "file": "backend/app/analytics/concept_semantic_matching.py",
+   "line": 85,
+   "text": "# NOT a domain-specific or CBIT/AICTE-specific list.",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/analytics/core_knowledge_mapping.py",
+   "line": 91,
+   "text": "metadata (\"Computer Science & Engineering\" -> \"computer-science-and-engineering\").",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/analytics/core_knowledge_mapping.py",
+   "line": 143,
+   "text": "generically, not with a CSE-specific rule): converts '&' used as a",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/analytics/core_knowledge_mapping.py",
+   "line": 299,
+   "text": "Electronics\" and \"digital  electronics\" under one domain are reported as",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/analytics/corpus_clustering.py",
+   "line": 3,
+   "text": "design). Groups real, extracted topic fragments (from BOTH AICTE and CBIT)",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/analytics/corpus_clustering.py",
+   "line": 4,
+   "text": "by statistical similarity, independent of whether a matching AICTE",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/analytics/corpus_clustering.py",
+   "line": 106,
+   "text": "A cluster containing fragments from BOTH AICTE and CBIT is stronger",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/api/v1/ingestion.py",
+   "line": 80,
+   "text": "dataset: str = Form(\"naukri\"),",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "backend/app/core/config.py",
+   "line": 58,
+   "text": "# against the Naukri fixture (two postings of the same role differing only",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/knowledge_engine/jobs.py",
+   "line": 9,
+   "text": "linkedin.com/jobs/view/<digits>        -> linkedin:<digits>",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/knowledge_engine/jobs.py",
+   "line": 11,
+   "text": "naukri.com/job-listings-...-<digits>   -> naukri:<digits>",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/knowledge_engine/jobs.py",
+   "line": 44,
+   "text": "_LINKEDIN_RE = re.compile(r\"linkedin\\.com/jobs/view/(?:[^/?#]*-)?(\\d+)\", re.I)",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "backend/app/knowledge_engine/jobs.py",
+   "line": 46,
+   "text": "_NAUKRI_RE = re.compile(r\"naukri\\.com/job-listings-(?:.*-)?(\\d{6,})(?:[/?#]|$)\", re.I)",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "backend/app/knowledge_engine/jobs.py",
+   "line": 62,
+   "text": "return \"linkedin\", m.group(1), \"url_external_id\"",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "backend/app/knowledge_engine/jobs.py",
+   "line": 72,
+   "text": "return \"naukri\", m.group(1), \"url_external_id\"",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "backend/app/knowledge_engine/noise.py",
+   "line": 8,
+   "text": "AICTE and CBIT documents (examples in the comments), not guessed.",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/models/core_knowledge.py",
+   "line": 5,
+   "text": "academically-recognized core knowledge (e.g. what ECE fundamentally covers)",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/models/curriculum.py",
+   "line": 20,
+   "text": "\"Computing & Data\", \"Electronics & Electrical\", \"Mechanical &",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/models/curriculum.py",
+   "line": 34,
+   "text": "\"\"\"A department within an institution, e.g. 'Dept. of Mechanical Engineering'.\"\"\"",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/models/curriculum.py",
+   "line": 51,
+   "text": "aliases_json = Column(Text, nullable=True)  # e.g. [\"AI&DS\", \"AIDS\", \"Artificial Intelligence and Data Science\"] -- how the SAME programme is referred to across",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/models/jobs.py",
+   "line": 18,
+   "text": "\"Software & IT Services\", \"Electronics Manufacturing\", \"Automotive\"),",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/models/jobs.py",
+   "line": 86,
+   "text": "skills_raw = Column(Text, nullable=True)  # e.g. Naukri's comma-separated \"skills\" tag column, kept verbatim",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/ingestion/curriculum.py",
+   "line": 83,
+   "text": "pipeline must ingest CBIT AI&DS, CBIT CSE, CBIT ECE, ... and curricula",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/ingestion/job_postings.py",
+   "line": 57,
+   "text": "\"naukri\": {",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "backend/app/pipelines/ingestion/job_postings.py",
+   "line": 65,
+   "text": "\"skills_tag\": \"skills\",  # Naukri's structured comma-separated skills column",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/ingestion/job_postings.py",
+   "line": 67,
+   "text": "\"linkedin\": {",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "backend/app/pipelines/ingestion/job_postings.py",
+   "line": 89,
+   "text": "DEFAULT_COLUMN_MAP = COLUMN_MAP_PRESETS[\"naukri\"]",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 19,
+   "text": "# genuine (found by auditing actual AICTE and CBIT documents, not guessed):",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 20,
+   "text": "#   letter-prefix:      \"CS101\", \"CS-101\", \"CSE 3021\", \"MATH2001\", \"BSC-101\"",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 30,
+   "text": "# is a real, generic false positive found in the AICTE document (\"AY",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 75,
+   "text": "# Relaxed from requiring the label ALONE on the line: the real CBIT format is",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 85,
+   "text": "# GENERIC fix for a real gap found auditing actual CBIT/AICTE documents:",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 88,
+   "text": "# the UNIT/MODULE/PART heading (e.g. CBIT: \"UNIT-I\\nPartial Differentiation",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 109,
+   "text": "# Broader label set observed on the real AICTE model curriculum, where the",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 235,
+   "text": "# the AICTE, CBIT R22 and CBIT R22A documents: \"SEMESTER – I\", \"SEMESTER-II\",",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 319,
+   "text": "Real bug this fixes (found on the actual AICTE and CBIT R22A PDFs):",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 322,
+   "text": "after CS402\" took 408 AICTE topics away from the real course, \"(MD5,",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 324,
+   "text": "Pandemic\" took 36 in CBIT. Two generic structural rules decide:",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 618,
+   "text": "# positive found in the AICTE document: a sentence that",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/curriculum_structuring.py",
+   "line": 675,
+   "text": "group for finer sub-items (verified against real CBIT R-22A text, e.g.",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 4,
+   "text": "phase's topic-level AICTE extraction.",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 6,
+   "text": "VERIFIED ROOT CAUSE (not assumed): AICTE's syllabus pages use a genuine",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 12,
+   "text": "`page.extract_tables()` on the real AICTE PDF (course CS-301, page 85):",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 19,
+   "text": "document is AICTE's or CBIT's. When no such header exists, it still",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 320,
+   "text": "observing real repeated boilerplate (\"AICTE Model Curriculum for UG",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 321,
+   "text": "Degree Course in Computer Science and Engineering\", \"SEMESTER III\")",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 326,
+   "text": "the real CBIT document): a line that legitimately recurs once PER",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 331,
+   "text": "entirely (349 -> 31 modules on the real CBIT document, verified).",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 377,
+   "text": "mostly dense paragraph prose (verified on the real CBIT R-22A document:",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 379,
+   "text": "reconstruction replaced pdftotext's output there). CBIT's real syllabus",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 381,
+   "text": "real CBIT pages returns only CO-PO matrices and CIE-guideline tables,",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/layout_aware_extraction.py",
+   "line": 387,
+   "text": "demonstrably helps -- verified on the real AICTE document). For every",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/skill_extraction.py",
+   "line": 129,
+   "text": "Splits a structured tags/skills field (e.g. Naukri's comma-separated",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/pipelines/preprocessing/skill_normalization.py",
+   "line": 56,
+   "text": "\"structured_tag\": 1.0,      # an explicit human-provided tag (e.g. Naukri's skills column)",
+   "classification": "COMMENT_OR_DOCSTRING"
+  },
+  {
+   "file": "backend/app/services/evidence_metadata.py",
+   "line": 105,
+   "text": "names = {\"naukri\": \"Export with Naukri-style columns\", \"linkedin\": \"Export with LinkedIn-style columns\",",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "flutter_app/lib/screens/ingestion_screen.dart",
+   "line": 54,
+   "text": "String _preset = 'naukri';",
+   "classification": "SOURCE_SPECIFIC_CONFIG"
+  },
+  {
+   "file": "flutter_app/lib/services/api_client.dart",
+   "line": 97,
+   "text": "/// one of the backend's known column-map presets (\"naukri\", \"linkedin\",",
+   "classification": "COMMENT_OR_DOCSTRING"
+  }
+ ]
+}

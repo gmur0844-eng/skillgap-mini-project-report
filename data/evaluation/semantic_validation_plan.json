@@ -1,0 +1,139 @@
+{
+ "plan": "semantic-validation-plan-v1",
+ "created_for_release": "consistency/hardening (after c8ecd067bb733f58)",
+ "full_internal_benchmark": {
+  "name": "semantic_benchmark_v1",
+  "cases": 88,
+  "sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+  "status": "FROZEN, unchanged"
+ },
+ "human_validation_subset": {
+  "cases": 48,
+  "selection": "Stratified, proportional, deterministic:\n      1. strata = case kind (the benchmark's candidate families); quotas proportional to the benchmark\n         (largest remainder), so the subset mirrors the benchmark instead of forcing equal classes;\n      2. inside a kind, cases are spread over the assistant's development labels proportionally, and every label that\n         occurs in the benchmark is represented at least once (rare classes such as PARENT stay testable);\n      3. failure-mode tags (lexical collision, acronym, hierarchy, abbreviation, alias, paraphrase) that the proportional\n         pass missed are added by swapping within the same kind+label cell when possible;\n      4. inside a cell, order = SHA-256(seed + case id): reproducible and independent of any model output.\n    Reviewers never see the development labels; they are used only to keep the class mix representative.",
+  "seed": "semantic-validation-v1",
+  "distribution": {
+   "kind": {
+    "ALIAS_SENSE": 25,
+    "AMBIGUOUS_TAXONOMY_LABEL": 10,
+    "AMBIGUOUS_TOPIC_MAPPING": 6,
+    "DIAGNOSTIC": 7
+   },
+   "development_label (never shown to reviewers)": {
+    "CHILD": 7,
+    "PARTIAL_OVERLAP": 2,
+    "UNRELATED": 14,
+    "SAME_CONCEPT": 11,
+    "RELATED": 11,
+    "PARENT": 2,
+    "INSUFFICIENT_EVIDENCE": 1
+   },
+   "tags": {
+    "acronym": 10,
+    "hierarchy": 9,
+    "esco": 33,
+    "paraphrase": 10,
+    "lexical_collision": 14,
+    "abbreviation": 5,
+    "alias": 3,
+    "topic_mapping": 6,
+    "hard_case": 7
+   }
+  },
+  "benchmark_distribution": {
+   "kind": {
+    "ALIAS_SENSE": 45,
+    "AMBIGUOUS_TAXONOMY_LABEL": 18,
+    "AMBIGUOUS_TOPIC_MAPPING": 12,
+    "DIAGNOSTIC": 13
+   },
+   "development_label": {
+    "CHILD": 12,
+    "PARTIAL_OVERLAP": 4,
+    "UNRELATED": 28,
+    "SAME_CONCEPT": 18,
+    "RELATED": 23,
+    "PARENT": 2,
+    "INSUFFICIENT_EVIDENCE": 1
+   }
+  }
+ },
+ "package_layout": "data/evaluation/semantic_gold/<discipline-slug>/<version>/{MANIFEST.json, subset.json, blind_export.csv, form_cases.json, labels/, agreement.json, adjudication.json, semantic_gold_v1.json, metrics.json, assistant_adjudication.json}",
+ "packages": [
+  {
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "discipline": "Computer Science and Engineering",
+   "status": "PENDING_INDEPENDENT_LABELS"
+  }
+ ],
+ "reviewers": {
+  "target": 2,
+  "role": "independent domain reviewer (faculty or practitioner of the discipline)",
+  "independence": "each reviewer labels all 48 alone; names that denote the assistant or a model are refused",
+  "blind_to": [
+   "model predictions",
+   "assistant adjudication",
+   "deterministic prediction",
+   "model confidence",
+   "current system decision",
+   "expected answer"
+  ]
+ },
+ "agreement": {
+  "two_reviewers": "Cohen's kappa + raw agreement + per-class specific agreement + disagreement matrix",
+  "three_or_more": "Fleiss' kappa"
+ },
+ "adjudication": "a named human adjudicator chooses one of the reviewers' labels or AMBIGUOUS; the model answer and the assistant adjudication are never shown or used",
+ "gold": "semantic_gold_v1: UNANIMOUS or ADJUDICATED cases only; UNRESOLVED/UNLABELLED listed and excluded; immutable once frozen",
+ "metrics_after_labels": [
+  "accuracy",
+  "macro precision",
+  "macro recall",
+  "macro F1",
+  "per-class precision/recall/F1",
+  "confusion matrix",
+  "critical error rates",
+  "baseline vs Qwen (raw and validated) 2x2",
+  "error categories"
+ ],
+ "gate": {
+  "version": "semantic-gate-v3",
+  "file": "data/evaluation/semantic_gate_v3.json",
+  "declared_at": "2026-09-29T18:17:38+00:00",
+  "declared_before": "any independent human label for the 48-case human-validation subset existed (0 label files in data/evaluation/semantic_gold/*/v1/labels at declaration)",
+  "criteria": {
+   "min_independent_reviewers": 2,
+   "min_gold_cases": 44,
+   "min_kappa_when_two_or_more_reviewers": 0.6,
+   "min_accuracy": 0.8,
+   "min_macro_f1": 0.7,
+   "max_false_same_concept": 1,
+   "max_wrong_hierarchy_direction": 0,
+   "max_false_parent_or_child": 1,
+   "max_unsupported_taxonomy_evidence": 0,
+   "max_lexical_collision": 0,
+   "min_predictions_per_promoted_class": 8,
+   "min_precision_per_promoted_class": 0.9
+  },
+  "supersedes": "semantic-gate-v2 (sha256 d16871cffa28bbb867549f153359dfb808a9b67c57445ca6c8f86d80c9825f82), unchanged except the gold size: human validation uses the stratified 48-case subset of the frozen 88, so min_gold_cases 80 could never be met"
+ },
+ "assistant_adjudication": {
+  "stored_as": "ASSISTANT_ADJUDICATION",
+  "file": "data/evaluation/semantic_gold/computer-science-and-engineering/v1/assistant_adjudication.json",
+  "never": [
+   "shown to reviewers",
+   "used by the gate",
+   "reported as accuracy",
+   "called human validation"
+  ]
+ },
+ "safe_mode": "Qwen stays SAFE_MODE until metrics.json reports INDEPENDENTLY_EVALUATED and the v3 gate passes; then only classes meeting the per-class bar are promoted",
+ "commands": [
+  "python3 scripts/evaluation/semantic_validation.py import-form --package data/evaluation/semantic_gold/computer-science-and-engineering/v1/ --csv <responses.csv>",
+  "python3 scripts/evaluation/semantic_validation.py agreement --package data/evaluation/semantic_gold/computer-science-and-engineering/v1/",
+  "python3 scripts/evaluation/semantic_validation.py adjudication-sheet --package data/evaluation/semantic_gold/computer-science-and-engineering/v1/",
+  "python3 scripts/evaluation/semantic_validation.py adjudicate --package data/evaluation/semantic_gold/computer-science-and-engineering/v1/ --file <sheet> --adjudicator \"<name>\"",
+  "python3 scripts/evaluation/semantic_validation.py freeze --package data/evaluation/semantic_gold/computer-science-and-engineering/v1/",
+  "python3 scripts/evaluation/semantic_validation.py evaluate --package data/evaluation/semantic_gold/computer-science-and-engineering/v1/"
+ ],
+ "new_discipline": "python3 scripts/evaluation/semantic_validation.py build --discipline \"<name>\" --benchmark <frozen benchmark of that discipline> (no code change)"
+}

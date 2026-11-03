@@ -1,0 +1,150 @@
+{
+  "_comment": "Reference curricula of disciplines other than the default run's. They are NOT part of the default analysis (curriculum_sources.json), so the published run and its inputs are unchanged. An uploaded curriculum's analysis context gets the reference of its own discipline from here when the base manifest has none of that discipline (analysis_jobs.derived_manifest). Each entry has the same fields as a curriculum_sources.json document, plus known_limitations measured on this file.",
+  "version": "1",
+  "references": [
+    {
+      "doc_id": "aicte-ug-cse-aids-model",
+      "role": "REFERENCE",
+      "institution": "All India Council for Technical Education (AICTE)",
+      "programme": "UG Computer Science and Engineering (Artificial Intelligence and Data Science) Model Curriculum",
+      "discipline": "Artificial Intelligence and Data Science",
+      "curriculum_version": "2021",
+      "academic_year": null,
+      "path": "data/raw/curricula/aicte/aicte_ug_cse_aids_model_curriculum.pdf",
+      "expected_sha256": "2b60b80659a47056f5465ae55fa525b6d7447fbcd3981f4d28a72b6675d83dcc",
+      "source_url": null,
+      "acquisition": "supplied by the project owner on 2026-10-21 (file CS_AIDS.pdf); its title page and PDF metadata identify it as the AICTE Model Curriculum for UG Degree Course in Computer Science and Engineering (Artificial Intelligence and Data Science), 2021, 157 pages",
+      "retrieved_at": "2026-10-21",
+      "known_limitations": [
+        "the 11 suggested professional electives (Appendix I: e.g. Image Processing and Computer Vision, Natural Language Processing, Advanced Machine Learning) carry the placeholder code XXNNN and are not extracted as courses, so elective-level AI topics are under-represented in this reference",
+        "one course title is cut at a line break (ES203 'Introduction to Data Structure and', full title '... and Algorithms')",
+        "one title carries a table fragment (AU301 'Indian Constitution 3^ 3^')",
+        "a second 'Mathematics- I' entry (MT102) is extracted without a semester",
+        "re-measured on 2026-10-22 after the parser learned the plural 'Course Contents:' label: 394 more clean topics (Engineering Graphics and other courses labelled that way) and one more course (AU102); the earlier figures were 46 courses and 1,580 clean topics"
+      ],
+      "parse_check": {
+        "checked_at": "2026-10-22",
+        "courses": 47,
+        "courses_with_semester": 45,
+        "units": 86,
+        "clean_topics": 1974,
+        "all_topics": 2320,
+        "courses_with_topics": 34
+      }
+    },
+    {
+      "doc_id": "aicte-ug-ece-model",
+      "role": "REFERENCE",
+      "institution": "All India Council for Technical Education (AICTE)",
+      "programme": "Revised Model Curriculum for UG Degree Course in Electronics and Communication Engineering (ECE)",
+      "discipline": "Electronics and Communication Engineering",
+      "curriculum_version": "2023",
+      "academic_year": null,
+      "path": "data/raw/curricula/aicte/aicte_ug_ece_model_curriculum.pdf",
+      "expected_sha256": "99a142b63d2d6cad5ef5ee3dc1c5031d1f3b7204278e55ff499bfe3c99ca7049",
+      "source_url": "https://aicte.gov.in/sites/default/files/Final_ECE.pdf",
+      "acquisition": "downloaded by the project owner from the AICTE website (source_url) with curl on 2026-10-22; identified by its title page ('Revised Model Curriculum for UG Degree Course in Electronics and Communication Engineering (ECE) 2023'), 160 pages",
+      "retrieved_at": "2026-10-22",
+      "known_limitations": [
+        "47 of 95 courses carry topics: labs, audit courses, open-elective slots and internships have no syllabus text in the document",
+        "slot ES-05 offers two alternative courses ('Digital Fabrication / Workshop/Manufacturing Practices'); their syllabi are merged under one course",
+        "the document numbers some syllabi differently from its scheme (the scheme's EC-10 Microcontrollers is EC-08 in the syllabus section, and EC-08 is also used for Analog Circuits), so those topics sit under the syllabus's code",
+        "first-year codes appear in two spellings (BS-02 and BS02), giving duplicate course entries",
+        "7 courses have no semester"
+      ],
+      "parse_check": {
+        "checked_at": "2026-10-22",
+        "courses": 95,
+        "courses_with_semester": 88,
+        "units": 105,
+        "clean_topics": 3340,
+        "all_topics": 4398,
+        "courses_with_topics": 47
+      }
+    },
+    {
+      "doc_id": "aicte-ug-mech-model",
+      "role": "REFERENCE",
+      "institution": "All India Council for Technical Education (AICTE)",
+      "programme": "Revised Model Curriculum for UG Degree Course in Mechanical Engineering",
+      "discipline": "Mechanical Engineering",
+      "curriculum_version": "2023",
+      "academic_year": null,
+      "path": "data/raw/curricula/aicte/aicte_ug_mech_model_curriculum.pdf",
+      "expected_sha256": "f8e1960dfa96223963a8afe08f473e77bbe6efa8509b4c732a2658034186d641",
+      "source_url": "https://aicte.gov.in/sites/default/files/Final_Mechanical%20Engg.pdf",
+      "acquisition": "downloaded by the project owner from the AICTE website (source_url) with curl on 2026-10-22; identified by its title page ('Revised Model Curriculum for UG Degree Course in Mechanical Engineering 2023'), 162 pages",
+      "retrieved_at": "2026-10-22",
+      "known_limitations": [
+        "34 of 56 courses carry topics: labs, projects, audit courses and elective slots have no syllabus text",
+        "the syllabi's 'Objectives' and 'Contents' side labels are not in the text layer; content is read from its 'Heading: list' paragraphs, so a syllabus written as plain prose without such headings is not read"
+      ],
+      "parse_check": {
+        "checked_at": "2026-10-22",
+        "courses": 56,
+        "courses_with_semester": 56,
+        "units": 172,
+        "clean_topics": 2196,
+        "all_topics": 2773,
+        "courses_with_topics": 34
+      }
+    },
+    {
+      "doc_id": "aicte-ug-civil-model",
+      "role": "REFERENCE",
+      "institution": "All India Council for Technical Education (AICTE)",
+      "programme": "Model Curriculum for Undergraduate Degree Courses in Civil Engineering (Engineering & Technology)",
+      "discipline": "Civil Engineering",
+      "curriculum_version": "2024",
+      "academic_year": null,
+      "path": "data/raw/curricula/aicte/aicte_ug_civil_model_curriculum_2024.pdf",
+      "expected_sha256": "21fd1b4af124323af8eef2e9efc73561deb58b16ab7fbe7ff2cf9e8646b49f61",
+      "source_url": "https://aicte.gov.in/sites/default/files/AICTE%20Model%20Curriculum%20_UG_Civil_2024.pdf",
+      "acquisition": "downloaded by the project owner from the AICTE website (source_url) with curl on 2026-10-22; identified by its title page ('Model Curriculum for Undergraduate Degree Courses in Civil Engineering'; PDF created 2023-11-26), 189 pages",
+      "retrieved_at": "2026-10-22",
+      "known_limitations": [
+        "36 of 54 courses carry topics: elective slots (PCE, MOPCE), audit and induction courses have no syllabus text",
+        "syllabi written as one prose paragraph with no unit headings or content label are not read (e.g. PCC-15 Intelligent Transportation Systems, PCC-16, PCC-17)",
+        "2 codes from scheme rows have no readable title (BS-01, ES-05) and are set aside",
+        "1 course has no semester"
+      ],
+      "parse_check": {
+        "checked_at": "2026-10-22",
+        "courses": 54,
+        "courses_with_semester": 53,
+        "units": 199,
+        "clean_topics": 3609,
+        "all_topics": 4768,
+        "courses_with_topics": 36
+      }
+    },
+    {
+      "doc_id": "aicte-ug-eee-model",
+      "role": "REFERENCE",
+      "institution": "All India Council for Technical Education (AICTE)",
+      "programme": "Model Curriculum for Undergraduate Degree Courses in Electrical Engineering (Engineering & Technology)",
+      "discipline": "Electrical Engineering",
+      "curriculum_version": "2018",
+      "academic_year": null,
+      "path": "data/raw/curricula/aicte/aicte_ug_eee_model_curriculum_2018.pdf",
+      "expected_sha256": "bf547730a4cc1db07554914c3be9e988c2023b0596ffef947d74a62d4497ecf8",
+      "source_url": "https://aicte.gov.in/sites/default/files/ug-vol1.pdf",
+      "acquisition": "derived file: pages 191-268 of 'Model Curriculum for Undergraduate Degree in Engineering & Technology, January 2018 (Volume I)' (aicte_ug_model_curriculum_2018_vol1.pdf, sha256 c8585eb77b2dfb69e3fca0909e2293ea4ff65c97e89f13676bee99b99e697c47, 433 pages, downloaded by the project owner from the AICTE website (source_url) with curl on 2026-10-22), extracted unchanged with: qpdf aicte_ug_model_curriculum_2018_vol1.pdf --pages . 191-268 -- aicte_ug_eee_model_curriculum_2018.pdf; source_url is the full volume's address",
+      "retrieved_at": "2026-10-22",
+      "known_limitations": [
+        "this is the 2018 model curriculum; AICTE has no newer Electrical Engineering edition in the downloaded set",
+        "the section has no semester headings, so no course has a semester",
+        "29 of 38 courses carry topics"
+      ],
+      "parse_check": {
+        "checked_at": "2026-10-22",
+        "courses": 38,
+        "courses_with_semester": 0,
+        "units": 181,
+        "clean_topics": 2490,
+        "all_topics": 3900,
+        "courses_with_topics": 29
+      }
+    }
+  ]
+}

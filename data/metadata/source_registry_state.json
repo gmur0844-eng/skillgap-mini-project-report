@@ -1,0 +1,49 @@
+{
+ "sources": {
+  "curricula-drop-folder": {
+   "last_failure": "2026-10-21T15:33:29+00:00",
+   "last_reason": "no new files in data/raw/curricula/incoming",
+   "last_status": "SOURCE_UNAVAILABLE"
+  },
+  "curriculum-manifest": {
+   "last_reason": "6 registered file(s) present",
+   "last_status": "AVAILABLE",
+   "last_success": "2026-10-21T15:33:29+00:00"
+  },
+  "esco-v1.2.1": {
+   "last_reason": "1 registered file(s) present",
+   "last_status": "AVAILABLE",
+   "last_success": "2026-10-21T15:33:29+00:00"
+  },
+  "esco-v1.2.1-occupations": {
+   "last_reason": "1 registered file(s) present",
+   "last_status": "AVAILABLE",
+   "last_success": "2026-10-21T15:33:29+00:00"
+  },
+  "job-postings-drop-folder": {
+   "last_reason": "registered 24 file(s); the next pipeline run ingests them through the quality gates",
+   "last_status": "AVAILABLE",
+   "last_success": "2026-10-21T15:33:29+00:00"
+  },
+  "jooble-api-india": {
+   "last_failure": "2026-10-21T15:33:29+00:00",
+   "last_reason": "disabled in the source registry",
+   "last_status": "SOURCE_UNAVAILABLE"
+  },
+  "onet-local-files": {
+   "last_failure": "2026-10-21T15:33:29+00:00",
+   "last_reason": "no new files in data/raw/onet",
+   "last_status": "SOURCE_UNAVAILABLE"
+  },
+  "peer-curriculum-official-sites": {
+   "last_failure": "2026-10-21T15:33:29+00:00",
+   "last_reason": "3 requested document(s) not supplied: download the official PDF, place it in data/raw/curricula/incoming with a .source.json sidecar",
+   "last_status": "SOURCE_UNAVAILABLE"
+  },
+  "supplied-job-postings": {
+   "last_reason": "15 registered file(s) present",
+   "last_status": "AVAILABLE",
+   "last_success": "2026-10-21T15:33:29+00:00"
+  }
+ }
+}

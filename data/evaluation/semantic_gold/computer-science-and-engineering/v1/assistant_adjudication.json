@@ -1,0 +1,536 @@
+{
+ "label_source": "ASSISTANT_ADJUDICATION",
+ "is_human_validated": false,
+ "use": "error analysis and preparation of the human review only; never shown to reviewers, never used by the promotion gate, never reported as accuracy",
+ "provenance": "the frozen benchmark's development labels (labelled by the assistant before the benchmark was frozen; see its FREEZE_MANIFEST known_bias)",
+ "cases": [
+  {
+   "case_id": "bm1-000",
+   "label": "CHILD",
+   "rationale": "AWS Cloud is one specific provider of cloud technologies",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-001",
+   "label": "CHILD",
+   "rationale": "AWS cloud service provider environments: a specific cloud platform",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-002",
+   "label": "PARTIAL_OVERLAP",
+   "rationale": "audited 'quality systems' are quality management systems broadly; the ESCO concept is product-development QC tools (FMEA, PPAP)",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-003",
+   "label": "UNRELATED",
+   "rationale": "two-wheeler servicing repair, not metal manufacturing processes",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-004",
+   "label": "UNRELATED",
+   "rationale": "'did' is the verb in 'What did we learn?'",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-005",
+   "label": "UNRELATED",
+   "rationale": "'Call / WhatsApp' is a phone contact line",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-006",
+   "label": "SAME_CONCEPT",
+   "rationale": "'IT operations' = information technology, the computers/networks of the ESCO concept",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-007",
+   "label": "UNRELATED",
+   "rationale": "'re' is the tail of the contraction we’re",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-008",
+   "label": "RELATED",
+   "rationale": "'HR/TA heads' names client departments/people, associated with but not the HRM function knowledge",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-009",
+   "label": "UNRELATED",
+   "rationale": "'re' is the tail of you’re",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-010",
+   "label": "CHILD",
+   "rationale": "MS Excel is a specific spreadsheet program; the skill is using spreadsheet software",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-011",
+   "label": "RELATED",
+   "rationale": "SEM (search engine marketing) listed beside SEO; related marketing practice, not SEO itself",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-012",
+   "label": "UNRELATED",
+   "rationale": "CMM among gauges = coordinate measuring machine, not ICT process quality models",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-013",
+   "label": "UNRELATED",
+   "rationale": "'it’s' is a pronoun",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-014",
+   "label": "RELATED",
+   "rationale": "'HR Heads' are client contacts; associated with, not the HRM function",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-015",
+   "label": "RELATED",
+   "rationale": "'CRM automation' tools are software associated with the CRM management approach",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-016",
+   "label": "PARTIAL_OVERLAP",
+   "rationale": "plant 'quality systems' broadly vs product-development QC tools",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-017",
+   "label": "UNRELATED",
+   "rationale": "'Technical Skills' is a section heading (SAP), not applying science/engineering knowledge",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-018",
+   "label": "RELATED",
+   "rationale": "managing CRM systems (software) relates to the CRM approach",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-019",
+   "label": "UNRELATED",
+   "rationale": "sales call performance, not computer-assisted language learning",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-020",
+   "label": "CHILD",
+   "rationale": "proficiency in MS Excel: a specific spreadsheet program",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-021",
+   "label": "UNRELATED",
+   "rationale": "'Technical Skills' heading in a tax role",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-022",
+   "label": "RELATED",
+   "rationale": "maintaining electrical equipment vs the ESCO skill for electronic equipment: similar activity, different equipment class",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-023",
+   "label": "SAME_CONCEPT",
+   "rationale": "'PLC-based control systems' = programmable logic controllers",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-024",
+   "label": "RELATED",
+   "rationale": "C#/.NET is the .NET platform; Visual Basic is one .NET language, not the same concept",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-025",
+   "label": "RELATED",
+   "rationale": ".NET developer profile relates to, but is not, Visual Basic programming",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-026",
+   "label": "RELATED",
+   "rationale": "Excel data analysis is associated with, not the discipline of, statistics",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-027",
+   "label": "UNRELATED",
+   "rationale": "JSON data format, not the open source (service-oriented) model",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-028",
+   "label": "RELATED",
+   "rationale": "MIS data analysis skills relate to statistics",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-029",
+   "label": "UNRELATED",
+   "rationale": "SEM-BCS is an SAP consolidation module, not search engine optimisation",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-030",
+   "label": "UNRELATED",
+   "rationale": "industrial PI data archive data collection, not statistics",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-031",
+   "label": "SAME_CONCEPT",
+   "rationale": "consent to data privacy = data protection (boilerplate application text)",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-032",
+   "label": "UNRELATED",
+   "rationale": "CCD = compulsorily convertible debenture, not camera sensors",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-033",
+   "label": "SAME_CONCEPT",
+   "rationale": "negotiation skills with stakeholders = negotiating to reach common understanding",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-034",
+   "label": "RELATED",
+   "rationale": "financial planning analytics relates to financial forecasting",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-035",
+   "label": "SAME_CONCEPT",
+   "rationale": "attention to detail = attend to detail",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-036",
+   "label": "UNRELATED",
+   "rationale": "income-tax return filing for clients, not personal financial resource planning",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-037",
+   "label": "SAME_CONCEPT",
+   "rationale": "cloud computing = cloud technologies",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-038",
+   "label": "SAME_CONCEPT",
+   "rationale": "decision-making = making decisions (describes what the platform supports)",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-039",
+   "label": "SAME_CONCEPT",
+   "rationale": "problem-solving skills = solve problems",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-040",
+   "label": "SAME_CONCEPT",
+   "rationale": "manage projects end-to-end = perform project management",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-041",
+   "label": "SAME_CONCEPT",
+   "rationale": "decision-making skills = make decisions",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-042",
+   "label": "RELATED",
+   "rationale": "'pharmaceutical companies' (clients) relate to knowledge of the pharmaceutical industry",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-043",
+   "label": "RELATED",
+   "rationale": "product information management relates to, but is not, organisational knowledge management",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-044",
+   "label": "CHILD",
+   "rationale": "task risk assessment is one part of risk management",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-045",
+   "label": "SAME_CONCEPT",
+   "rationale": "AI/ML capabilities: ML = machine learning",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-046",
+   "label": "UNRELATED",
+   "rationale": "ML here is machine learning, not the ML programming language",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-047",
+   "label": "CHILD",
+   "rationale": "GIMP is one graphics editor",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-048",
+   "label": "UNRELATED",
+   "rationale": "'ICT tools' (smart cities) = information and communication technology, not in-circuit test",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-049",
+   "label": "UNRELATED",
+   "rationale": "PPC is a plant department (production planning and control), not strategic decisions",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-050",
+   "label": "UNRELATED",
+   "rationale": "PPC is a plant department, not pay-per-click advertising",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-051",
+   "label": "SAME_CONCEPT",
+   "rationale": "GIMP = GIMP (graphics editor software)",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-052",
+   "label": "SAME_CONCEPT",
+   "rationale": "ICT tools = computer/information technology",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-053",
+   "label": "PARENT",
+   "rationale": "quality management systems are broader than quality assurance procedures",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-054",
+   "label": "RELATED",
+   "rationale": "quality management systems relate to the soft skill 'manage quality'",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-055",
+   "label": "UNRELATED",
+   "rationale": "'personal data processing' in a privacy notice (legal sense), not data-entry processing",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-056",
+   "label": "SAME_CONCEPT",
+   "rationale": "Cascading Style Sheets = CSS",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-057",
+   "label": "SAME_CONCEPT",
+   "rationale": "assisting with conflict resolution = resolve conflicts",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-058",
+   "label": "CHILD",
+   "rationale": "resolving a conflict is part of conflict management practice",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-059",
+   "label": "CHILD",
+   "rationale": "Google Docs is one office program",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-060",
+   "label": "PARTIAL_OVERLAP",
+   "rationale": "collaborating with colleagues overlaps with liaising/negotiating with colleagues",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-061",
+   "label": "UNRELATED",
+   "rationale": "'core maintenance experience' means main maintenance work, not foundry cores",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-062",
+   "label": "CHILD",
+   "rationale": "LabVIEW is one graphical development environment",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-063",
+   "label": "RELATED",
+   "rationale": "vector calculus fragment (directional derivative, divergence) relates to vector line integrals",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-064",
+   "label": "RELATED",
+   "rationale": "loops in compiler code optimisation vs iteration constructs in programming: related",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-065",
+   "label": "PARTIAL_OVERLAP",
+   "rationale": "both cover polynomial time; LEFT is NP-completeness theory",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-066",
+   "label": "INSUFFICIENT_EVIDENCE",
+   "rationale": "RIGHT is the bare fragment 'Development' in a compiler module; its meaning is not recoverable",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-067",
+   "label": "RELATED",
+   "rationale": "file system metadata relates to distributed file systems",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-068",
+   "label": "UNRELATED",
+   "rationale": "first-order ODE 'Equations' vs Maxwell’s equations of electromagnetism",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-069",
+   "label": "UNRELATED",
+   "rationale": "meaning of prosperity (human values) vs K-means clustering",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-070",
+   "label": "PARENT",
+   "rationale": "first-order ODE types in general vs the specific type 'equations solvable for y'",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-071",
+   "label": "UNRELATED",
+   "rationale": "vector-calculus fields vs algebraic field in discrete mathematics",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-072",
+   "label": "RELATED",
+   "rationale": "vector fields (divergence) relate to physics fields (divergence and curl)",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-073",
+   "label": "UNRELATED",
+   "rationale": "incremental development of code (software engineering) vs code segment of process memory",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-074",
+   "label": "RELATED",
+   "rationale": "UI/UX 'User' topic relates to user-interface requirements",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-075",
+   "label": "UNRELATED",
+   "rationale": "angular momentum (physics) vs the Angular framework",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-076",
+   "label": "SAME_CONCEPT",
+   "rationale": "'JavaScript frameworks (React, Vue, or Angular)' = Angular framework",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-077",
+   "label": "UNRELATED",
+   "rationale": "neural network models vs designing computer networks",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-078",
+   "label": "SAME_CONCEPT",
+   "rationale": "neural network models = artificial neural networks",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-079",
+   "label": "RELATED",
+   "rationale": "SQL injection is an attack on SQL-using applications; related to SQL, not SQL",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-080",
+   "label": "RELATED",
+   "rationale": "database management systems relate to the classification of databases",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-081",
+   "label": "SAME_CONCEPT",
+   "rationale": "Database Management Systems = database management systems",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-082",
+   "label": "CHILD",
+   "rationale": "version control tools (Git, GitHub) are software configuration management tools",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-083",
+   "label": "RELATED",
+   "rationale": "buffer overflow attacks in C/C++ programs relate to C++",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-084",
+   "label": "CHILD",
+   "rationale": "convolutional neural networks are part of deep learning",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-085",
+   "label": "UNRELATED",
+   "rationale": "JavaScript/TypeScript is not Java",
+   "in_human_subset": false
+  },
+  {
+   "case_id": "bm1-086",
+   "label": "CHILD",
+   "rationale": "Python for data science is a specific use of Python programming",
+   "in_human_subset": true
+  },
+  {
+   "case_id": "bm1-087",
+   "label": "RELATED",
+   "rationale": "influence of AI and ML in diagnostics relates to machine learning",
+   "in_human_subset": true
+  }
+ ]
+}

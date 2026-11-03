@@ -1,0 +1,13 @@
+job_id,title,company_name,location,description,posted_date,salary
+1,Machine Learning Engineer,Fixture Corp,Remote,"<p>Looking for a Machine Learning Engineer with experience in Python, PyTorch, AWS, Docker and large language models. You will build and deploy ML pipelines. Visit https://fixturecorp.example/careers or email hr@fixturecorp.example to apply.</p>",2024-01-15,120000
+2,Machine Learning Engineer,Fixture Corp,Remote,"Looking for a Machine Learning Engineer with experience in Python, PyTorch, AWS, Docker and large language models. You will build and deploy ML pipelines.",2024-01-16,120000
+3,ML Engineer,Fixture Corp,Remote,"Looking for a Machine Learning Engineer with experience in Python, PyTorch, AWS, Docker, and large language models! You'll build and deploy machine learning pipelines for our team.",2024-01-17,121000
+4,Backend Engineer,Acme Fixtures,New York,"We need a backend engineer skilled in C++, C#, .NET and SQL Server to maintain our trading platform. Node.js and React.js experience a plus. Equal Opportunity Employer. Job ID: BE-2291",2024-02-01,110000
+5,Data Analyst,Acme Fixtures,New York,,2024-02-02,
+6,Cloud Engineer,Skyward Fixture Inc,Austin,"n/a",2024-02-03,95000
+7,DevOps Engineer,Skyward Fixture Inc,Austin,"Seeking a DevOps engineer with strong Kubernetes, Docker, GCP and Terraform skills. Apply now! Click here to apply: https://skyward.example/apply",2024-02-04,105000
+8,Frontend Developer,Pixel Fixtures,San Francisco,"Frontend developer needed with React.js, TypeScript and Node.js experience. Build delightful UIs for our SaaS product.",2024-03-10,98000
+9,Data Scientist,Fixture Analytics,Boston,"Data scientist role requiring Python, SQL, TensorFlow and strong statistics background. Experience with Azure ML a plus.",2024-03-12,115000
+10,Data Scientist,Fixture Analytics,Boston,"##!!$$ &&&",2024-03-13,115000
+11,Site Reliability Engineer,Nimbus Fixture,Seattle,"SRE with Kubernetes, AWS, Prometheus and Go experience. On-call rotation required. Equal Opportunity Employer statement applies.",2024-04-05,130000
+12,Site Reliability Engineer,Nimbus Fixture,Seattle,"SRE with Kubernetes, AWS, Prometheus, and Go experience required. On-call rotation is expected of all engineers on the team.",2024-04-06,131000

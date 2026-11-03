@@ -1,0 +1,273 @@
+{
+  "_comment": "Discipline profiles: how the shared engine treats each academic discipline. Data, not code: a new discipline is a new entry here. 'aliases' resolve the free-text discipline of a curriculum to a profile. 'knowledge_areas' and 'occupation_examples' are ORIENTATION for people reading the results (what the discipline is about); they are never used as demand evidence and never assert that a skill is required. 'industry_populations' lists the job-posting populations (population_id in the source manifest) that are relevant evidence of this discipline's demand; a curriculum whose discipline has none is analysed on its own curriculum and its industry analyses are reported NOT_APPLICABLE with the reason. Peer and reference curricula are compared only within the same profile. Two-letter forms that also name degrees or other disciplines ('ME' = Master of Engineering, 'CE' = Computer Engineering) are deliberately not aliases.",
+  "version": "discipline-profiles-v1",
+  "evidence_populations": {
+    "CURRENT_JOB_DATASET_2026_09": {
+      "domain": "general_market_india",
+      "description": "Exported Indian job postings across sectors (sales, operations, finance, software, manufacturing, ...), collected 2026-09-22.",
+      "basis": "inspected: the 100 postings' titles span many sectors; software roles are a minority"
+    },
+    "EMPLOYER_JOB_BOARDS_IN": {
+      "domain": "software_and_it",
+      "description": "Public job boards of eleven software and technology employers hiring in India, collected 2026-10-01.",
+      "basis": "inspected: every employer is a software or technology company"
+    }
+  },
+  "profiles": [
+    {
+      "id": "cse",
+      "version": "1",
+      "name": "Computer Science and Engineering",
+      "short": "CSE",
+      "aliases": [
+        "computer science and engineering",
+        "computer science & engineering",
+        "computer science engineering",
+        "computer science",
+        "cse",
+        "cs"
+      ],
+      "specialisations": [
+        "Artificial Intelligence and Machine Learning",
+        "Cyber Security",
+        "Internet of Things",
+        "Data Science"
+      ],
+      "related": [
+        "it",
+        "aids"
+      ],
+      "knowledge_areas": [
+        "Algorithms and data structures",
+        "Operating systems",
+        "Databases",
+        "Software engineering",
+        "Computer networks",
+        "Cloud computing",
+        "Cybersecurity"
+      ],
+      "occupation_examples": [
+        "Software developer",
+        "Systems analyst",
+        "Database designer and administrator",
+        "Network and systems engineer"
+      ],
+      "industry_populations": [
+        "CURRENT_JOB_DATASET_2026_09",
+        "EMPLOYER_JOB_BOARDS_IN"
+      ],
+      "validation": "Validated with real data: the published release analyses a CSE curriculum against these postings, the AICTE model curriculum and three CSE peers."
+    },
+    {
+      "id": "aids",
+      "version": "1",
+      "name": "Artificial Intelligence and Data Science",
+      "short": "AI & DS",
+      "aliases": [
+        "artificial intelligence and data science",
+        "artificial intelligence & data science",
+        "ai and data science",
+        "ai & ds",
+        "ai&ds",
+        "aids",
+        "ai and ds"
+      ],
+      "specialisations": [
+        "Machine Learning",
+        "Data Engineering"
+      ],
+      "related": [
+        "cse",
+        "it"
+      ],
+      "knowledge_areas": [
+        "Statistics and probability",
+        "Machine learning",
+        "Deep learning",
+        "Data engineering",
+        "Data visualisation",
+        "MLOps",
+        "Responsible AI"
+      ],
+      "occupation_examples": [
+        "Data scientist",
+        "Machine learning engineer",
+        "Data engineer",
+        "Data analyst"
+      ],
+      "industry_populations": [
+        "CURRENT_JOB_DATASET_2026_09",
+        "EMPLOYER_JOB_BOARDS_IN"
+      ],
+      "validation": "Not validated with a real AI & DS curriculum yet: the postings are relevant, but no AI & DS reference or peer curriculum has been supplied."
+    },
+    {
+      "id": "it",
+      "version": "1",
+      "name": "Information Technology",
+      "short": "IT",
+      "aliases": [
+        "information technology",
+        "it"
+      ],
+      "specialisations": [],
+      "related": [
+        "cse",
+        "aids"
+      ],
+      "knowledge_areas": [
+        "Software development",
+        "Information systems",
+        "Networking",
+        "Cloud infrastructure",
+        "Enterprise systems",
+        "Information security"
+      ],
+      "occupation_examples": [
+        "Software developer",
+        "Systems administrator",
+        "Network administrator",
+        "IT support engineer"
+      ],
+      "industry_populations": [
+        "CURRENT_JOB_DATASET_2026_09",
+        "EMPLOYER_JOB_BOARDS_IN"
+      ],
+      "validation": "Not validated with a real IT curriculum yet: the postings are relevant, but no IT reference or peer curriculum has been supplied."
+    },
+    {
+      "id": "ece",
+      "version": "1",
+      "name": "Electronics and Communication Engineering",
+      "short": "ECE",
+      "aliases": [
+        "electronics and communication engineering",
+        "electronics & communication engineering",
+        "electronics and communications engineering",
+        "electronics and communication",
+        "ece"
+      ],
+      "specialisations": [
+        "VLSI Design",
+        "Embedded Systems",
+        "Communication Systems"
+      ],
+      "related": [
+        "eee"
+      ],
+      "knowledge_areas": [
+        "Digital electronics",
+        "Communication systems",
+        "Signal processing",
+        "Embedded systems",
+        "VLSI",
+        "Semiconductor design"
+      ],
+      "occupation_examples": [
+        "Electronics engineer",
+        "Embedded systems engineer",
+        "RTL design engineer",
+        "Telecommunications engineer"
+      ],
+      "industry_populations": [],
+      "validation": "Curriculum analysis only: no job-posting evidence for electronics roles has been supplied."
+    },
+    {
+      "id": "eee",
+      "version": "1",
+      "name": "Electrical and Electronics Engineering",
+      "short": "EEE",
+      "aliases": [
+        "electrical and electronics engineering",
+        "electrical & electronics engineering",
+        "electrical and electronic engineering",
+        "electrical engineering",
+        "eee"
+      ],
+      "specialisations": [
+        "Power Systems",
+        "Power Electronics"
+      ],
+      "related": [
+        "ece"
+      ],
+      "knowledge_areas": [
+        "Electrical machines",
+        "Power systems",
+        "Control systems",
+        "Power electronics",
+        "Renewable energy systems"
+      ],
+      "occupation_examples": [
+        "Electrical engineer",
+        "Power systems engineer",
+        "Control systems engineer"
+      ],
+      "industry_populations": [],
+      "validation": "Curriculum analysis only: no job-posting evidence for electrical roles has been supplied."
+    },
+    {
+      "id": "mech",
+      "version": "1",
+      "name": "Mechanical Engineering",
+      "short": "Mechanical",
+      "aliases": [
+        "mechanical engineering",
+        "mechanical",
+        "mech"
+      ],
+      "specialisations": [
+        "Manufacturing",
+        "Thermal Engineering",
+        "Design"
+      ],
+      "related": [],
+      "knowledge_areas": [
+        "Thermodynamics",
+        "Fluid mechanics",
+        "Manufacturing",
+        "Machine design",
+        "CAD/CAE",
+        "Robotics and automation"
+      ],
+      "occupation_examples": [
+        "Mechanical engineer",
+        "Manufacturing engineer",
+        "Design engineer"
+      ],
+      "industry_populations": [],
+      "validation": "Curriculum analysis only: no job-posting evidence for mechanical roles has been supplied."
+    },
+    {
+      "id": "civil",
+      "version": "1",
+      "name": "Civil Engineering",
+      "short": "Civil",
+      "aliases": [
+        "civil engineering",
+        "civil"
+      ],
+      "specialisations": [
+        "Structural Engineering",
+        "Transportation Engineering",
+        "Environmental Engineering"
+      ],
+      "related": [],
+      "knowledge_areas": [
+        "Structural engineering",
+        "Geotechnical engineering",
+        "Transportation",
+        "Construction management",
+        "Environmental engineering"
+      ],
+      "occupation_examples": [
+        "Civil engineer",
+        "Structural engineer",
+        "Site engineer",
+        "Construction manager"
+      ],
+      "industry_populations": [],
+      "validation": "Curriculum analysis only: no job-posting evidence for civil-engineering roles has been supplied."
+    }
+  ]
+}

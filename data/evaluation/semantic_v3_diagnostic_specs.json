@@ -1,0 +1,23 @@
+{
+ "_comment": "Hard-case diagnostics for Semantic Engine V3. Each case pairs a REAL occurrence (the first curriculum topic or job posting, ordered by uid, whose text matches `source_regex`) with a REAL ESCO concept (by exact prefLabel). This is test/evaluation data: no production code reads a term from it. Cases whose source text does not exist in the supplied data are listed under `not_available` and are NOT invented.",
+ "cases": [
+  {"diag_id": "d01", "hard_case": "Angular / angular momentum", "source": "topic", "source_regex": "angular momentum", "esco_pref_label": "Angular"},
+  {"diag_id": "d02", "hard_case": "Angular (framework)", "source": "posting", "source_regex": "\\bAngular\\b", "esco_pref_label": "Angular"},
+  {"diag_id": "d03", "hard_case": "network / neural network", "source": "topic", "source_regex": "^Neural Network models", "esco_pref_label": "design computer network"},
+  {"diag_id": "d04", "hard_case": "neural network (positive control)", "source": "topic", "source_regex": "^Neural Network models", "esco_pref_label": "artificial neural networks"},
+  {"diag_id": "d05", "hard_case": "SQL / SQL injection", "source": "topic", "source_regex": "^SQL Injection$", "esco_pref_label": "SQL"},
+  {"diag_id": "d06", "hard_case": "database / DBMS", "source": "topic", "source_regex": "^Database Management Systems$", "esco_pref_label": "database"},
+  {"diag_id": "d07", "hard_case": "DBMS (positive control)", "source": "topic", "source_regex": "^Database Management Systems$", "esco_pref_label": "database management systems"},
+  {"diag_id": "d08", "hard_case": "Git / GitHub", "source": "topic", "source_regex": "GIT and GitHub", "esco_pref_label": "tools for software configuration management"},
+  {"diag_id": "d09", "hard_case": "C / C++", "source": "topic", "source_regex": "Buffer overflow attack in C and C\\+\\+", "esco_pref_label": "C++"},
+  {"diag_id": "d10", "hard_case": "CNN / convolutional neural network", "source": "topic", "source_regex": "^Convolutional Neural Network: The Convolution Operation", "esco_pref_label": "deep learning"},
+  {"diag_id": "d11", "hard_case": "Java / JavaScript", "source": "posting", "source_regex": "\\bJavaScript\\b", "esco_pref_label": "Java (computer programming)"},
+  {"diag_id": "d12", "hard_case": "Python (course topic)", "source": "topic", "source_regex": "^Python for Data Science", "esco_pref_label": "Python (computer programming)"},
+  {"diag_id": "d13", "hard_case": "AI / ML", "source": "topic", "source_regex": "^Influence of AI and ML in Clinical", "esco_pref_label": "machine learning"}
+ ],
+ "not_available": [
+  {"hard_case": "React / chemical reaction", "reason": "no curriculum topic or posting in the supplied data contains 'chemical reaction'"},
+  {"hard_case": "Python / python snake", "reason": "no supplied text uses 'python' in the animal sense"},
+  {"hard_case": "C (language) as an ESCO concept", "reason": "no ESCO v1.2.1 English concept has 'C' as a label"}
+ ]
+}

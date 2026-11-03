@@ -1,0 +1,65 @@
+{
+  "description": "Golden regression pages: real pages from the CBIT R22, CBIT R22A and AICTE documents whose expected structure was read by hand from the PDF text. Used twice: (1) the pipeline's evaluation step measures per-page topic recall/precision against expected_topics; (2) backend/tests/test_golden_regression.py re-parses frozen snapshots of these pages and asserts the invariants, so a parser change that breaks known-good pages fails the test suite.",
+  "labelled_by": "assistant",
+  "human_validated": false,
+  "caveat": "Expectations were written by the assistant from the page text, not by a curriculum expert. They are a regression baseline for known-good pages, not ground truth for the whole corpus. expected_topics lists a representative subset of each page's topics, so 'precision' here only counts extracted topics that match one of the listed items and is a lower bound.",
+  "pages": [
+    {
+      "fixture_id": "cbit_r22a_operating_systems",
+      "doc_id": "cbit-be-cse-r22a",
+      "source_sha256": "f98246ad7ea5342571639a0ce03619622806555fceb81bfd255daa7cc1377492",
+      "page": 95,
+      "course_code": "22CSC15N",
+      "course_title": "Operating Systems",
+      "prerequisite_contains": "Computer Architecture and Programming Fundamentals",
+      "unit_labels": ["UNIT-I", "UNIT-II", "UNIT-III"],
+      "expected_topics": ["Computer System overview", "Components of a computer system", "functions of OS", "Micro-kernel",
+                          "Process Control Block (PCB)", "scheduling algorithms", "Linux IPC Mechanisms",
+                          "segmentation", "paging", "page replacement algorithms", "disk scheduling", "swap space management"],
+      "must_not_be_topics": ["60 Marks", "40 Marks", "CO 1", "CO-PO Articulation Matrix",
+                             "Understand the basics of Operating systems and its major components"]
+    },
+    {
+      "fixture_id": "cbit_r22_data_structures",
+      "doc_id": "cbit-be-cse-r22",
+      "source_sha256": "bc14c2f0e51703675a1ca47b1b6836a140313a77c27c69debf220183d26783a2",
+      "page": 34,
+      "course_code": "22CSC05",
+      "course_title": "Data Structures",
+      "prerequisite_contains": "Basic knowledge of programming language such as python",
+      "unit_labels": ["UNIT-I", "UNIT-II", "UNIT-III", "UNIT-IV", "UNIT-V"],
+      "expected_topics": ["Abstract Data Types", "Quick sort", "Merge Sort", "Radix sort", "Stack ADT", "Circular queues",
+                          "singly linked lists", "doubly linked lists", "AVL trees", "Binary Search Trees", "Heap Sort",
+                          "graph traversals", "Hash Functions", "Quadratic Probing", "Double Hashing"],
+      "unit_of_topic": {"Stack ADT": "UNIT-II", "AVL trees": "UNIT-IV", "Double Hashing": "UNIT-V"},
+      "must_not_be_topics": ["60 Marks", "CO 1", "Analyse various linear and nonlinear data structures"]
+    },
+    {
+      "fixture_id": "aicte_programming_for_problem_solving",
+      "doc_id": "aicte-ug-cse-model",
+      "source_sha256": "5c4bd3b16c2865fbbf1b37651e639f009676153247283c5cc44ba5a6341ed410",
+      "page": 61,
+      "extra_pages": [62],
+      "course_code": "ESC-201",
+      "course_title": "Programming for Problem Solving",
+      "unit_labels": ["Module I", "Module II", "Module IX", "Module X"],
+      "expected_topics": ["Arithmetic expressions and precedence", "Character arrays and Strings", "call by value",
+                          "Fibonacci series", "Defining structures and Array of Structures", "notion of linked list"],
+      "must_not_be_topics": ["Byron Gottfried", "Schaum's Outline of Programming with C", "Brian W. Kernighan",
+                             "Programming in ANSI C"]
+    },
+    {
+      "fixture_id": "aicte_idea_lab_table_page",
+      "doc_id": "aicte-ug-cse-model",
+      "source_sha256": "5c4bd3b16c2865fbbf1b37651e639f009676153247283c5cc44ba5a6341ed410",
+      "page": 50,
+      "course_code": "AU-101",
+      "course_title": "IDEA Lab Workshop",
+      "extraction_method": "pdfplumber_table_topics_column",
+      "expected_topics": ["Electronic component familiarization", "Version control tools - GIT and GitHub",
+                          "Soldering using soldering iron/station"],
+      "regression_note": "Table-column page: the Topics table sits BELOW the AU-101 header. Before the reading-order fix these topics were attributed to the previous course (HSMC-102).",
+      "must_not_be_topics": []
+    }
+  ]
+}

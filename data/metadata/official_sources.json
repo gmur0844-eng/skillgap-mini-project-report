@@ -1,0 +1,220 @@
+{
+ "_comment": "Official sources the evidence-expansion fetcher may read (scripts/acquisition/fetch_official_sources.py). Only official publishers: an institution's own website for its curriculum, an employer's own job board (served through the employer's applicant-tracking provider's documented public API) for its job postings. Every entry records why it is legitimate and what it is used for. Files land in the drop folders with a .source.json sidecar; nothing is analysed until it is registered and passes the pipeline's gates. Raw downloads are never redistributed (excluded from release packages).",
+ "version": "1",
+ "user_agent": "SkillGapCurriculumResearch/1.0 (academic curriculum-industry alignment study; contact: project owner)",
+ "request_interval_seconds": 1.5,
+ "peer_documents": [
+  {
+   "doc_id": "nitt-btech-cse-2024-25",
+   "status": "USE",
+   "role": "PEER",
+   "institution": "National Institute of Technology Tiruchirappalli",
+   "programme": "B.Tech Computer Science and Engineering",
+   "discipline": "Computer Science and Engineering",
+   "curriculum_version": "Curriculum and Syllabus (Feb 2025; batches admitted 2024-25)",
+   "academic_year": "2024-25",
+   "url": "https://nitt.edu/home/academics/curriculum/Curriculum%20and%20Syllabus%20_CSE_Feb%202025.pdf",
+   "file": "nitt_btech_cse_2024-25.pdf",
+   "licence_note": "no licence statement in the document; official public document of the institute, used for analysis with attribution, not redistributed",
+   "why": "official NIT Tiruchirappalli CSE department curriculum with unit-level topics and course outcomes per course (checked 2026-10-01); NIT Tiruchirappalli is one of the four requested peers that were missing"
+  }
+ ],
+ "peer_documents_not_acquired": [
+  {
+   "name": "IIT Bombay B.Tech CSE",
+   "status": "NOT_AVAILABLE",
+   "reason": "the official curriculum (cse.iitb.ac.in, 2022) lists course codes and credits only; no topic content to compare. The 2013 document with topics is marked 'proposed' and is not used"
+  },
+  {
+   "name": "IIT Madras B.Tech CSE",
+   "status": "NOT_AVAILABLE",
+   "reason": "the official 2024-batch curriculum (iitm.ac.in) lists course codes and credits only; no topic content to compare"
+  },
+  {
+   "name": "IIT Delhi B.Tech CSE",
+   "status": "HOLD",
+   "reason": "the official 'Courses of Study 2024 - Course Descriptions' (home.iitd.ac.in) is an institute-wide catalogue; the B.Tech CSE programme's course list is in a separate volume and the CSE section could not be verified; comparing a whole-institute catalogue with one programme would be wrong"
+  }
+ ],
+ "job_boards": {
+  "_comment": "Employer job boards served by the employer's ATS through a documented public read API (no key, no login). Greenhouse: 'Job Board data is publicly available, so authentication is not required for any GET endpoints' (developers.greenhouse.io/job-board.html). Lever: GET /v0/postings/SITE needs no key; published postings are publicly viewable (github.com/lever/postings-api). Only postings located in India are kept. The posting date is taken ONLY from the source: Greenhouse first_published, Lever createdAt; a posting without one is kept as UNDATED (never given a date). verified_on = the board answered with India postings when checked.",
+  "boards": [
+   {
+    "provider": "lever",
+    "board": "cred",
+    "employer": "CRED",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "lever",
+    "board": "meesho",
+    "employer": "Meesho",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "lever",
+    "board": "zeta",
+    "employer": "Zeta",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "groww",
+    "employer": "Groww",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "druva",
+    "employer": "Druva",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "inmobi",
+    "employer": "InMobi",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "rubrik",
+    "employer": "Rubrik",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "databricks",
+    "employer": "Databricks",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "mongodb",
+    "employer": "MongoDB",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "twilio",
+    "employer": "Twilio",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "stripe",
+    "employer": "Stripe",
+    "verified_on": "2026-10-01"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "hackerrank",
+    "employer": "HackerRank",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "elastic",
+    "employer": "Elastic",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "gitlab",
+    "employer": "GitLab",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "datadog",
+    "employer": "Datadog",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "okta",
+    "employer": "Okta",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "cloudflare",
+    "employer": "Cloudflare",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "airbnb",
+    "employer": "Airbnb",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "zscaler",
+    "employer": "Zscaler",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "greenhouse",
+    "board": "figma",
+    "employer": "Figma",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "lever",
+    "board": "paytm",
+    "employer": "Paytm",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "ashby",
+    "board": "sarvam",
+    "employer": "Sarvam AI",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "ashby",
+    "board": "notion",
+    "employer": "Notion",
+    "verified_on": "2026-10-21"
+   },
+   {
+    "provider": "smartrecruiters",
+    "board": "ServiceNow",
+    "employer": "ServiceNow",
+    "verified_on": "2026-10-21"
+   }
+  ],
+  "india_terms": [
+   "india",
+   "bengaluru",
+   "bangalore",
+   "hyderabad",
+   "pune",
+   "mumbai",
+   "gurugram",
+   "gurgaon",
+   "noida",
+   "new delhi",
+   "delhi",
+   "chennai",
+   "kolkata",
+   "ahmedabad",
+   "kochi",
+   "jaipur",
+   "coimbatore",
+   "thiruvananthapuram",
+   "chandigarh",
+   "indore",
+   "lucknow",
+   "mysuru",
+   "mysore",
+   "vadodara",
+   "nagpur",
+   "bhubaneswar",
+   "visakhapatnam"
+  ],
+  "population_id": "EMPLOYER_JOB_BOARDS_IN",
+  "population_definition": "postings located in India that were open on the snapshot date on the official job boards of the listed employers (public ATS APIs); one collection method, one geography",
+  "date_semantics": "OPEN_POSTINGS_SNAPSHOT"
+ }
+}

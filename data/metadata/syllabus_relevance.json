@@ -1,0 +1,94 @@
+{
+ "_comment": "Which ESCO top-level groups are syllabus content for each discipline profile. Used by the assistant (backend/app/assistant/relevance.py) to tell syllabus content from professional-practice skills and other fields; it never changes an analysis result. ESCO groups as recorded in each run's intelligence/skill_taxonomy_context.jsonl (top_skill_groups). Per profile: core / supporting ESCO groups; digital_is_core: skills of ESCO's digital skills collection and technology tools named in postings are core content (otherwise supporting). default_profile: used when the analysed curriculum's discipline has no profile.",
+ "version": "1",
+ "practice_groups": [
+  "transversal skills and competences",
+  "communication, collaboration and creativity",
+  "management skills",
+  "information skills",
+  "thinking skills and competences",
+  "self-management skills and competences",
+  "social and communication skills and competences",
+  "life skills and competences",
+  "core skills and competences"
+ ],
+ "profiles": {
+  "cse": {
+   "core": [
+    "information and communication technologies (icts)",
+    "working with computers"
+   ],
+   "supporting": [
+    "natural sciences, mathematics and statistics",
+    "engineering, manufacturing and construction"
+   ],
+   "digital_is_core": true
+  },
+  "aids": {
+   "core": [
+    "information and communication technologies (icts)",
+    "natural sciences, mathematics and statistics",
+    "working with computers"
+   ],
+   "supporting": [
+    "engineering, manufacturing and construction",
+    "social sciences, journalism and information"
+   ],
+   "digital_is_core": true
+  },
+  "it": {
+   "core": [
+    "information and communication technologies (icts)",
+    "working with computers"
+   ],
+   "supporting": [
+    "natural sciences, mathematics and statistics",
+    "business, administration and law"
+   ],
+   "digital_is_core": true
+  },
+  "ece": {
+   "core": [
+    "engineering, manufacturing and construction"
+   ],
+   "supporting": [
+    "information and communication technologies (icts)",
+    "natural sciences, mathematics and statistics"
+   ],
+   "digital_is_core": false
+  },
+  "eee": {
+   "core": [
+    "engineering, manufacturing and construction"
+   ],
+   "supporting": [
+    "natural sciences, mathematics and statistics",
+    "information and communication technologies (icts)"
+   ],
+   "digital_is_core": false
+  },
+  "mech": {
+   "core": [
+    "engineering, manufacturing and construction",
+    "working with machinery and specialised equipment"
+   ],
+   "supporting": [
+    "natural sciences, mathematics and statistics",
+    "information and communication technologies (icts)"
+   ],
+   "digital_is_core": false
+  },
+  "civil": {
+   "core": [
+    "engineering, manufacturing and construction",
+    "constructing"
+   ],
+   "supporting": [
+    "natural sciences, mathematics and statistics",
+    "agriculture, forestry, fisheries and veterinary"
+   ],
+   "digital_is_core": false
+  }
+ },
+ "default_profile": "cse"
+}

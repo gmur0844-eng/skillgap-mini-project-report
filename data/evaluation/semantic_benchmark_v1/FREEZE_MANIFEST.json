@@ -1,0 +1,28 @@
+{
+ "benchmark": "semantic_benchmark_v1",
+ "status": "FROZEN",
+ "frozen_at": "2026-09-27T08:29:26+00:00",
+ "cases": 88,
+ "by_kind": {
+  "ALIAS_SENSE": 45,
+  "AMBIGUOUS_TAXONOMY_LABEL": 18,
+  "AMBIGUOUS_TOPIC_MAPPING": 12,
+  "DIAGNOSTIC": 13
+ },
+ "by_label": {
+  "CHILD": 12,
+  "PARTIAL_OVERLAP": 4,
+  "UNRELATED": 28,
+  "SAME_CONCEPT": 18,
+  "RELATED": 23,
+  "PARENT": 2,
+  "INSUFFICIENT_EVIDENCE": 1
+ },
+ "sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+ "source_candidates": "data/semantic_runs/qwen-270-v3/candidates.json",
+ "source_candidates_sha256": "a889097d1884fe61461ba1f21a8a9b6026f4ef051bbbfe8a6febdce9b94d7ab1",
+ "label_source": "DEVELOPMENT GOLD SET, labelled by the assistant with the protocol in docs/SEMANTIC_EVALUATION_REPORT.md. No independent human labels. Metrics on it are development estimates, not validated accuracy.",
+ "known_bias": "the labeller had seen V2 (qwen-270-v1) outputs for the 75 pool cases before labelling; V3 outputs did not exist when the set was frozen.",
+ "selection": "all hard-case surfaces (<=2 per surface), then candidate-id-hash order per kind to quotas ALIAS 45 / TAXONOMY 18 / TOPIC 12; all 13 diagnostics",
+ "rule": "frozen: must not be edited after V3 results are seen; any correction creates semantic_benchmark_v2"
+}

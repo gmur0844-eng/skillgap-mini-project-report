@@ -1,0 +1,42 @@
+{
+ "version": "semantic-gate-v2",
+ "declared_at": "2026-09-27T20:13:58+00:00",
+ "declared_before": "any independent human label for semantic_benchmark_v1 existed (0 label files at declaration)",
+ "benchmark": "semantic_benchmark_v1",
+ "benchmark_sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+ "gold": "semantic_gold_v1 (independent reviewers + predefined adjudication; never the model answer, never the development labels)",
+ "evaluated_system": "QWEN_VALIDATED",
+ "evaluated_system_note": "Qwen output after the deterministic evidence validator (what could reach production)",
+ "criteria": {
+  "min_independent_reviewers": 1,
+  "min_gold_cases": 80,
+  "min_kappa_when_two_or_more_reviewers": 0.6,
+  "min_accuracy": 0.8,
+  "min_macro_f1": 0.7,
+  "max_false_same_concept": 1,
+  "max_wrong_hierarchy_direction": 0,
+  "max_false_parent_or_child": 1,
+  "max_unsupported_taxonomy_evidence": 0,
+  "max_lexical_collision": 0,
+  "min_predictions_per_promoted_class": 8,
+  "min_precision_per_promoted_class": 0.9
+ },
+ "severe_errors": [
+  "FALSE_SAME_CONCEPT",
+  "WRONG_HIERARCHY_DIRECTION",
+  "UNSUPPORTED_TAXONOMY_EVIDENCE",
+  "FALSE_PARENT",
+  "FALSE_CHILD",
+  "LEXICAL_COLLISION"
+ ],
+ "promotable_classes": [
+  "SAME_CONCEPT",
+  "UNRELATED",
+  "PARENT",
+  "CHILD",
+  "RELATED"
+ ],
+ "if_failed": "SAFE_MODE: model decisions are recorded and shown, never applied",
+ "if_passed": "only the classes in promotable_classes that also meet min_precision_per_promoted_class with >= min_predictions_per_promoted_class predictions may take effect; every other class stays blocked",
+ "rule": "frozen: any change creates semantic-gate-v3 and must be declared before the results it is applied to are seen"
+}

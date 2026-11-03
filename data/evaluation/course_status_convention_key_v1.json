@@ -1,0 +1,47 @@
+{
+ "name": "course_status_convention_key_v1",
+ "purpose": "Evaluation only. Three of the supplied curricula encode compulsory/option status in their own course codes. The status reader (curriculum_understanding.course_status) never reads codes; it reads the scheme layout. Agreement with each institution's code convention is therefore an independent check of the reader on real documents. Courses whose code matches no pattern are not scored.",
+ "label_source": "INSTITUTION_CODE_CONVENTION (read off the documents by the author; not human-validated)",
+ "documents": {
+  "cbit-be-cse-r22a": [
+   [
+    "^22[A-Z]{2}[CMIU]",
+    "COMPULSORY"
+   ],
+   [
+    "^22[A-Z]{2}[EO]",
+    "ELECTIVE_OPTION"
+   ]
+  ],
+  "cbit-be-cse-r22": [
+   [
+    "^22[A-Z]{2}[CMIU]",
+    "COMPULSORY"
+   ],
+   [
+    "^22[A-Z]{2}[EO]",
+    "ELECTIVE_OPTION"
+   ]
+  ],
+  "nitt-btech-cse-2024-25": [
+   [
+    "^[A-Z]{2}(IR|LR|PC)",
+    "COMPULSORY"
+   ],
+   [
+    "^[A-Z]{2}(PE|OE|HO|MI)",
+    "ELECTIVE_OPTION"
+   ]
+  ],
+  "nitw-btech-cse-2024-25": [
+   [
+    "^CS1[HM]",
+    "ELECTIVE_OPTION"
+   ],
+   [
+    "^CS1[34](2[1-9]|[3-7][0-9]|80)$",
+    "ELECTIVE_OPTION"
+   ]
+  ]
+ }
+}

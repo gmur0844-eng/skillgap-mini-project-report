@@ -1,0 +1,7 @@
+O*NET-SOC Code	Title	Example	Commodity Code	Commodity Title	Hot Technology
+15-2051.00	Data Scientists	Python	43232304	Object or component oriented development software	Y
+15-2051.00	Data Scientists	TensorFlow	43232304	Object or component oriented development software	Y
+15-1252.00	Software Developers	Docker	43233201	Virtualization software	Y
+15-1252.00	Software Developers	Kubernetes	43233201	Virtualization software	Y
+15-1244.00	Network and Computer Systems Administrators	Amazon Web Services	43232402	Cloud infrastructure software	Y
+15-1211.00	Computer Systems Analysts	Microsoft SQL Server	43232304	Object or component oriented development software	N

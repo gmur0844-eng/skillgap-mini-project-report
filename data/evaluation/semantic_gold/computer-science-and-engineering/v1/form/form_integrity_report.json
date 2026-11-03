@@ -1,0 +1,170 @@
+{
+ "case_count": 48,
+ "case_ids": [
+  "bm1-001",
+  "bm1-002",
+  "bm1-003",
+  "bm1-006",
+  "bm1-007",
+  "bm1-009",
+  "bm1-010",
+  "bm1-013",
+  "bm1-014",
+  "bm1-015",
+  "bm1-018",
+  "bm1-019",
+  "bm1-020",
+  "bm1-021",
+  "bm1-022",
+  "bm1-023",
+  "bm1-026",
+  "bm1-027",
+  "bm1-029",
+  "bm1-031",
+  "bm1-034",
+  "bm1-035",
+  "bm1-037",
+  "bm1-038",
+  "bm1-043",
+  "bm1-045",
+  "bm1-046",
+  "bm1-050",
+  "bm1-052",
+  "bm1-053",
+  "bm1-057",
+  "bm1-058",
+  "bm1-059",
+  "bm1-060",
+  "bm1-061",
+  "bm1-063",
+  "bm1-066",
+  "bm1-069",
+  "bm1-070",
+  "bm1-071",
+  "bm1-072",
+  "bm1-075",
+  "bm1-076",
+  "bm1-078",
+  "bm1-080",
+  "bm1-084",
+  "bm1-086",
+  "bm1-087"
+ ],
+ "duplicate_ids": [],
+ "missing_ids": [],
+ "modified_cases": [],
+ "invented_ids": [],
+ "subset_ids_not_in_form": [],
+ "order_matches_subset": true,
+ "expected_case_count": 48,
+ "benchmark": {
+  "path": "data/evaluation/semantic_benchmark_v1/benchmark.json",
+  "sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+  "sha256_verified": true,
+  "cases": 88
+ },
+ "blindness": {
+  "form_fields_per_case": [
+   "case number",
+   "case reference id",
+   "Concept A",
+   "context / evidence of A",
+   "Concept B",
+   "context / evidence of B"
+  ],
+  "excluded_benchmark_fields": [
+   "candidate_id",
+   "context_hash",
+   "esco",
+   "evidence_span",
+   "input_hash",
+   "kind",
+   "label",
+   "label_source",
+   "rationale",
+   "reviewer",
+   "right_description",
+   "right_type",
+   "tags",
+   "timestamp"
+  ],
+  "leaks_found": []
+ },
+ "label_definitions": {
+  "schema_version": "relationship-labels-v1",
+  "choices": [
+   {
+    "choice": "A — Same concept",
+    "code": "SAME_CONCEPT",
+    "definition_shown": "Concept A and Concept B denote the same thing in this context"
+   },
+   {
+    "choice": "B — Parent / broader concept",
+    "code": "PARENT",
+    "definition_shown": "Concept A is a broader concept that includes Concept B"
+   },
+   {
+    "choice": "C — Child / more specific concept",
+    "code": "CHILD",
+    "definition_shown": "Concept A is a narrower concept, a kind or part of Concept B"
+   },
+   {
+    "choice": "D — Related",
+    "code": "RELATED",
+    "definition_shown": "clearly connected, but neither equal nor one inside the other"
+   },
+   {
+    "choice": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP",
+    "definition_shown": "they share part of their meaning"
+   },
+   {
+    "choice": "F — Unrelated",
+    "code": "UNRELATED",
+    "definition_shown": "different things (e.g. a shared word with a different sense)"
+   },
+   {
+    "choice": "G — Ambiguous",
+    "code": "AMBIGUOUS",
+    "definition_shown": "the context allows more than one reading"
+   },
+   {
+    "choice": "H — Insufficient evidence",
+    "code": "INSUFFICIENT_EVIDENCE",
+    "definition_shown": "the context does not decide it"
+   }
+  ]
+ },
+ "passed": true,
+ "rendered_check": {
+  "status": "PASSED",
+  "problems": [],
+  "items": {
+   "TEXT": 1,
+   "PAGE_BREAK": 49,
+   "MULTIPLE_CHOICE": 96,
+   "PARAGRAPH_TEXT": 48
+  },
+  "case_pages": 48,
+  "questions_per_case": 3,
+  "settings": {
+   "title": "Semantic Relationship Validation — Curriculum Intelligence",
+   "description": "This form is part of an independent evaluation of semantic relationships used in a curriculum-intelligence system.\n\nYou will review 48 cases involving concepts, skills, curriculum topics, and reference concepts.\n\nFor each case, review the information provided and select the relationship that best describes the two concepts.\n\nPlease make your judgment independently based only on the information provided.\n\nThe system's AI prediction is not shown to you.\n\nThere are no expected answers shown in this form.",
+   "emailCollection": "DO_NOT_COLLECT",
+   "requireLogin": false,
+   "limitOneResponsePerUser": false,
+   "allowResponseEdits": false,
+   "publishingSummary": false,
+   "showLinkToRespondAgain": false,
+   "shuffleQuestions": false,
+   "progressBar": true,
+   "confirmation": "Thank you. Your judgments have been recorded.",
+   "acceptingResponses": true,
+   "published": true
+  }
+ },
+ "generated_at": "2026-10-02T01:54:25+00:00",
+ "script": "scripts/evaluation/create_semantic_validation_form.gs",
+ "script_sha256": "b5973e1f8ca6b7658bb868b10e5b549ef7203905fd1d902a13f57ced73f69903",
+ "cases_sha256": "7631599200adbdfccfd1f54469420492e8f9290e661e6750a5660496bde02fcd"
+}

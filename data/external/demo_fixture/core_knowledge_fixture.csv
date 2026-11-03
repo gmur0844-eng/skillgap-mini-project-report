@@ -1,0 +1,6 @@
+domain,topic,subtopic,description
+FIXTURE DOMAIN 1,Fixture Topic 1.1,Fixture Subtopic 1.1.a,Synthetic description for pipeline testing only.
+FIXTURE DOMAIN 1,Fixture Topic 1.1,Fixture Subtopic 1.1.b,
+FIXTURE DOMAIN 1,Fixture Topic 1.2,,
+FIXTURE DOMAIN 2,Fixture Topic 2.1,Fixture Subtopic 2.1.a,
+,Missing Domain Row,,This row is intentionally invalid (no domain) to test rejection handling.

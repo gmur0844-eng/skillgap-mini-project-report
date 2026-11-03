@@ -1,0 +1,94 @@
+{
+ "package": "semantic_gold/computer-science-and-engineering/v1",
+ "discipline": "Computer Science and Engineering",
+ "benchmark": {
+  "path": "data/evaluation/semantic_benchmark_v1/benchmark.json",
+  "sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+  "cases": 88,
+  "version": "semantic_benchmark_v1"
+ },
+ "benchmark_version": "semantic_benchmark_v1",
+ "label_schema_version": "relationship-labels-v1",
+ "label_schema": {
+  "version": "relationship-labels-v1",
+  "labels": [
+   {
+    "code": "SAME_CONCEPT",
+    "user_label": "Equivalent concept",
+    "meaning": "A and B denote the same thing in this context"
+   },
+   {
+    "code": "PARENT",
+    "user_label": "A is broader",
+    "meaning": "A is a broader concept that includes B"
+   },
+   {
+    "code": "CHILD",
+    "user_label": "A is more specific",
+    "meaning": "A is a narrower concept, a kind or part of B"
+   },
+   {
+    "code": "RELATED",
+    "user_label": "Related concept",
+    "meaning": "clearly connected, but neither equal nor one inside the other"
+   },
+   {
+    "code": "PARTIAL_OVERLAP",
+    "user_label": "Partial overlap",
+    "meaning": "they share part of their meaning"
+   },
+   {
+    "code": "UNRELATED",
+    "user_label": "Unrelated",
+    "meaning": "different things (e.g. a shared word with a different sense)"
+   },
+   {
+    "code": "AMBIGUOUS",
+    "user_label": "Ambiguous",
+    "meaning": "the context allows more than one reading"
+   },
+   {
+    "code": "INSUFFICIENT_EVIDENCE",
+    "user_label": "Not enough evidence",
+    "meaning": "the context does not decide it"
+   }
+  ],
+  "confidence": {
+   "scale": [
+    1,
+    5
+   ],
+   "labels": {
+    "1": "guess",
+    "3": "fairly sure",
+    "5": "certain"
+   }
+  }
+ },
+ "case_count": 48,
+ "reviewer_design": {
+  "target_reviewers": 2,
+  "reviewer_role": "independent domain reviewer (faculty or practitioner of the discipline)",
+  "each_reviewer_labels": "all subset cases, independently, without seeing any system output",
+  "blind_to": [
+   "model predictions",
+   "assistant adjudication",
+   "deterministic prediction",
+   "model confidence",
+   "current system decision",
+   "expected answer"
+  ]
+ },
+ "agreement": {
+  "measure": "COHEN_KAPPA (2 reviewers) / FLEISS_KAPPA (3+)",
+  "status": "PENDING"
+ },
+ "adjudication": {
+  "procedure": "a named human adjudicator chooses one of the reviewers' labels or AMBIGUOUS; the model answer and the assistant adjudication are never shown or used",
+  "status": "PENDING"
+ },
+ "gold_status": "PENDING_INDEPENDENT_LABELS",
+ "review_count": 0,
+ "created_at": "2026-09-29T18:17:28+00:00",
+ "created_by": "scripts/evaluation/semantic_validation.py build"
+}

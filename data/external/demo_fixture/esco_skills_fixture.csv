@@ -1,0 +1,13 @@
+conceptUri,preferredLabel,altLabels,description,skillType
+http://data.europa.eu/esco/skill/fixture-0001,Python (computer programming),"python programming
+python coding",Use the programming language Python to write software.,skill/competence
+http://data.europa.eu/esco/skill/fixture-0002,machine learning,"ML
+machine learning techniques",Apply statistical techniques to enable systems to learn from data.,skill/competence
+http://data.europa.eu/esco/skill/fixture-0003,cloud computing,"cloud technologies
+cloud infrastructure",Use remote servers hosted on the internet to store, manage and process data.,skill/competence
+http://data.europa.eu/esco/skill/fixture-0004,Docker (software),"Docker containers",Use the Docker platform to build, deploy and run containerized applications.,skill/competence
+http://data.europa.eu/esco/skill/fixture-0005,SQL,"structured query language",Use the computer language SQL to retrieve and manage information in databases.,skill/competence
+http://data.europa.eu/esco/skill/fixture-0006,large language models,"LLMs
+generative language models",Develop and apply large-scale neural language models for text generation and understanding.,skill/competence
+http://data.europa.eu/esco/skill/fixture-0007,Kubernetes,"K8s",Use the Kubernetes platform to orchestrate containerized applications.,skill/competence
+http://data.europa.eu/esco/skill/fixture-0008,,,"Row with missing preferredLabel to test that malformed rows are skipped, not fabricated.",skill/competence

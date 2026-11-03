@@ -1,0 +1,15 @@
+{
+  "_comment": "Data-driven abbreviation -> expansion map for curriculum-topic matching. Illustrative starter set only (the exact examples given in the normalization-audit spec) -- extend by editing this file, never by adding code branches. Keys are matched case-sensitively against the WHOLE trimmed term (never a substring), to avoid false positives like matching the word 'as'.",
+  "DBMS": "Database Management Systems",
+  "OS": "Operating Systems",
+  "DS": "Data Structures",
+  "CN": "Computer Networks",
+  "AI": "Artificial Intelligence",
+  "_applies_to_disciplines": [
+    "computer-science-and-engineering",
+    "computing-and-data",
+    "information-technology",
+    "artificial-intelligence-and-data-science"
+  ],
+  "_scope_comment": "Discipline keys (slugs of the discipline name recorded in the pipeline source manifest) this vocabulary applies to. The scoped loader (load_scoped_vocabulary) only applies it to topics from these disciplines, so e.g. 'CN' is never expanded to 'Computer Networks' inside a Chemical Engineering curriculum. Adding vocabulary for a new discipline = adding a new file under reference_data/vocab/, never code."
+}

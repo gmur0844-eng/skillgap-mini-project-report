@@ -1,0 +1,39 @@
+{
+ "_comment": "Metadata policy per document role. Data, not code: the ingestion API validates uploads against this file, the UI renders the form from it (GET /api/v1/metadata/document-roles), and a new role or a changed requirement is a change here. Disciplines are never listed here: discipline is free text and new disciplines work without any code change.",
+ "version": "document-roles-v1",
+ "roles": [
+  {"role": "TARGET", "label": "Institutional curriculum (the one analysed)", "kind": "INSTITUTIONAL_CURRICULUM",
+   "description": "A programme curriculum of an institution; the analysis compares it with industry demand and with reference and peer curricula.",
+   "required": ["institution", "programme", "discipline", "curriculum_version"],
+   "recommended": ["academic_year", "degree_level", "specialization"], "analysed_by_curriculum_pipeline": true},
+  {"role": "PREVIOUS_VERSION", "label": "Earlier version of the institutional curriculum", "kind": "INSTITUTIONAL_CURRICULUM",
+   "description": "An older version of the same programme, used for curriculum drift.",
+   "required": ["institution", "programme", "discipline", "curriculum_version"],
+   "recommended": ["academic_year", "degree_level"], "analysed_by_curriculum_pipeline": true},
+  {"role": "PEER", "label": "Peer curriculum", "kind": "PEER_CURRICULUM",
+   "description": "An official curriculum of another institution, used only for peer comparison; never mixed into the target's analytics.",
+   "required": ["institution", "programme", "discipline", "curriculum_version", "source_url"],
+   "recommended": ["academic_year", "degree_level", "licence_note"], "analysed_by_curriculum_pipeline": true},
+  {"role": "REFERENCE", "label": "Reference curriculum", "kind": "REFERENCE_CURRICULUM",
+   "description": "A model or regulatory curriculum (e.g. from a national body). It may not belong to one institution: 'institution' holds the issuing body when there is one.",
+   "required": ["discipline", "curriculum_version"],
+   "recommended": ["institution", "programme", "academic_year", "source_url"], "analysed_by_curriculum_pipeline": true},
+  {"role": "GENERAL_REFERENCE", "label": "General taxonomy or reference document", "kind": "GENERAL_REFERENCE",
+   "description": "A taxonomy, framework or reference text that is not a curriculum. Registered as a source with provenance; not run through curriculum extraction.",
+   "required": ["title"],
+   "recommended": ["publisher", "version", "source_url", "licence_note"], "analysed_by_curriculum_pipeline": false}
+ ],
+ "fields": {
+  "institution": "Institution or issuing body",
+  "programme": "Programme (e.g. the degree programme's name as written by the institution)",
+  "discipline": "Discipline or branch -- free text; any discipline is accepted",
+  "specialization": "Specialization, if the programme has one",
+  "degree_level": "Degree level (e.g. undergraduate, postgraduate, diploma) -- free text",
+  "academic_year": "Academic year the curriculum applies from",
+  "curriculum_version": "Curriculum version or regulation as named in the document",
+  "document_role": "What this document is for in the analysis",
+  "source_url": "Where the official document was obtained",
+  "licence_note": "Licence or terms of use as stated by the source",
+  "title": "Document title", "publisher": "Publisher", "version": "Version"
+ }
+}

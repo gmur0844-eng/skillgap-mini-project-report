@@ -1,0 +1,10 @@
+{
+  "name": "skill_qualification_validation_v1",
+  "role": "validation",
+  "items": 150,
+  "seed": 20261009,
+  "sampling": "uniform random over job-posting mentions of the 498 release postings, excluding benchmark v1 items, one mention per (posting, phrase); validation = first 150, holdout = next 200",
+  "sha256": "f0124083fd7bb0b5b72240ed13aab85fdcb3c1bc0d8e0a7c3c02cfd609323481",
+  "frozen_before": "skill qualification v0.2 (generalization) implementation",
+  "label_question": "Does this phrase, in this sentence and its context, state a skill or knowledge the job requires (evidence of industry demand)?"
+}

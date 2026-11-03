@@ -1,0 +1,28 @@
+{
+ "fixture_id": "aicte_idea_lab_table_page",
+ "doc_id": "aicte-ug-cse-model",
+ "source_sha256": "5c4bd3b16c2865fbbf1b37651e639f009676153247283c5cc44ba5a6341ed410",
+ "parser_fingerprint_at_snapshot": "a7f6801a5ad88f49",
+ "pages": {
+  "50": "AU-101 IDEA Lab Workshop 2L:0T:4P 0 Credit\nCourse Objectives:\n1. To learn all the skills associated with the tools and inventory associated with the IDEA Lab.\n2. Learn useful mechanical and electronic fabrication processes.\n3. Learn necessary skills to build useful and standalone system/ project with enclosures.\n4. Learn necessary skills to create print and electronic documentation for the system/project\nCourse Contents:\n1.\nTopics: Electronic component familiarization, Understanding electronic system design flow. Schematic design and PCB layout and Gerber creation using EagleCAD. Documentation using Doxygen, Google Docs, Overleaf. Version control tools - GIT and GitHub. Basic 2D and 3D designing using CAD tools such as FreeCAD, Sketchup, Prusa Slicer, FlatCAM, Inkspace, OpenBSP and VeriCUT.\n2.\nTopics: Familiarization and use of basic measurement instruments - DSO including various triggering modes, DSO probes, DMM, LCR bridge, Signal and function generator. Logic analyzer and MSO. Bench power supply (with 4-wire output) Circuit prototyping using (a) breadboard, (b) Zero PCB (c) ‘Manhattan’ style and (d) custom PCB. Single, double and multilayer PCBs. Single and double-sided PCB prototype fabrication in the lab. Soldering using soldering iron/station. Soldering using a temperature controlled reflow oven. Automated circuit assembly and soldering using pick and place machines.\n47"
+ },
+ "extraction_methods": {
+  "50": "pdfplumber_table_topics_column"
+ },
+ "expectations": {
+  "fixture_id": "aicte_idea_lab_table_page",
+  "course_code": "AU-101",
+  "course_title": "IDEA Lab Workshop",
+  "extraction_method": "pdfplumber_table_topics_column",
+  "expected_topics": [
+   "Electronic component familiarization",
+   "Version control tools - GIT and GitHub",
+   "Soldering using soldering iron/station"
+  ],
+  "regression_note": "Table-column page: the Topics table sits BELOW the AU-101 header. Before the reading-order fix these topics were attributed to the previous course (HSMC-102).",
+  "must_not_be_topics": []
+ },
+ "labelled_by": "assistant",
+ "human_validated": false,
+ "caveat": "Expectations were written by the assistant from the page text, not by a curriculum expert. They are a regression baseline for known-good pages, not ground truth for the whole corpus. expected_topics lists a representative subset of each page's topics, so 'precision' here only counts extracted topics that match one of the listed items and is a lower bound."
+}

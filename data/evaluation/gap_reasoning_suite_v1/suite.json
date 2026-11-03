@@ -1,0 +1,1286 @@
+{
+ "coverage_cfg": {
+  "max_item_words": 8,
+  "substantial_min_topics": 3,
+  "substantial_min_units": 2
+ },
+ "label_source": "AUTHOR_LABELLED: written by the author AFTER the Phase 4-6 implementation, as a specification of the intended behaviour on invented disciplines, document layouts and programme levels. Not an accuracy estimate; no human labels.",
+ "name": "gap_reasoning_suite_v1",
+ "programmes": [
+  {
+   "documents": [
+    {
+     "courses": [
+      {
+       "course_code": "AG501",
+       "course_uid": "ag:501",
+       "semester": "V",
+       "title": "Soil Physics and Chemistry",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/soilchem": "soil chemistry"
+         },
+         "text": "Soil chemistry",
+         "unit": "Unit I"
+        },
+        {
+         "skills": {
+          "http://syn/soilchem": "soil chemistry"
+         },
+         "text": "Ion exchange, advanced soil chemistry",
+         "unit": "Unit II"
+        },
+        {
+         "skills": {
+          "http://syn/soilchem": "soil chemistry"
+         },
+         "text": "Soil chemistry",
+         "unit": "Unit III"
+        },
+        {
+         "skills": {
+          "http://syn/cropsim": "crop growth simulation"
+         },
+         "text": "Crop growth simulation",
+         "unit": "Unit IV"
+        }
+       ]
+      },
+      {
+       "course_code": "AG502",
+       "course_uid": "ag:502",
+       "semester": "V",
+       "title": "Irrigation Design",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/drip": "drip irrigation design"
+         },
+         "text": "Drip irrigation design",
+         "unit": "Unit II"
+        },
+        {
+         "skills": {
+          "http://syn/tillage": "conventional tillage"
+         },
+         "text": "Conventional tillage",
+         "unit": "Unit I"
+        },
+        {
+         "skills": {
+          "http://syn/tillage": "conventional tillage"
+         },
+         "text": "Conventional tillage, field layout",
+         "unit": "Unit II"
+        },
+        {
+         "skills": {
+          "http://syn/tillage": "conventional tillage"
+         },
+         "text": "Conventional tillage",
+         "unit": "Unit III"
+        }
+       ]
+      },
+      {
+       "course_code": "AG503",
+       "course_uid": "ag:503",
+       "semester": "V",
+       "title": "Soil Physics and Chemistry Lab"
+      },
+      {
+       "course_code": "AG505",
+       "course_uid": "ag:505",
+       "semester": "V",
+       "title": "Drone Surveying Studio"
+      },
+      {
+       "course_code": "AG511",
+       "course_uid": "ag:511",
+       "semester": "V",
+       "title": "Hydroponic Systems",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/hydro": "hydroponic cultivation"
+         },
+         "text": "Hydroponic cultivation",
+         "unit": "Unit I"
+        }
+       ]
+      },
+      {
+       "course_code": "AG512",
+       "course_uid": "ag:512",
+       "semester": "V",
+       "title": "Agricultural Marketing"
+      },
+      {
+       "course_code": "AG601",
+       "course_uid": "ag:601",
+       "semester": "VI",
+       "title": "Crop Physiology",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/precision": "precision farming"
+         },
+         "text": "Precision farming sensors for stomatal response",
+         "unit": "Unit II"
+        }
+       ]
+      },
+      {
+       "course_code": "AG602",
+       "course_uid": "ag:602",
+       "semester": "VI",
+       "title": "Farm Project Part-I"
+      },
+      {
+       "course_code": "AG603",
+       "course_uid": "ag:603",
+       "outcomes": [
+        {
+         "skills": [
+          "http://syn/greenhouse"
+         ],
+         "text": "Apply greenhouse climate control to protected crops"
+        }
+       ],
+       "semester": "VI",
+       "title": "Greenhouse Engineering"
+      },
+      {
+       "course_code": "AGX0",
+       "course_uid": "ag:x0",
+       "semester": "I",
+       "title": "Agricultural Science I"
+      },
+      {
+       "course_code": "AGX1",
+       "course_uid": "ag:x1",
+       "semester": "II",
+       "title": "Agricultural Science II"
+      },
+      {
+       "course_code": "AGX2",
+       "course_uid": "ag:x2",
+       "semester": "III",
+       "title": "Agricultural Science III"
+      },
+      {
+       "course_code": "AGX3",
+       "course_uid": "ag:x3",
+       "semester": "IV",
+       "title": "Agricultural Science IV"
+      },
+      {
+       "course_code": "AGX4",
+       "course_uid": "ag:x4",
+       "semester": "VII",
+       "title": "Agricultural Science VII"
+      },
+      {
+       "course_code": "AGX5",
+       "course_uid": "ag:x5",
+       "semester": "VIII",
+       "title": "Agricultural Science VIII"
+      }
+     ],
+     "discipline": "Agricultural Engineering",
+     "doc_id": "agri-target",
+     "institution": "Riverbend Institute",
+     "pages": [
+      "\n                FACULTY OF AGRICULTURAL ENGINEERING\nSEMESTER - V\n S.  Course      Title of the Course                 Hours per Week    Credits\n No   Code\n 1.   AG501     Soil Physics and Chemistry            3   -   -          3\n 2.   AG502     Irrigation Design                     3   -   -          3\n 3.   AG503     Soil Physics and Chemistry Lab        -   -   3          1.5\n                Professional Elective\n 4.   AGExx                                           3   -   -          3\n 5.   AG505     Drone Surveying Studio                -   1   3          2\n                Total                                 9   1   6         12.5\n\n        Professional Elective - I                   Open Elective - I\n AG511   Hydroponic Systems                       OE201   Rural Sociology\n AG512   Agricultural Marketing\n",
+      "\nSEMESTER - VI\n S.  Course      Title of the Course                 Hours per Week    Credits\n 1.   AG601     Crop Physiology                       3   -   -          3\n 2.   AG602     Farm Project Part-I                   -   -   4          2\n 3.   AG603     Greenhouse Engineering                3   -   -          3\n"
+     ],
+     "programme": "B.Tech Agricultural Engineering",
+     "role": "TARGET"
+    },
+    {
+     "courses": [
+      {
+       "course_code": "R0",
+       "course_uid": "agr:0",
+       "semester": "I",
+       "title": "Model course"
+      },
+      {
+       "course_code": "R1",
+       "course_uid": "agr:1",
+       "semester": "II",
+       "title": "Model course"
+      },
+      {
+       "course_code": "R2",
+       "course_uid": "agr:2",
+       "semester": "III",
+       "title": "Model course"
+      },
+      {
+       "course_code": "R3",
+       "course_uid": "agr:3",
+       "semester": "IV",
+       "title": "Model course"
+      },
+      {
+       "course_code": "R4",
+       "course_uid": "agr:4",
+       "semester": "V",
+       "title": "Model course"
+      },
+      {
+       "course_code": "R5",
+       "course_uid": "agr:5",
+       "semester": "VI",
+       "title": "Model course"
+      },
+      {
+       "course_code": "R6",
+       "course_uid": "agr:6",
+       "semester": "VII",
+       "title": "Model course"
+      },
+      {
+       "course_code": "R7",
+       "course_uid": "agr:7",
+       "semester": "VIII",
+       "title": "Model course"
+      }
+     ],
+     "discipline": "Agricultural Engineering",
+     "doc_id": "agri-reference",
+     "institution": "National Council",
+     "programme": "UG Agricultural Engineering Model Curriculum",
+     "role": "REFERENCE"
+    }
+   ],
+   "expect": {
+    "course_status": [
+     {
+      "case": "numbered scheme row",
+      "code": "AG501",
+      "doc_id": "agri-target",
+      "status": "COMPULSORY"
+     },
+     {
+      "case": "row after an in-table elective placeholder",
+      "code": "AG503",
+      "doc_id": "agri-target",
+      "status": "COMPULSORY"
+     },
+     {
+      "case": "row after placeholder",
+      "code": "AG505",
+      "doc_id": "agri-target",
+      "status": "COMPULSORY"
+     },
+     {
+      "case": "option list under the scheme",
+      "code": "AG511",
+      "doc_id": "agri-target",
+      "status": "ELECTIVE_OPTION"
+     },
+     {
+      "case": "option list, one column",
+      "code": "AG512",
+      "doc_id": "agri-target",
+      "status": "ELECTIVE_OPTION"
+     },
+     {
+      "case": "next page, semester heading",
+      "code": "AG601",
+      "doc_id": "agri-target",
+      "status": "COMPULSORY"
+     },
+     {
+      "case": "not printed in any scheme",
+      "code": "AGX0",
+      "doc_id": "agri-target",
+      "status": "UNKNOWN"
+     }
+    ],
+    "coverage": [
+     {
+      "access": "COMPULSORY",
+      "coverage_level": "SUBSTANTIAL",
+      "doc_id": "agri-target",
+      "practice": "PAIRED_PRACTICAL",
+      "skill": "http://syn/soilchem"
+     },
+     {
+      "access": "ELECTIVE_ONLY",
+      "coverage_level": "INTRODUCTORY",
+      "doc_id": "agri-target",
+      "skill": "http://syn/hydro"
+     },
+     {
+      "access": "COMPULSORY",
+      "coverage_level": "INTRODUCTORY",
+      "doc_id": "agri-target",
+      "practice": "THEORY_ONLY",
+      "skill": "http://syn/drip"
+     },
+     {
+      "coverage_level": "MENTION",
+      "doc_id": "agri-target",
+      "skill": "http://syn/precision"
+     },
+     {
+      "coverage_level": "UNCERTAIN",
+      "doc_id": "agri-target",
+      "skill": "http://syn/greenhouse"
+     }
+    ],
+    "gap": [
+     {
+      "case": "substantial, compulsory",
+      "skill": "http://syn/soilchem",
+      "state": "NO_GAP"
+     },
+     {
+      "case": "elective only",
+      "skill": "http://syn/hydro",
+      "state": "LIMITED_COVERAGE"
+     },
+     {
+      "case": "one direct topic in a compulsory course",
+      "skill": "http://syn/drip",
+      "state": "DEPTH_GAP"
+     },
+     {
+      "case": "only qualifies another subject",
+      "skill": "http://syn/precision",
+      "state": "STRUCTURAL_GAP"
+     },
+     {
+      "case": "outcome claims it, no topic teaches it",
+      "skill": "http://syn/greenhouse",
+      "state": "REVIEW_REQUIRED"
+     },
+     {
+      "case": "a directly narrower concept is taught",
+      "skill": "http://syn/cropmodel",
+      "state": "LIMITED_COVERAGE"
+     },
+     {
+      "case": "substantial + declining",
+      "skill": "http://syn/tillage",
+      "state": "OUTDATED_COVERAGE",
+      "trend": "DECLINING"
+     },
+     {
+      "case": "transversal: stops at DISCIPLINE_RELEVANT",
+      "skill": "http://syn/teamwork",
+      "skill_row": {
+       "decision": "TRANSVERSAL"
+      },
+      "state": "INSUFFICIENT_EVIDENCE"
+     },
+     {
+      "case": "broader skill demanded; its narrower concept is taught (introductory)",
+      "skill": "http://syn/irrig",
+      "state": "LIMITED_COVERAGE"
+     }
+    ],
+    "level": [
+     {
+      "doc_id": "agri-target",
+      "level": "UNDERGRADUATE"
+     }
+    ],
+    "scope": [
+     {
+      "doc_id": "agri-target",
+      "state": "COMPLETE"
+     }
+    ]
+   },
+   "name": "agricultural engineering (UG, scheme table + option list)"
+  },
+  {
+   "documents": [
+    {
+     "courses": [
+      {
+       "course_code": "CH101",
+       "course_uid": "ch:101",
+       "semester": "I",
+       "title": "Molecular Spectroscopy",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/spectro": "spectroscopy"
+         },
+         "text": "Spectroscopy",
+         "unit": "Unit 1"
+        },
+        {
+         "skills": {
+          "http://syn/spectro": "spectroscopy"
+         },
+         "text": "Vibrational spectroscopy",
+         "unit": "Unit 2"
+        },
+        {
+         "skills": {
+          "http://syn/spectro": "spectroscopy"
+         },
+         "text": "Electronic spectroscopy",
+         "unit": "Unit 3"
+        }
+       ]
+      },
+      {
+       "course_code": "CH102",
+       "course_uid": "ch:102",
+       "semester": "I",
+       "title": "Chromatography",
+       "title_skills": {
+        "http://syn/chroma": "chromatography"
+       },
+       "topics": [
+        {
+         "skills": {
+          "http://syn/chroma": "chromatography"
+         },
+         "text": "Gas chromatography",
+         "unit": "Unit 1"
+        },
+        {
+         "skills": {},
+         "text": "Column packing and detectors",
+         "unit": "Unit 2"
+        }
+       ]
+      },
+      {
+       "course_code": "CH103",
+       "course_uid": "ch:103",
+       "semester": "I",
+       "title": "Chromatography Laboratory",
+       "title_skills": {
+        "http://syn/chroma": "chromatography"
+       }
+      },
+      {
+       "course_code": "CH104",
+       "course_uid": "ch:104",
+       "semester": "I",
+       "title": "Research Methodology"
+      },
+      {
+       "course_code": "CH201",
+       "course_uid": "ch:201",
+       "semester": "II",
+       "title": "Analytical Chemistry",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/analytical": "analytical chemistry"
+         },
+         "text": "Analytical chemistry",
+         "unit": "Unit 1"
+        },
+        {
+         "skills": {
+          "http://syn/analytical": "analytical chemistry"
+         },
+         "text": "Quantitative analytical chemistry",
+         "unit": "Unit 2"
+        },
+        {
+         "skills": {
+          "http://syn/analytical": "analytical chemistry"
+         },
+         "text": "Analytical chemistry",
+         "unit": "Unit 3"
+        },
+        {
+         "skills": {
+          "http://syn/appchem": "applied chemistry"
+         },
+         "text": "Applied chemistry",
+         "unit": "Unit 4"
+        },
+        {
+         "skills": {
+          "http://syn/appchem": "applied chemistry"
+         },
+         "text": "Applied chemistry",
+         "unit": "Unit 5"
+        },
+        {
+         "skills": {
+          "http://syn/appchem": "applied chemistry"
+         },
+         "text": "Applied chemistry",
+         "unit": "Unit 6"
+        }
+       ]
+      },
+      {
+       "course_code": "CH202",
+       "course_uid": "ch:202",
+       "semester": "II",
+       "title": "Thesis Phase 1"
+      },
+      {
+       "course_code": "CH301",
+       "course_uid": "ch:301",
+       "semester": "II",
+       "title": "Polymer Science",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/polymer": "polymer synthesis"
+         },
+         "text": "Polymer synthesis",
+         "unit": "Unit 1"
+        },
+        {
+         "skills": {
+          "http://syn/polymer": "polymer synthesis"
+         },
+         "text": "Step-growth polymer synthesis",
+         "unit": "Unit 2"
+        },
+        {
+         "skills": {
+          "http://syn/polymer": "polymer synthesis"
+         },
+         "text": "Polymer synthesis",
+         "unit": "Unit 3"
+        }
+       ]
+      },
+      {
+       "course_code": "CH302",
+       "course_uid": "ch:302",
+       "semester": "II",
+       "title": "Green Chemistry"
+      },
+      {
+       "course_code": "CH401",
+       "course_uid": "ch:401",
+       "semester": "II",
+       "title": "Advanced Electrochemistry"
+      }
+     ],
+     "discipline": "Applied Chemistry",
+     "doc_id": "chem-target",
+     "institution": "Lakeside University",
+     "pages": [
+      "\n                     M.Sc. APPLIED CHEMISTRY - COURSE STRUCTURE\nI - Semester\nS.No.   Code      Course Title                         L-T-P     Credits\n  1     CH101     Molecular Spectroscopy               3-0-0       3\n  2     CH102     Chromatography                       3-0-0       3\n  3     CH103     Chromatography Laboratory            0-0-4       2\n  4     CH104     Research Methodology                 2-0-0       2\nII - Semester\nS.No.   Code      Course Title                         L-T-P     Credits\n  1     CH201     Analytical Chemistry                 3-0-0       3\n  2     CH202     Thesis Phase 1                       0-0-8       4\n",
+      "\n                          ELECTIVE COURSES\nS.No.   Code      Course Title                         L-T-P     Credits\n  1     CH301     Polymer Science                      3-0-0       3\n  2     CH302     Green Chemistry                      3-0-0       3\n\nHonours Courses:\n   Code      Course Title                       L-T-P    Credits\n   CH401     Advanced Electrochemistry          3-0-0      3\n"
+     ],
+     "programme": "M.Sc. Applied Chemistry",
+     "role": "TARGET"
+    }
+   ],
+   "expect": {
+    "course_status": [
+     {
+      "case": "serial without dot, L-T-P",
+      "code": "CH101",
+      "doc_id": "chem-target",
+      "status": "COMPULSORY"
+     },
+     {
+      "case": "second semester block",
+      "code": "CH201",
+      "doc_id": "chem-target",
+      "status": "COMPULSORY"
+     },
+     {
+      "case": "page-level option table, numbered rows",
+      "code": "CH301",
+      "doc_id": "chem-target",
+      "status": "ELECTIVE_OPTION"
+     },
+     {
+      "case": "page-level option table",
+      "code": "CH302",
+      "doc_id": "chem-target",
+      "status": "ELECTIVE_OPTION"
+     },
+     {
+      "case": "honours list",
+      "code": "CH401",
+      "doc_id": "chem-target",
+      "status": "ELECTIVE_OPTION"
+     }
+    ],
+    "coverage": [
+     {
+      "access": "COMPULSORY",
+      "coverage_level": "SUBSTANTIAL",
+      "doc_id": "chem-target",
+      "skill": "http://syn/spectro"
+     },
+     {
+      "coverage_level": "INTRODUCTORY",
+      "doc_id": "chem-target",
+      "practice": "PRACTISED",
+      "skill": "http://syn/chroma"
+     },
+     {
+      "access": "ELECTIVE_ONLY",
+      "coverage_level": "SUBSTANTIAL",
+      "doc_id": "chem-target",
+      "skill": "http://syn/polymer"
+     }
+    ],
+    "gap": [
+     {
+      "case": "substantial compulsory",
+      "skill": "http://syn/spectro",
+      "state": "NO_GAP"
+     },
+     {
+      "case": "whole course named after it, one topic",
+      "skill": "http://syn/chroma",
+      "state": "REVIEW_REQUIRED"
+     },
+     {
+      "case": "absent; only its BROADER concept is taught (context, not proof)",
+      "skill": "http://syn/electro",
+      "state": "STRUCTURAL_GAP"
+     },
+     {
+      "case": "substantial but elective only",
+      "skill": "http://syn/polymer",
+      "state": "LIMITED_COVERAGE"
+     },
+     {
+      "case": "names the programme's own discipline",
+      "skill": "http://syn/appchem",
+      "state": "INSUFFICIENT_EVIDENCE"
+     }
+    ],
+    "level": [
+     {
+      "doc_id": "chem-target",
+      "level": "POSTGRADUATE"
+     }
+    ],
+    "scope": [
+     {
+      "doc_id": "chem-target",
+      "state": "COMPLETE"
+     }
+    ]
+   },
+   "name": "applied chemistry (PG, page-level option table, honours list, L-T-P without row dots)"
+  },
+  {
+   "documents": [
+    {
+     "courses": [
+      {
+       "course_code": "CO101",
+       "course_uid": "co:101",
+       "semester": "I",
+       "title": "Financial Accounting",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/ledger": "ledger reconciliation"
+         },
+         "text": "Ledger reconciliation",
+         "unit": "Unit I"
+        },
+        {
+         "skills": {
+          "http://syn/ledger": "ledger reconciliation"
+         },
+         "text": "Bank ledger reconciliation",
+         "unit": "Unit II"
+        },
+        {
+         "skills": {
+          "http://syn/ledger": "ledger reconciliation"
+         },
+         "text": "Ledger reconciliation",
+         "unit": "Unit III"
+        }
+       ]
+      },
+      {
+       "course_code": "CO102",
+       "course_uid": "co:102",
+       "semester": "II",
+       "title": "Business Law",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/tax": "indirect taxation"
+         },
+         "text": "Indirect taxation",
+         "unit": "Unit I"
+        }
+       ]
+      }
+     ],
+     "discipline": "Commerce",
+     "doc_id": "com-target",
+     "institution": "Hillcrest College",
+     "programme": "Bachelor of Commerce",
+     "role": "TARGET"
+    },
+    {
+     "courses": [
+      {
+       "course_code": "CP0",
+       "course_uid": "cp:0",
+       "semester": "I",
+       "title": "Commerce course"
+      },
+      {
+       "course_code": "CP1",
+       "course_uid": "cp:1",
+       "semester": "II",
+       "title": "Commerce course"
+      },
+      {
+       "course_code": "CP2",
+       "course_uid": "cp:2",
+       "semester": "III",
+       "title": "Commerce course"
+      },
+      {
+       "course_code": "CP3",
+       "course_uid": "cp:3",
+       "semester": "IV",
+       "title": "Commerce course"
+      },
+      {
+       "course_code": "CP4",
+       "course_uid": "cp:4",
+       "semester": "V",
+       "title": "Commerce course"
+      },
+      {
+       "course_code": "CP5",
+       "course_uid": "cp:5",
+       "semester": "VI",
+       "title": "Commerce course"
+      }
+     ],
+     "discipline": "Commerce",
+     "doc_id": "com-prev",
+     "institution": "Hillcrest College",
+     "programme": "Bachelor of Commerce",
+     "role": "PREVIOUS_VERSION"
+    }
+   ],
+   "expect": {
+    "gap": [
+     {
+      "case": "what a partial document teaches still counts",
+      "skill": "http://syn/ledger",
+      "state": "NO_GAP"
+     },
+     {
+      "case": "introductory in a partial document",
+      "skill": "http://syn/tax",
+      "state": "INSUFFICIENT_EVIDENCE"
+     },
+     {
+      "case": "absent from a partial document",
+      "skill": "http://syn/audit",
+      "state": "INSUFFICIENT_EVIDENCE"
+     },
+     {
+      "case": "support below SUPPORTED",
+      "skill": "http://syn/payroll",
+      "skill_row": {
+       "new": {
+        "companies": 2,
+        "postings": 3,
+        "support_state": "OBSERVED"
+       }
+      },
+      "state": "INSUFFICIENT_EVIDENCE"
+     }
+    ],
+    "level": [
+     {
+      "doc_id": "com-target",
+      "level": "UNDERGRADUATE"
+     }
+    ],
+    "scope": [
+     {
+      "doc_id": "com-target",
+      "state": "PARTIAL"
+     },
+     {
+      "doc_id": "com-prev",
+      "state": "COMPLETE"
+     }
+    ]
+   },
+   "name": "commerce (UG, the new version supplies semesters I-II only)"
+  },
+  {
+   "documents": [
+    {
+     "courses": [
+      {
+       "course_code": "CV301",
+       "course_uid": "cv:301",
+       "semester": "III",
+       "title": "Surveying",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/survey": "land surveying"
+         },
+         "text": "Land surveying",
+         "unit": "Unit 1"
+        }
+       ]
+      },
+      {
+       "course_code": "CV302",
+       "course_uid": "cv:302",
+       "semester": "III",
+       "title": "Concrete Technology",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/concrete": "concrete mix design"
+         },
+         "text": "Concrete mix design",
+         "unit": "Unit 3"
+        }
+       ]
+      },
+      {
+       "course_code": "CV303",
+       "course_uid": "cv:303",
+       "semester": "III",
+       "title": "Concrete Technology Lab - II"
+      },
+      {
+       "course_code": "CV401",
+       "course_uid": "cv:401",
+       "semester": "IV",
+       "title": "Advanced Surveying",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/survey": "land surveying"
+         },
+         "text": "Geodetic land surveying",
+         "unit": "Unit 1"
+        }
+       ]
+      },
+      {
+       "course_code": "CV402",
+       "course_uid": "cv:402",
+       "semester": "IV",
+       "title": "Geotechnical Engineering",
+       "topics": [
+        {
+         "skills": {
+          "http://syn/geotech": "slope stability analysis"
+         },
+         "text": "Slope stability analysis using limit equilibrium and finite element methods for embankments",
+         "unit": "Unit 4"
+        }
+       ]
+      },
+      {
+       "course_code": "CV901",
+       "course_uid": "cv:901",
+       "semester": "IV",
+       "title": "Building Information Modelling",
+       "title_skills": {
+        "http://syn/bim": "building information modelling"
+       },
+       "topics": [
+        {
+         "skills": {
+          "http://syn/bim": "building information modelling"
+         },
+         "text": "Building information modelling",
+         "unit": "Unit 1"
+        }
+       ]
+      },
+      {
+       "course_code": "CVF0",
+       "course_uid": "cv:f0",
+       "semester": "I",
+       "title": "Civil course"
+      },
+      {
+       "course_code": "CVF1",
+       "course_uid": "cv:f1",
+       "semester": "II",
+       "title": "Civil course"
+      },
+      {
+       "course_code": "CVF2",
+       "course_uid": "cv:f2",
+       "semester": "V",
+       "title": "Civil course"
+      },
+      {
+       "course_code": "CVF3",
+       "course_uid": "cv:f3",
+       "semester": "VI",
+       "title": "Civil course"
+      },
+      {
+       "course_code": "CVF4",
+       "course_uid": "cv:f4",
+       "semester": "VII",
+       "title": "Civil course"
+      },
+      {
+       "course_code": "CVF5",
+       "course_uid": "cv:f5",
+       "semester": "VIII",
+       "title": "Civil course"
+      }
+     ],
+     "discipline": "Civil Engineering",
+     "doc_id": "civil-target",
+     "institution": "Northfield Institute",
+     "pages": [
+      "\nSemester III\nSl. No.  Course Code   Course                                   Credits\n  1.     CV301         Surveying                                  4\n  2.     CV302         Concrete Technology                        3\n  3.     CV303         Concrete Technology Lab - II               2\nSemester IV\nSl. No.  Course Code   Course                                   Credits\n  1.     CV401         Advanced Surveying                         3\n  2.     CV402         Geotechnical Engineering                   3\n\nb. MINOR (offered to other departments)\nSl. No.  Course Code   Course                                   Credits\n  1.     CV901         Building Information Modelling             3\n"
+     ],
+     "programme": "BE Civil Engineering",
+     "role": "TARGET"
+    },
+    {
+     "courses": [],
+     "doc_id": "lvl0",
+     "institution": "x",
+     "programme": "Diploma in Civil Engineering",
+     "role": "PEER"
+    },
+    {
+     "courses": [],
+     "doc_id": "lvl1",
+     "institution": "x",
+     "programme": "Master of Business Administration",
+     "role": "PEER"
+    },
+    {
+     "courses": [],
+     "doc_id": "lvl2",
+     "institution": "x",
+     "programme": "Dual Degree B.Tech + M.Tech",
+     "role": "PEER"
+    },
+    {
+     "courses": [],
+     "doc_id": "lvl3",
+     "institution": "x",
+     "programme": "Ph.D. Programme in Physics",
+     "role": "PEER"
+    },
+    {
+     "courses": [],
+     "doc_id": "lvl4",
+     "institution": "x",
+     "programme": "Bachelor of Architecture",
+     "role": "PEER"
+    },
+    {
+     "courses": [],
+     "doc_id": "lvl5",
+     "institution": "x",
+     "programme": "B.Pharm",
+     "role": "PEER"
+    }
+   ],
+   "expect": {
+    "course_kind": [
+     {
+      "kind": "THEORY",
+      "title": "Software Project Management"
+     },
+     {
+      "kind": "THEORY",
+      "title": "Laboratory Safety Management"
+     },
+     {
+      "kind": "PRACTICAL",
+      "title": "Concrete Technology Lab - II"
+     },
+     {
+      "kind": "PROJECT",
+      "title": "Project Part-I"
+     },
+     {
+      "kind": "SEMINAR",
+      "title": "Technical Seminar"
+     },
+     {
+      "kind": "SELF_DIRECTED",
+      "title": "MOOCS / Training / Internship"
+     },
+     {
+      "kind": "PRACTICAL",
+      "title": "Design Studio"
+     },
+     {
+      "kind": "PROJECT",
+      "title": "Capstone Project (Phase 2)"
+     },
+     {
+      "kind": "PRACTICAL",
+      "title": "Engineering Workshop Practice"
+     },
+     {
+      "kind": "THEORY",
+      "title": "Workshop on Entrepreneurship"
+     },
+     {
+      "kind": "PRACTICAL",
+      "title": "Hydraulics Laboratory"
+     },
+     {
+      "kind": "PROJECT",
+      "title": "Industrial Internship"
+     },
+     {
+      "kind": "THEORY",
+      "title": "Seminar Studies in Ethics"
+     },
+     {
+      "kind": "PROJECT",
+      "title": "Thesis Phase 1"
+     },
+     {
+      "kind": "THEORY",
+      "title": "Professional Practice"
+     }
+    ],
+    "course_status": [
+     {
+      "case": "lab row with roman suffix",
+      "code": "CV303",
+      "doc_id": "civil-target",
+      "status": "COMPULSORY"
+     },
+     {
+      "case": "row before a minor block",
+      "code": "CV402",
+      "doc_id": "civil-target",
+      "status": "COMPULSORY"
+     },
+     {
+      "case": "minor block, lettered heading",
+      "code": "CV901",
+      "doc_id": "civil-target",
+      "status": "ELECTIVE_OPTION"
+     }
+    ],
+    "coverage": [
+     {
+      "access": "COMPULSORY",
+      "coverage_level": "ADVANCED",
+      "doc_id": "civil-target",
+      "skill": "http://syn/survey"
+     },
+     {
+      "coverage_level": "INTRODUCTORY",
+      "doc_id": "civil-target",
+      "practice": "PAIRED_PRACTICAL",
+      "skill": "http://syn/concrete"
+     },
+     {
+      "coverage_level": "MENTION",
+      "doc_id": "civil-target",
+      "skill": "http://syn/geotech"
+     },
+     {
+      "access": "ELECTIVE_ONLY",
+      "coverage_level": "INTRODUCTORY",
+      "doc_id": "civil-target",
+      "skill": "http://syn/bim"
+     }
+    ],
+    "gap": [
+     {
+      "case": "progression via prerequisite",
+      "skill": "http://syn/survey",
+      "state": "NO_GAP"
+     },
+     {
+      "case": "one topic, compulsory, paired lab",
+      "skill": "http://syn/concrete",
+      "state": "DEPTH_GAP"
+     },
+     {
+      "case": "buried in a long item (incidental)",
+      "skill": "http://syn/geotech",
+      "state": "STRUCTURAL_GAP"
+     },
+     {
+      "case": "minor course only",
+      "skill": "http://syn/bim",
+      "state": "LIMITED_COVERAGE"
+     },
+     {
+      "case": "same skill, unconfirmed concept",
+      "skill": "http://syn/bim",
+      "skill_row": {
+       "normalized_concept": false
+      },
+      "state": "INSUFFICIENT_EVIDENCE"
+     }
+    ],
+    "level": [
+     {
+      "doc_id": "civil-target",
+      "level": "UNDERGRADUATE"
+     },
+     {
+      "doc_id": "lvl0",
+      "level": "UNKNOWN"
+     },
+     {
+      "doc_id": "lvl1",
+      "level": "POSTGRADUATE"
+     },
+     {
+      "doc_id": "lvl2",
+      "level": "UNKNOWN"
+     },
+     {
+      "doc_id": "lvl3",
+      "level": "POSTGRADUATE"
+     },
+     {
+      "doc_id": "lvl4",
+      "level": "UNDERGRADUATE"
+     },
+     {
+      "doc_id": "lvl5",
+      "level": "UNDERGRADUATE"
+     }
+    ]
+   },
+   "name": "civil engineering (UG, prerequisite progression, minor block)",
+   "prereq_edges": [
+    {
+     "source_uid": "cv:301",
+     "target_uid": "cv:401"
+    }
+   ]
+  }
+ ],
+ "taxonomy": {
+  "http://syn/analytical": {
+   "broader": [],
+   "pref_label": "analytical chemistry"
+  },
+  "http://syn/appchem": {
+   "broader": [],
+   "pref_label": "applied chemistry"
+  },
+  "http://syn/audit": {
+   "broader": [],
+   "pref_label": "audit sampling"
+  },
+  "http://syn/bim": {
+   "broader": [],
+   "pref_label": "building information modelling"
+  },
+  "http://syn/chroma": {
+   "broader": [],
+   "pref_label": "chromatography"
+  },
+  "http://syn/concrete": {
+   "broader": [],
+   "pref_label": "concrete mix design"
+  },
+  "http://syn/cropmodel": {
+   "broader": [],
+   "pref_label": "crop modelling"
+  },
+  "http://syn/cropsim": {
+   "broader": [
+    "http://syn/cropmodel"
+   ],
+   "pref_label": "crop growth simulation"
+  },
+  "http://syn/drip": {
+   "broader": [
+    "http://syn/irrig"
+   ],
+   "pref_label": "drip irrigation design"
+  },
+  "http://syn/electro": {
+   "broader": [
+    "http://syn/analytical"
+   ],
+   "pref_label": "electrochemical sensing"
+  },
+  "http://syn/geotech": {
+   "broader": [],
+   "pref_label": "slope stability analysis"
+  },
+  "http://syn/greenhouse": {
+   "broader": [],
+   "pref_label": "greenhouse climate control"
+  },
+  "http://syn/hydro": {
+   "broader": [],
+   "pref_label": "hydroponic cultivation"
+  },
+  "http://syn/irrig": {
+   "broader": [],
+   "pref_label": "irrigation engineering"
+  },
+  "http://syn/ledger": {
+   "broader": [],
+   "pref_label": "ledger reconciliation"
+  },
+  "http://syn/payroll": {
+   "broader": [],
+   "pref_label": "payroll processing"
+  },
+  "http://syn/polymer": {
+   "broader": [],
+   "pref_label": "polymer synthesis"
+  },
+  "http://syn/precision": {
+   "broader": [],
+   "pref_label": "precision farming"
+  },
+  "http://syn/soilchem": {
+   "broader": [],
+   "pref_label": "soil chemistry"
+  },
+  "http://syn/spectro": {
+   "broader": [],
+   "pref_label": "spectroscopy"
+  },
+  "http://syn/survey": {
+   "broader": [],
+   "pref_label": "land surveying"
+  },
+  "http://syn/tax": {
+   "broader": [],
+   "pref_label": "indirect taxation"
+  },
+  "http://syn/teamwork": {
+   "broader": [],
+   "pref_label": "work in teams"
+  },
+  "http://syn/tillage": {
+   "broader": [],
+   "pref_label": "conventional tillage"
+  }
+ }
+}

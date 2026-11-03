@@ -1,15 +1,79 @@
-*.aux
-*.log
-*.out
-*.toc
-*.lof
-*.lot
-*.bbl
-*.blg
-*.fls
-*.fdb_latexmk
-*.synctex.gz
-*-blx.bib
-*.run.xml
-.DS_Store
+# Source repository for the Skill-Gap & Curriculum Drift Intelligence release.
+# The repository holds code, tests, scripts, documentation, configuration and small curated evaluation data.
+# Data, generated runs and anything machine-local or personal are shipped (where allowed) in the release zip only.
+
+# secrets and machine-local settings
+.env
+.env.*
+!.env.example
+.pgpass
+.netrc
+*.pem
+*.key
+
+# environments, caches, builds
+.venv/
 __pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+flutter_app/build/
+flutter_app/.dart_tool/
+flutter_app/ios/Pods/
+.DS_Store
+._*
+.idea/
+.vscode/
+
+# raw sources: peer-institution PDFs and job-board files are not ours to redistribute, and the job spreadsheets carry
+# personal details; curricula uploaded through the app are runtime state
+data/raw/
+# app runtime state: analysis jobs and curricula uploaded through the app
+data/metadata/analysis_contexts/
+data/metadata/staged_uploads/
+# derived text and generated runs (rebuilt by scripts/pipeline/run_knowledge_pipeline.py)
+data/bronze/
+data/silver/
+data/gold/
+data/experiments/
+data/semantic_runs/
+# the live semantic cache is machine-local; the hash-pinned recordings in data/cache/semantic_decisions/ are kept
+data/cache/semantic_decisions/live/
+# the industry-extraction cache is machine-local and rebuilt on a miss
+data/cache/industry_extraction/
+# downloaded embedding models (scripts/semantic/fetch_embedding_model.py) and their vector cache are machine-local
+data/models/
+data/cache/embeddings/
+# assistant conversations and drafts are machine-local
+data/assistant/
+
+# validation logs, database dumps, packages, backups and sync staging
+artifacts/
+.sync/
+.mac_hashes_tmp.txt
+*.dump
+*.zip
+*.tar.gz
+.env
+.env.*
+!.env.example
+*.xlsx
+*.xls
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+.dart_tool/
+build/
+artifacts/
+data/models/
+data/bronze/
+data/silver/
+data/gold/
+data/raw/
+data/sources/
+*.zip
+*.safetensors
+*.bin
+*.gguf

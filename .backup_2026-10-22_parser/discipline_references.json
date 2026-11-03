@@ -1,0 +1,27 @@
+{
+  "_comment": "Reference curricula of disciplines other than the default run's. They are NOT part of the default analysis (curriculum_sources.json), so the published run and its inputs are unchanged. An uploaded curriculum's analysis context gets the reference of its own discipline from here when the base manifest has none of that discipline (analysis_jobs.derived_manifest). Each entry has the same fields as a curriculum_sources.json document, plus known_limitations measured on this file.",
+  "version": "1",
+  "references": [
+    {
+      "doc_id": "aicte-ug-cse-aids-model",
+      "role": "REFERENCE",
+      "institution": "All India Council for Technical Education (AICTE)",
+      "programme": "UG Computer Science and Engineering (Artificial Intelligence and Data Science) Model Curriculum",
+      "discipline": "Artificial Intelligence and Data Science",
+      "curriculum_version": "2021",
+      "academic_year": null,
+      "path": "data/raw/curricula/aicte/aicte_ug_cse_aids_model_curriculum.pdf",
+      "expected_sha256": "2b60b80659a47056f5465ae55fa525b6d7447fbcd3981f4d28a72b6675d83dcc",
+      "source_url": null,
+      "acquisition": "supplied by the project owner on 2026-10-21 (file CS_AIDS.pdf); its title page and PDF metadata identify it as the AICTE Model Curriculum for UG Degree Course in Computer Science and Engineering (Artificial Intelligence and Data Science), 2021, 157 pages",
+      "retrieved_at": "2026-10-21",
+      "known_limitations": [
+        "the 11 suggested professional electives (Appendix I: e.g. Image Processing and Computer Vision, Natural Language Processing, Advanced Machine Learning) carry the placeholder code XXNNN and are not extracted as courses, so elective-level AI topics are under-represented in this reference",
+        "one course title is cut at a line break (ES203 'Introduction to Data Structure and', full title '... and Algorithms')",
+        "one title carries a table fragment (AU301 'Indian Constitution 3^ 3^')",
+        "a second 'Mathematics- I' entry (MT102) is extracted without a semester"
+      ],
+      "parse_check": {"checked_at": "2026-10-21", "courses": 46, "courses_with_semester": 45, "units": 86, "clean_topics": 1580, "all_topics": 1885}
+    }
+  ]
+}

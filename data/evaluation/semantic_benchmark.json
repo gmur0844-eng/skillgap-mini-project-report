@@ -1,0 +1,426 @@
+{
+ "description": "Real target (CBIT R22A) / reference (AICTE) topic pairs. 30 pairs were drawn at random (seed 7) from links the pipeline produced; 15 are random target/reference pairs (expected mostly UNRELATED). Each pair is labelled with the relationship its MEANING supports: SAME_CONCEPT, CHILD (target narrower than reference), PARENT (target broader), RELATED, PARTIAL_OVERLAP, UNRELATED.",
+ "labelled_by": "assistant",
+ "human_validated": false,
+ "caveat": "Assistant labels, not expert ground truth. 45 pairs is a small sample: per-class metrics have very wide uncertainty and the pipeline-link half is biased towards pairs the pipeline already linked (it measures precision of produced links far better than recall). Fragment targets are labelled UNRELATED because no valid link can be supported.",
+ "relationship_direction": "CHILD/PARENT describe the TARGET relative to the REFERENCE",
+ "pairs": [
+  {
+   "pair_id": "p00",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Synonyms",
+   "reference_text": "Synonyms",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT"
+  },
+  {
+   "pair_id": "p01",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Water Chemistry",
+   "reference_text": "Water chemistry",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT"
+  },
+  {
+   "pair_id": "p02",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Include practice sessions to discuss natural acceptance in human being as the innate acceptance for",
+   "reference_text": "Lecture 23: Natural Acceptance of Human Values",
+   "source": "pipeline_link",
+   "label": "RELATED"
+  },
+  {
+   "pair_id": "p03",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "configurations",
+   "reference_text": "electronic configurations",
+   "source": "pipeline_link",
+   "label": "UNRELATED",
+   "note": "target is a fragment without standalone meaning; no valid link"
+  },
+  {
+   "pair_id": "p04",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "0/1 Knapsack",
+   "reference_text": "(integer) knapsack",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT",
+   "note": "0/1 knapsack is the integer knapsack problem"
+  },
+  {
+   "pair_id": "p05",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Newton's",
+   "reference_text": "Newton\u2019s",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT",
+   "note": "identical apart from a typographic apostrophe"
+  },
+  {
+   "pair_id": "p06",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Advantages",
+   "reference_text": "Advantages/Benefits",
+   "source": "pipeline_link",
+   "label": "UNRELATED",
+   "note": "generic word, no concept"
+  },
+  {
+   "pair_id": "p07",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Doubly Linked Lists",
+   "reference_text": "notion of linked list (no implementation)",
+   "source": "pipeline_link",
+   "label": "CHILD"
+  },
+  {
+   "pair_id": "p08",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "System Testing",
+   "reference_text": "testing",
+   "source": "pipeline_link",
+   "label": "CHILD"
+  },
+  {
+   "pair_id": "p09",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Articles",
+   "reference_text": "Articles",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT"
+  },
+  {
+   "pair_id": "p10",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Understanding Harmony in the Human Being - Harmony in Myself",
+   "reference_text": "Practice Sessions for Module 2 \u2013 Harmony in the Human Being",
+   "source": "pipeline_link",
+   "label": "RELATED"
+  },
+  {
+   "pair_id": "p11",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "8-Queens Problem",
+   "reference_text": "problems",
+   "source": "pipeline_link",
+   "label": "UNRELATED",
+   "note": "'problems' is generic; no conceptual link"
+  },
+  {
+   "pair_id": "p12",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "process states",
+   "reference_text": "process",
+   "source": "pipeline_link",
+   "label": "CHILD"
+  },
+  {
+   "pair_id": "p13",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "\uf0b7 Natural acceptance of human values",
+   "reference_text": "Lecture 23: Natural Acceptance of Human Values",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT"
+  },
+  {
+   "pair_id": "p14",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "sharing",
+   "reference_text": "page sharing",
+   "source": "pipeline_link",
+   "label": "UNRELATED",
+   "note": "target is a fragment ('sharing') without standalone meaning"
+  },
+  {
+   "pair_id": "p15",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "binary .sorting algorithms-bubble sort",
+   "reference_text": "Basic Sorting Algorithms (Bubble",
+   "source": "pipeline_link",
+   "label": "RELATED"
+  },
+  {
+   "pair_id": "p16",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Process",
+   "reference_text": "process",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT"
+  },
+  {
+   "pair_id": "p17",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Document Object Model",
+   "reference_text": "Object",
+   "source": "pipeline_link",
+   "label": "UNRELATED",
+   "note": "shares only the word 'Object'"
+  },
+  {
+   "pair_id": "p18",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "problem statement",
+   "reference_text": "Problem",
+   "source": "pipeline_link",
+   "label": "UNRELATED",
+   "note": "shares only the word 'problem'"
+  },
+  {
+   "pair_id": "p19",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Eigenvectors",
+   "reference_text": "Eigenvalues and eigenvectors",
+   "source": "pipeline_link",
+   "label": "CHILD",
+   "note": "reference is a conjunction 'eigenvalues AND eigenvectors': the target is a PART of it (CHILD), although it has fewer words"
+  },
+  {
+   "pair_id": "p20",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Structures",
+   "reference_text": "Structures",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT"
+  },
+  {
+   "pair_id": "p21",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Protocols",
+   "reference_text": "Protocol (SDAP)",
+   "source": "pipeline_link",
+   "label": "PARENT",
+   "note": "generic 'Protocols' vs one specific protocol"
+  },
+  {
+   "pair_id": "p22",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Vulnerability in programming",
+   "reference_text": "Vulnerability",
+   "source": "pipeline_link",
+   "label": "CHILD"
+  },
+  {
+   "pair_id": "p23",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Concurrency control: Lock-Based Protocols",
+   "reference_text": "ACID properties (ii) Conflict-serializability (iii) Concurrency control: locks",
+   "source": "pipeline_link",
+   "label": "CHILD"
+  },
+  {
+   "pair_id": "p24",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "verification of Stroke\u2019s theorem (without proof) and Gauss\u2019s",
+   "reference_text": "Cauchy-Goursat theorem (without proof)",
+   "source": "pipeline_link",
+   "label": "UNRELATED",
+   "note": "different theorems; only '(without proof)' is shared"
+  },
+  {
+   "pair_id": "p25",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Process management: Program vs. process",
+   "reference_text": "Process abstraction --- program vs. process",
+   "source": "pipeline_link",
+   "label": "SAME_CONCEPT"
+  },
+  {
+   "pair_id": "p26",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Goals and Rewards",
+   "reference_text": "goal",
+   "source": "pipeline_link",
+   "label": "UNRELATED",
+   "note": "reference 'goal' is a context-free fragment"
+  },
+  {
+   "pair_id": "p27",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Instruction Set Architecture (ISA): Introduction to RTL",
+   "reference_text": "X86 Instruction set",
+   "source": "pipeline_link",
+   "label": "RELATED"
+  },
+  {
+   "pair_id": "p28",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "attacks",
+   "reference_text": "cyber-attack surfaces",
+   "source": "pipeline_link",
+   "label": "RELATED"
+  },
+  {
+   "pair_id": "p29",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Configurational isomerism -Geometrical (cis-trans) isomerism & Optical isomerism- optical activity",
+   "reference_text": "optical activity",
+   "source": "pipeline_link",
+   "label": "RELATED"
+  },
+  {
+   "pair_id": "p30",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "An Agile Development: Agility",
+   "reference_text": "active learning",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p31",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Combinations",
+   "reference_text": "D2D communications",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p32",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Date Ranges",
+   "reference_text": "Simple Queries (select/project/join/ aggregate queries) (iv) Complex queries (With Clause",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p33",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Forest residue",
+   "reference_text": "Carpentry",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p34",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "AdaBoost",
+   "reference_text": "process-to- process delivery",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p35",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "entropy and free",
+   "reference_text": "Understanding Individual differences & Uniqueness",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p36",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Introduction to Mealy and Moore machine",
+   "reference_text": "Emotion: Concept",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p37",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "algorithm",
+   "reference_text": "domain adaptation",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p38",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Regression Testability",
+   "reference_text": "Optional advanced topics if there is extra time: Semantic entailment",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p39",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Selection",
+   "reference_text": "Recurrence",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p40",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Intelligent agents",
+   "reference_text": "PAC learning",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p41",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "non-blocking point-to-point communication",
+   "reference_text": "Numerical solution stationary-state",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p42",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Probability Distributions: Discrete probability distribution: Poisson distribution",
+   "reference_text": "File handling (only if time is available",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p43",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Forms",
+   "reference_text": "how style scalability",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  },
+  {
+   "pair_id": "p44",
+   "target_doc": "cbit-be-cse-r22a",
+   "reference_doc": "aicte-ug-cse-model",
+   "target_text": "Hexadecimal numbers",
+   "reference_text": "Neural",
+   "source": "random_pair",
+   "label": "UNRELATED"
+  }
+ ]
+}

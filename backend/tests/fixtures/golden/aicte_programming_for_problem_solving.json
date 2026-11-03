@@ -1,0 +1,42 @@
+{
+ "fixture_id": "aicte_programming_for_problem_solving",
+ "doc_id": "aicte-ug-cse-model",
+ "source_sha256": "5c4bd3b16c2865fbbf1b37651e639f009676153247283c5cc44ba5a6341ed410",
+ "parser_fingerprint_at_snapshot": "a7f6801a5ad88f49",
+ "pages": {
+  "61": "\n\n ESC-201               Programming             for 3L:0T:4P              5 Credits\n                       Problem Solving\n\nCourse Objectives:\n\n1.   To learn the fundamentals of computers.\n2.   To understand the various steps in program development.\n3.   To learn the syntax and semantics of C programming language.\n4.   To learn the usage of structured programming approach in solving problems.\n5.   To understated and formulate algorithm for programming script\n6.   To analyze the output based on the given input variables\n\n\nCourse Contents:\n\nModule I: Introduction to Programming; Introduction to components of a computer system (disks,\nmemory, processor, where a program is stored and executed, operating system, compilers etc.)\n\nIdea of Algorithm: steps to solve logical and numerical problems. Representation of Algorithm:\nFlowchart/Pseudocode with examples.\n\nFrom algorithms to programs; source code, variables (with data types) variables and memory\nlocations, Syntax and Logical Errors in compilation, object and executable code.\n\nModule II: Arithmetic expressions and precedence.\n\nModule III: Conditional Branching and Loops. Writing and evaluation of conditionals and\nconsequent branching. Iteration and loops.\n\nModule IV: Arrays, Arrays (1-D, 2-D), Character arrays and Strings\n\nModule V: Basic Algorithms, Searching, Basic Sorting Algorithms (Bubble, Insertion and\nSelection), Finding roots of equations, notion of order of complexity through example programs (no\nformal definition required)\n\n\nModule VI: Function, Functions (including using built in libraries), Parameter passing in functions,\ncall by value, Passing arrays to functions: idea of call by reference\n\n\nModule VII: Recursion, Recursion as a different way of solving problems. Example programs, such\nas Finding Factorial, Fibonacci series, Ackerman function etc. Quick sort or Merge sort.\n\n\nModule VIII: Structures, Defining structures and Array of Structures\n\n\n\n\n                                                58\n",
+  "62": "\n\nModule IX: Pointers, Idea of pointers, Defining pointers, Use of Pointers in self-referential\nstructures, notion of linked list (no implementation)\n\nModule X: File handling (only if time is available, otherwise should be done as part of the lab).\n\nPRACTICALS:\n\n1. Familiarization with programming environment\n2. Simple computational problems using arithmetic expressions\n3. Problems involving if-then-else structures\n4. Iterative problems e.g., sum of series\n5. 1D Array manipulation\n6. Matrix problems, String operations\n7. Simple functions\n8. Programming for solving Numerical methods problems\n9. Recursive functions\n10. Pointers and structures\n11. File operations\n\n\nTEXT/REFERENCE BOOKS:\n\n1.    AICTE’s Prescribed Textbook: Programming for Problem Solving, Khanna Book Publishing Co.\n2.    Byron Gottfried, Schaum's Outline of Programming with C, McGraw-Hill.\n3.    E. Balaguruswamy, Programming in ANSI C, Tata McGraw-Hill.\n4.    Brian W. Kernighan and Dennis M. Ritchie, The C Programming Language, Prentice Hall of\n      India.\n\n\nAlternative NPTEL/SWAYAM Course:\n S. No.       NPTEL Course Name                       Instructor                  Host Institute\n\n              INTRODUCTION TO                         PROF. SATYADEV\n 1                                                                                   IIT KANPUR\n              PROGRAMMING IN C                        NANDAKUMAR\n\n              PROBLEM SOLVING THROUGH                     PROF. ANUPAM\n 2                                                                                IIT KHARAGPUR\n              PROGRAMMING IN C                                BASU\n\n\n\nEXPERIMENTS THAT MAY BE PERFORMED THROUGH VIRTUAL LABS:\n\n     S. No.              Experiment Name                             Experiment Link(s)\n\n\n       1      Simple computational      problems   using http://ps-\n              arithmetic expressions.                    iiith.vlabs.ac.in/exp7/Introduction.html?do\n\n\n\n\n                                                     59\n"
+ },
+ "extraction_methods": {
+  "61": "pdftotext_layout",
+  "62": "pdftotext_layout"
+ },
+ "expectations": {
+  "fixture_id": "aicte_programming_for_problem_solving",
+  "course_code": "ESC-201",
+  "course_title": "Programming for Problem Solving",
+  "unit_labels": [
+   "Module I",
+   "Module II",
+   "Module IX",
+   "Module X"
+  ],
+  "expected_topics": [
+   "Arithmetic expressions and precedence",
+   "Character arrays and Strings",
+   "call by value",
+   "Fibonacci series",
+   "Defining structures and Array of Structures",
+   "notion of linked list"
+  ],
+  "must_not_be_topics": [
+   "Byron Gottfried",
+   "Schaum's Outline of Programming with C",
+   "Brian W. Kernighan",
+   "Programming in ANSI C"
+  ]
+ },
+ "labelled_by": "assistant",
+ "human_validated": false,
+ "caveat": "Expectations were written by the assistant from the page text, not by a curriculum expert. They are a regression baseline for known-good pages, not ground truth for the whole corpus. expected_topics lists a representative subset of each page's topics, so 'precision' here only counts extracted topics that match one of the listed items and is a lower bound."
+}

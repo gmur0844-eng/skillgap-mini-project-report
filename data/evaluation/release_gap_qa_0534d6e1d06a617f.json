@@ -1,0 +1,637 @@
+{
+ "run_id": "0534d6e1d06a617f",
+ "content_digest": "abc35eea85f1adbc3af3575f24f1d9d2b0e0f0499d4840d4ee4e50942d6ede98",
+ "counts": {
+  "job_postings": 498,
+  "judgeable_skills (SUPPORTED + HIGH_SUPPORT demand)": 68,
+  "confirmed_gaps": 11,
+  "gaps_held_for_review (supported demand, evidence disagrees)": 2,
+  "recommendations_issued": 11,
+  "recommendations_withheld_for_review": 14,
+  "not_recommended (suppressed with a reason)": 218,
+  "peer_curricula_available": [
+   "Indian Institute of Technology Kanpur",
+   "National Institute of Technology Warangal",
+   "National Institute of Technology Tiruchirappalli"
+  ],
+  "peer_curricula_missing": [
+   "IIT Bombay B.Tech CSE",
+   "IIT Delhi B.Tech CSE",
+   "IIT Madras B.Tech CSE"
+  ],
+  "occupation_established_postings": 61,
+  "trend_status_by_population": {
+   "CURRENT_JOB_DATASET_2026_09": "INSUFFICIENT_DATA",
+   "EMPLOYER_JOB_BOARDS_IN": "INSUFFICIENT_DATA"
+  }
+ },
+ "database": {
+  "eligible_postings": "498",
+  "judgeable_skills": "68",
+  "gap_v2_partial_or_missing": "24",
+  "recommendation_by_state": "RECOMMENDATION_SUPPORTED=11, SUPPRESSED=232",
+  "occupation_established_postings (v2 resolver, title + description context; the reported figure)": "61",
+  "occupation_established_postings_v1 (title-only resolver kept for comparison)": "58"
+ },
+ "gaps": [
+  {
+   "skill": "MySQL",
+   "skill_key": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+   "eligible_postings": 498,
+   "demand": "10 postings / 6 companies (2.01 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 0,
+   "taxonomy": "EXACT (prefLabel_exact)",
+   "curriculum_coverage": "1 target course(s) ['22CSC42'], 1 topic span(s)",
+   "coverage_level": "INTRODUCTORY",
+   "gap_state": "PARTIAL",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "MySQL": 10,
+    "Mysql": 1
+   },
+   "example_job_titles": [
+    "Staff Software Engineer - Databases",
+    "Engineering Manager- Platform",
+    "Senior Sales Compensation Engineer",
+    "Sales Specialist - Lakebase",
+    "Engineering Manager Polaris Platform"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "lead others",
+   "skill_key": "http://data.europa.eu/esco/skill/75d8e5d9-bef3-418b-9011-01bff9f27207",
+   "eligible_postings": 498,
+   "demand": "22 postings / 10 companies (4.42 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 2,
+   "taxonomy": "NORMALIZED (hiddenLabel_full_taxonomy)",
+   "curriculum_coverage": "0 target course(s) [], 0 topic span(s)",
+   "coverage_level": "ABSENT",
+   "gap_state": "MISSING",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "ADD_ELECTIVE",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "people management": 13,
+    "leadership skills": 7,
+    "Leadership skills": 2,
+    "Leadership Qualities": 1
+   },
+   "example_job_titles": [
+    "Staff Software Engineer (Money)",
+    "Fraud Operations Manager",
+    "Director Data Science",
+    "Associate Director - Legal",
+    "Director - Design"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "NoSQL",
+   "skill_key": "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c",
+   "eligible_postings": 498,
+   "demand": "10 postings / 5 companies (2.01 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 0,
+   "taxonomy": "EXACT (prefLabel_exact)",
+   "curriculum_coverage": "3 target course(s) ['22CSC42', '22CSE05', '22CSE28'], 7 topic span(s)",
+   "coverage_level": "INTRODUCTORY",
+   "gap_state": "PARTIAL",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "NoSQL": 10
+   },
+   "example_job_titles": [
+    "Technical Services Engineer",
+    "Engineering Manager- Platform",
+    "Solutions Architect",
+    "Application Engineer",
+    "Full Stack Developer - Fresher / Junior (Node.js & React)"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "financial analysis",
+   "skill_key": "http://data.europa.eu/esco/skill/99571e68-801f-49af-a897-5f75996642e1",
+   "eligible_postings": 498,
+   "demand": "5 postings / 5 companies (1.0 %)",
+   "support_state": "SUPPORTED",
+   "qualification_only_postings": 0,
+   "taxonomy": "EXACT (prefLabel_exact)",
+   "curriculum_coverage": "1 target course(s) ['22MEO06'], 1 topic span(s)",
+   "coverage_level": "INTRODUCTORY",
+   "gap_state": "PARTIAL",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "financial analysis": 4,
+    "Financial Analysis": 1
+   },
+   "example_job_titles": [
+    "Finance and Strategy Specialist",
+    "Senior Payroll Accountant",
+    "Senior Manager - Procurement",
+    "Real Estate Analyst",
+    "Associate Process Manager"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "SPARK",
+   "skill_key": "http://data.europa.eu/esco/skill/af7ae54f-4649-4c16-87c7-59ba41d4d57f",
+   "eligible_postings": 498,
+   "demand": "26 postings / 5 companies (5.22 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 0,
+   "taxonomy": "NORMALIZED (prefLabel_case_whitespace_normalized)",
+   "curriculum_coverage": "1 target course(s) ['22CSE19'], 2 topic span(s)",
+   "coverage_level": "MENTION",
+   "gap_state": "MISSING",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "Spark": 26
+   },
+   "example_job_titles": [
+    "Staff Engineer I",
+    "Staff Engineer 1 – Salesforce AI",
+    "Director Data Science",
+    "Senior Forward Deployed Engineer",
+    "Director of Engineering (Data Infrastructure)"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "make decisions",
+   "skill_key": "http://data.europa.eu/esco/skill/d62d2b4c-a6f8-439e-8a1b-4f29ab5f2c47",
+   "eligible_postings": 498,
+   "demand": "89 postings / 5 companies (17.87 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 2,
+   "taxonomy": "EXACT (prefLabel_exact)",
+   "curriculum_coverage": "1 target course(s) ['22CAO02'], 1 topic span(s)",
+   "coverage_level": "MENTION",
+   "gap_state": "MISSING",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "make decisions": 80,
+    "decision-making": 12,
+    "make decision": 6,
+    "decision making": 4
+   },
+   "example_job_titles": [
+    "Software Engineer 3",
+    "Senior Administrator - Business Systems",
+    "Technical Services Engineer",
+    "Staff Engineer",
+    "Senior Engineer - GTM Tech"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "Agile development",
+   "skill_key": "http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221",
+   "eligible_postings": 498,
+   "demand": "7 postings / 5 companies (1.41 %)",
+   "support_state": "SUPPORTED",
+   "qualification_only_postings": 0,
+   "taxonomy": "EXACT (prefLabel_exact)",
+   "curriculum_coverage": "1 target course(s) ['22CSC21N'], 1 topic span(s)",
+   "coverage_level": "INTRODUCTORY",
+   "gap_state": "PARTIAL",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "agile development": 5,
+    "agile development environment": 1,
+    "Agile development": 1
+   },
+   "example_job_titles": [
+    "Senior Axiom Developer",
+    "Product Security Engineer II",
+    "Product Manager I",
+    "Product Manager II",
+    "Director - Design"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "system design",
+   "skill_key": "http://data.europa.eu/esco/skill/fae27053-8924-4bfd-b565-c9fe502044c9",
+   "eligible_postings": 498,
+   "demand": "16 postings / 7 companies (3.21 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 0,
+   "taxonomy": "EXACT (prefLabel_exact)",
+   "curriculum_coverage": "1 target course(s) ['22ECO05'], 2 topic span(s)",
+   "coverage_level": "MENTION",
+   "gap_state": "MISSING",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "system design": 10,
+    "System Design": 5,
+    "system\nDesign": 1
+   },
+   "example_job_titles": [
+    "Security Architect - AI-Powered Security Engineering",
+    "Staff Engineer - Business Systems (Integrations)",
+    "Staff Engineer I",
+    "Lead Salesforce Engineer",
+    "Engineer 3 - GTM Tech"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "data models",
+   "skill_key": "http://data.europa.eu/esco/skill/fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+   "eligible_postings": 498,
+   "demand": "14 postings / 7 companies (2.81 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 0,
+   "taxonomy": "EXACT (prefLabel_exact)",
+   "curriculum_coverage": "1 target course(s) ['22CSC11N'], 1 topic span(s)",
+   "coverage_level": "INTRODUCTORY",
+   "gap_state": "PARTIAL",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "data models": 14
+   },
+   "example_job_titles": [
+    "Forward Deployed Architect, Industry Solutions",
+    "Forward Deployed Engineer, Industry Solutions",
+    "Engineer 3 - Business Systems",
+    "SDE II - Salesforce AI",
+    "Data Operations Specialist"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "docker",
+   "skill_key": "surface:docker",
+   "eligible_postings": 498,
+   "demand": "23 postings / 9 companies (4.62 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 0,
+   "taxonomy": "UNMAPPED (None)",
+   "curriculum_coverage": "2 target course(s) ['22CSE25', '22ITE11'], 9 topic span(s)",
+   "coverage_level": "INTRODUCTORY",
+   "gap_state": "PARTIAL",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "Docker": 23
+   },
+   "example_job_titles": [
+    "Security Architect - AI-Powered Security Engineering",
+    "Manager Site Reliability Engineer",
+    "Staff Software Engineer (Money)",
+    "Principal Engineer (L5)",
+    "Manager, Technical Services"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  },
+  {
+   "skill": "node.js",
+   "skill_key": "surface:node.js",
+   "eligible_postings": 498,
+   "demand": "13 postings / 5 companies (2.61 %)",
+   "support_state": "HIGH_SUPPORT",
+   "qualification_only_postings": 0,
+   "taxonomy": "UNMAPPED (None)",
+   "curriculum_coverage": "2 target course(s) ['22CSC42', '22CSO01N'], 2 topic span(s)",
+   "coverage_level": "INTRODUCTORY",
+   "gap_state": "PARTIAL",
+   "evidence_state": "INFERRED",
+   "recommendation_state": "RECOMMENDATION_SUPPORTED",
+   "recommendation_action": "EXPAND_EXISTING_TOPIC",
+   "evidence_trace_available": true,
+   "mention_forms": {
+    "Node.js": 10,
+    "node.js": 3
+   },
+   "example_job_titles": [
+    "Technical Services Engineer",
+    "Associate TSE II",
+    "Security Architect - AI-Powered Security Engineering",
+    "Forward Deployed Engineer, Industry Solutions",
+    "Sr Full Stack Developer (AI Agents)"
+   ],
+   "verdict": "CONFIRMED",
+   "problems": []
+  }
+ ],
+ "gaps_held": [],
+ "recommendations": [
+  {
+   "skill": "make decisions",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22CAO02"
+   ],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "89 of the 498 eligible supplied postings (17.87%) mention this skill; observed prevalence, not importance",
+   "gap": "MISSING / MENTION / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (0.88%) is measurable but below the configured partial-coverage threshold; industry demand (17.87%) is real and non-zero.",
+   "uncertainty": [],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Software Engineer 3",
+    "Senior Administrator - Business Systems",
+    "Technical Services Engineer",
+    "Staff Engineer",
+    "Senior Engineer - GTM Tech"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "SPARK",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22CSE19"
+   ],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "26 of the 498 eligible supplied postings (5.22%) mention this skill; observed prevalence, not importance",
+   "gap": "MISSING / MENTION / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (0.88%) is measurable but below the configured partial-coverage threshold; industry demand (5.22%) is real and non-zero.",
+   "uncertainty": [],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Staff Engineer I",
+    "Staff Engineer 1 – Salesforce AI",
+    "Director Data Science",
+    "Senior Forward Deployed Engineer",
+    "Director of Engineering (Data Infrastructure)"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "lead others",
+   "action": "ADD_ELECTIVE",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "22 of the 498 eligible supplied postings (4.42%) mention this skill; observed prevalence, not importance",
+   "gap": "MISSING / ABSENT / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Industry demand (4.42%) is real and non-zero; measured curriculum coverage is genuinely zero.",
+   "uncertainty": [
+    "CURRICULUM_ABSENCE_IS_TEXTUAL: no topic text of the target curriculum names the skill; a differently worded topic could still teach it"
+   ],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Staff Software Engineer (Money)",
+    "Fraud Operations Manager",
+    "Director Data Science",
+    "Associate Director - Legal",
+    "Director - Design"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "Agile development",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22CSC21N"
+   ],
+   "support_state": "SUPPORTED",
+   "industry_evidence": "7 of the 498 eligible supplied postings (1.41%) mention this skill; observed prevalence, not importance",
+   "gap": "PARTIAL / INTRODUCTORY / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (0.88%) is measurable but below the configured partial-coverage threshold; industry demand (1.41%) is real and non-zero.",
+   "uncertainty": [
+    "BORDERLINE_SUPPORT: support is SUPPORTED, not HIGH_SUPPORT"
+   ],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Senior Axiom Developer",
+    "Product Security Engineer II",
+    "Product Manager I",
+    "Product Manager II",
+    "Director - Design"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "MySQL",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22CSC42"
+   ],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "10 of the 498 eligible supplied postings (2.01%) mention this skill; observed prevalence, not importance",
+   "gap": "PARTIAL / INTRODUCTORY / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (0.88%) is measurable but below the configured partial-coverage threshold; industry demand (2.01%) is real and non-zero.",
+   "uncertainty": [],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Staff Software Engineer - Databases",
+    "Engineering Manager- Platform",
+    "Senior Sales Compensation Engineer",
+    "Sales Specialist - Lakebase",
+    "Engineering Manager Polaris Platform"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "node.js",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22CSC42",
+    "22CSO01N"
+   ],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "13 of the 498 eligible supplied postings (2.61%) mention this skill; observed prevalence, not importance",
+   "gap": "PARTIAL / INTRODUCTORY / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (1.77%) is measurable but below the configured partial-coverage threshold; industry demand (2.61%) is real and non-zero.",
+   "uncertainty": [
+    "ESCO_UNMAPPED: the skill is normalized but no ESCO concept label in the taxonomy used matches it"
+   ],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Technical Services Engineer",
+    "Associate TSE II",
+    "Security Architect - AI-Powered Security Engineering",
+    "Forward Deployed Engineer, Industry Solutions",
+    "Sr Full Stack Developer (AI Agents)"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "docker",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22CSE25",
+    "22ITE11"
+   ],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "23 of the 498 eligible supplied postings (4.62%) mention this skill; observed prevalence, not importance",
+   "gap": "PARTIAL / INTRODUCTORY / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (1.77%) is measurable but below the configured partial-coverage threshold; industry demand (4.62%) is real and non-zero.",
+   "uncertainty": [
+    "ESCO_UNMAPPED: the skill is normalized but no ESCO concept label in the taxonomy used matches it"
+   ],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Security Architect - AI-Powered Security Engineering",
+    "Manager Site Reliability Engineer",
+    "Staff Software Engineer (Money)",
+    "Principal Engineer (L5)",
+    "Manager, Technical Services"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "financial analysis",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22MEO06"
+   ],
+   "support_state": "SUPPORTED",
+   "industry_evidence": "5 of the 498 eligible supplied postings (1.0%) mention this skill; observed prevalence, not importance",
+   "gap": "PARTIAL / INTRODUCTORY / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (0.88%) is measurable but below the configured partial-coverage threshold; industry demand (1.0%) is real and non-zero.",
+   "uncertainty": [
+    "BORDERLINE_SUPPORT: support is SUPPORTED, not HIGH_SUPPORT"
+   ],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Finance and Strategy Specialist",
+    "Senior Payroll Accountant",
+    "Senior Manager - Procurement",
+    "Real Estate Analyst",
+    "Associate Process Manager"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "NoSQL",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22CSC42",
+    "22CSE05",
+    "22CSE28"
+   ],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "10 of the 498 eligible supplied postings (2.01%) mention this skill; observed prevalence, not importance",
+   "gap": "PARTIAL / INTRODUCTORY / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (2.65%) is measurable but below the configured partial-coverage threshold; industry demand (2.01%) is real and non-zero.",
+   "uncertainty": [],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Technical Services Engineer",
+    "Engineering Manager- Platform",
+    "Solutions Architect",
+    "Application Engineer",
+    "Full Stack Developer - Fresher / Junior (Node.js & React)"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "system design",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22ECO05"
+   ],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "16 of the 498 eligible supplied postings (3.21%) mention this skill; observed prevalence, not importance",
+   "gap": "MISSING / MENTION / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (0.88%) is measurable but below the configured partial-coverage threshold; industry demand (3.21%) is real and non-zero.",
+   "uncertainty": [],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Security Architect - AI-Powered Security Engineering",
+    "Staff Engineer - Business Systems (Integrations)",
+    "Staff Engineer I",
+    "Lead Salesforce Engineer",
+    "Engineer 3 - GTM Tech"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  },
+  {
+   "skill": "data models",
+   "action": "EXPAND_EXISTING_TOPIC",
+   "state": "RECOMMENDATION_SUPPORTED",
+   "target_courses": [
+    "22CSC11N"
+   ],
+   "support_state": "HIGH_SUPPORT",
+   "industry_evidence": "14 of the 498 eligible supplied postings (2.81%) mention this skill; observed prevalence, not importance",
+   "gap": "PARTIAL / INTRODUCTORY / INFERRED",
+   "is_confirmed_gap": true,
+   "reason": "Curriculum coverage (0.88%) is measurable but below the configured partial-coverage threshold; industry demand (2.81%) is real and non-zero.",
+   "uncertainty": [],
+   "evidence_trace_available": true,
+   "example_job_titles": [
+    "Forward Deployed Architect, Industry Solutions",
+    "Forward Deployed Engineer, Industry Solutions",
+    "Engineer 3 - Business Systems",
+    "SDE II - Salesforce AI",
+    "Data Operations Specialist"
+   ],
+   "scope_statement": "These results describe the supplied job-posting dataset and are not necessarily representative of the entire labour market."
+  }
+ ],
+ "rules": {
+  "support": {
+   "observed_min_postings": 3,
+   "supported_min_postings": 5,
+   "supported_min_companies": 3,
+   "high_support_min_postings": 10,
+   "high_support_min_companies": 5
+  },
+  "confirmed_gap": "classification_v2 in PARTIAL/MISSING, support_state in SUPPORTED/HIGH_SUPPORT, evidence_status != REVIEW_REQUIRED (intelligence_stage.is_confirmed_gap)"
+ }
+}

@@ -1,0 +1,1794 @@
+{
+ "package": "semantic_gold/computer-science-and-engineering/v1",
+ "benchmark_sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+ "reviewer_id": "R01",
+ "reviewer_source": "NOT_STATED",
+ "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+ "counts_as_independent_label": false,
+ "source": {
+  "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+  "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04"
+ },
+ "source_notes": [
+  "all 5 submissions in the file carry the same timestamp (2026-10-22T09:03:53.725000); independent form submissions are stamped when each is sent"
+ ],
+ "imported_at": "2026-10-22T07:36:46+00:00",
+ "records": [
+  {
+   "record_uid": "resp:5c28e77106f84691",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-001",
+   "question_number": 1,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "AWS is a specific cloud service provider. Cloud technologies are the broader category of technologies used to deliver computing resources and services over networks. AWS is an example within that category, not a synonym for the entire category.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "C2",
+     "confidence": "D2",
+     "reasoning": "E2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:bca9c46e941755ad",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-002",
+   "question_number": 2,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "B — Parent / broader concept",
+    "code": "PARENT"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Quality systems can cover an organisation's overall quality-management framework, including audits, documentation, calibration, inspection, and corrective actions. Quality control systems focus more specifically on controlling and checking product or process quality. The broader-to-narrower relationship is plausible, although the reference description includes quality-system tools that can extend beyond quality control.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "F2",
+     "confidence": "G2",
+     "reasoning": "H2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:2bf568961126565e",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-003",
+   "question_number": 3,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "In the job evidence, “repair processes” refers to servicing and repairing two-wheelers in a customer-service setting. The reference concept concerns metalworking and manufacturing processes. Although the reference description mentions repair processes, the two contexts do not establish the same technical meaning. A shared phrase alone is insufficient to prove a semantic match.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "I2",
+     "confidence": "J2",
+     "reasoning": "K2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:60fd7381cff824db",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-006",
+   "question_number": 4,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "“IT” commonly means information technology, which includes computing systems, networks, software, and information infrastructure. However, the job evidence is primarily about data-centre facilities, including mechanical and electrical infrastructure. Therefore, the terms are related, but the context does not establish that the job's use of “IT” denotes the full reference concept of computer technology.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "L2",
+     "confidence": "M2",
+     "reasoning": "N2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:1e979ac98d16de4d",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-007",
+   "question_number": 5,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "H — Insufficient evidence",
+    "code": "INSUFFICIENT_EVIDENCE"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "“Re” is only a short fragment and could stand for many words or abbreviations. The job description contains no evidence that it means reverse engineering. It would be unjustified to expand the fragment into a complete technical concept.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "O2",
+     "confidence": "P2",
+     "reasoning": "Q2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:cacf6678cb8ad9ee",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-009",
+   "question_number": 6,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "H — Insufficient evidence",
+    "code": "INSUFFICIENT_EVIDENCE"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "The same problem occurs here: “re” is not sufficiently distinctive to identify reverse engineering. The software-development job title does not establish that meaning either. The correct approach is to avoid inferring a technical skill from an incomplete token.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "R2",
+     "confidence": "S2",
+     "reasoning": "T2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:09905501a036745a",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-010",
+   "question_number": 7,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Microsoft Excel is a particular spreadsheet application. “Use spreadsheet software” describes a broader capability that can be performed with Excel or other spreadsheet tools. Excel is a specific tool that enables the broader activity.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "U2",
+     "confidence": "V2",
+     "reasoning": "W2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:b421586a577ecb52",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-013",
+   "question_number": 8,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "H — Insufficient evidence",
+    "code": "INSUFFICIENT_EVIDENCE"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "The lowercase token “it” appears in safety instructions for an offshore or industrial role. It is likely a pronoun, not the abbreviation “IT.” There is no evidence that it refers to computer technology. Treating every occurrence of “it” as information technology would be a serious text-matching error.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "X2",
+     "confidence": "Y2",
+     "reasoning": "Z2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:05941a01f9bddc81",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-014",
+   "question_number": 9,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "HR commonly stands for Human Resources. Human resource management is the organisational function responsible for recruitment, employee performance, and related people-management activities. The abbreviation and the expanded concept are closely equivalent in this context, although HR can sometimes refer to the department rather than the management function itself.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AA2",
+     "confidence": "AB2",
+     "reasoning": "AC2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:529382b45a389609",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-015",
+   "question_number": 10,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "CRM conventionally stands for Customer Relationship Management. In the marketing-automation context, it refers to tools or practices for managing customer interactions and relationships. The abbreviation directly corresponds to the expanded term.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AD2",
+     "confidence": "AE2",
+     "reasoning": "AF2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:0b65345cea925906",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-018",
+   "question_number": 11,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "The job explicitly mentions CRM systems, customer databases, reporting dashboards, and lead management. These are typical components or uses of customer relationship management. The abbreviation and the reference term represent the same core concept in this context.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AG2",
+     "confidence": "AH2",
+     "reasoning": "AI2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:ecfc9d95518f6179",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-019",
+   "question_number": 12,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "The source mentions call-performance reports and lead conversions in a sales role. The reference concept, often abbreviated CALL, means Computer-Assisted Language Learning. Here, “call” refers to sales or telephone activity, not technology-assisted language education. The similar letters do not establish a semantic relationship.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AJ2",
+     "confidence": "AK2",
+     "reasoning": "AL2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:79a57937a9d47bcd",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-020",
+   "question_number": 13,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Excel is a specific spreadsheet application, whereas the reference skill describes the general ability to create, edit, organise, calculate, and retrieve tabular data using spreadsheet software. The job's merchandising context supports Excel use, but Excel remains narrower than the general capability.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AM2",
+     "confidence": "AN2",
+     "reasoning": "AO2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:192a14926f271873",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-021",
+   "question_number": 14,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "“Technical Skills” is a broad and underspecified heading in the tax role. The evidence specifically mentions income-tax knowledge and identifying tax issues, whereas the reference describes applying scientific and engineering principles. Both involve specialised knowledge, but that shared generality does not make them equivalent. Only a limited overlap in the broad notion of technical competence is defensible.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AP2",
+     "confidence": "AQ2",
+     "reasoning": "AR2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:d4dd07b14bbae63a",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-022",
+   "question_number": 15,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Electrical equipment includes power-distribution systems, motors, switchgear, and transformers. Maintaining electronic equipment involves inspecting, diagnosing, repairing, and preventing faults in electronic devices. Both involve technical equipment maintenance, but electrical and electronic equipment are not identical categories, and the first phrase names equipment rather than a maintenance activity.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AS2",
+     "confidence": "AT2",
+     "reasoning": "AU2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:328f2b74f0799b6e",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-023",
+   "question_number": 16,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "PLC is the standard abbreviation for Programmable Logic Controller. The job explicitly mentions PLC-based control systems, and the reference describes programmable controllers used to monitor inputs and outputs and automate electromechanical processes. The abbreviation and expanded term denote the same technology.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AV2",
+     "confidence": "AW2",
+     "reasoning": "AX2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:64147ca1e68719e2",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-026",
+   "question_number": 17,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Data analysis is the process of examining and interpreting data. Statistics provides methods for collecting, summarising, analysing, and interpreting data. Statistics is an important part of data analysis, but data analysis also includes activities and techniques that are not exclusively statistical. The concepts are related rather than interchangeable.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "AY2",
+     "confidence": "AZ2",
+     "reasoning": "BA2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:068e153cb2fbe897",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-027",
+   "question_number": 18,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "JSON is a text-based data-interchange format commonly used in APIs and software systems. The reference describes a model for service-oriented business and software architecture. JSON may be used to exchange data in such systems, but it is not the same as the architectural model itself.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BB2",
+     "confidence": "BC2",
+     "reasoning": "BD2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:ce3cfd397f4b8fd7",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-029",
+   "question_number": 19,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "In the job evidence, SEM appears in a list of SAP financial and consolidation systems, specifically SAP SEM-BCS. In marketing, SEM often means Search Engine Marketing, while SEO means Search Engine Optimisation. The reference is SEO, and the source is using SEM in an entirely different enterprise-software context. They should not be matched based on the acronym alone.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BE2",
+     "confidence": "BF2",
+     "reasoning": "BG2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:34b88e84f6162fca",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-031",
+   "question_number": 20,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Data privacy concerns appropriate use, access, and handling of personal information. Data protection includes measures, rules, and safeguards designed to protect data and uphold privacy rights. The concepts overlap substantially, but data protection can cover security and regulatory controls beyond privacy alone. The application-form context supports the privacy meaning, though it does not establish complete equivalence.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BH2",
+     "confidence": "BI2",
+     "reasoning": "BJ2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:39e1d3c90555e491",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-034",
+   "question_number": 21,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Financial planning involves setting financial goals, allocating resources, and deciding how to achieve those goals. Financial forecasting estimates future revenue, expenditure, and financial conditions. Forecasting can support planning, but it is only one component of the broader planning process. The concepts are connected without being identical.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BK2",
+     "confidence": "BL2",
+     "reasoning": "BM2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:7302b36bb80ca202",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-035",
+   "question_number": 22,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "“Attention to detail” describes careful consideration of small but important elements. “Attend to detail” describes carrying out work with that same care. One is expressed as a noun phrase and the other as a verb phrase, but their underlying competency is substantially the same.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BN2",
+     "confidence": "BO2",
+     "reasoning": "BP2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:7105817582dfda32",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-037",
+   "question_number": 23,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Cloud computing is a particular approach to providing computing resources and services over a network. Cloud technologies is a broader category that can include the infrastructure, software, platforms, networking, and other technologies that enable cloud services. Cloud computing fits within the broader category, though the exact hierarchy depends on the taxonomy's definitions.Confidence: Moderate to high.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BQ2",
+     "confidence": "BR2",
+     "reasoning": "BS2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:d3807784b50202a1",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-038",
+   "question_number": 24,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Decision-making is the process of choosing between alternatives. “Make decisions” expresses the performance of that process as an action. The grammatical forms differ, but the underlying competency is equivalent in ordinary workplace terminology.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BT2",
+     "confidence": "BU2",
+     "reasoning": "BV2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:b3c199cfc3048bc8",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-043",
+   "question_number": 25,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Information management concerns collecting, organising, storing, and distributing information. Knowledge management focuses on capturing, sharing, and applying knowledge and organisational expertise. They overlap because information supports knowledge creation, but knowledge management includes interpretation, experience, and organisational learning beyond information handling alone.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BW2",
+     "confidence": "BX2",
+     "reasoning": "BY2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:dc6b0568483a7e38",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-045",
+   "question_number": 26,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "“ML” is a standard abbreviation for machine learning. However, the source token is lowercase “ml,” and the supplied evidence must establish that it is a technical abbreviation rather than an incidental fragment. If it appears in an AI/ML course or technical sentence, the same-concept label is appropriate; without that context, the label should be treated cautiously.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "BZ2",
+     "confidence": "CA2",
+     "reasoning": "CB2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:db927607fc5153d0",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-046",
+   "question_number": 27,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "G — Ambiguous",
+    "code": "AMBIGUOUS"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "“ML” may mean machine learning, but in some programming contexts it can refer to the ML programming language. The reference specifically includes a computer-programming interpretation. Unless the source context clearly disambiguates the abbreviation, multiple readings remain possible.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "CC2",
+     "confidence": "CD2",
+     "reasoning": "CE2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:bc30a614d40d79d8",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-050",
+   "question_number": 28,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "G — Ambiguous",
+    "code": "AMBIGUOUS"
+   },
+   "confidence": {
+    "raw": "Low",
+    "code": "LOW"
+   },
+   "reasoning": "PPC commonly stands for pay-per-click in digital advertising, but it also has other meanings in different technical and business domains. The label should be “Same concept” only when the surrounding source clearly refers to paid advertising. If the provided context does not establish that meaning, use “Insufficient evidence” rather than automatically expanding the acronym.\nConfidence: Low without the full source context.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "CF2",
+     "confidence": "CG2",
+     "reasoning": "CH2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:a0d2875c8d6efcd8",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-052",
+   "question_number": 29,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Information and Communication Technology includes computing, telecommunications, networks, and systems used to handle information. Computer technology overlaps with ICT but does not necessarily cover the full communications and telecommunications component. Thus, the terms are related, with ICT generally being broader than computer technology.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "CI2",
+     "confidence": "CJ2",
+     "reasoning": "CK2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:fbd084b37cc72842",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-053",
+   "question_number": 30,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Quality management is the overall system for planning, assuring, controlling, and improving quality. Quality assurance procedures are specific processes used to provide confidence that requirements will be met. These procedures form part of quality management, so if the relationship scheme strictly distinguishes broader and narrower concepts, B — Parent / broader may be more precise than “Related.”\nConfidence: Moderate; consider B if the hierarchy is explicit.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "CL2",
+     "confidence": "CM2",
+     "reasoning": "CN2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:d5ef0c9c5bff371e",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-057",
+   "question_number": 31,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Conflict resolution describes the process or competency of addressing disagreements and reaching an acceptable outcome. “Resolve conflicts” expresses that competency as an action. The two phrases describe the same core skill in different grammatical forms.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "CO2",
+     "confidence": "CP2",
+     "reasoning": "CQ2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:e74eb3c001ae8d42",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-058",
+   "question_number": 32,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Conflict resolution focuses on resolving a particular disagreement or bringing it to a conclusion. Conflict management is broader and includes handling disagreements, reducing escalation, and managing ongoing conflict even when it cannot be fully resolved. The concepts overlap, but their scope differs.\nConfidence: Moderate to high",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "CR2",
+     "confidence": "CS2",
+     "reasoning": "CT2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:4f52d296be097dac",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-059",
+   "question_number": 33,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Google Docs is a specific word-processing application. Office software is a broader category that includes word processors, spreadsheets, presentation tools, and related productivity applications. Google Docs belongs within that category, although the precise taxonomy may classify it under word-processing software first.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "CU2",
+     "confidence": "CV2",
+     "reasoning": "CW2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:666ddeeb413b7a6b",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-060",
+   "question_number": 34,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Both phrases describe working or communicating with colleagues to coordinate activities. “Collaborate” usually implies working jointly toward a shared outcome, while “liaise” can mean coordinating or exchanging information without jointly completing the work. They are close equivalents, but they are not identical in every setting.\nConfidence: Moderate to high",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "CX2",
+     "confidence": "CY2",
+     "reasoning": "CZ2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:4347267a0d6bad17",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-061",
+   "question_number": 35,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "G — Ambiguous",
+    "code": "AMBIGUOUS"
+   },
+   "confidence": {
+    "raw": "Low",
+    "code": "LOW"
+   },
+   "reasoning": "“Core maintenance” could refer to maintaining a particular type of core, while “maintain cores” describes an action. The intended technical meaning of “core” is not clear from the short phrase alone. If both phrases refer to the same specialised equipment or component in the source curriculum, they may be equivalent; otherwise, more context is needed.\nConfidence: Low to moderate",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DA2",
+     "confidence": "DB2",
+     "reasoning": "DC2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:aa8a7a6447ef62f2",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-063",
+   "question_number": 36,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "B — Parent / broader concept",
+    "code": "PARENT"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "A vector is a mathematical object with magnitude and direction. A vector line integral is a specific mathematical operation involving a vector field along a curve. A general vector is not itself a line integral, but the broader vector topic can encompass the mathematical objects used in vector calculus. The curriculum context supports a broad-versus-specific relationship, although the taxonomy could represent the connection differently.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DD2",
+     "confidence": "DE2",
+     "reasoning": "DF2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:e72d898fd5788ba3",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-066",
+   "question_number": 37,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Incremental code development is a particular approach to software development in which functionality is built and delivered in small stages. “Development” is much broader and can refer to many kinds of development. The more specific phrase describes a particular method within the broader development concept.\nConfidence: High, assuming the broader term refers to software development.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DG2",
+     "confidence": "DH2",
+     "reasoning": "DI2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:5eb007063e154fac",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-069",
+   "question_number": 38,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "“Meaning of Prosperity in detail” concerns the interpretation of prosperity, whereas K-means is an unsupervised machine-learning clustering algorithm. The course evidence appears to combine unrelated extracted text fragments. There is no semantic relationship between the two concepts based on the supplied evidence.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DJ2",
+     "confidence": "DK2",
+     "reasoning": "DL2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:15f96d35824cf6ca",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-070",
+   "question_number": 39,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "B — Parent / broader concept",
+    "code": "PARENT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Equations is a broad mathematical category. Equations solvable for \\(y\\) describes a narrower class of equations based on how they can be solved or expressed. The specific class falls under the general concept of equations, so the first concept is broader than the second.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DM2",
+     "confidence": "DN2",
+     "reasoning": "DO2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:7ea2572acf55dc40",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-071",
+   "question_number": 40,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "G — Ambiguous",
+    "code": "AMBIGUOUS"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "In vector calculus, irrotational fields and solenoidal fields are types of vector fields characterised by their curl or divergence properties. However, the reference “Field” comes from a discrete-mathematics context involving rings, groups, and subgroups, where a field is an algebraic structure. These are different technical senses of the same word. The context points to ambiguity rather than a straightforward parent–child relationship.\nConfidence: High that the senses differ.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DP2",
+     "confidence": "DQ2",
+     "reasoning": "DR2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:7b9b50f09093779c",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-072",
+   "question_number": 41,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "The source describes vector fields in calculus and physics, including divergence and related vector operations. The reference comes from physics and mentions field-related phenomena, so it may refer to a physical field rather than an algebraic field. If the reference is a vector or physical field, the source concept is more specific; if it means a different kind of field, the relationship is ambiguous. The supplied context makes “Related” defensible, but not certain.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DS2",
+     "confidence": "DT2",
+     "reasoning": "DU2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:5047fcd134384df0",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-075",
+   "question_number": 42,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Concept A is a fragment of a physics topic about angular momentum. Concept B refers to Angular, the software-development framework. The word “angular” has different meanings in mechanics and software development. The incomplete source phrase does not provide a meaningful link between the physics concept and the programming framework.\nConfidence: High that the intended senses are different, though the source is truncated.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DV2",
+     "confidence": "DW2",
+     "reasoning": "DX2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:773c69500f3d53b6",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-076",
+   "question_number": 43,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "The source mentions Angular alongside React and Vue as modern JavaScript frameworks used to build web and mobile applications. The reference describes software development using Angular. Both uses refer to the same framework, so the relationship is one of concept equivalence.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "DY2",
+     "confidence": "DZ2",
+     "reasoning": "EA2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:14d8de5eb56af6cb",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-078",
+   "question_number": 44,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Neural network models in the bioinformatics curriculum likely refer to artificial neural networks used for prediction or modelling. The reference explicitly defines artificial neural networks as computing systems inspired by biological neural networks. In an AI or machine-learning context, the phrases are effectively equivalent, although “neural network models” could be broader if it includes multiple model families or theoretical representations.\nConfidence: Moderate to high",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "EB2",
+     "confidence": "EC2",
+     "reasoning": "ED2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:304259b200a25dd7",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-080",
+   "question_number": 45,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "A Database Management System (DBMS) is software that defines, stores, queries, and manages databases. A database is the organised collection of data itself. The two concepts are closely related but denote different things: one is the management software, and the other is the data structure or collection.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "EE2",
+     "confidence": "EF2",
+     "reasoning": "EG2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:45944d03025bb57a",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-084",
+   "question_number": 46,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "The convolution operation is a specific technique used in convolutional neural networks. Deep learning is the broader field that includes convolutional neural networks and other neural-network architectures. The curriculum topic is a specialised component of a deep-learning subject, so it is narrower than the reference concept.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "EH2",
+     "confidence": "EI2",
+     "reasoning": "EJ2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:ca7c9a90ebccbad5",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-086",
+   "question_number": 47,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Python for Data Science describes applying Python to data manipulation, analysis, and related workflows. Python programming is the broader capability, encompassing data science as well as web development, automation, scripting, and other uses. The source topic is therefore more specific than the general Python programming concept.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "EK2",
+     "confidence": "EL2",
+     "reasoning": "EM2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:ec0dcdd3e7a2b1b8",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-087",
+   "question_number": 48,
+   "reviewer_id": "R01",
+   "submission": 1,
+   "reviewer_source": "NOT_STATED",
+   "reviewer_source_meaning": "how the answers were produced was not stated",
+   "attestation_note": "How R01, R04 and R05 answered has not been stated.",
+   "human_reviewed": false,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "The curriculum topic concerns applications and impacts of AI and machine learning in clinical and genomic diagnostics. Machine learning is a core method that can support those applications, but the curriculum topic also includes AI's broader influence, clinical use cases, and diagnostic context. The topic is therefore related to machine learning, but it is not simply a synonym for the underlying method.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 2,
+    "cells": {
+     "relationship": "EN2",
+     "confidence": "EO2",
+     "reasoning": "EP2"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  }
+ ]
+}

@@ -1,0 +1,3572 @@
+{
+ "benchmark": "semantic_benchmark_v1",
+ "benchmark_sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+ "gate": "semantic-gate-v2",
+ "gate_sha256": "d16871cffa28bbb867549f153359dfb808a9b67c57445ca6c8f86d80c9825f82",
+ "evaluated_at": "2026-09-27T20:14:47+00:00",
+ "cases_in_benchmark": 88,
+ "reviewers": [],
+ "status": "PENDING_INDEPENDENT_LABELS",
+ "independent_reviewers": 0,
+ "gate_version": "semantic-gate-v2",
+ "gate_declared_at": "2026-09-27T20:13:58+00:00",
+ "mode": "SAFE_MODE",
+ "reason": "no independent human labels exist for the frozen benchmark; model accuracy is not claimed",
+ "next_action": "an independent reviewer fills labelling_sheet.csv; then benchmark_labelling.py ingest / gold / evaluate",
+ "internal_development_preview": {
+  "label_source": "DEVELOPMENT GOLD labelled by the assistant -- NOT independent, NOT human-validated; for development diagnostics only; never used by the promotion gate",
+  "gold_distribution": {
+   "CHILD": 12,
+   "PARTIAL_OVERLAP": 4,
+   "UNRELATED": 28,
+   "SAME_CONCEPT": 18,
+   "RELATED": 23,
+   "PARENT": 2,
+   "INSUFFICIENT_EVIDENCE": 1
+  },
+  "systems": {
+   "DETERMINISTIC_BASELINE": {
+    "cases": 88,
+    "predicted": 75,
+    "abstained": 13,
+    "definite_predictions": 0,
+    "non_definite_predictions": 75,
+    "precision_on_definite": null,
+    "accuracy": 0.0,
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 18,
+      "predicted": 0
+     },
+     "PARENT": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 2,
+      "predicted": 0
+     },
+     "CHILD": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 12,
+      "predicted": 0
+     },
+     "RELATED": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 23,
+      "predicted": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 4,
+      "predicted": 0
+     },
+     "UNRELATED": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 28,
+      "predicted": 0
+     },
+     "AMBIGUOUS": {
+      "precision": 0.0,
+      "recall": null,
+      "f1": null,
+      "support": 0,
+      "predicted": 75
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 1,
+      "predicted": 0
+     }
+    },
+    "confusion_matrix": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 15,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 3
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 2,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 9,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 3
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 19,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 4
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 4,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 25,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 3
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     }
+    },
+    "critical_errors": {
+     "MISSED_SAME_CONCEPT": 18
+    },
+    "critical_error_rate": 0.0,
+    "per_case": [
+     {
+      "case_id": "bm1-000",
+      "kind": "ALIAS_SENSE",
+      "left": "AWS",
+      "right": "cloud technologies",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-001",
+      "kind": "ALIAS_SENSE",
+      "left": "AWS",
+      "right": "cloud technologies",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-002",
+      "kind": "ALIAS_SENSE",
+      "left": "quality systems",
+      "right": "quality control systems",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-003",
+      "kind": "ALIAS_SENSE",
+      "left": "repair processes",
+      "right": "types of metal manufacturing processes",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-004",
+      "kind": "ALIAS_SENSE",
+      "left": "did",
+      "right": "direct inward dialing",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-005",
+      "kind": "ALIAS_SENSE",
+      "left": "Call",
+      "right": "Computer Assisted Language Learning",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-006",
+      "kind": "ALIAS_SENSE",
+      "left": "IT",
+      "right": "computer technology",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-007",
+      "kind": "ALIAS_SENSE",
+      "left": "re",
+      "right": "reverse engineering",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-008",
+      "kind": "ALIAS_SENSE",
+      "left": "HR",
+      "right": "human resource management",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-009",
+      "kind": "ALIAS_SENSE",
+      "left": "re",
+      "right": "reverse engineering",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-010",
+      "kind": "ALIAS_SENSE",
+      "left": "MS Excel",
+      "right": "use spreadsheets software",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-011",
+      "kind": "ALIAS_SENSE",
+      "left": "SEM",
+      "right": "search engine optimisation",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-012",
+      "kind": "ALIAS_SENSE",
+      "left": "CMM",
+      "right": "ICT process quality models",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-013",
+      "kind": "ALIAS_SENSE",
+      "left": "it",
+      "right": "computer technology",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-014",
+      "kind": "ALIAS_SENSE",
+      "left": "HR",
+      "right": "human resource management",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-015",
+      "kind": "ALIAS_SENSE",
+      "left": "CRM",
+      "right": "customer relationship management",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-016",
+      "kind": "ALIAS_SENSE",
+      "left": "quality systems",
+      "right": "quality control systems",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-017",
+      "kind": "ALIAS_SENSE",
+      "left": "Technical Skills",
+      "right": "apply knowledge of science, technology and engineering",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-018",
+      "kind": "ALIAS_SENSE",
+      "left": "CRM",
+      "right": "customer relationship management",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-019",
+      "kind": "ALIAS_SENSE",
+      "left": "call",
+      "right": "Computer Assisted Language Learning",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-020",
+      "kind": "ALIAS_SENSE",
+      "left": "MS Excel",
+      "right": "use spreadsheets software",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-021",
+      "kind": "ALIAS_SENSE",
+      "left": "Technical Skills",
+      "right": "apply knowledge of science, technology and engineering",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-022",
+      "kind": "ALIAS_SENSE",
+      "left": "electrical equipment",
+      "right": "maintain electronic equipment",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-023",
+      "kind": "ALIAS_SENSE",
+      "left": "PLC",
+      "right": "programmable logic controller",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-024",
+      "kind": "ALIAS_SENSE",
+      "left": ".NET",
+      "right": "Visual Basic",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-025",
+      "kind": "ALIAS_SENSE",
+      "left": ".NET",
+      "right": "Visual Basic",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-026",
+      "kind": "ALIAS_SENSE",
+      "left": "Data Analysis",
+      "right": "statistics",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-027",
+      "kind": "ALIAS_SENSE",
+      "left": "JSON",
+      "right": "Open source model",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-028",
+      "kind": "ALIAS_SENSE",
+      "left": "data analysis",
+      "right": "statistics",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-029",
+      "kind": "ALIAS_SENSE",
+      "left": "SEM",
+      "right": "search engine optimisation",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-030",
+      "kind": "ALIAS_SENSE",
+      "left": "data collection",
+      "right": "statistics",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-031",
+      "kind": "ALIAS_SENSE",
+      "left": "data privacy",
+      "right": "data protection",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-032",
+      "kind": "ALIAS_SENSE",
+      "left": "CCD",
+      "right": "digital camera sensors",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-033",
+      "kind": "ALIAS_SENSE",
+      "left": "negotiation skills",
+      "right": "negotiate compromises",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-034",
+      "kind": "ALIAS_SENSE",
+      "left": "financial planning",
+      "right": "financial forecasting",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-035",
+      "kind": "ALIAS_SENSE",
+      "left": "attention to detail",
+      "right": "attend to detail",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-036",
+      "kind": "ALIAS_SENSE",
+      "left": "Tax return",
+      "right": "manage financial and material resources",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-037",
+      "kind": "ALIAS_SENSE",
+      "left": "cloud computing",
+      "right": "cloud technologies",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-038",
+      "kind": "ALIAS_SENSE",
+      "left": "decision-making",
+      "right": "make decisions",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-039",
+      "kind": "ALIAS_SENSE",
+      "left": "problem-solving skills",
+      "right": "solve problems",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-040",
+      "kind": "ALIAS_SENSE",
+      "left": "manage projects",
+      "right": "perform project management",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-041",
+      "kind": "ALIAS_SENSE",
+      "left": "decision-making",
+      "right": "make decisions",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-042",
+      "kind": "ALIAS_SENSE",
+      "left": "pharmaceutical companies",
+      "right": "pharmaceutical industry",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-043",
+      "kind": "ALIAS_SENSE",
+      "left": "Information Management",
+      "right": "knowledge management",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-044",
+      "kind": "ALIAS_SENSE",
+      "left": "Risk Assessment",
+      "right": "risk management",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-045",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ml",
+      "right": "machine learning",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-046",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ml",
+      "right": "ML (computer programming)",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-047",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "gimp",
+      "right": "graphics editor software",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-048",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ict",
+      "right": "in-circuit test",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-049",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ppc",
+      "right": "make strategic business decisions",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-050",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ppc",
+      "right": "pay-per-click",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-051",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "gimp",
+      "right": "GIMP (graphics editor software)",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-052",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ict",
+      "right": "computer technology",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-053",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "quality management",
+      "right": "quality assurance procedures",
+      "gold": "PARENT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-054",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "quality management",
+      "right": "manage quality",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-055",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "data processing",
+      "right": "process data",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-056",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "cascading style sheets",
+      "right": "CSS",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-057",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "conflict resolution",
+      "right": "resolve conflicts",
+      "gold": "SAME_CONCEPT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-058",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "conflict resolution",
+      "right": "conflict management",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-059",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "google docs",
+      "right": "office software",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-060",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "collaborate with colleagues",
+      "right": "liaise with colleagues",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-061",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "core maintenance",
+      "right": "maintain cores",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-062",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "labview",
+      "right": "integrated development environment software",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-063",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "vector",
+      "right": "vector line integrals",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-064",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Loops",
+      "right": "Iteration and loops",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-065",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Theory of NP-Completeness: Polynomial time",
+      "right": "Memory Hierarchy etc. (ii) Notion of polynomial time computation. (iii) Polynomial time reductions",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-066",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Incremental Development of Code",
+      "right": "Development",
+      "gold": "INSUFFICIENT_EVIDENCE",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-067",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "File system metadata",
+      "right": "Remote and Distributed file systems",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-068",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Equations",
+      "right": "Maxwell\u2019s equations",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-069",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "meaning of Prosperity in detail",
+      "right": "K Means",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-070",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Equations",
+      "right": "equations solvable for y",
+      "gold": "PARENT",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-071",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Irrotational fields and Solenoidal fields",
+      "right": "Field",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-072",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Irrotational fields and Solenoidal fields",
+      "right": "field",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-073",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Incremental Development of Code",
+      "right": "code",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-074",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "User",
+      "right": "requirements including user interface",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-075",
+      "kind": "DIAGNOSTIC",
+      "left": "Angular momentum about a point of a rigid body in",
+      "right": "Angular",
+      "gold": "UNRELATED",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-076",
+      "kind": "DIAGNOSTIC",
+      "left": "Angular",
+      "right": "Angular",
+      "gold": "SAME_CONCEPT",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-077",
+      "kind": "DIAGNOSTIC",
+      "left": "Neural Network models",
+      "right": "design computer network",
+      "gold": "UNRELATED",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-078",
+      "kind": "DIAGNOSTIC",
+      "left": "Neural Network models",
+      "right": "artificial neural networks",
+      "gold": "SAME_CONCEPT",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-079",
+      "kind": "DIAGNOSTIC",
+      "left": "SQL Injection",
+      "right": "SQL",
+      "gold": "RELATED",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-080",
+      "kind": "DIAGNOSTIC",
+      "left": "Database Management Systems",
+      "right": "database",
+      "gold": "RELATED",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-081",
+      "kind": "DIAGNOSTIC",
+      "left": "Database Management Systems",
+      "right": "database management systems",
+      "gold": "SAME_CONCEPT",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-082",
+      "kind": "DIAGNOSTIC",
+      "left": "Version control tools - GIT and GitHub",
+      "right": "tools for software configuration management",
+      "gold": "CHILD",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-083",
+      "kind": "DIAGNOSTIC",
+      "left": "Buffer overflow attack in C and C++",
+      "right": "C++",
+      "gold": "RELATED",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-084",
+      "kind": "DIAGNOSTIC",
+      "left": "Convolutional Neural Network: The Convolution Operation",
+      "right": "deep learning",
+      "gold": "CHILD",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-085",
+      "kind": "DIAGNOSTIC",
+      "left": "JavaScript",
+      "right": "Java (computer programming)",
+      "gold": "UNRELATED",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-086",
+      "kind": "DIAGNOSTIC",
+      "left": "Python for Data Science",
+      "right": "Python (computer programming)",
+      "gold": "CHILD",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-087",
+      "kind": "DIAGNOSTIC",
+      "left": "Influence of AI and ML in Clinical and Genomic Diagnostics",
+      "right": "machine learning",
+      "gold": "RELATED",
+      "prediction": null,
+      "correct": false,
+      "critical_errors": []
+     }
+    ],
+    "by_kind": {
+     "ALIAS_SENSE": {
+      "cases": 45,
+      "correct": 0,
+      "accuracy": 0.0
+     },
+     "AMBIGUOUS_TAXONOMY_LABEL": {
+      "cases": 18,
+      "correct": 0,
+      "accuracy": 0.0
+     },
+     "AMBIGUOUS_TOPIC_MAPPING": {
+      "cases": 12,
+      "correct": 0,
+      "accuracy": 0.0
+     },
+     "DIAGNOSTIC": {
+      "cases": 13,
+      "correct": 0,
+      "accuracy": 0.0
+     }
+    }
+   },
+   "QWEN_RAW": {
+    "cases": 88,
+    "predicted": 88,
+    "abstained": 0,
+    "definite_predictions": 87,
+    "non_definite_predictions": 1,
+    "precision_on_definite": 0.5172,
+    "accuracy": 0.5114,
+    "macro_precision": 0.2246,
+    "macro_recall": 0.281,
+    "macro_f1": 0.2406,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "precision": 0.3947,
+      "recall": 0.8333,
+      "f1": 0.5357,
+      "support": 18,
+      "predicted": 38
+     },
+     "PARENT": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 2,
+      "predicted": 0
+     },
+     "CHILD": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 12,
+      "predicted": 0
+     },
+     "RELATED": {
+      "precision": 0.4444,
+      "recall": 0.3478,
+      "f1": 0.3902,
+      "support": 23,
+      "predicted": 18
+     },
+     "PARTIAL_OVERLAP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4,
+      "predicted": 1
+     },
+     "UNRELATED": {
+      "precision": 0.7333,
+      "recall": 0.7857,
+      "f1": 0.7586,
+      "support": 28,
+      "predicted": 30
+     },
+     "AMBIGUOUS": {
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "support": 0,
+      "predicted": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1,
+      "predicted": 1
+     }
+    },
+    "confusion_matrix": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 15,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 2,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 2,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 10,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 9,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 8,
+      "PARTIAL_OVERLAP": 1,
+      "UNRELATED": 5,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 2,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 3,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 22,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1,
+      "NO_PREDICTION": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     }
+    },
+    "critical_errors": {
+     "FALSE_SAME_CONCEPT": 23,
+     "ALIAS_SENSE_ERROR": 18,
+     "ACRONYM_SENSE_ERROR": 10,
+     "FALSE_RELATED": 8,
+     "UNSUPPORTED_TAXONOMY_EVIDENCE": 11,
+     "MISSED_SAME_CONCEPT": 3,
+     "LEXICAL_COLLISION": 2,
+     "INSUFFICIENT_CONTEXT_ERROR": 1
+    },
+    "critical_error_rate": 0.3636,
+    "per_case": [
+     {
+      "case_id": "bm1-000",
+      "kind": "ALIAS_SENSE",
+      "left": "AWS",
+      "right": "cloud technologies",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-001",
+      "kind": "ALIAS_SENSE",
+      "left": "AWS",
+      "right": "cloud technologies",
+      "gold": "CHILD",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR",
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-002",
+      "kind": "ALIAS_SENSE",
+      "left": "quality systems",
+      "right": "quality control systems",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-003",
+      "kind": "ALIAS_SENSE",
+      "left": "repair processes",
+      "right": "types of metal manufacturing processes",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-004",
+      "kind": "ALIAS_SENSE",
+      "left": "did",
+      "right": "direct inward dialing",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-005",
+      "kind": "ALIAS_SENSE",
+      "left": "Call",
+      "right": "Computer Assisted Language Learning",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-006",
+      "kind": "ALIAS_SENSE",
+      "left": "IT",
+      "right": "computer technology",
+      "gold": "SAME_CONCEPT",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "MISSED_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-007",
+      "kind": "ALIAS_SENSE",
+      "left": "re",
+      "right": "reverse engineering",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-008",
+      "kind": "ALIAS_SENSE",
+      "left": "HR",
+      "right": "human resource management",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-009",
+      "kind": "ALIAS_SENSE",
+      "left": "re",
+      "right": "reverse engineering",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-010",
+      "kind": "ALIAS_SENSE",
+      "left": "MS Excel",
+      "right": "use spreadsheets software",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-011",
+      "kind": "ALIAS_SENSE",
+      "left": "SEM",
+      "right": "search engine optimisation",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-012",
+      "kind": "ALIAS_SENSE",
+      "left": "CMM",
+      "right": "ICT process quality models",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-013",
+      "kind": "ALIAS_SENSE",
+      "left": "it",
+      "right": "computer technology",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-014",
+      "kind": "ALIAS_SENSE",
+      "left": "HR",
+      "right": "human resource management",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-015",
+      "kind": "ALIAS_SENSE",
+      "left": "CRM",
+      "right": "customer relationship management",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-016",
+      "kind": "ALIAS_SENSE",
+      "left": "quality systems",
+      "right": "quality control systems",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-017",
+      "kind": "ALIAS_SENSE",
+      "left": "Technical Skills",
+      "right": "apply knowledge of science, technology and engineering",
+      "gold": "UNRELATED",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-018",
+      "kind": "ALIAS_SENSE",
+      "left": "CRM",
+      "right": "customer relationship management",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-019",
+      "kind": "ALIAS_SENSE",
+      "left": "call",
+      "right": "Computer Assisted Language Learning",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-020",
+      "kind": "ALIAS_SENSE",
+      "left": "MS Excel",
+      "right": "use spreadsheets software",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-021",
+      "kind": "ALIAS_SENSE",
+      "left": "Technical Skills",
+      "right": "apply knowledge of science, technology and engineering",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-022",
+      "kind": "ALIAS_SENSE",
+      "left": "electrical equipment",
+      "right": "maintain electronic equipment",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-023",
+      "kind": "ALIAS_SENSE",
+      "left": "PLC",
+      "right": "programmable logic controller",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-024",
+      "kind": "ALIAS_SENSE",
+      "left": ".NET",
+      "right": "Visual Basic",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": [
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-025",
+      "kind": "ALIAS_SENSE",
+      "left": ".NET",
+      "right": "Visual Basic",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": [
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-026",
+      "kind": "ALIAS_SENSE",
+      "left": "Data Analysis",
+      "right": "statistics",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-027",
+      "kind": "ALIAS_SENSE",
+      "left": "JSON",
+      "right": "Open source model",
+      "gold": "UNRELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-028",
+      "kind": "ALIAS_SENSE",
+      "left": "data analysis",
+      "right": "statistics",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-029",
+      "kind": "ALIAS_SENSE",
+      "left": "SEM",
+      "right": "search engine optimisation",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-030",
+      "kind": "ALIAS_SENSE",
+      "left": "data collection",
+      "right": "statistics",
+      "gold": "UNRELATED",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-031",
+      "kind": "ALIAS_SENSE",
+      "left": "data privacy",
+      "right": "data protection",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-032",
+      "kind": "ALIAS_SENSE",
+      "left": "CCD",
+      "right": "digital camera sensors",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-033",
+      "kind": "ALIAS_SENSE",
+      "left": "negotiation skills",
+      "right": "negotiate compromises",
+      "gold": "SAME_CONCEPT",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "MISSED_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-034",
+      "kind": "ALIAS_SENSE",
+      "left": "financial planning",
+      "right": "financial forecasting",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-035",
+      "kind": "ALIAS_SENSE",
+      "left": "attention to detail",
+      "right": "attend to detail",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-036",
+      "kind": "ALIAS_SENSE",
+      "left": "Tax return",
+      "right": "manage financial and material resources",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-037",
+      "kind": "ALIAS_SENSE",
+      "left": "cloud computing",
+      "right": "cloud technologies",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-038",
+      "kind": "ALIAS_SENSE",
+      "left": "decision-making",
+      "right": "make decisions",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-039",
+      "kind": "ALIAS_SENSE",
+      "left": "problem-solving skills",
+      "right": "solve problems",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-040",
+      "kind": "ALIAS_SENSE",
+      "left": "manage projects",
+      "right": "perform project management",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-041",
+      "kind": "ALIAS_SENSE",
+      "left": "decision-making",
+      "right": "make decisions",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-042",
+      "kind": "ALIAS_SENSE",
+      "left": "pharmaceutical companies",
+      "right": "pharmaceutical industry",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-043",
+      "kind": "ALIAS_SENSE",
+      "left": "Information Management",
+      "right": "knowledge management",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-044",
+      "kind": "ALIAS_SENSE",
+      "left": "Risk Assessment",
+      "right": "risk management",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-045",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ml",
+      "right": "machine learning",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-046",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ml",
+      "right": "ML (computer programming)",
+      "gold": "UNRELATED",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-047",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "gimp",
+      "right": "graphics editor software",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-048",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ict",
+      "right": "in-circuit test",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-049",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ppc",
+      "right": "make strategic business decisions",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-050",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ppc",
+      "right": "pay-per-click",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-051",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "gimp",
+      "right": "GIMP (graphics editor software)",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-052",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ict",
+      "right": "computer technology",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-053",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "quality management",
+      "right": "quality assurance procedures",
+      "gold": "PARENT",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED"
+      ]
+     },
+     {
+      "case_id": "bm1-054",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "quality management",
+      "right": "manage quality",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-055",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "data processing",
+      "right": "process data",
+      "gold": "UNRELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "LEXICAL_COLLISION"
+      ]
+     },
+     {
+      "case_id": "bm1-056",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "cascading style sheets",
+      "right": "CSS",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-057",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "conflict resolution",
+      "right": "resolve conflicts",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-058",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "conflict resolution",
+      "right": "conflict management",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-059",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "google docs",
+      "right": "office software",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-060",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "collaborate with colleagues",
+      "right": "liaise with colleagues",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-061",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "core maintenance",
+      "right": "maintain cores",
+      "gold": "UNRELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "LEXICAL_COLLISION"
+      ]
+     },
+     {
+      "case_id": "bm1-062",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "labview",
+      "right": "integrated development environment software",
+      "gold": "CHILD",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-063",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "vector",
+      "right": "vector line integrals",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-064",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Loops",
+      "right": "Iteration and loops",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-065",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Theory of NP-Completeness: Polynomial time",
+      "right": "Memory Hierarchy etc. (ii) Notion of polynomial time computation. (iii) Polynomial time reductions",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-066",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Incremental Development of Code",
+      "right": "Development",
+      "gold": "INSUFFICIENT_EVIDENCE",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": [
+       "INSUFFICIENT_CONTEXT_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-067",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "File system metadata",
+      "right": "Remote and Distributed file systems",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-068",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Equations",
+      "right": "Maxwell\u2019s equations",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-069",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "meaning of Prosperity in detail",
+      "right": "K Means",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-070",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Equations",
+      "right": "equations solvable for y",
+      "gold": "PARENT",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED"
+      ]
+     },
+     {
+      "case_id": "bm1-071",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Irrotational fields and Solenoidal fields",
+      "right": "Field",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-072",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Irrotational fields and Solenoidal fields",
+      "right": "field",
+      "gold": "RELATED",
+      "prediction": "PARTIAL_OVERLAP",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-073",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Incremental Development of Code",
+      "right": "code",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-074",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "User",
+      "right": "requirements including user interface",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-075",
+      "kind": "DIAGNOSTIC",
+      "left": "Angular momentum about a point of a rigid body in",
+      "right": "Angular",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-076",
+      "kind": "DIAGNOSTIC",
+      "left": "Angular",
+      "right": "Angular",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-077",
+      "kind": "DIAGNOSTIC",
+      "left": "Neural Network models",
+      "right": "design computer network",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-078",
+      "kind": "DIAGNOSTIC",
+      "left": "Neural Network models",
+      "right": "artificial neural networks",
+      "gold": "SAME_CONCEPT",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-079",
+      "kind": "DIAGNOSTIC",
+      "left": "SQL Injection",
+      "right": "SQL",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-080",
+      "kind": "DIAGNOSTIC",
+      "left": "Database Management Systems",
+      "right": "database",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-081",
+      "kind": "DIAGNOSTIC",
+      "left": "Database Management Systems",
+      "right": "database management systems",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-082",
+      "kind": "DIAGNOSTIC",
+      "left": "Version control tools - GIT and GitHub",
+      "right": "tools for software configuration management",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-083",
+      "kind": "DIAGNOSTIC",
+      "left": "Buffer overflow attack in C and C++",
+      "right": "C++",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-084",
+      "kind": "DIAGNOSTIC",
+      "left": "Convolutional Neural Network: The Convolution Operation",
+      "right": "deep learning",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-085",
+      "kind": "DIAGNOSTIC",
+      "left": "JavaScript",
+      "right": "Java (computer programming)",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-086",
+      "kind": "DIAGNOSTIC",
+      "left": "Python for Data Science",
+      "right": "Python (computer programming)",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-087",
+      "kind": "DIAGNOSTIC",
+      "left": "Influence of AI and ML in Clinical and Genomic Diagnostics",
+      "right": "machine learning",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     }
+    ],
+    "by_kind": {
+     "ALIAS_SENSE": {
+      "cases": 45,
+      "correct": 26,
+      "accuracy": 0.5778
+     },
+     "AMBIGUOUS_TAXONOMY_LABEL": {
+      "cases": 18,
+      "correct": 8,
+      "accuracy": 0.4444
+     },
+     "AMBIGUOUS_TOPIC_MAPPING": {
+      "cases": 12,
+      "correct": 5,
+      "accuracy": 0.4167
+     },
+     "DIAGNOSTIC": {
+      "cases": 13,
+      "correct": 6,
+      "accuracy": 0.4615
+     }
+    }
+   },
+   "QWEN_VALIDATED": {
+    "cases": 88,
+    "predicted": 88,
+    "abstained": 0,
+    "definite_predictions": 52,
+    "non_definite_predictions": 36,
+    "precision_on_definite": 0.5385,
+    "accuracy": 0.3182,
+    "macro_precision": 0.195,
+    "macro_recall": 0.1575,
+    "macro_f1": 0.1689,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "precision": 0.3077,
+      "recall": 0.2222,
+      "f1": 0.2581,
+      "support": 18,
+      "predicted": 13
+     },
+     "PARENT": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 2,
+      "predicted": 0
+     },
+     "CHILD": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "support": 12,
+      "predicted": 0
+     },
+     "RELATED": {
+      "precision": 0.3333,
+      "recall": 0.1304,
+      "f1": 0.1875,
+      "support": 23,
+      "predicted": 9
+     },
+     "PARTIAL_OVERLAP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4,
+      "predicted": 1
+     },
+     "UNRELATED": {
+      "precision": 0.7241,
+      "recall": 0.75,
+      "f1": 0.7368,
+      "support": 28,
+      "predicted": 29
+     },
+     "AMBIGUOUS": {
+      "precision": 0.0,
+      "recall": null,
+      "f1": null,
+      "support": 0,
+      "predicted": 4
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1,
+      "predicted": 32
+     }
+    },
+    "confusion_matrix": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 4,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 12,
+      "NO_PREDICTION": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 2,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 3,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 7,
+      "NO_PREDICTION": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 3,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 3,
+      "PARTIAL_OVERLAP": 1,
+      "UNRELATED": 5,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 10,
+      "NO_PREDICTION": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 1,
+      "NO_PREDICTION": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 2,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 21,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 2,
+      "NO_PREDICTION": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "NO_PREDICTION": 0
+     }
+    },
+    "critical_errors": {
+     "FALSE_RELATED": 5,
+     "MISSED_SAME_CONCEPT": 14,
+     "ALIAS_SENSE_ERROR": 6,
+     "ACRONYM_SENSE_ERROR": 5,
+     "FALSE_SAME_CONCEPT": 9,
+     "LEXICAL_COLLISION": 2,
+     "INSUFFICIENT_CONTEXT_ERROR": 1,
+     "UNSUPPORTED_TAXONOMY_EVIDENCE": 1
+    },
+    "critical_error_rate": 0.1136,
+    "per_case": [
+     {
+      "case_id": "bm1-000",
+      "kind": "ALIAS_SENSE",
+      "left": "AWS",
+      "right": "cloud technologies",
+      "gold": "CHILD",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-001",
+      "kind": "ALIAS_SENSE",
+      "left": "AWS",
+      "right": "cloud technologies",
+      "gold": "CHILD",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-002",
+      "kind": "ALIAS_SENSE",
+      "left": "quality systems",
+      "right": "quality control systems",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-003",
+      "kind": "ALIAS_SENSE",
+      "left": "repair processes",
+      "right": "types of metal manufacturing processes",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-004",
+      "kind": "ALIAS_SENSE",
+      "left": "did",
+      "right": "direct inward dialing",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-005",
+      "kind": "ALIAS_SENSE",
+      "left": "Call",
+      "right": "Computer Assisted Language Learning",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-006",
+      "kind": "ALIAS_SENSE",
+      "left": "IT",
+      "right": "computer technology",
+      "gold": "SAME_CONCEPT",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "MISSED_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-007",
+      "kind": "ALIAS_SENSE",
+      "left": "re",
+      "right": "reverse engineering",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-008",
+      "kind": "ALIAS_SENSE",
+      "left": "HR",
+      "right": "human resource management",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-009",
+      "kind": "ALIAS_SENSE",
+      "left": "re",
+      "right": "reverse engineering",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-010",
+      "kind": "ALIAS_SENSE",
+      "left": "MS Excel",
+      "right": "use spreadsheets software",
+      "gold": "CHILD",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-011",
+      "kind": "ALIAS_SENSE",
+      "left": "SEM",
+      "right": "search engine optimisation",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-012",
+      "kind": "ALIAS_SENSE",
+      "left": "CMM",
+      "right": "ICT process quality models",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-013",
+      "kind": "ALIAS_SENSE",
+      "left": "it",
+      "right": "computer technology",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-014",
+      "kind": "ALIAS_SENSE",
+      "left": "HR",
+      "right": "human resource management",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-015",
+      "kind": "ALIAS_SENSE",
+      "left": "CRM",
+      "right": "customer relationship management",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-016",
+      "kind": "ALIAS_SENSE",
+      "left": "quality systems",
+      "right": "quality control systems",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-017",
+      "kind": "ALIAS_SENSE",
+      "left": "Technical Skills",
+      "right": "apply knowledge of science, technology and engineering",
+      "gold": "UNRELATED",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "ALIAS_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-018",
+      "kind": "ALIAS_SENSE",
+      "left": "CRM",
+      "right": "customer relationship management",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-019",
+      "kind": "ALIAS_SENSE",
+      "left": "call",
+      "right": "Computer Assisted Language Learning",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-020",
+      "kind": "ALIAS_SENSE",
+      "left": "MS Excel",
+      "right": "use spreadsheets software",
+      "gold": "CHILD",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-021",
+      "kind": "ALIAS_SENSE",
+      "left": "Technical Skills",
+      "right": "apply knowledge of science, technology and engineering",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-022",
+      "kind": "ALIAS_SENSE",
+      "left": "electrical equipment",
+      "right": "maintain electronic equipment",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-023",
+      "kind": "ALIAS_SENSE",
+      "left": "PLC",
+      "right": "programmable logic controller",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-024",
+      "kind": "ALIAS_SENSE",
+      "left": ".NET",
+      "right": "Visual Basic",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": [
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-025",
+      "kind": "ALIAS_SENSE",
+      "left": ".NET",
+      "right": "Visual Basic",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": [
+       "ALIAS_SENSE_ERROR",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-026",
+      "kind": "ALIAS_SENSE",
+      "left": "Data Analysis",
+      "right": "statistics",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-027",
+      "kind": "ALIAS_SENSE",
+      "left": "JSON",
+      "right": "Open source model",
+      "gold": "UNRELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-028",
+      "kind": "ALIAS_SENSE",
+      "left": "data analysis",
+      "right": "statistics",
+      "gold": "RELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-029",
+      "kind": "ALIAS_SENSE",
+      "left": "SEM",
+      "right": "search engine optimisation",
+      "gold": "UNRELATED",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-030",
+      "kind": "ALIAS_SENSE",
+      "left": "data collection",
+      "right": "statistics",
+      "gold": "UNRELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-031",
+      "kind": "ALIAS_SENSE",
+      "left": "data privacy",
+      "right": "data protection",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-032",
+      "kind": "ALIAS_SENSE",
+      "left": "CCD",
+      "right": "digital camera sensors",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-033",
+      "kind": "ALIAS_SENSE",
+      "left": "negotiation skills",
+      "right": "negotiate compromises",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-034",
+      "kind": "ALIAS_SENSE",
+      "left": "financial planning",
+      "right": "financial forecasting",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-035",
+      "kind": "ALIAS_SENSE",
+      "left": "attention to detail",
+      "right": "attend to detail",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-036",
+      "kind": "ALIAS_SENSE",
+      "left": "Tax return",
+      "right": "manage financial and material resources",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-037",
+      "kind": "ALIAS_SENSE",
+      "left": "cloud computing",
+      "right": "cloud technologies",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-038",
+      "kind": "ALIAS_SENSE",
+      "left": "decision-making",
+      "right": "make decisions",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-039",
+      "kind": "ALIAS_SENSE",
+      "left": "problem-solving skills",
+      "right": "solve problems",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-040",
+      "kind": "ALIAS_SENSE",
+      "left": "manage projects",
+      "right": "perform project management",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-041",
+      "kind": "ALIAS_SENSE",
+      "left": "decision-making",
+      "right": "make decisions",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-042",
+      "kind": "ALIAS_SENSE",
+      "left": "pharmaceutical companies",
+      "right": "pharmaceutical industry",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-043",
+      "kind": "ALIAS_SENSE",
+      "left": "Information Management",
+      "right": "knowledge management",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-044",
+      "kind": "ALIAS_SENSE",
+      "left": "Risk Assessment",
+      "right": "risk management",
+      "gold": "CHILD",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-045",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ml",
+      "right": "machine learning",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-046",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ml",
+      "right": "ML (computer programming)",
+      "gold": "UNRELATED",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED",
+       "ACRONYM_SENSE_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-047",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "gimp",
+      "right": "graphics editor software",
+      "gold": "CHILD",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-048",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ict",
+      "right": "in-circuit test",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-049",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ppc",
+      "right": "make strategic business decisions",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-050",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ppc",
+      "right": "pay-per-click",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-051",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "gimp",
+      "right": "GIMP (graphics editor software)",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-052",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "ict",
+      "right": "computer technology",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-053",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "quality management",
+      "right": "quality assurance procedures",
+      "gold": "PARENT",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED"
+      ]
+     },
+     {
+      "case_id": "bm1-054",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "quality management",
+      "right": "manage quality",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-055",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "data processing",
+      "right": "process data",
+      "gold": "UNRELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "LEXICAL_COLLISION"
+      ]
+     },
+     {
+      "case_id": "bm1-056",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "cascading style sheets",
+      "right": "CSS",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-057",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "conflict resolution",
+      "right": "resolve conflicts",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-058",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "conflict resolution",
+      "right": "conflict management",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-059",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "google docs",
+      "right": "office software",
+      "gold": "CHILD",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-060",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "collaborate with colleagues",
+      "right": "liaise with colleagues",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-061",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "core maintenance",
+      "right": "maintain cores",
+      "gold": "UNRELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT",
+       "LEXICAL_COLLISION"
+      ]
+     },
+     {
+      "case_id": "bm1-062",
+      "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+      "left": "labview",
+      "right": "integrated development environment software",
+      "gold": "CHILD",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-063",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "vector",
+      "right": "vector line integrals",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-064",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Loops",
+      "right": "Iteration and loops",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-065",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Theory of NP-Completeness: Polynomial time",
+      "right": "Memory Hierarchy etc. (ii) Notion of polynomial time computation. (iii) Polynomial time reductions",
+      "gold": "PARTIAL_OVERLAP",
+      "prediction": "AMBIGUOUS",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-066",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Incremental Development of Code",
+      "right": "Development",
+      "gold": "INSUFFICIENT_EVIDENCE",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": [
+       "INSUFFICIENT_CONTEXT_ERROR"
+      ]
+     },
+     {
+      "case_id": "bm1-067",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "File system metadata",
+      "right": "Remote and Distributed file systems",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-068",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Equations",
+      "right": "Maxwell\u2019s equations",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-069",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "meaning of Prosperity in detail",
+      "right": "K Means",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-070",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Equations",
+      "right": "equations solvable for y",
+      "gold": "PARENT",
+      "prediction": "RELATED",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_RELATED"
+      ]
+     },
+     {
+      "case_id": "bm1-071",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Irrotational fields and Solenoidal fields",
+      "right": "Field",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-072",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Irrotational fields and Solenoidal fields",
+      "right": "field",
+      "gold": "RELATED",
+      "prediction": "PARTIAL_OVERLAP",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-073",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "Incremental Development of Code",
+      "right": "code",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-074",
+      "kind": "AMBIGUOUS_TOPIC_MAPPING",
+      "left": "User",
+      "right": "requirements including user interface",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-075",
+      "kind": "DIAGNOSTIC",
+      "left": "Angular momentum about a point of a rigid body in",
+      "right": "Angular",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-076",
+      "kind": "DIAGNOSTIC",
+      "left": "Angular",
+      "right": "Angular",
+      "gold": "SAME_CONCEPT",
+      "prediction": "SAME_CONCEPT",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-077",
+      "kind": "DIAGNOSTIC",
+      "left": "Neural Network models",
+      "right": "design computer network",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-078",
+      "kind": "DIAGNOSTIC",
+      "left": "Neural Network models",
+      "right": "artificial neural networks",
+      "gold": "SAME_CONCEPT",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-079",
+      "kind": "DIAGNOSTIC",
+      "left": "SQL Injection",
+      "right": "SQL",
+      "gold": "RELATED",
+      "prediction": "UNRELATED",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-080",
+      "kind": "DIAGNOSTIC",
+      "left": "Database Management Systems",
+      "right": "database",
+      "gold": "RELATED",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-081",
+      "kind": "DIAGNOSTIC",
+      "left": "Database Management Systems",
+      "right": "database management systems",
+      "gold": "SAME_CONCEPT",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": [
+       "MISSED_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-082",
+      "kind": "DIAGNOSTIC",
+      "left": "Version control tools - GIT and GitHub",
+      "right": "tools for software configuration management",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-083",
+      "kind": "DIAGNOSTIC",
+      "left": "Buffer overflow attack in C and C++",
+      "right": "C++",
+      "gold": "RELATED",
+      "prediction": "RELATED",
+      "correct": true,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-084",
+      "kind": "DIAGNOSTIC",
+      "left": "Convolutional Neural Network: The Convolution Operation",
+      "right": "deep learning",
+      "gold": "CHILD",
+      "prediction": "INSUFFICIENT_EVIDENCE",
+      "correct": false,
+      "critical_errors": []
+     },
+     {
+      "case_id": "bm1-085",
+      "kind": "DIAGNOSTIC",
+      "left": "JavaScript",
+      "right": "Java (computer programming)",
+      "gold": "UNRELATED",
+      "prediction": "UNRELATED",
+      "correct": true,
+      "critical_errors": [
+       "UNSUPPORTED_TAXONOMY_EVIDENCE"
+      ]
+     },
+     {
+      "case_id": "bm1-086",
+      "kind": "DIAGNOSTIC",
+      "left": "Python for Data Science",
+      "right": "Python (computer programming)",
+      "gold": "CHILD",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     },
+     {
+      "case_id": "bm1-087",
+      "kind": "DIAGNOSTIC",
+      "left": "Influence of AI and ML in Clinical and Genomic Diagnostics",
+      "right": "machine learning",
+      "gold": "RELATED",
+      "prediction": "SAME_CONCEPT",
+      "correct": false,
+      "critical_errors": [
+       "FALSE_SAME_CONCEPT"
+      ]
+     }
+    ],
+    "by_kind": {
+     "ALIAS_SENSE": {
+      "cases": 45,
+      "correct": 12,
+      "accuracy": 0.2667
+     },
+     "AMBIGUOUS_TAXONOMY_LABEL": {
+      "cases": 18,
+      "correct": 6,
+      "accuracy": 0.3333
+     },
+     "AMBIGUOUS_TOPIC_MAPPING": {
+      "cases": 12,
+      "correct": 5,
+      "accuracy": 0.4167
+     },
+     "DIAGNOSTIC": {
+      "cases": 13,
+      "correct": 5,
+      "accuracy": 0.3846
+     }
+    }
+   }
+  },
+  "baseline_vs_model": {
+   "QWEN_RAW": {
+    "both_correct": 0,
+    "baseline_correct_model_incorrect": 0,
+    "baseline_incorrect_model_correct": 45,
+    "both_incorrect": 43,
+    "cases_baseline_correct_model_incorrect": [],
+    "cases_baseline_incorrect_model_correct": [
+     "bm1-003",
+     "bm1-004",
+     "bm1-005",
+     "bm1-007",
+     "bm1-009",
+     "bm1-012",
+     "bm1-013",
+     "bm1-014",
+     "bm1-019",
+     "bm1-021",
+     "bm1-022",
+     "bm1-023",
+     "bm1-026",
+     "bm1-028",
+     "bm1-029",
+     "bm1-031",
+     "bm1-032",
+     "bm1-034",
+     "bm1-035",
+     "bm1-036",
+     "bm1-037",
+     "bm1-038",
+     "bm1-039",
+     "bm1-040",
+     "bm1-041",
+     "bm1-043",
+     "bm1-045",
+     "bm1-048",
+     "bm1-049",
+     "bm1-050",
+     "bm1-051",
+     "bm1-052",
+     "bm1-056",
+     "bm1-057",
+     "bm1-063",
+     "bm1-068",
+     "bm1-069",
+     "bm1-071",
+     "bm1-073",
+     "bm1-075",
+     "bm1-076",
+     "bm1-077",
+     "bm1-081",
+     "bm1-083",
+     "bm1-085"
+    ]
+   },
+   "QWEN_VALIDATED": {
+    "both_correct": 0,
+    "baseline_correct_model_incorrect": 0,
+    "baseline_incorrect_model_correct": 28,
+    "both_incorrect": 60,
+    "cases_baseline_correct_model_incorrect": [],
+    "cases_baseline_incorrect_model_correct": [
+     "bm1-003",
+     "bm1-004",
+     "bm1-005",
+     "bm1-007",
+     "bm1-009",
+     "bm1-012",
+     "bm1-013",
+     "bm1-019",
+     "bm1-021",
+     "bm1-022",
+     "bm1-032",
+     "bm1-036",
+     "bm1-045",
+     "bm1-048",
+     "bm1-049",
+     "bm1-050",
+     "bm1-051",
+     "bm1-057",
+     "bm1-063",
+     "bm1-068",
+     "bm1-069",
+     "bm1-071",
+     "bm1-073",
+     "bm1-075",
+     "bm1-076",
+     "bm1-077",
+     "bm1-083",
+     "bm1-085"
+    ]
+   }
+  }
+ }
+}

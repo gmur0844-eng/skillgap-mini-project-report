@@ -1,0 +1,36 @@
+{
+ "name": "gap_reasoning_suite_v1",
+ "suite_sha256": "492f5e40f1d59da32074a85d648aab7ada0be24fc10ffbfd30b8b7d760a180de",
+ "label_source": "AUTHOR_LABELLED, written AFTER the Phase 4-6 implementation; a specification of intended behaviour on invented disciplines (agricultural, applied chemistry PG, commerce, civil), scheme layouts and programme levels. Not an accuracy estimate. No human labels.",
+ "contents": {
+  "programmes": 4,
+  "course_kind_cases": 15,
+  "course_status_cases": 15,
+  "level_cases": 10,
+  "scope_cases": 4,
+  "coverage_cases": 12,
+  "gap_cases": 23
+ },
+ "first_run_2026-10-08": {
+  "course_kind": "13/15",
+  "course_status": "14/15",
+  "level": "10/10",
+  "scope": "4/4",
+  "coverage": "12/12",
+  "gap": "20/23",
+  "failures_and_what_was_done": [
+   "course_kind 'MOOCS / Training / Internship' read PROJECT (kind priority, not position): left as a known failure, not tuned",
+   "course_kind 'Engineering Workshop Practice' read THEORY (head noun 'Practice'): left as a known failure, not tuned",
+   "course_status AG601: a 'SEMESTER - VI' heading was not recognised because its hyphen counted as a numeric column; code fixed (a semester/year heading may carry one numeric token); a general rule, re-checked on the six real documents (unchanged)",
+   "gap: 3 civil cases expected DEPTH/STRUCTURAL/LIMITED but the authored civil document had only semesters III-IV, so the code correctly called it PARTIAL; the SUITE was wrong and was completed with filler semesters"
+  ]
+ },
+ "after_fix": {
+  "course_kind": "13/15",
+  "course_status": "15/15",
+  "level": "10/10",
+  "scope": "4/4",
+  "coverage": "12/12",
+  "gap": "23/23"
+ }
+}

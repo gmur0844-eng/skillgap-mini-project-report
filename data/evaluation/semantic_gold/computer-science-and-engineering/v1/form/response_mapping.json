@@ -1,0 +1,118 @@
+{
+ "version": "semantic-form-responses-v1",
+ "form_title": "Semantic Relationship Validation — Curriculum Intelligence",
+ "package": "semantic_gold/computer-science-and-engineering/v1",
+ "benchmark": {
+  "path": "data/evaluation/semantic_benchmark_v1/benchmark.json",
+  "sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7"
+ },
+ "output_columns": [
+  {
+   "name": "case_id",
+   "from": "the reference in the question title 'Case <n> (Ref. <case_id>) — …'",
+   "join": "benchmark_id of the frozen benchmark; model outputs are joined on it later, outside the form"
+  },
+  {
+   "name": "reviewer_id",
+   "from": "the 'Reviewer ID' answer (pseudonymous; no name or email is collected)"
+  },
+  {
+   "name": "relationship_label",
+   "from": "'Case <n> (Ref. <case_id>) — Relationship'",
+   "mapping": {
+    "A — Same concept": "SAME_CONCEPT",
+    "B — Parent / broader concept": "PARENT",
+    "C — Child / more specific concept": "CHILD",
+    "D — Related": "RELATED",
+    "E — Partial overlap": "PARTIAL_OVERLAP",
+    "F — Unrelated": "UNRELATED",
+    "G — Ambiguous": "AMBIGUOUS",
+    "H — Insufficient evidence": "INSUFFICIENT_EVIDENCE"
+   }
+  },
+  {
+   "name": "confidence",
+   "from": "'Case <n> (Ref. <case_id>) — Confidence'",
+   "mapping": {
+    "High": "HIGH",
+    "Moderate": "MODERATE",
+    "Low": "LOW"
+   }
+  },
+  {
+   "name": "reasoning",
+   "from": "'Case <n> (Ref. <case_id>) — Optional reasoning' (empty when not given)"
+  },
+  {
+   "name": "timestamp",
+   "from": "the 'Timestamp' column Google Forms adds to every response"
+  }
+ ],
+ "one_row_per": "reviewer × case",
+ "expected_rows_per_reviewer": 48,
+ "case_ids": [
+  "bm1-001",
+  "bm1-002",
+  "bm1-003",
+  "bm1-006",
+  "bm1-007",
+  "bm1-009",
+  "bm1-010",
+  "bm1-013",
+  "bm1-014",
+  "bm1-015",
+  "bm1-018",
+  "bm1-019",
+  "bm1-020",
+  "bm1-021",
+  "bm1-022",
+  "bm1-023",
+  "bm1-026",
+  "bm1-027",
+  "bm1-029",
+  "bm1-031",
+  "bm1-034",
+  "bm1-035",
+  "bm1-037",
+  "bm1-038",
+  "bm1-043",
+  "bm1-045",
+  "bm1-046",
+  "bm1-050",
+  "bm1-052",
+  "bm1-053",
+  "bm1-057",
+  "bm1-058",
+  "bm1-059",
+  "bm1-060",
+  "bm1-061",
+  "bm1-063",
+  "bm1-066",
+  "bm1-069",
+  "bm1-070",
+  "bm1-071",
+  "bm1-072",
+  "bm1-075",
+  "bm1-076",
+  "bm1-078",
+  "bm1-080",
+  "bm1-084",
+  "bm1-086",
+  "bm1-087"
+ ],
+ "never_in_form_or_export": [
+  "Qwen prediction",
+  "Claude prediction",
+  "system prediction",
+  "expected label",
+  "gold label",
+  "model confidence",
+  "model score",
+  "benchmark result",
+  "promotion gate",
+  "whether the model was correct",
+  "why a case was selected"
+ ],
+ "importer": "python3 scripts/evaluation/semantic_validation.py import-form --package <package dir> --csv <Google Forms responses CSV> [--long-out <responses_long.csv>]",
+ "apps_script_export": "exportResponsesLongCsv() in create_semantic_validation_form.gs writes the same columns to a CSV in the form owner's Google Drive"
+}

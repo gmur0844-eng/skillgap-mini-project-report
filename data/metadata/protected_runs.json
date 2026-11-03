@@ -1,0 +1,4 @@
+{
+ "_comment": "Release runs the pipeline must never delete or regenerate in place (pipeline.ProtectedRunError).",
+ "protected_runs": ["c066b227857f9eaf"]
+}

@@ -1,0 +1,102 @@
+{
+ "_comment": "Semantic hard cases from the engine-2.0 specification. They are TEST DATA: no production code names them. 'expected' is the relationship stated or implied by the specification (assistant-transcribed), NOT a human label; it is used only to report behaviour, never to tune thresholds.",
+ "label_source": "SPECIFICATION_TRANSCRIBED_BY_ASSISTANT",
+ "cases": [
+  {
+   "case_id": "hc01",
+   "left": "Angular",
+   "right": "angular momentum",
+   "expected": "UNRELATED"
+  },
+  {
+   "case_id": "hc02",
+   "left": "Java",
+   "right": "JavaScript",
+   "expected": "UNRELATED"
+  },
+  {
+   "case_id": "hc03",
+   "left": "Git",
+   "right": "GitHub",
+   "expected": "RELATED"
+  },
+  {
+   "case_id": "hc04",
+   "left": "C",
+   "right": "C++",
+   "expected": "RELATED"
+  },
+  {
+   "case_id": "hc05",
+   "left": "Python",
+   "right": "python snake",
+   "expected": "UNRELATED"
+  },
+  {
+   "case_id": "hc06",
+   "left": "SQL",
+   "right": "SQL injection",
+   "expected": "RELATED"
+  },
+  {
+   "case_id": "hc07",
+   "left": "cloud",
+   "right": "cloud computing",
+   "expected": "PARENT"
+  },
+  {
+   "case_id": "hc08",
+   "left": "AI",
+   "right": "artificial intelligence",
+   "expected": "SAME_CONCEPT"
+  },
+  {
+   "case_id": "hc09",
+   "left": "ML",
+   "right": "machine learning",
+   "expected": "SAME_CONCEPT"
+  },
+  {
+   "case_id": "hc10",
+   "left": "CNN",
+   "right": "convolutional neural network",
+   "expected": "SAME_CONCEPT"
+  },
+  {
+   "case_id": "hc11",
+   "left": "database",
+   "right": "database management system",
+   "expected": "RELATED"
+  },
+  {
+   "case_id": "hc12",
+   "left": ".NET",
+   "right": "Visual Basic",
+   "expected": "RELATED"
+  },
+  {
+   "case_id": "hc13",
+   "left": "React",
+   "right": "chemical reaction",
+   "expected": "UNRELATED"
+  },
+  {
+   "case_id": "hc14",
+   "left": "network",
+   "right": "neural network",
+   "expected": "UNRELATED"
+  },
+  {
+   "case_id": "hc15",
+   "left": "model",
+   "right": "mathematical model",
+   "expected": "PARENT"
+  },
+  {
+   "case_id": "hc16",
+   "left": "testing",
+   "right": "statistical testing",
+   "expected": "PARENT"
+  }
+ ]
+}

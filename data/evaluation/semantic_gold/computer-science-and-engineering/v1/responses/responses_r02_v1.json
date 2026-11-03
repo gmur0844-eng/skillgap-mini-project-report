@@ -1,0 +1,1794 @@
+{
+ "package": "semantic_gold/computer-science-and-engineering/v1",
+ "benchmark_sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+ "reviewer_id": "R02",
+ "reviewer_source": "HUMAN_AI_ASSISTED",
+ "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+ "counts_as_independent_label": false,
+ "source": {
+  "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+  "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04"
+ },
+ "source_notes": [
+  "all 5 submissions in the file carry the same timestamp (2026-10-22T09:03:53.725000); independent form submissions are stamped when each is sent"
+ ],
+ "imported_at": "2026-10-22T07:36:46+00:00",
+ "records": [
+  {
+   "record_uid": "resp:d37d087cc5ea7225",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-001",
+   "question_number": 1,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "AWS (Amazon Web Services) is a specific cloud-service platform and therefore a child of the broader category 'cloud technologies,' which encompasses all cloud computing platforms and delivery models. The hierarchy is unambiguous.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "C3",
+     "confidence": "D3",
+     "reasoning": "E3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:4f8caa5886c6d340",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-002",
+   "question_number": 2,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Quality systems is a broad umbrella encompassing quality planning, assurance, control, and improvement. Quality control systems form one operational subset. Neither term is a strict synonym nor is quality systems purely a parent in all taxonomies; substantial overlap exists but so does divergence.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "F3",
+     "confidence": "G3",
+     "reasoning": "H3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:f9dc4a65ee5565a0",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-003",
+   "question_number": 3,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Repair processes in an automotive servicing context address correcting faults in existing components. Metal manufacturing processes concern primary fabrication (casting, forging, rolling). The shared word 'processes' is insufficient; the industrial phases and technical domains are distinct.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "I3",
+     "confidence": "J3",
+     "reasoning": "K3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:34cd26660407d25c",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-006",
+   "question_number": 4,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "IT (Information Technology) covers computing, networking, telecommunications, and data governance. Computer technology in the reference is narrower, focusing on hardware and software systems. IT subsumes computer technology but also includes communications infrastructure beyond pure computing.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "L3",
+     "confidence": "M3",
+     "reasoning": "N3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:53d1ea130a3bca21",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-007",
+   "question_number": 5,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "H — Insufficient evidence",
+    "code": "INSUFFICIENT_EVIDENCE"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'re' is a two-character fragment with no context confirming it abbreviates reverse engineering. No classification can be made reliably.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "O3",
+     "confidence": "P3",
+     "reasoning": "Q3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:ae2bd409e7a512e2",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-009",
+   "question_number": 6,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "H — Insufficient evidence",
+    "code": "INSUFFICIENT_EVIDENCE"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Same reasoning as Case 5. A second occurrence of the same unexpanded fragment does not resolve the ambiguity.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "R3",
+     "confidence": "S3",
+     "reasoning": "T3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:60f16605faf2ef55",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-010",
+   "question_number": 7,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "MS Excel is a named spreadsheet application. 'Use spreadsheet software' is the general competency. Excel is one specific tool enabling that competency, making it a child of the broader concept.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "U3",
+     "confidence": "V3",
+     "reasoning": "W3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:167c768194a242c7",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-013",
+   "question_number": 8,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "H — Insufficient evidence",
+    "code": "INSUFFICIENT_EVIDENCE"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'it' in an oil-rig safety context is almost certainly a pronoun, not an IT abbreviation. No basis exists for linking it to computer technology.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "X3",
+     "confidence": "Y3",
+     "reasoning": "Z3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:d3cbc2066a29ee04",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-014",
+   "question_number": 9,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "HR typically denotes the Human Resources department or function — a practical instantiation of human resource management as a discipline. The function is more specific than the full academic and managerial discipline.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AA3",
+     "confidence": "AB3",
+     "reasoning": "AC3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:c4a8f336952f56cd",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-015",
+   "question_number": 10,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "CRM is the standard abbreviation for Customer Relationship Management. In a marketing-automation context the abbreviation and the expansion are semantically identical.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AD3",
+     "confidence": "AE3",
+     "reasoning": "AF3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:fa491db0318fad3b",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-018",
+   "question_number": 11,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Second occurrence of the same CRM abbreviation in a business/sales context. Same classification applies.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AG3",
+     "confidence": "AH3",
+     "reasoning": "AI3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:33d63236bdb4cfa9",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-019",
+   "question_number": 12,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'call' in a sales-reporting context means a telephone or client call. CALL (Computer Assisted Language Learning) is an educational technology acronym. The shared string is coincidental; the domains are entirely different.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AJ3",
+     "confidence": "AK3",
+     "reasoning": "AL3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:ec52042508092584",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-020",
+   "question_number": 13,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Same as Case 7: MS Excel is a specific spreadsheet tool; 'use spreadsheet software' is the general competency it fulfils.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AM3",
+     "confidence": "AN3",
+     "reasoning": "AO3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:21b124f4561a8ab5",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-021",
+   "question_number": 14,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "'Technical Skills' in a tax context covers domain-specific knowledge such as tax-law interpretation. The reference concept emphasises STEM application. Both involve specialised knowledge, but the domain of Concept A only partially intersects with the STEM orientation of Concept B.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AP3",
+     "confidence": "AQ3",
+     "reasoning": "AR3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:ab7887a3ed10ddbf",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-022",
+   "question_number": 15,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Electrical equipment (motors, switchgear, cabling) and electronic equipment (control circuits, sensors) are related but distinct engineering categories. The object named differs from the activity-plus-object in Concept B, and electrical does not equal electronic in engineering taxonomy.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AS3",
+     "confidence": "AT3",
+     "reasoning": "AU3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:391337588301dcad",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-023",
+   "question_number": 16,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "PLC is the universal abbreviation for Programmable Logic Controller. In an industrial-automation context the abbreviation and expansion denote the same device.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AV3",
+     "confidence": "AW3",
+     "reasoning": "AX3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:a978893edac27725",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-026",
+   "question_number": 17,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Data analysis is an applied practice drawing on statistical methods. Statistics is the broader mathematical discipline providing foundational methods. Data analysis is therefore a child application of statistics.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "AY3",
+     "confidence": "AZ3",
+     "reasoning": "BA3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:118f42ff4280d85f",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-027",
+   "question_number": 18,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "JSON is a data-interchange format specification. 'Open source model' is a software-development and licensing paradigm. A format standard is not a development model; the concepts belong to different layers of abstraction.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BB3",
+     "confidence": "BC3",
+     "reasoning": "BD3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:22b3058ae8e879ec",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-029",
+   "question_number": 19,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "In an SAP/enterprise context SEM stands for Strategic Enterprise Management, a BI module. The reference concept is search engine optimisation, a digital-marketing practice. The domains are mismatched and the abbreviation's meaning in this context is unrelated to SEO.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BE3",
+     "confidence": "BF3",
+     "reasoning": "BG3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:5f7dddce6252bf75",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-031",
+   "question_number": 20,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Data privacy concerns individual rights over personal data. Data protection encompasses technical and organisational measures securing data. The concepts share substantial scope but are not identical; neither fully contains the other in all regulatory frameworks.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BH3",
+     "confidence": "BI3",
+     "reasoning": "BJ3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:48cd0ef50151f3ba",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-034",
+   "question_number": 21,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "B — Parent / broader concept",
+    "code": "PARENT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Financial planning is the overarching process of goal-setting, analysis, and strategy in finance, of which forecasting is one tool. Financial forecasting is a specific sub-activity within financial planning.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BK3",
+     "confidence": "BL3",
+     "reasoning": "BM3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:809d86752ce8cb53",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-035",
+   "question_number": 22,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'Attention to detail' and 'attend to detail' are nominal and verbal forms of the same professional competency. No semantic distinction exists between them.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BN3",
+     "confidence": "BO3",
+     "reasoning": "BP3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:7de59dce8eeaec67",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-037",
+   "question_number": 23,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Cloud computing is a specific paradigm for delivering computing resources over the internet. Computer technology is the broader field. Cloud computing is one distinct sub-area of the computer technology domain.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BQ3",
+     "confidence": "BR3",
+     "reasoning": "BS3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:bedebe3f61253d1d",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-038",
+   "question_number": 24,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'Decision-making' and 'make decisions' are morphological variants (noun phrase and verb phrase) of the same competency with identical meaning in a professional context.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BT3",
+     "confidence": "BU3",
+     "reasoning": "BV3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:6397c84f73a1df7e",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-043",
+   "question_number": 25,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Information management concerns governing structured data and documents. Knowledge management additionally encompasses tacit knowledge and organisational learning. The two are related disciplines sharing significant scope but diverging enough in purpose and method to be treated as related rather than hierarchically contained.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BW3",
+     "confidence": "BX3",
+     "reasoning": "BY3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:834ba4397f77edcf",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-045",
+   "question_number": 26,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "G — Ambiguous",
+    "code": "AMBIGUOUS"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Lowercase 'ml' is ambiguous: it commonly abbreviates millilitres in scientific writing but machine learning in data-science contexts. The data-science course context makes machine learning the more probable reading, but the abbreviation is not expanded in the source, preserving residual ambiguity.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "BZ3",
+     "confidence": "CA3",
+     "reasoning": "CB3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:8c16199d57b32a9d",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-046",
+   "question_number": 27,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "G — Ambiguous",
+    "code": "AMBIGUOUS"
+   },
+   "confidence": {
+    "raw": "Low",
+    "code": "LOW"
+   },
+   "reasoning": "If 'ml' means machine learning (the field) and Concept B refers to the ML programming language, these are unrelated. If both mean machine learning in a programming context, they could be the same. The ambiguity in both terms prevents confident classification.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "CC3",
+     "confidence": "CD3",
+     "reasoning": "CE3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:bdd920ed383fc1bb",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-050",
+   "question_number": 28,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'ppc' is the standard lowercase abbreviation for pay-per-click in digital-advertising contexts. The abbreviation and its expansion are the same concept.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "CF3",
+     "confidence": "CG3",
+     "reasoning": "CH3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:d764468b75ced397",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-052",
+   "question_number": 29,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "ICT (Information and Communication Technologies) explicitly includes telecommunications and communication networks beyond computing. 'Computer technology' in the reference is narrower. ICT subsumes computer technology but extends further, making partial overlap the most accurate classification.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "CI3",
+     "confidence": "CJ3",
+     "reasoning": "CK3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:bb01a6db0718dade",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-053",
+   "question_number": 30,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "B — Parent / broader concept",
+    "code": "PARENT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Quality management is the overarching discipline covering planning, assurance, control, and improvement. Quality assurance procedures are a specific operational subset — documented steps for verifying process conformance — within quality management.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "CL3",
+     "confidence": "CM3",
+     "reasoning": "CN3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:f24d11922072097c",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-057",
+   "question_number": 31,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'Conflict resolution' and 'resolve conflicts' are the nominal and verbal forms of the same professional competency with identical meaning.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "CO3",
+     "confidence": "CP3",
+     "reasoning": "CQ3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:d1b0fd7ec3fb4d8e",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-058",
+   "question_number": 32,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Conflict resolution aims to bring disputes to a definitive conclusion. Conflict management is broader, encompassing de-escalation, mediation, accommodation, and other strategies. The two overlap substantially but neither contains the other in standard competency taxonomies.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "CR3",
+     "confidence": "CS3",
+     "reasoning": "CT3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:4d15d1f337ddd98e",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-059",
+   "question_number": 33,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Google Docs is a specific word-processing application. Office software is the broader product category encompassing word processors, spreadsheets, presentation tools, and other productivity applications. Google Docs is one instance within that category.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "CU3",
+     "confidence": "CV3",
+     "reasoning": "CW3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:78758b44399fc132",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-060",
+   "question_number": 34,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "E — Partial overlap",
+    "code": "PARTIAL_OVERLAP"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "Collaboration involves joint working toward a shared goal; liaising involves information exchange and coordination. Both entail collegial interaction but diverge in whether joint output is produced. Neither concept fully contains the other.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "CX3",
+     "confidence": "CY3",
+     "reasoning": "CZ3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:e30e8587f6e5ba4b",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-061",
+   "question_number": 35,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "'Core maintenance' and 'maintain cores' are nominal and verbal forms of the same maintenance task in a technical context. Residual uncertainty exists because the exact type of core is not specified in the source.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DA3",
+     "confidence": "DB3",
+     "reasoning": "DC3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:10427ea55af3a1a8",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-063",
+   "question_number": 36,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "B — Parent / broader concept",
+    "code": "PARENT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'Vector' is a foundational mathematical concept encompassing vector algebra, vector spaces, and all vector operations including line integrals. Vector line integrals are a specific topic within vector calculus, making Concept A the parent.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DD3",
+     "confidence": "DE3",
+     "reasoning": "DF3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:49642616d158fa57",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-066",
+   "question_number": 37,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Incremental Development of Code is a specific software-engineering methodology. Development is the broad activity encompassing all software-creation approaches. Concept A is a more specific concept within Concept B.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DG3",
+     "confidence": "DH3",
+     "reasoning": "DI3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:4cc2badc6f329493",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-069",
+   "question_number": 38,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'Meaning of Prosperity in detail' is a social-science or economics topic. 'K Means' is a machine-learning clustering algorithm. The word 'means' is coincidental; the domains are entirely different.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DJ3",
+     "confidence": "DK3",
+     "reasoning": "DL3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:75fa8c74187905b3",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-070",
+   "question_number": 39,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "B — Parent / broader concept",
+    "code": "PARENT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'Equations' is a broad mathematical topic. 'Equations solvable for y' is a specific subset — those expressible in explicit form y = f(x). Concept A is the parent.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DM3",
+     "confidence": "DN3",
+     "reasoning": "DO3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:1a0da3e319f3e2d7",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-071",
+   "question_number": 40,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Irrotational and solenoidal fields are vector-calculus concepts from physics. 'Field' in discrete mathematics is an algebraic structure with binary operations. The term 'field' is a well-known polysemy across mathematics; the referents are unrelated.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DP3",
+     "confidence": "DQ3",
+     "reasoning": "DR3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:6dad099097967283",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-072",
+   "question_number": 41,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "In Physics-I, 'field' denotes vector fields generally. Irrotational (curl-free) and solenoidal (divergence-free) are specific subtypes of vector fields. Concept A names specific child concepts within the broader Concept B.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DS3",
+     "confidence": "DT3",
+     "reasoning": "DU3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:ede0b7216f3cde8b",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-075",
+   "question_number": 42,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "F — Unrelated",
+    "code": "UNRELATED"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "Angular momentum is a classical-mechanics concept. Angular is a web-application framework. The shared word is coincidental; the domains are physics and software engineering respectively.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DV3",
+     "confidence": "DW3",
+     "reasoning": "DX3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:347877193669182b",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-076",
+   "question_number": 43,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "In a software-development job context, 'Angular' unambiguously refers to the Angular web framework. The abbreviated name and the qualified reference concept denote the same entity.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "DY3",
+     "confidence": "DZ3",
+     "reasoning": "EA3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:8b58c398f2554a29",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-078",
+   "question_number": 44,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "A — Same concept",
+    "code": "SAME_CONCEPT"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'Neural Network models' in an ML/AI course context refers to the same class of computational models as 'artificial neural networks.' The qualifier 'artificial' is implicit and standard in ML contexts.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "EB3",
+     "confidence": "EC3",
+     "reasoning": "ED3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:519f4496a0b44171",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-080",
+   "question_number": 45,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "A DBMS is a specific category of software for managing databases. 'Database' is the broader concept space. In curriculum taxonomies DBMS is conventionally grouped as a child topic under the database domain.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "EE3",
+     "confidence": "EF3",
+     "reasoning": "EG3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:d7692f60c8bccd8a",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-084",
+   "question_number": 46,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "The convolution operation is a specific mechanism within CNNs, which are a specific architecture within deep learning. Concept A is a highly specific subtopic that falls within the broader Concept B.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "EH3",
+     "confidence": "EI3",
+     "reasoning": "EJ3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:f4e2c74c64150d0e",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-086",
+   "question_number": 47,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "C — Child / more specific concept",
+    "code": "CHILD"
+   },
+   "confidence": {
+    "raw": "High",
+    "code": "HIGH"
+   },
+   "reasoning": "'Python for Data Science' is a specialised application of Python programming focusing on data-manipulation libraries and analytical workflows. 'Python (computer programming)' is the broader language concept. Concept A is a child of Concept B.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "EK3",
+     "confidence": "EL3",
+     "reasoning": "EM3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  },
+  {
+   "record_uid": "resp:b7d5eaa31f6770de",
+   "package": "semantic_gold/computer-science-and-engineering/v1",
+   "question_id": "bm1-087",
+   "question_number": 48,
+   "reviewer_id": "R02",
+   "submission": 1,
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "reviewer_source_meaning": "a person answered after reading about the topics with an AI assistant",
+   "attestation_note": "Stated by the project owner on 2026-10-22: the reviewers used AI to read about the topics, then chose their answers themselves.",
+   "human_reviewed": true,
+   "counts_as_independent_label": false,
+   "imported_at": "2026-10-22T07:36:46+00:00",
+   "relationship": {
+    "raw": "D — Related",
+    "code": "RELATED"
+   },
+   "confidence": {
+    "raw": "Moderate",
+    "code": "MODERATE"
+   },
+   "reasoning": "The topic examines how AI and ML influence healthcare diagnostics — an applied domain topic that uses machine learning among other tools. It is not a subtype of machine learning itself, nor is it equivalent to it. The relationship is one of application and relevance.",
+   "status": "COMPLETED",
+   "issues": [],
+   "provenance": {
+    "file": "Semantic_Relationship_Validation_R01_to_R05.xlsx",
+    "file_sha256": "3d9eae28292e5ffb32ac6d829a79020779d9130906cd1253bc382069d649ae04",
+    "sheet": "Form responses 1",
+    "row": 3,
+    "cells": {
+     "relationship": "EN3",
+     "confidence": "EO3",
+     "reasoning": "EP3"
+    },
+    "submitted_at": "2026-10-22T09:03:53.725000"
+   }
+  }
+ ]
+}

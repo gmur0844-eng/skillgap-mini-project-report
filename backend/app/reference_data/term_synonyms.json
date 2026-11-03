@@ -1,0 +1,32 @@
+{
+  "_comment": "Data-driven synonym GROUPS for curriculum-topic matching. Each inner list holds phrasings treated as fully interchangeable for matching purposes -- illustrative starter set only, matching the spec's own test examples. Deliberately EXCLUDES modified/broader forms (e.g. 'Advanced Data Structures', 'Data Structures and Algorithms') -- those are NOT synonyms of the base term and must not be added here; see the compound-concept and partial-relationship handling in core_knowledge_mapping.py instead.",
+  "groups": [
+    [
+      "Database Management System",
+      "Database Management Systems",
+      "Database Systems"
+    ],
+    [
+      "Operating System",
+      "Operating Systems",
+      "Operating System Concepts"
+    ],
+    [
+      "Computer Networks",
+      "Computer Networking",
+      "Data Communication and Networking"
+    ],
+    [
+      "Artificial Intelligence",
+      "Foundations of Artificial Intelligence",
+      "Introduction to AI"
+    ]
+  ],
+  "_applies_to_disciplines": [
+    "computer-science-and-engineering",
+    "computing-and-data",
+    "information-technology",
+    "artificial-intelligence-and-data-science"
+  ],
+  "_scope_comment": "Discipline keys (slugs of the discipline name recorded in the pipeline source manifest) this vocabulary applies to. The scoped loader (load_scoped_vocabulary) only applies it to topics from these disciplines, so e.g. 'CN' is never expanded to 'Computer Networks' inside a Chemical Engineering curriculum. Adding vocabulary for a new discipline = adding a new file under reference_data/vocab/, never code."
+}

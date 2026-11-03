@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-10-08",
+  "note": "implementation hashes at the single holdout evaluation; any later change requires a new holdout",
+  "files": {
+    "backend/app/knowledge_engine/skill_evidence.py": "c11e6af97f861cc51345b9a79f7415a204762efa97d863b4d8cd59c88e2a41ae",
+    "backend/app/knowledge_engine/relevance.py": "d77f99e8e11930701974e971a62377e9f1c8b485f1cf90b3b0e9a47cf70bf76c",
+    "scripts/analysis/skill_evidence_audit.py": "97dc031c48cc9eaff9717854174decb3589ce5af8a367dbc18502d59cc069bf4",
+    "scripts/analysis/relevance_audit.py": "4c5b70b96c4dfde57652181b2b0d89e7320e5b5455f3f347ba57873759506e0c",
+    "scripts/analysis/skill_qualification_audit.py": "c087ec6c2dbb21e50fe5e9e3372c035c945e7ba1b3fe76de89acce7f806e5363",
+    "backend/app/knowledge_engine/skill_qualification.py": "a88cd0d545951a5e99028814d7051ea9cc6ed42b5033d0e7bd0b03eb32732e05"
+  },
+  "post_holdout_changes": [
+    {
+      "file": "backend/app/knowledge_engine/skill_evidence.py",
+      "change": "added skill_gap_eligible(): skill-level gap eligibility now requires a confirmed-concept occurrence (found while preparing the release report: 'help customers', counted only under its own wording, could be gap-eligible at skill level). Mention-level qualification, which the holdout evaluates, is unchanged; holdout metrics re-run identical.",
+      "sha256_after": "b52d1ba73a4352f63031a512fcc1a6b489253929faf58cdc8e0b5f0248bde922"
+    },
+    {
+      "file": "scripts/analysis/skill_evidence_audit.py",
+      "change": "uses skill_gap_eligible; reports normalized vs unnormalized new demand",
+      "sha256_after": "6d10dd4e7ac626f698a198feb900f8571138f5f96d5bc00e1f1cec7c478fb0c5"
+    }
+  ]
+}

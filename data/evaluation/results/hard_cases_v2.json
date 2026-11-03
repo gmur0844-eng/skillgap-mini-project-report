@@ -1,0 +1,353 @@
+{
+ "label_source": "SPECIFICATION_TRANSCRIBED_BY_ASSISTANT (not human labels)",
+ "cases": [
+  {
+   "case_id": "hc01",
+   "left": "Angular",
+   "right": "angular momentum",
+   "expected": "UNRELATED",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": "RELATED",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc02",
+   "left": "Java",
+   "right": "JavaScript",
+   "expected": "UNRELATED",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "EXACT",
+    "esco_pref_label": "JavaScript",
+    "mapping_method": "prefLabel_exact",
+    "reason": "label match in the full ESCO v1.2.1 classification"
+   },
+   "left_inside_right_relation": null,
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc03",
+   "left": "Git",
+   "right": "GitHub",
+   "expected": "RELATED",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "left_inside_right_relation": null,
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc04",
+   "left": "C",
+   "right": "C++",
+   "expected": "RELATED",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: label shorter than 2 characters"
+   },
+   "right_esco": {
+    "status": "EXACT",
+    "esco_pref_label": "C++",
+    "mapping_method": "prefLabel_exact",
+    "reason": "label match in the full ESCO v1.2.1 classification"
+   },
+   "left_inside_right_relation": "RELATED",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc05",
+   "left": "Python",
+   "right": "python snake",
+   "expected": "UNRELATED",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": "RELATED",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc06",
+   "left": "SQL",
+   "right": "SQL injection",
+   "expected": "RELATED",
+   "left_esco": {
+    "status": "EXACT",
+    "esco_pref_label": "SQL",
+    "mapping_method": "prefLabel_exact",
+    "reason": "label match in the full ESCO v1.2.1 classification; prefLabel precedence over other concepts' alt/hidden labels"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": "RELATED",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc07",
+   "left": "cloud",
+   "right": "cloud computing",
+   "expected": "PARENT",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "NORMALIZED",
+    "esco_pref_label": "cloud technologies",
+    "mapping_method": "altLabel_full_taxonomy",
+    "reason": "label match in the full ESCO v1.2.1 classification"
+   },
+   "left_inside_right_relation": "RELATED",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc08",
+   "left": "AI",
+   "right": "artificial intelligence",
+   "expected": "SAME_CONCEPT",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": null,
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc09",
+   "left": "ML",
+   "right": "machine learning",
+   "expected": "SAME_CONCEPT",
+   "left_esco": {
+    "status": "AMBIGUOUS",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "label belongs to more than one ESCO concept in the full ESCO v1.2.1 classification"
+   },
+   "right_esco": {
+    "status": "EXACT",
+    "esco_pref_label": "machine learning",
+    "mapping_method": "prefLabel_exact",
+    "reason": "label match in the full ESCO v1.2.1 classification"
+   },
+   "left_inside_right_relation": null,
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc10",
+   "left": "CNN",
+   "right": "convolutional neural network",
+   "expected": "SAME_CONCEPT",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": null,
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc11",
+   "left": "database",
+   "right": "database management system",
+   "expected": "RELATED",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": "RELATED",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc12",
+   "left": ".NET",
+   "right": "Visual Basic",
+   "expected": "RELATED",
+   "left_esco": {
+    "status": "NORMALIZED",
+    "esco_pref_label": "Visual Basic",
+    "mapping_method": "altLabel_full_taxonomy",
+    "reason": "label match in the full ESCO v1.2.1 classification"
+   },
+   "right_esco": {
+    "status": "EXACT",
+    "esco_pref_label": "Visual Basic",
+    "mapping_method": "prefLabel_exact",
+    "reason": "label match in the full ESCO v1.2.1 classification; prefLabel precedence over other concepts' alt/hidden labels"
+   },
+   "left_inside_right_relation": null,
+   "conflated_by_taxonomy": true,
+   "same_esco_concept": true
+  },
+  {
+   "case_id": "hc13",
+   "left": "React",
+   "right": "chemical reaction",
+   "expected": "UNRELATED",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": null,
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc14",
+   "left": "network",
+   "right": "neural network",
+   "expected": "UNRELATED",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": "PARTIAL",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc15",
+   "left": "model",
+   "right": "mathematical model",
+   "expected": "PARENT",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": "PARTIAL",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  },
+  {
+   "case_id": "hc16",
+   "left": "testing",
+   "right": "statistical testing",
+   "expected": "PARENT",
+   "left_esco": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "LABEL_CONTEXT_DEPENDENT: single ordinary word: the text match does not establish the skill sense"
+   },
+   "right_esco": {
+    "status": "UNMAPPED",
+    "esco_pref_label": null,
+    "mapping_method": null,
+    "reason": "no label in the full ESCO v1.2.1 English classification matches this surface"
+   },
+   "left_inside_right_relation": "PARTIAL",
+   "conflated_by_taxonomy": false,
+   "same_esco_concept": false
+  }
+ ],
+ "summary": {
+  "cases": 16,
+  "conflated_by_taxonomy": 1,
+  "left_held_back_by_label_evidence_rule": 13,
+  "left_inside_right_relation": {
+   "DIRECT": 0,
+   "PARTIAL": 3,
+   "RELATED": 6,
+   "INCIDENTAL": 0,
+   "null": 7
+  }
+ }
+}

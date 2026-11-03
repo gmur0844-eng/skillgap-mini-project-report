@@ -1,0 +1,258 @@
+{
+ "base": {
+  "run_id": "84d7737ccb8e4d87",
+  "documents": {
+   "aicte-ug-cse-model": "REFERENCE",
+   "cbit-be-cse-r22": "PREVIOUS_VERSION",
+   "cbit-be-cse-r22a": "TARGET",
+   "iitk-btech-cse-cos-2024": "PEER",
+   "nitw-btech-cse-2024-25": "PEER"
+  },
+  "postings": 100,
+  "companies": 95,
+  "posting_date_range": {
+   "earliest": "2026-09-22",
+   "latest": "2026-09-22"
+  },
+  "populations": [
+   {
+    "population_id": "CURRENT_JOB_DATASET_2026_09",
+    "eligible_postings": 100,
+    "trend_status": "INSUFFICIENT_DATA",
+    "granularity": null,
+    "qualifying_periods": 1,
+    "date_basis": null
+   }
+  ],
+  "skills_normalized": 357,
+  "skills_eligible": 120,
+  "demand_skills": 115,
+  "demand_by_support": {
+   "INSUFFICIENT_EVIDENCE": 90,
+   "SUPPORTED": 5,
+   "OBSERVED": 20
+  },
+  "gaps_v2": {
+   "INSUFFICIENT_EVIDENCE": 92,
+   "PARTIAL": 13,
+   "COVERED": 10
+  },
+  "confirmed_gaps": 0,
+  "gaps_needing_review": 0,
+  "recommendations_issued": 0,
+  "withheld_for_review": 1,
+  "not_recommended": 114,
+  "occupations_established": 22,
+  "occupations_by_state": {
+   "AMBIGUOUS": 4,
+   "CANDIDATE": 11,
+   "EXACT": 18,
+   "INSUFFICIENT_EVIDENCE": 45,
+   "UNMAPPED": 19,
+   "VARIANT": 3
+  },
+  "peers_available": [
+   "Indian Institute of Technology Kanpur",
+   "National Institute of Technology Warangal"
+  ],
+  "peers_missing": [
+   "IIT Bombay B.Tech CSE",
+   "IIT Delhi B.Tech CSE",
+   "IIT Madras B.Tech CSE",
+   "NIT Tiruchirappalli B.Tech CSE"
+  ],
+  "topic_mappings_by_status": {
+   "INSUFFICIENT_EVIDENCE": 3886,
+   "MODEL_SUGGESTED": 226,
+   "REVIEW_REQUIRED": 281,
+   "REFERENCE_MAPPED": 33
+  },
+  "concepts": 1318
+ },
+ "new": {
+  "run_id": "c066b227857f9eaf",
+  "documents": {
+   "aicte-ug-cse-model": "REFERENCE",
+   "cbit-be-cse-r22": "PREVIOUS_VERSION",
+   "cbit-be-cse-r22a": "TARGET",
+   "iitk-btech-cse-cos-2024": "PEER",
+   "nitw-btech-cse-2024-25": "PEER",
+   "nitt-btech-cse-2024-25": "PEER"
+  },
+  "postings": 498,
+  "companies": 106,
+  "posting_date_range": {
+   "earliest": "2023-05-08",
+   "latest": "2026-10-01"
+  },
+  "populations": [
+   {
+    "population_id": "CURRENT_JOB_DATASET_2026_09",
+    "eligible_postings": 100,
+    "trend_status": "INSUFFICIENT_DATA",
+    "granularity": null,
+    "qualifying_periods": 1,
+    "date_basis": "posting publication date"
+   },
+   {
+    "population_id": "EMPLOYER_JOB_BOARDS_IN",
+    "eligible_postings": 398,
+    "trend_status": "INSUFFICIENT_DATA",
+    "granularity": null,
+    "qualifying_periods": 1,
+    "date_basis": "snapshot date (postings open on the job boards that day)"
+   }
+  ],
+  "skills_normalized": 660,
+  "skills_eligible": 247,
+  "demand_skills": 243,
+  "demand_by_support": {
+   "INSUFFICIENT_EVIDENCE": 122,
+   "OBSERVED": 53,
+   "SUPPORTED": 27,
+   "HIGH_SUPPORT": 41
+  },
+  "gaps_v2": {
+   "INSUFFICIENT_EVIDENCE": 202,
+   "COVERED": 17,
+   "PARTIAL": 20,
+   "MISSING": 4
+  },
+  "confirmed_gaps": 11,
+  "gaps_needing_review": 5,
+  "recommendations_issued": 11,
+  "withheld_for_review": 14,
+  "not_recommended": 218,
+  "occupations_established": 61,
+  "occupations_by_state": {
+   "AMBIGUOUS": 44,
+   "CANDIDATE": 115,
+   "EXACT": 39,
+   "INSUFFICIENT_EVIDENCE": 131,
+   "UNMAPPED": 161,
+   "VARIANT": 8
+  },
+  "peers_available": [
+   "Indian Institute of Technology Kanpur",
+   "National Institute of Technology Warangal",
+   "National Institute of Technology Tiruchirappalli"
+  ],
+  "peers_missing": [
+   "IIT Bombay B.Tech CSE",
+   "IIT Delhi B.Tech CSE",
+   "IIT Madras B.Tech CSE"
+  ],
+  "topic_mappings_by_status": {
+   "INSUFFICIENT_EVIDENCE": 3886,
+   "MODEL_SUGGESTED": 226,
+   "REVIEW_REQUIRED": 281,
+   "REFERENCE_MAPPED": 33
+  },
+  "concepts": 1318
+ },
+ "files": {
+  "added": [],
+  "removed": [],
+  "changed": [
+   "evaluation.json",
+   "health.json",
+   "industry/curriculum_skill_coverage.jsonl",
+   "industry/curriculum_skill_mentions.jsonl",
+   "industry/esco_mappings.jsonl",
+   "industry/evidence_traces.jsonl",
+   "industry/exports/industry_demand.csv",
+   "industry/exports/recommendations.csv",
+   "industry/exports/skill_gaps.csv",
+   "industry/industry_demand.jsonl",
+   "industry/industry_health.json",
+   "industry/industry_review_queue.jsonl",
+   "industry/ingestion_summary.json",
+   "industry/population_scope.json",
+   "industry/posting_records.jsonl",
+   "industry/postings.jsonl",
+   "industry/qualification_mentions.jsonl",
+   "industry/recommendation_suppressions.jsonl",
+   "industry/recommendations.jsonl",
+   "industry/segment_demand.jsonl",
+   "industry/segments.json",
+   "industry/skill_gaps.jsonl",
+   "industry/skill_mentions.jsonl",
+   "industry/skills.jsonl",
+   "industry/temporal_scope.json",
+   "industry_v2/dimension_demand.json",
+   "industry_v2/distributions.json",
+   "industry_v2/mentions_vs_postings.jsonl",
+   "industry_v2/occupation_analysis.json",
+   "industry_v2/occupation_resolution.jsonl",
+   "industry_v2/occupation_summary.json",
+   "industry_v2/segment_trend_scopes.jsonl",
+   "industry_v2/skill_clusters.json",
+   "industry_v2/skill_trends.jsonl",
+   "industry_v2/temporal_populations.json",
+   "intelligence/coverage_depth.jsonl",
+   "intelligence/curriculum_industry_lag.jsonl",
+   "intelligence/evidence_status.json",
+   "intelligence/graph_consistency.json",
+   "intelligence/graph_edges.jsonl",
+   "intelligence/graph_nodes.jsonl",
+   "intelligence/industry_trends.jsonl",
+   "intelligence/intelligence_report.json",
+   "intelligence/outcome_skill_mentions.jsonl",
+   "intelligence/peer_benchmark.json",
+   "intelligence/posting_occupations.jsonl",
+   "intelligence/semantic_decisions.jsonl",
+   "intelligence/semantic_pending_candidates.jsonl",
+   "intelligence/skill_gaps_v2.jsonl",
+   "intelligence/skill_taxonomy_context.jsonl",
+   "peers/peer_benchmark.json",
+   "peers/peer_relations.jsonl",
+   "peers/peer_review_candidates.jsonl",
+   "peers/peer_status.json",
+   "quarantine.jsonl"
+  ],
+  "unchanged": [
+   "concept_drift.jsonl",
+   "concept_edges.jsonl",
+   "concept_families.jsonl",
+   "concept_reference_status.jsonl",
+   "concept_skill_links.jsonl",
+   "concepts.jsonl",
+   "course_correspondence.jsonl",
+   "course_drift.jsonl",
+   "course_reference_matches.jsonl",
+   "courses.jsonl",
+   "exports/concept_drift.csv",
+   "exports/concepts.csv",
+   "exports/course_drift.csv",
+   "exports/topic_mappings.csv",
+   "industry/esco_audit.json",
+   "industry/esco_delta_audit.json",
+   "intelligence/prerequisite_recommendations.jsonl",
+   "intelligence/semantic_drift.jsonl",
+   "intelligence/topic_hierarchy.jsonl",
+   "prerequisites_unresolved.jsonl",
+   "review_queue.jsonl",
+   "review_queue_high_priority.json",
+   "skill_candidates.jsonl",
+   "topic_mappings.jsonl"
+  ]
+ },
+ "verdict": {
+  "materially_improved": true,
+  "notes": [
+   "industry evidence 100 -> 498 postings",
+   "trends remain not established",
+   "peer curricula 2 -> 3",
+   "established occupations 22 -> 61",
+   "skills with supported demand 5 -> 68",
+   "confirmed gaps 0 -> 11",
+   "recommendations issued 0 -> 11"
+  ]
+ },
+ "files_summary": {
+  "added": 0,
+  "removed": 0,
+  "changed": 55,
+  "unchanged": 24
+ }
+}

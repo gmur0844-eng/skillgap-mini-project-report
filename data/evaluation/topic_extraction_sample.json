@@ -1,0 +1,325 @@
+{
+ "description": "Random sample of 75 extracted topic fragments (25 per document, seed 20260927) drawn from SILVER, labelled TOPIC (usable curriculum content) or NOISE (bibliography, names, page numbers, headers, truncated or meaningless fragments) by reading the fragment together with its source line.",
+ "labelled_by": "assistant",
+ "human_validated": false,
+ "caveat": "Labels are the assistant's reading of the source text, not expert ground truth; borderline fragments (short list items, truncated but meaningful phrases) are a judgement call. Metrics from 75 items have wide uncertainty.",
+ "sampling": {
+  "seed": 20260927,
+  "per_document": 25,
+  "population": "all SILVER topic fragments of the run's documents, noise included"
+ },
+ "items": [
+  {
+   "topic_uid": "topic:55c7ac6f4115c1c2",
+   "label": "NOISE",
+   "note": "list item 'bath' has no standalone meaning"
+  },
+  {
+   "topic_uid": "topic:a8e19485defdd2c7",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:6c64056ec1f77d41",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:2ab6ff301946d2ac",
+   "label": "NOISE",
+   "note": "contributor name"
+  },
+  {
+   "topic_uid": "topic:19f13aba678108ec",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:1c58c777e28cab1b",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:ab9597ab06f9bb4d",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:8c323ab4d0de24de",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:7c243bfd4baf210e",
+   "label": "TOPIC",
+   "note": "objective-style sentence inside a Topics cell; names content (OSPF/BGP routing)"
+  },
+  {
+   "topic_uid": "topic:ecd9b46255b615da",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:26aa210a283500fa",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:6bc93d9fbd7ae58a",
+   "label": "NOISE",
+   "note": "line-wrap truncation"
+  },
+  {
+   "topic_uid": "topic:19cfa47c00579e0b",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:414d09cb5e3b1847",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:e7086d6813a1a023",
+   "label": "NOISE",
+   "note": "line-wrap truncation"
+  },
+  {
+   "topic_uid": "topic:a1810a356837c3c0",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:65a730f71fe77b2f",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:59cf465300fffe9d",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:0282ffb9d6a9449f",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:2ed9a3b40950d47a",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:7866d69205b22ffb",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:b9924d1d278522bb",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:da1d103656e62569",
+   "label": "TOPIC",
+   "note": "real unit content (D.C. circuits, Ohm's law); 'D. C.' looks like initials to the classifier"
+  },
+  {
+   "topic_uid": "topic:d5788fb17ea7c90f",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:45edf0f76d384f85",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:04de042e26f9b115",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:e35baddee7b9492a",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:3fa096ef2b40da6f",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:e84465cd4a7d5d35",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:205c7a4ee72bb4a3",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:76ff656645ad7e29",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:57b812d42cccbed3",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:bf04a585daceecda",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:30c99a134d939a1d",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:bd2fb5e12d2f8502",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:335f69902abe859c",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:1a257545aea1986b",
+   "label": "NOISE",
+   "note": "chemical formula fragment of a molecule list"
+  },
+  {
+   "topic_uid": "topic:0ed1ec5180761937",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:b4d2d840c1de72a7",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:0fd0d6a72b7182b5",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:38665247fab4c694",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:6ead9e24497a5805",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:8b1dd3aa5b2ee11b",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:0ca16aa11d259297",
+   "label": "TOPIC",
+   "note": "FFT is a real topic; rejected only for having fewer than 4 letters"
+  },
+  {
+   "topic_uid": "topic:4e1953957cc52b17",
+   "label": "TOPIC",
+   "note": "'CSS floating' is real content; fragment starts with 'and'"
+  },
+  {
+   "topic_uid": "topic:de5b85bcf80684d6",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:3ba99100842e9e65",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:38de6c9e716e8e78",
+   "label": "TOPIC",
+   "note": "several topics merged by dash separators; still content"
+  },
+  {
+   "topic_uid": "topic:38b7265a86f205f8",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:2f07632dd38806e9",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:5f2be9a6b8fc664c",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:0fbbc07053fb68f8",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:14789029fc4413de",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:45f0e2b39950af5b",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:e5a0bed4371ca6bc",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:1ee9b8af87ef817c",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:154915eb01dee7a9",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:c73b8a0ac442b118",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:25980ca049e42fbd",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:c4d3bce0fe26c2e1",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:102c3afd122fdc51",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:877833e1a85ece6d",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:1f6d2f3f917a1e35",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:57470fe3d1b77a45",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:cb296327bac0eba8",
+   "label": "NOISE",
+   "note": "additional-reading citation"
+  },
+  {
+   "topic_uid": "topic:f8d916f5648020a4",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:e79012fc8e8cf31e",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:30e6e3b447793786",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:0b0dfd963a7cbd04",
+   "label": "NOISE"
+  },
+  {
+   "topic_uid": "topic:def9b68dd75aba41",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:5a392a6927d3e7e7",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:68e26e4514ec8b9c",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:d1e980a89ada44e0",
+   "label": "TOPIC"
+  },
+  {
+   "topic_uid": "topic:d1b943d9ca19604d",
+   "label": "NOISE",
+   "note": "line-wrap truncation"
+  },
+  {
+   "topic_uid": "topic:784839631ca70752",
+   "label": "TOPIC"
+  }
+ ]
+}

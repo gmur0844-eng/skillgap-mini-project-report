@@ -1,0 +1,47 @@
+{
+ "fixture_id": "cbit_r22a_operating_systems",
+ "doc_id": "cbit-be-cse-r22a",
+ "source_sha256": "f98246ad7ea5342571639a0ce03619622806555fceb81bfd255daa7cc1377492",
+ "parser_fingerprint_at_snapshot": "a7f6801a5ad88f49",
+ "pages": {
+  "95": "\n\n22CSC15N\n                                       OPERATING SYSTEMS\nSEE                                                                             60 Marks\nCIE                                                                             40 Marks\n\nPREREQUISITE: Computer Architecture and Programming Fundamentals.\n\n1.   Understand the basic concepts and design of an operating system.\n2.   Interpret the structure and organization of the file system.\n3.   Learn Inter Process Communication mechanisms and memory management approaches.\n4.   Explore cloud infrastructures and technologies.\n\nCOURSE OUTCOMES: After the completion of this course, the student will be able to\n1.   Understand the basics of Operating systems and its major components.\n2.   Illustrate the concepts related to process management.\n3.   Distinguish various memory management techniques.\n4.   Apply concepts of process synchronization and deadlocks to a given situation.\n5.   Evaluate various file allocation methods and security as well as recovery features in the designing\n     Operating system.\n                                        CO-PO Articulation Matrix\n    CO 1         2     1     1      -      -    -    -     -     -      -    -      2        1       1\n    CO 2         3     3      -     3     1     -    -     -     -      -    -      2        2       2\n    CO 3         3     3     2      1     1     -    -     -     -      -    -      2        2       2\n    CO 4         3     3     1      3      -    -    -     -     -      -    -      2        2       2\n    CO 5         3     3     2      3     1     -    -     -     -      -    -      2        2       2\n\nUNIT-I\nIntroduction to Operating Systems: Computer System overview, Components of a computer system,\nfunctions of OS, Examples and different types of OS (RTOS vs. desktop vs. mobile etc.), OS\ndistributions and versions. OS architectures: Micro-kernel, Layered, Kernel Approaches and\nexamples, Linux/Unix OS Design and architecture overview.\n\nUNIT-II\nProcess management: Program vs. process, process states, Process Control Block (PCB), OS services\nand system calls (fork, wait, exec, getpid, getppid etc.), system calls vs. System programs, Process\nscheduling- Process context switching, scheduling algorithms, scheduling criteria. Process\nmanagement in Unix/Linux. Inter Process Communication: Linux IPC Mechanisms, RPC, RPC\nexception handling and Security issues.\n\nUNIT-III\nMemory Management: Memory view of a process, Process memory usage requirements, virtual and\nphysical memory related system calls (mmap, munmap, sbrk, mprotect). Address translation\nmechanisms      static mapping, segmentation, paging, page faults, page replacement algorithms, page\nsharing, read/write permissions, swapping. Memory management in Linux/Unix. Secondary Memory\nManagement: Disk structure, disk scheduling, disk management, buffering, swap space management.\n\n\n\n"
+ },
+ "extraction_methods": {
+  "95": "pdftotext_layout"
+ },
+ "expectations": {
+  "fixture_id": "cbit_r22a_operating_systems",
+  "course_code": "22CSC15N",
+  "course_title": "Operating Systems",
+  "prerequisite_contains": "Computer Architecture and Programming Fundamentals",
+  "unit_labels": [
+   "UNIT-I",
+   "UNIT-II",
+   "UNIT-III"
+  ],
+  "expected_topics": [
+   "Computer System overview",
+   "Components of a computer system",
+   "functions of OS",
+   "Micro-kernel",
+   "Process Control Block (PCB)",
+   "scheduling algorithms",
+   "Linux IPC Mechanisms",
+   "segmentation",
+   "paging",
+   "page replacement algorithms",
+   "disk scheduling",
+   "swap space management"
+  ],
+  "must_not_be_topics": [
+   "60 Marks",
+   "40 Marks",
+   "CO 1",
+   "CO-PO Articulation Matrix",
+   "Understand the basics of Operating systems and its major components"
+  ]
+ },
+ "labelled_by": "assistant",
+ "human_validated": false,
+ "caveat": "Expectations were written by the assistant from the page text, not by a curriculum expert. They are a regression baseline for known-good pages, not ground truth for the whole corpus. expected_topics lists a representative subset of each page's topics, so 'precision' here only counts extracted topics that match one of the listed items and is a lower bound."
+}

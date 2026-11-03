@@ -1,0 +1,7 @@
+# OPTIONAL: the local sentence-embedding backend ("sentence_transformer"). Not needed for the default analysis, which
+# uses TF-IDF. Approved 2026-10-21 (docs/TRANSFORMER_STRATEGY.md §8, items 1 and 2). Installs PyTorch (CPU) as a
+# dependency of sentence-transformers.
+#   pip install -r backend/requirements-embedding.txt
+# The model itself is downloaded separately: python scripts/semantic/fetch_embedding_model.py
+sentence-transformers>=3.0,<6
+huggingface_hub>=0.23

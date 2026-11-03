@@ -1,0 +1,515 @@
+{
+ "run_id": "84d7737ccb8e4d87",
+ "database": "skillgap_knowledge_final",
+ "layers": [
+  "GOLD",
+  "DB",
+  "API (service layer)",
+  "UI (payload labels)",
+  "DOCS"
+ ],
+ "classification_vocabulary": [
+  "TRUE_BUG",
+  "SCOPE_DIFFERENCE",
+  "DERIVED_METRIC",
+  "STALE_DOCUMENTATION",
+  "DISPLAY_LABEL_PROBLEM",
+  "ROUNDING_ONLY",
+  "EXPECTED_DIFFERENCE",
+  "UNRESOLVED"
+ ],
+ "summary": {
+  "SCOPE_DIFFERENCE": 5,
+  "NONE": 8,
+  "EXPECTED_DIFFERENCE": 1,
+  "STALE_DOCUMENTATION": 1
+ },
+ "inconsistent": [],
+ "checks": [
+  {
+   "metric": "courses (target)",
+   "definition": "courses of the TARGET document (all extracted, with or without clean topics)",
+   "layers": {
+    "GOLD": 113,
+    "DB": 113,
+    "API": 113,
+    "UI": "113 \"Target-curriculum courses\"",
+    "GOLD_all_roles": {
+     "REFERENCE": 40,
+     "PREVIOUS_VERSION": 36,
+     "TARGET": 113
+    },
+    "GOLD_target_with_clean_topics": 79,
+    "peer_benchmark_scope_target_courses": 79
+   },
+   "status": "CONSISTENT_WITH_SCOPE_DIFFERENCE",
+   "classification": "SCOPE_DIFFERENCE",
+   "cause": "113 = every TARGET course extracted; 79 = TARGET courses that have at least one clean topic (the peer benchmark compares topic content, so its scope counts only those); 189 = courses of all non-peer documents (TARGET + PREVIOUS_VERSION + REFERENCE; peers are not published)",
+   "action": "label both populations explicitly (UI + peer scope)"
+  },
+  {
+   "metric": "topics (target, clean)",
+   "definition": "TARGET topics with noise_label TOPIC (page provenance kept)",
+   "layers": {
+    "GOLD": 4426,
+    "DB": 4426,
+    "API": 4426,
+    "UI": "4426 \"Target-curriculum topics\"",
+    "GOLD_all_extracted_items": 8935,
+    "GOLD_by_role_clean": {
+     "REFERENCE:clean": 2242,
+     "REFERENCE:noise": 775,
+     "PREVIOUS_VERSION:clean": 957,
+     "PREVIOUS_VERSION:noise": 157,
+     "TARGET:clean": 4426,
+     "TARGET:noise": 378
+    },
+    "DOCS": null
+   },
+   "status": "CONSISTENT_WITH_SCOPE_DIFFERENCE",
+   "classification": "SCOPE_DIFFERENCE",
+   "cause": "8935 = every extracted topic item of the non-peer documents incl. noise (bibliography, fragments, ...); 4426 = clean TARGET topics",
+   "action": "UI label: 'target-curriculum topics'"
+  },
+  {
+   "metric": "concepts",
+   "definition": "concept clusters whose members include at least one TARGET topic",
+   "layers": {
+    "GOLD": 1093,
+    "GOLD_all_roles": 1318,
+    "DB_concept_run": 1318,
+    "API": 1093,
+    "UI": "1093 \"Target-curriculum concepts\"",
+    "by_roles": {
+     "PREVIOUS_VERSION+TARGET": 486,
+     "TARGET": 397,
+     "REFERENCE+TARGET": 144,
+     "PREVIOUS_VERSION+REFERENCE+TARGET": 66,
+     "REFERENCE": 182,
+     "PREVIOUS_VERSION": 13,
+     "PREVIOUS_VERSION+REFERENCE": 30
+    },
+    "DOCS_historical": "1,337 in engine 1.1/2.0 reports (runs up to d140f830ab26adeb); 1,318 from f173ee4fff47e2a6 on"
+   },
+   "status": "CONSISTENT_WITH_SCOPE_DIFFERENCE",
+   "classification": "SCOPE_DIFFERENCE",
+   "cause": "1318 = concepts of all non-peer documents; 1093 = those containing a TARGET topic. 1,337 is the count of earlier runs (before the topic-cleaning change of run f173ee4fff47e2a6), stated in the engine 1.1 / 2.0 reports and three methodology documents",
+   "action": "UI label 'target-curriculum concepts'; methodology docs annotated with the run they describe"
+  },
+  {
+   "metric": "postings",
+   "definition": "distinct eligible postings of population CURRENT_JOB_DATASET_2026_09",
+   "layers": {
+    "GOLD": 100,
+    "GOLD_posting_records": 100,
+    "DB": 100,
+    "API": 100,
+    "UI": "100 \"Industry postings\"",
+    "companies": 95,
+    "date_range": {
+     "earliest": "2026-09-22",
+     "latest": "2026-09-22"
+    },
+    "geography": {
+     "IN": 100
+    }
+   },
+   "status": "CONSISTENT",
+   "classification": null,
+   "cause": null,
+   "action": null
+  },
+  {
+   "metric": "skills",
+   "definition": "normalized industry skills eligible for analytics",
+   "layers": {
+    "GOLD_all_normalized": 357,
+    "GOLD_eligible": 120,
+    "GOLD_demand_rows": 115,
+    "GOLD_eligible_esco_mapped": 106,
+    "GOLD_demand_esco_mapped": 101,
+    "qualification_only_eligible": [
+     "computer science",
+     "computer technology",
+     "electrical engineering",
+     "fine arts",
+     "think innovatively"
+    ],
+    "DB_demand": 115,
+    "API": 120,
+    "UI": "120 \"Normalized industry skills eligible for analysis\" (115 demand-assessed (skill role in >= 1 posting); 106 mapped to ESCO; 357 normalized in total)"
+   },
+   "status": "CONSISTENT_WITH_SCOPE_DIFFERENCE",
+   "classification": "SCOPE_DIFFERENCE",
+   "cause": "357 = every normalized skill (incl. not eligible: uncategorized / off-discipline / alias review); 120 = eligible for analytics; 115 = demand rows: eligible skills with >= 1 posting where the mention role is SKILL (5 eligible skills occur only as qualification requirements: computer science, computer technology, electrical engineering, fine arts, think innovatively); 106 = eligible skills with an ESCO URI (EXACT/NORMALIZED/SEMANTIC_MATCH); 101 of the 115 demand skills",
+   "action": "UI label: 'normalized industry skills eligible for analysis'; state 115 demand-eligible separately"
+  },
+  {
+   "metric": "demand denominator",
+   "definition": "posting_count = distinct postings with an established SKILL mention; prevalence = posting_count / eligible postings",
+   "layers": {
+    "recomputed_mismatches": [],
+    "skill_posting_pairs_with_repeated_mentions": 29,
+    "prevalence_formula_violations": []
+   },
+   "status": "CONSISTENT",
+   "classification": null,
+   "cause": "a skill mentioned several times in one posting counts once (29 such skill/posting pairs)",
+   "action": null
+  },
+  {
+   "metric": "gaps (v2)",
+   "definition": "gap classification v2 (coverage depth) of the 115 demand skills",
+   "layers": {
+    "GOLD": {
+     "INSUFFICIENT_EVIDENCE": 92,
+     "PARTIAL": 13,
+     "COVERED": 10
+    },
+    "DB": {
+     "COVERED": 10,
+     "INSUFFICIENT_EVIDENCE": 92,
+     "PARTIAL": 13
+    },
+    "API_gap_summary": {
+     "INSUFFICIENT_EVIDENCE": 92,
+     "PARTIAL": 13,
+     "COVERED": 10
+    },
+    "API_headline": 0,
+    "UI": "0 \"Evidence-supported gaps\" — \"PARTIAL or MISSING with SUPPORTED demand; of 115 demand skills: 10 covered, 13 partial, 0 missing, 92 not enough evidence\"",
+    "by_class_and_demand_support": {
+     "INSUFFICIENT_EVIDENCE|INSUFFICIENT_EVIDENCE": 73,
+     "INSUFFICIENT_EVIDENCE|SUPPORTED": 4,
+     "PARTIAL|INSUFFICIENT_EVIDENCE": 13,
+     "COVERED|INSUFFICIENT_EVIDENCE": 4,
+     "COVERED|OBSERVED": 5,
+     "INSUFFICIENT_EVIDENCE|OBSERVED": 15,
+     "COVERED|SUPPORTED": 1
+    },
+    "partial_or_missing_with_supported_demand": [],
+    "v1": {
+     "INSUFFICIENT_EVIDENCE": 90,
+     "PARTIAL": 24,
+     "MISSING": 1
+    }
+   },
+   "status": "CONSISTENT",
+   "classification": null,
+   "cause": "the headline counts evidence-supported gaps: PARTIAL/MISSING with SUPPORTED/HIGH_SUPPORT demand (0); PARTIAL (13) and MISSING (0) are shown separately with their demand support. Resolved: before this release the headline was PARTIAL + MISSING under a label claiming supported demand (DISPLAY_LABEL_PROBLEM, run c8ecd067bb733f58)",
+   "action": null
+  },
+  {
+   "metric": "recommendations",
+   "definition": "recommendations produced / suppressed with reasons",
+   "layers": {
+    "GOLD": {
+     "supported": 0,
+     "suppressed": 115
+    },
+    "DB": {
+     "SUPPRESSED": 115
+    },
+    "API": {
+     "supported": 0,
+     "context": "115 withheld or suppressed with coded reasons"
+    },
+    "every_suppression_has_reason": true,
+    "suppression_reason_codes": {
+     "GAP_INSUFFICIENT_EVIDENCE": 90,
+     "INDUSTRY_SUPPORT_BELOW_THRESHOLD": 110,
+     "CLASSIFICATION_CONFLICT_REVIEW_REQUIRED": 1,
+     "ESCO_MAPPING_AMBIGUOUS": 10
+    },
+    "recommendation_vs_gap_v2_conflicts": []
+   },
+   "status": "CONSISTENT",
+   "classification": null,
+   "cause": null,
+   "action": null
+  },
+  {
+   "metric": "occupations",
+   "definition": "posting → ESCO occupation resolution (v2)",
+   "layers": {
+    "GOLD": {
+     "INSUFFICIENT_EVIDENCE": 45,
+     "CANDIDATE": 11,
+     "UNMAPPED": 19,
+     "AMBIGUOUS": 4,
+     "EXACT": 18,
+     "VARIANT": 3
+    },
+    "GOLD_established": 22,
+    "GOLD_by": {
+     "context": 1,
+     "title": 21
+    },
+    "summary_file": {
+     "established": 22,
+     "established_by_title": 21,
+     "established_by_context": 1,
+     "title_contradicted_by_context": 1
+    },
+    "DB": {
+     "UNMAPPED": 19,
+     "EXACT": 18,
+     "AMBIGUOUS": 4,
+     "VARIANT": 3,
+     "INSUFFICIENT_EVIDENCE": 45,
+     "CANDIDATE": 11
+    },
+    "API": {
+     "established": 22,
+     "established_share": 0.22,
+     "by_state": {
+      "AMBIGUOUS": 4,
+      "CANDIDATE": 11,
+      "EXACT": 18,
+      "INSUFFICIENT_EVIDENCE": 45,
+      "UNMAPPED": 19,
+      "VARIANT": 3
+     }
+    },
+    "DOCS": 22,
+    "contradicted_but_established": [],
+    "v1_posting_occupations_established": 22
+   },
+   "status": "CONSISTENT",
+   "classification": null,
+   "cause": null,
+   "action": null
+  },
+  {
+   "metric": "peer relations",
+   "definition": "semantic peer/reference relations",
+   "layers": {
+    "GOLD": {
+     "RELATED|SUPPORTED": 767,
+     "AMBIGUOUS|REVIEW_REQUIRED": 3119,
+     "SAME_CONCEPT|REVIEW_REQUIRED": 89,
+     "SAME_CONCEPT|SUPPORTED": 91,
+     "PARTIAL_OVERLAP|SUPPORTED": 1
+    },
+    "GOLD_total": 4067,
+    "DB": {
+     "SAME_CONCEPT:SUPPORTED": 91,
+     "SAME_CONCEPT:REVIEW_REQUIRED": 89,
+     "RELATED:SUPPORTED": 767,
+     "PARTIAL_OVERLAP:SUPPORTED": 1,
+     "AMBIGUOUS:REVIEW_REQUIRED": 3119
+    },
+    "DB_total": 4067,
+    "status": "PEER_DATA_PARTIAL",
+    "missing_requested": [
+     "IIT Bombay B.Tech CSE",
+     "IIT Delhi B.Tech CSE",
+     "IIT Madras B.Tech CSE",
+     "NIT Tiruchirappalli B.Tech CSE"
+    ],
+    "model_consulted_and_supported": 0,
+    "peer_topics_in_db": 0,
+    "peer_roles_in_target_concepts": 0,
+    "DOCS_supported": 859
+   },
+   "status": "CONSISTENT",
+   "classification": null,
+   "cause": null,
+   "action": null
+  },
+  {
+   "metric": "trends",
+   "definition": "trend states per population and skill",
+   "layers": {
+    "populations": {
+     "CURRENT_JOB_DATASET_2026_09": "INSUFFICIENT_DATA"
+    },
+    "skill_trend_states": {
+     "INSUFFICIENT_DATA": 115
+    },
+    "DB": {
+     "INSUFFICIENT_DATA": 115
+    },
+    "v1_temporal_scope": {
+     "trend_status": "INSUFFICIENT_EVIDENCE",
+     "period_granularity": "month",
+     "trend_label_for_all_skills": "INSUFFICIENT_DATA"
+    },
+    "gap_v2_industry_trend": {
+     "INSUFFICIENT_EVIDENCE": 115
+    }
+   },
+   "status": "CONSISTENT_WITH_SCOPE_DIFFERENCE",
+   "classification": "EXPECTED_DIFFERENCE",
+   "cause": "no trend is classified anywhere. Two vocabularies describe the same fact: the v1 industry stage writes trend_status INSUFFICIENT_EVIDENCE at month granularity, v2 writes INSUFFICIENT_DATA after evaluating week/month/quarter; gap v2 carries the v1 value. Both mean 'one period, no trend'",
+   "action": "UI shows one human label ('Not enough time periods for a trend') for both"
+  },
+  {
+   "metric": "drift",
+   "definition": "course drift (R22 → R22A) and concept drift",
+   "layers": {
+    "course_drift": {
+     "ADDED": 15,
+     "RETAINED": 12,
+     "RETAINED_RECODED": 6,
+     "REMOVED": 14,
+     "EVOLVED": 4
+    },
+    "course_drift_methods": {
+     "no previous-version course with the same normalized title": 15,
+     "normalized_title_identity": 18,
+     "no target-version course with the same normalized title": 14,
+     "topic_match_lineage": 4
+    },
+    "concept_drift": {
+     "ADDED": 46,
+     "EXPANDED": 34,
+     "REDUCED": 18,
+     "REMOVED": 18,
+     "RETAINED": 283,
+     "RETAINED_REWORDED": 185,
+     "UNCERTAIN": 160
+    },
+    "semantic_drift_categories": {
+     "REWORDED": 185,
+     "PERSISTENT": 283,
+     "INSUFFICIENT_EVIDENCE": 160,
+     "ADDED": 46,
+     "REMOVED": 18,
+     "EXPANDED": 34,
+     "REDUCED": 18
+    },
+    "DB_concept_drift": {
+     "UNCERTAIN": 160,
+     "REDUCED": 18,
+     "RETAINED": 283,
+     "ADDED": 46,
+     "EXPANDED": 34,
+     "REMOVED": 18,
+     "RETAINED_REWORDED": 185
+    },
+    "not_detected_at_concept_level": [
+     "EVOLVED",
+     "MERGED",
+     "RENAMED",
+     "SPLIT"
+    ]
+   },
+   "status": "CONSISTENT_WITH_SCOPE_DIFFERENCE",
+   "classification": "SCOPE_DIFFERENCE",
+   "cause": "course-level EVOLVED (4) exists: a one-to-one topic-match lineage detector (share >= related_min_share both ways, MODEL_SUGGESTED). RENAMED / MERGED / SPLIT / EVOLVED are not detected at concept level (stated). concept drift status names (RETAINED, RETAINED_REWORDED, UNCERTAIN) map one-to-one to the semantic categories (PERSISTENT, REWORDED, INSUFFICIENT_EVIDENCE)",
+   "action": null
+  },
+  {
+   "metric": "graph",
+   "definition": "knowledge graph nodes / edges",
+   "layers": {
+    "GOLD_nodes": 10331,
+    "GOLD_edges": 15689,
+    "DB_edges": 15689,
+    "DB_primary_key_columns": 2,
+    "nodes_by_type": {
+     "CONCEPT": 1318,
+     "COURSE": 189,
+     "CURRICULUM_VERSION": 3,
+     "ESCO_SKILL_GROUP": 79,
+     "OCCUPATION": 17,
+     "ESCO_SKILL": 138,
+     "JOB_POSTING": 22,
+     "INDUSTRY_POPULATION": 1,
+     "SKILL": 357,
+     "SUBTOPIC": 136,
+     "TOPIC": 8071
+    },
+    "edges_by_relationship": {
+     "MAPS_TO": 3337,
+     "CONTAINS": 7814,
+     "PARENT_OF": 1703,
+     "CHILD_OF": 1715,
+     "DEMANDED_BY": 115,
+     "MENTIONS": 817,
+     "SAME_AS": 51,
+     "RELATED_TO": 95,
+     "APPEARS_IN": 22,
+     "PREREQUISITE_OF": 20
+    },
+    "edge_methods": {
+     "tfidf_concept_clustering": 3231,
+     "document_structure": 7814,
+     "colon_head_list_structure": 2758,
+     "posting_prevalence": 115,
+     "alias": 426,
+     "normalized_text_identity": 51,
+     "esco_broader_relation": 284,
+     "tfidf_cosine+token_containment": 376,
+     "prefLabel_exact": 62,
+     "normalized_label": 193,
+     "exact_label": 183,
+     "tfidf_cosine": 95,
+     "prefLabel_case_whitespace_normalized": 21,
+     "esco_occupation_label_match": 22,
+     "explicit_statement+exact_label_match": 12,
+     "altLabel_full_taxonomy": 16,
+     "technical_token": 15,
+     "explicit_statement+normalized_label_match": 8,
+     "hiddenLabel_full_taxonomy": 6,
+     "tfidf_cosine_to_esco_label": 1
+    },
+    "DOCS_historical": "10,394 nodes in the engine 2.0 report (older run)"
+   },
+   "status": "CONSISTENT_WITH_SCOPE_DIFFERENCE",
+   "classification": "STALE_DOCUMENTATION",
+   "cause": "10,394 nodes is the engine 2.0 report's run (1,337 concepts); the current run has 10,331 (1,318 concepts). DB edges equal GOLD edges for this run (primary key (run_id, edge_id))",
+   "action": null
+  },
+  {
+   "metric": "semantic decisions",
+   "definition": "recorded semantic decisions and their effect",
+   "layers": {
+    "GOLD": 274,
+    "DB": 274,
+    "applied": 0,
+    "blocked": 42,
+    "human_validated": 0,
+    "API_overview": {
+     "mode": "SAFE_MODE",
+     "mode_label": "AI interpretation is advisory",
+     "decisions": 274,
+     "effects_blocked": 42,
+     "independent_evaluation": "PENDING_INDEPENDENT_LABELS"
+    }
+   },
+   "status": "CONSISTENT",
+   "classification": null,
+   "cause": null,
+   "action": null
+  },
+  {
+   "metric": "topic mappings",
+   "definition": "TARGET topic → REFERENCE topic mappings",
+   "layers": {
+    "GOLD": 4426,
+    "by_relationship_evidence": {
+     "NEW_DISCOVERED_UNMAPPED|INSUFFICIENT_EVIDENCE": 1435,
+     "INSUFFICIENT_EVIDENCE|INSUFFICIENT_EVIDENCE": 2451,
+     "PARTIAL_OVERLAP|MODEL_SUGGESTED": 41,
+     "PARENT|REVIEW_REQUIRED": 97,
+     "SAME_CONCEPT|REFERENCE_MAPPED": 33,
+     "AMBIGUOUS|REVIEW_REQUIRED": 18,
+     "CHILD|REVIEW_REQUIRED": 111,
+     "RELATED|REVIEW_REQUIRED": 16,
+     "SAME_CONCEPT|REVIEW_REQUIRED": 18,
+     "PARENT|MODEL_SUGGESTED": 85,
+     "CHILD|MODEL_SUGGESTED": 83,
+     "PARTIAL_OVERLAP|REVIEW_REQUIRED": 21,
+     "RELATED|MODEL_SUGGESTED": 17
+    },
+    "DB": 4426
+   },
+   "status": "CONSISTENT",
+   "classification": null,
+   "cause": "see TOPIC_CONCEPT_MAPPING_AUDIT.md for the semantic audit of these mappings",
+   "action": null
+  }
+ ]
+}

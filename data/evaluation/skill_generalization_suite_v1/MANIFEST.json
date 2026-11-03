@@ -1,0 +1,8 @@
+{
+  "name": "skill_generalization_suite_v1",
+  "sha256": "8faf29450cc79bd11455a8b03bcd74514c390983f4878a1bc39b783cd537f2be",
+  "cases": 59,
+  "programme_relevance_cases": 17,
+  "label_source": "AUTHOR_LABELLED",
+  "frozen_before": "skill qualification v0.2 implementation"
+}

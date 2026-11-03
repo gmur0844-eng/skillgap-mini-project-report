@@ -1,0 +1,5 @@
+[
+  {"domain": "FIXTURE DOMAIN 1", "topic": "Fixture Topic 1.1", "subtopic": "Fixture Subtopic 1.1.a", "description": "Synthetic description for pipeline testing only."},
+  {"domain": "FIXTURE DOMAIN 1", "topic": "Fixture Topic 1.2", "subtopic": null, "description": null},
+  {"domain": "", "topic": "Missing Domain Row JSON", "subtopic": null, "description": null}
+]

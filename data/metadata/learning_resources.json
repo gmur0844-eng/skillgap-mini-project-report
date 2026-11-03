@@ -1,0 +1,615 @@
+{
+ "_comment": "Curated learning resources the assistant may recommend. Official documentation, open course platforms and widely known channels; every link is checked online when a draft is made (resources.check_link), and a link that does not exist is removed from the draft. Add entries here; ids must be unique.",
+ "version": "1",
+ "resources": [
+  {
+   "id": "nptel",
+   "kind": "course_platform",
+   "title": "NPTEL",
+   "url": "https://nptel.ac.in",
+   "tags": [
+    "general",
+    "india",
+    "video lectures",
+    "engineering",
+    "computer science"
+   ],
+   "note": "IIT/IISc video courses; AICTE model curricula map courses to NPTEL equivalents"
+  },
+  {
+   "id": "swayam",
+   "kind": "course_platform",
+   "title": "SWAYAM",
+   "url": "https://swayam.gov.in",
+   "tags": [
+    "general",
+    "india",
+    "online courses",
+    "credit transfer"
+   ],
+   "note": "Government of India MOOCs; credits can be transferred under UGC regulations"
+  },
+  {
+   "id": "vlab",
+   "kind": "course_platform",
+   "title": "Virtual Labs (MoE, Government of India)",
+   "url": "https://www.vlab.co.in",
+   "tags": [
+    "general",
+    "india",
+    "laboratory",
+    "experiments",
+    "engineering"
+   ],
+   "note": "online laboratory experiments referenced by AICTE model curricula"
+  },
+  {
+   "id": "mitocw",
+   "kind": "course_platform",
+   "title": "MIT OpenCourseWare",
+   "url": "https://ocw.mit.edu",
+   "tags": [
+    "general",
+    "lecture notes",
+    "computer science",
+    "mathematics",
+    "algorithms"
+   ],
+   "note": ""
+  },
+  {
+   "id": "khan",
+   "kind": "course_platform",
+   "title": "Khan Academy",
+   "url": "https://www.khanacademy.org",
+   "tags": [
+    "mathematics",
+    "statistics",
+    "probability",
+    "computing basics"
+   ],
+   "note": ""
+  },
+  {
+   "id": "fcc",
+   "kind": "course_platform",
+   "title": "freeCodeCamp",
+   "url": "https://www.freecodecamp.org/learn",
+   "tags": [
+    "programming",
+    "web development",
+    "javascript",
+    "python",
+    "data analysis",
+    "sql"
+   ],
+   "note": ""
+  },
+  {
+   "id": "cs50",
+   "kind": "course_platform",
+   "title": "CS50 (Harvard)",
+   "url": "https://cs50.harvard.edu",
+   "tags": [
+    "programming",
+    "computer science",
+    "python",
+    "sql",
+    "web"
+   ],
+   "note": ""
+  },
+  {
+   "id": "kaggle-learn",
+   "kind": "course_platform",
+   "title": "Kaggle Learn",
+   "url": "https://www.kaggle.com/learn",
+   "tags": [
+    "machine learning",
+    "data science",
+    "python",
+    "pandas",
+    "sql",
+    "deep learning"
+   ],
+   "note": ""
+  },
+  {
+   "id": "mslearn",
+   "kind": "course_platform",
+   "title": "Microsoft Learn",
+   "url": "https://learn.microsoft.com/en-us/training/",
+   "tags": [
+    "cloud",
+    "azure",
+    "devops",
+    "ai",
+    "data"
+   ],
+   "note": ""
+  },
+  {
+   "id": "roadmap",
+   "kind": "website",
+   "title": "roadmap.sh",
+   "url": "https://roadmap.sh",
+   "tags": [
+    "career paths",
+    "backend",
+    "devops",
+    "system design",
+    "frontend"
+   ],
+   "note": "community learning roadmaps per role"
+  },
+  {
+   "id": "docker-docs",
+   "kind": "documentation",
+   "title": "Docker documentation",
+   "url": "https://docs.docker.com",
+   "tags": [
+    "docker",
+    "containers",
+    "devops",
+    "containerisation"
+   ],
+   "note": ""
+  },
+  {
+   "id": "k8s-docs",
+   "kind": "documentation",
+   "title": "Kubernetes documentation",
+   "url": "https://kubernetes.io/docs/home/",
+   "tags": [
+    "kubernetes",
+    "containers",
+    "orchestration",
+    "devops",
+    "cloud"
+   ],
+   "note": ""
+  },
+  {
+   "id": "python-docs",
+   "kind": "documentation",
+   "title": "Python documentation",
+   "url": "https://docs.python.org/3/",
+   "tags": [
+    "python",
+    "programming"
+   ],
+   "note": ""
+  },
+  {
+   "id": "mysql-docs",
+   "kind": "documentation",
+   "title": "MySQL documentation",
+   "url": "https://dev.mysql.com/doc/",
+   "tags": [
+    "mysql",
+    "sql",
+    "databases",
+    "rdbms"
+   ],
+   "note": ""
+  },
+  {
+   "id": "postgres-docs",
+   "kind": "documentation",
+   "title": "PostgreSQL documentation",
+   "url": "https://www.postgresql.org/docs/",
+   "tags": [
+    "postgresql",
+    "sql",
+    "databases",
+    "rdbms"
+   ],
+   "note": ""
+  },
+  {
+   "id": "mongodb-docs",
+   "kind": "documentation",
+   "title": "MongoDB documentation",
+   "url": "https://www.mongodb.com/docs/",
+   "tags": [
+    "mongodb",
+    "nosql",
+    "databases",
+    "document stores"
+   ],
+   "note": ""
+  },
+  {
+   "id": "redis-docs",
+   "kind": "documentation",
+   "title": "Redis documentation",
+   "url": "https://redis.io/docs/",
+   "tags": [
+    "redis",
+    "nosql",
+    "caching",
+    "key value"
+   ],
+   "note": ""
+  },
+  {
+   "id": "node-docs",
+   "kind": "documentation",
+   "title": "Node.js documentation",
+   "url": "https://nodejs.org/docs/latest/api/",
+   "tags": [
+    "node.js",
+    "javascript",
+    "backend",
+    "web"
+   ],
+   "note": ""
+  },
+  {
+   "id": "react-docs",
+   "kind": "documentation",
+   "title": "React documentation",
+   "url": "https://react.dev/learn",
+   "tags": [
+    "react",
+    "javascript",
+    "frontend",
+    "web"
+   ],
+   "note": ""
+  },
+  {
+   "id": "mdn",
+   "kind": "documentation",
+   "title": "MDN Web Docs",
+   "url": "https://developer.mozilla.org/en-US/docs/Web",
+   "tags": [
+    "web development",
+    "html",
+    "css",
+    "javascript",
+    "http"
+   ],
+   "note": ""
+  },
+  {
+   "id": "spark-docs",
+   "kind": "documentation",
+   "title": "Apache Spark documentation",
+   "url": "https://spark.apache.org/docs/latest/",
+   "tags": [
+    "spark",
+    "big data",
+    "distributed computing",
+    "data engineering"
+   ],
+   "note": ""
+  },
+  {
+   "id": "kafka-docs",
+   "kind": "documentation",
+   "title": "Apache Kafka documentation",
+   "url": "https://kafka.apache.org/documentation/",
+   "tags": [
+    "kafka",
+    "streaming",
+    "messaging",
+    "data engineering"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hadoop-docs",
+   "kind": "documentation",
+   "title": "Apache Hadoop documentation",
+   "url": "https://hadoop.apache.org/docs/stable/",
+   "tags": [
+    "hadoop",
+    "big data",
+    "hdfs",
+    "mapreduce"
+   ],
+   "note": ""
+  },
+  {
+   "id": "numpy-docs",
+   "kind": "documentation",
+   "title": "NumPy documentation",
+   "url": "https://numpy.org/doc/stable/",
+   "tags": [
+    "numpy",
+    "python",
+    "scientific computing",
+    "data science"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pandas-docs",
+   "kind": "documentation",
+   "title": "pandas documentation",
+   "url": "https://pandas.pydata.org/docs/",
+   "tags": [
+    "pandas",
+    "python",
+    "data analysis",
+    "data science"
+   ],
+   "note": ""
+  },
+  {
+   "id": "sklearn-docs",
+   "kind": "documentation",
+   "title": "scikit-learn user guide",
+   "url": "https://scikit-learn.org/stable/user_guide.html",
+   "tags": [
+    "machine learning",
+    "scikit-learn",
+    "python",
+    "data science"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pytorch-tutorials",
+   "kind": "website",
+   "title": "PyTorch tutorials",
+   "url": "https://pytorch.org/tutorials/",
+   "tags": [
+    "deep learning",
+    "pytorch",
+    "neural networks",
+    "ai"
+   ],
+   "note": ""
+  },
+  {
+   "id": "tf-learn",
+   "kind": "website",
+   "title": "TensorFlow learning resources",
+   "url": "https://www.tensorflow.org/learn",
+   "tags": [
+    "deep learning",
+    "tensorflow",
+    "neural networks",
+    "ai"
+   ],
+   "note": ""
+  },
+  {
+   "id": "git-book",
+   "kind": "website",
+   "title": "Pro Git (free online book)",
+   "url": "https://git-scm.com/book/en/v2",
+   "tags": [
+    "git",
+    "version control",
+    "devops",
+    "collaboration"
+   ],
+   "note": ""
+  },
+  {
+   "id": "gh-actions",
+   "kind": "documentation",
+   "title": "GitHub Actions documentation",
+   "url": "https://docs.github.com/en/actions",
+   "tags": [
+    "ci/cd",
+    "devops",
+    "continuous integration",
+    "automation"
+   ],
+   "note": ""
+  },
+  {
+   "id": "aws-docs",
+   "kind": "documentation",
+   "title": "AWS documentation",
+   "url": "https://docs.aws.amazon.com",
+   "tags": [
+    "aws",
+    "cloud computing",
+    "cloud"
+   ],
+   "note": ""
+  },
+  {
+   "id": "gcp-docs",
+   "kind": "documentation",
+   "title": "Google Cloud documentation",
+   "url": "https://cloud.google.com/docs",
+   "tags": [
+    "google cloud",
+    "cloud computing",
+    "cloud"
+   ],
+   "note": ""
+  },
+  {
+   "id": "owasp-top10",
+   "kind": "documentation",
+   "title": "OWASP Top Ten",
+   "url": "https://owasp.org/www-project-top-ten/",
+   "tags": [
+    "security",
+    "web security",
+    "cyber security",
+    "secure coding"
+   ],
+   "note": ""
+  },
+  {
+   "id": "scrum-guide",
+   "kind": "documentation",
+   "title": "The Scrum Guide",
+   "url": "https://scrumguides.org",
+   "tags": [
+    "agile development",
+    "scrum",
+    "software engineering",
+    "project management"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d2l",
+   "kind": "website",
+   "title": "Dive into Deep Learning (free online book)",
+   "url": "https://d2l.ai",
+   "tags": [
+    "deep learning",
+    "machine learning",
+    "neural networks",
+    "ai"
+   ],
+   "note": ""
+  },
+  {
+   "id": "islp",
+   "kind": "website",
+   "title": "An Introduction to Statistical Learning (free online book)",
+   "url": "https://www.statlearning.com",
+   "tags": [
+    "machine learning",
+    "statistics",
+    "data science"
+   ],
+   "note": ""
+  },
+  {
+   "id": "slp3",
+   "kind": "website",
+   "title": "Speech and Language Processing, Jurafsky and Martin (free draft)",
+   "url": "https://web.stanford.edu/~jurafsky/slp3/",
+   "tags": [
+    "natural language processing",
+    "nlp",
+    "ai",
+    "language models"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-nptel",
+   "kind": "youtube",
+   "title": "NPTEL (YouTube)",
+   "url": "https://www.youtube.com/@nptelhrd",
+   "tags": [
+    "general",
+    "india",
+    "video lectures",
+    "engineering",
+    "computer science"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-mitocw",
+   "kind": "youtube",
+   "title": "MIT OpenCourseWare (YouTube)",
+   "url": "https://www.youtube.com/@mitocw",
+   "tags": [
+    "general",
+    "lectures",
+    "computer science",
+    "mathematics",
+    "algorithms"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-fcc",
+   "kind": "youtube",
+   "title": "freeCodeCamp.org (YouTube)",
+   "url": "https://www.youtube.com/@freecodecamp",
+   "tags": [
+    "programming",
+    "web development",
+    "python",
+    "sql",
+    "docker",
+    "machine learning"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-cs50",
+   "kind": "youtube",
+   "title": "CS50 (YouTube)",
+   "url": "https://www.youtube.com/@cs50",
+   "tags": [
+    "programming",
+    "computer science",
+    "python",
+    "sql",
+    "ai"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-3b1b",
+   "kind": "youtube",
+   "title": "3Blue1Brown (YouTube)",
+   "url": "https://www.youtube.com/@3blue1brown",
+   "tags": [
+    "mathematics",
+    "linear algebra",
+    "neural networks",
+    "calculus"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-statquest",
+   "kind": "youtube",
+   "title": "StatQuest with Josh Starmer (YouTube)",
+   "url": "https://www.youtube.com/@statquest",
+   "tags": [
+    "statistics",
+    "machine learning",
+    "data science"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-nana",
+   "kind": "youtube",
+   "title": "TechWorld with Nana (YouTube)",
+   "url": "https://www.youtube.com/@TechWorldwithNana",
+   "tags": [
+    "docker",
+    "kubernetes",
+    "devops",
+    "ci/cd",
+    "containers"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-abdulbari",
+   "kind": "youtube",
+   "title": "Abdul Bari (YouTube)",
+   "url": "https://www.youtube.com/@abdul_bari",
+   "tags": [
+    "algorithms",
+    "data structures",
+    "india"
+   ],
+   "note": ""
+  },
+  {
+   "id": "yt-computerphile",
+   "kind": "youtube",
+   "title": "Computerphile (YouTube)",
+   "url": "https://www.youtube.com/@Computerphile",
+   "tags": [
+    "computer science",
+    "security",
+    "networking",
+    "general"
+   ],
+   "note": ""
+  }
+ ]
+}

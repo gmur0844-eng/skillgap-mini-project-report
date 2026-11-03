@@ -1,0 +1,57 @@
+{
+  "documents": {
+    "5c4bd3b16c2865fbbf1b37651e639f009676153247283c5cc44ba5a6341ed410": {
+      "clean_topics": 2242,
+      "doc_id": "aicte-ug-cse-model",
+      "outcomes": 359,
+      "parser_fingerprint": "a7f6801a5ad88f49",
+      "pipeline_version": "knowledge-engine-2.0.0",
+      "recorded_at": "2026-09-27T05:21:00+00:00",
+      "recorded_from_run": "4406a88004595aec",
+      "units": 164,
+      "valid_courses": 40
+    },
+    "bc14c2f0e51703675a1ca47b1b6836a140313a77c27c69debf220183d26783a2": {
+      "clean_topics": 999,
+      "doc_id": "cbit-be-cse-r22",
+      "outcomes": 199,
+      "parser_fingerprint": "a7f6801a5ad88f49",
+      "pipeline_version": "knowledge-engine-2.0.0",
+      "recorded_at": "2026-09-27T05:21:00+00:00",
+      "recorded_from_run": "4406a88004595aec",
+      "units": 104,
+      "valid_courses": 36
+    },
+    "f98246ad7ea5342571639a0ce03619622806555fceb81bfd255daa7cc1377492": {
+      "clean_topics": 4426,
+      "doc_id": "cbit-be-cse-r22a",
+      "outcomes": 600,
+      "parser_fingerprint": "a7f6801a5ad88f49",
+      "pipeline_version": "knowledge-engine-2.0.0",
+      "recorded_at": "2026-09-27T05:21:00+00:00",
+      "recorded_from_run": "4406a88004595aec",
+      "units": 394,
+      "valid_courses": 113
+    }
+  },
+  "industry": {
+    "725ee70e0e9e7638": {
+      "eligible_postings": 100,
+      "esco_mapped_skills": 106,
+      "mentions": 210,
+      "pipeline_version": "knowledge-engine-2.0.0",
+      "recorded_at": "2026-09-27T05:21:00+00:00",
+      "recorded_from_run": "4406a88004595aec",
+      "unique_skills_eligible": 120
+    },
+    "bcb4f29124459b0e": {
+      "eligible_postings": 100,
+      "esco_mapped_skills": 78,
+      "mentions": 145,
+      "pipeline_version": "knowledge-engine-1.1.0",
+      "recorded_at": "2026-09-27T04:02:07+00:00",
+      "recorded_from_run": "6472ec43cba27593",
+      "unique_skills_eligible": 86
+    }
+  }
+}

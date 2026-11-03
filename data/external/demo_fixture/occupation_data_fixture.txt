@@ -1,0 +1,5 @@
+O*NET-SOC Code	Title	Description
+15-2051.00	Data Scientists	Develop and apply models to analyze data (fixture description).
+15-1252.00	Software Developers	Design and build software applications (fixture description).
+15-1244.00	Network and Computer Systems Administrators	Install and maintain computer networks (fixture description).
+15-1211.00	Computer Systems Analysts	Analyze IT systems and procedures (fixture description).

@@ -1,0 +1,608 @@
+[
+ {
+  "n": 1,
+  "case_id": "bm1-001",
+  "concept_a": "AWS",
+  "context_a": [
+   "L3 Cloud Engineer specializing in AWS Cloud Service Provider (CSP) environments",
+   "We are seeking a highly skilled",
+   ".",
+   "Manager - IT Operations & Infrastructure"
+  ],
+  "concept_b": "cloud technologies",
+  "description_b": "The technologies which enable access to hardware, software, data and services through remote servers and software networks irrespective of their location and architecture."
+ },
+ {
+  "n": 2,
+  "case_id": "bm1-002",
+  "concept_a": "quality systems",
+  "context_a": [
+   "Perform supplier audits covering manufacturing processes, quality systems, inspection methods, process controls, calibration, and traceability.",
+   "Conduct supplier evaluation, qualification, process audits, and periodic performance reviews.",
+   "Coordinate with suppliers for incoming quality issues, rejection, deviations, and non-conformities.",
+   "Supplier Quality Manager"
+  ],
+  "concept_b": "quality control systems",
+  "description_b": "Understanding of and experience with product development quality systems or tools such as FMEA, DOE, PPAP and APQP."
+ },
+ {
+  "n": 3,
+  "case_id": "bm1-003",
+  "concept_a": "repair processes",
+  "context_a": [
+   "Basic knowledge of two-wheeler servicing and repair processes.",
+   "Good communication and customer-handling skills.",
+   "Experience working in a **dealership or authorized service centre is an added advantage**.",
+   "Service Advisor"
+  ],
+  "concept_b": "types of metal manufacturing processes",
+  "description_b": "Metal processes linked to the different types of metal, such as casting processes, heat treatment processes, repair processes and other metal manufacturing processes."
+ },
+ {
+  "n": 4,
+  "case_id": "bm1-006",
+  "concept_a": "IT",
+  "context_a": [
+   "This position will be responsible for the overall operation and maintenance of the critical infrastructure supporting IT operations within the Data Center space.",
+   "This position will provide a central point of ownership and accountability for the overall hands-on management of the Mechanical, Electrical (M&E) and portfolio of Data Centers in India.",
+   "Responsible for ensuring maintenance/ repairs of site-critical facility infrastructure or a Data Center are planned and executed to the best interest of the business.",
+   "Data Center Engineering Operations Engineer - Hyderabad"
+  ],
+  "concept_b": "computer technology",
+  "description_b": "Computers, computer networks and other information technologies and equipment that can store, retrieve, transmit and manipulate data."
+ },
+ {
+  "n": 5,
+  "case_id": "bm1-007",
+  "concept_a": "re",
+  "context_a": [
+   "And we’re counting on your unique voice and perspective to help EY become even better, too.",
+   "At EY, you’ll have the chance to build a career as unique as you are, with the global scale, support, inclusive culture and technology to become the best version of you.",
+   "Join us and build an exceptional experience for yourself, and a better working world for all.",
+   "SAP Group Reporting - Staff"
+  ],
+  "concept_b": "reverse engineering",
+  "description_b": "The process of extracting knowledge or design information from anything man-made and reproducing it or anything else based on the extracted information. The process often involves disassembling something and analysing its components and workings in detail."
+ },
+ {
+  "n": 6,
+  "case_id": "bm1-009",
+  "concept_a": "re",
+  "context_a": [
+   "If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.",
+   "If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit for more information.",
+   "Company",
+   "Software Development Engineer III, Seller and AM GenAI Tools"
+  ],
+  "concept_b": "reverse engineering",
+  "description_b": "The process of extracting knowledge or design information from anything man-made and reproducing it or anything else based on the extracted information. The process often involves disassembling something and analysing its components and workings in detail."
+ },
+ {
+  "n": 7,
+  "case_id": "bm1-010",
+  "concept_a": "MS Excel",
+  "context_a": [
+   "Advanced MS Excel skills (Pivot Tables, VLOOKUP/XLOOKUP, Dashboards, Data Analysis).",
+   "Strong knowledge of Budgeting, Cost Control, MIS Reporting, Cash Flow, and ROI Analysis.",
+   "Strong analytical, reporting, and communication skills.",
+   "Associate Process Manager"
+  ],
+  "concept_b": "use spreadsheets software",
+  "description_b": "Use software tools to create and edit tabular data to carry out mathematical calculations, organise data and information, create diagrams based on data and to retrieve them."
+ },
+ {
+  "n": 8,
+  "case_id": "bm1-013",
+  "concept_a": "it",
+  "context_a": [
+   "Call a Time Out for Safety (TOFS) when you do not understand the plan, when an unsafe condition is observed, or perceived, anytime personal impairment is recognized, when it’s not clear what will happen next, or the hazards and associated risks for the task changes.",
+   "START, Task Planning Risk Assessment and use of the Prompt Card, Safe Manual Handling, Working at Heights, etc.",
+   "Participate in the execution of the rigs ‘Hold the Zero’ plan.",
+   "MPD Supervisor"
+  ],
+  "concept_b": "computer technology",
+  "description_b": "Computers, computer networks and other information technologies and equipment that can store, retrieve, transmit and manipulate data."
+ },
+ {
+  "n": 9,
+  "case_id": "bm1-014",
+  "concept_a": "HR",
+  "context_a": [
+   "Engage with HR Heads, Talent Acquisition Heads, Promoters, and other decision-makers.",
+   "Drive new client acquisition through prospecting, lead generation, and consultative selling.",
+   "Conduct virtual and face-to-face product demonstrations.",
+   "Account Manager"
+  ],
+  "concept_b": "human resource management",
+  "description_b": "The function in an organisation concerned with the recruitment of employees and the optimisation of employee performance."
+ },
+ {
+  "n": 10,
+  "case_id": "bm1-015",
+  "concept_a": "CRM",
+  "context_a": [
+   "Zapier, Make, CRM automation, AI agents, and no-code platforms",
+   "Explore tools such as",
+   ".",
+   "DIGITAL MARKETING INTERN – AI & AUTOMATION"
+  ],
+  "concept_b": "customer relationship management",
+  "description_b": "The customer-oriented management approach and basic principles of successful customer relations that focus on interactions with customers such as technical support, customer services, after-sales support and direct communication with the customer."
+ },
+ {
+  "n": 11,
+  "case_id": "bm1-018",
+  "concept_a": "CRM",
+  "context_a": [
+   "Experience managing CRM systems, customer databases, reporting dashboards, and lead management.",
+   "Good understanding of Digital Marketing including SEO, SEM, Email Marketing, Social Media Marketing, CMS, and Marketing Automation.",
+   "Basic design proficiency using Adobe Illustrator, Adobe Photoshop, or at least Canva.",
+   "Manager-Marketing-German MNC-Bangalore"
+  ],
+  "concept_b": "customer relationship management",
+  "description_b": "The customer-oriented management approach and basic principles of successful customer relations that focus on interactions with customers such as technical support, customer services, after-sales support and direct communication with the customer."
+ },
+ {
+  "n": 12,
+  "case_id": "bm1-019",
+  "concept_a": "call",
+  "context_a": [
+   "Provide weekly/monthly reports on call performance, lead conversions, and sales progress.",
+   "16.",
+   "17.",
+   "Lead Generation Executive || Kolkata"
+  ],
+  "concept_b": "Computer Assisted Language Learning",
+  "description_b": "A language teaching and learning approach in which information technologies as well as computer-based resources are used to reinforce, present, make interactive and assess second or foreign languages to be learned."
+ },
+ {
+  "n": 13,
+  "case_id": "bm1-020",
+  "concept_a": "MS Excel",
+  "context_a": [
+   "Strong analytical skills and proficiency in MS Excel.",
+   "1-4 years of experience in Merchandising, Retail Operations, or Inventory Management.",
+   "Good communication and stakeholder management skills.",
+   "Merchandiser"
+  ],
+  "concept_b": "use spreadsheets software",
+  "description_b": "Use software tools to create and edit tabular data to carry out mathematical calculations, organise data and information, create diagrams based on data and to retrieve them."
+ },
+ {
+  "n": 14,
+  "case_id": "bm1-021",
+  "concept_a": "Technical Skills",
+  "context_a": [
+   "Technical Skills",
+   "Identify tax issues and escalate key matters appropriately",
+   "Strong practical knowledge of Income Tax",
+   "Manager – Direct Tax"
+  ],
+  "concept_b": "apply knowledge of science, technology and engineering",
+  "description_b": "Develop and apply an understanding of the physical world and its governing principles, for example by making reasonable predictions about causes and effects, conceiving tests of these predictions and carrying out measurements using suitable units, tools and equipment."
+ },
+ {
+  "n": 15,
+  "case_id": "bm1-022",
+  "concept_a": "electrical equipment",
+  "context_a": [
+   "Monitor the performance and condition of electrical equipment through data analysis, alarms, and control systems, identifying potential issues, abnormalities, or inefficiencies.",
+   "Oversee the operation and maintenance of electrical systems in waste-to-energy plants, including power distribution, control systems, switchgear, transformers, motors, and related equipment.",
+   "Diagnose electrical equipment malfunctions, investigate root causes, and implement effective troubleshooting techniques to restore functionality and minimize downtime.",
+   "Senior Electrical Manager"
+  ],
+  "concept_b": "maintain electronic equipment",
+  "description_b": "Check and repair electronic equipment. Develop maintenance tasks on electronic equipment. Detect malfunction, locate faults and take measures to prevent damage."
+ },
+ {
+  "n": 16,
+  "case_id": "bm1-023",
+  "concept_a": "PLC",
+  "context_a": [
+   "Control Systems: Manage, troubleshoot, and calibrate synchronizing panels, AMF panels, APFC panels, and PLC-based control systems.",
+   "Backup Power: Oversee the breakdown and preventive maintenance of 500 KVA DG sets to ensure uninterrupted power supply.",
+   "Compliance & Safety: Ensure complete compliance with statutory electrical safety regulations and maintain all mandatory logs and registers.",
+   "Maintenance Engineer"
+  ],
+  "concept_b": "programmable logic controller",
+  "description_b": "Programmable logic controllers or PLC's are computer control systems used for the monitoring and control of input and output as well as the automation of electromechanical processes."
+ },
+ {
+  "n": 17,
+  "case_id": "bm1-026",
+  "concept_a": "Data Analysis",
+  "context_a": [
+   "Advanced MS Excel skills (Pivot Tables, VLOOKUP/XLOOKUP, Dashboards, Data Analysis).",
+   "Strong knowledge of Budgeting, Cost Control, MIS Reporting, Cash Flow, and ROI Analysis.",
+   "Strong analytical, reporting, and communication skills.",
+   "Associate Process Manager"
+  ],
+  "concept_b": "statistics",
+  "description_b": "The study of statistical theory, methods and practices such as collection, organisation, analysis, interpretation and presentation of data. It deals with all aspects of data including the planning of data collection in terms of the design of surveys and experiments in order to forecast and plan work-related activities."
+ },
+ {
+  "n": 18,
+  "case_id": "bm1-027",
+  "concept_a": "JSON",
+  "context_a": [
+   "Familiarity with RESTful APIs, JSON, and integrating front-end and back-end components into cohesive applications.",
+   "Experience building user interfaces with React or similar frameworks, along with solid understanding of Cascading Style Sheets (CSS) and modern HTML.",
+   "Basic knowledge of databases (SQL or NoSQL), data modeling, and query optimization.",
+   "Full Stack Developer - Fresher / Junior (Node.js & React)"
+  ],
+  "concept_b": "Open source model",
+  "description_b": "The open source model consists of principles and fundamentals of service-oriented modelling for business and software systems that allow the design and specification of service-oriented business systems within a variety of architectural styles, such as enterprise architecture."
+ },
+ {
+  "n": 19,
+  "case_id": "bm1-029",
+  "concept_a": "SEM",
+  "context_a": [
+   "Participate in support or implementation projects involving SAP BPC, SEM‐BCS, EC‐CS, FI‐LC, or ECC.",
+   "Support system testing, data validation, and reconciliation during month‐end and year‐end close.",
+   "Analysis & Reporting",
+   "SAP Group Reporting - Staff"
+  ],
+  "concept_b": "search engine optimisation",
+  "description_b": "The marketing approach which promotes webpage presentation by affecting the specific structures of the website which impact its visibility in unpaid search results."
+ },
+ {
+  "n": 20,
+  "case_id": "bm1-031",
+  "concept_a": "data privacy",
+  "context_a": [
+   "How to Apply: If you are passionate to join us and are aligned with our commitment to building a better working world, we invite you to apply by completing our user-friendly form with personal and professional information and by providing your consent to data privacy.",
+   "Benefits: Embark on a transformative career journey with us and indulge in a suite of premium benefits, encompassing exclusive health and wellness packages, enticing rewards, and cutting-edge learning opportunities that empower you to continually grow and excel in your professional and personal development.",
+   "EY | Building a better working world",
+   "SAP Group Reporting - Staff"
+  ],
+  "concept_b": "data protection",
+  "description_b": "The principles, ethical issues, regulations and protocols of data protection."
+ },
+ {
+  "n": 21,
+  "case_id": "bm1-034",
+  "concept_a": "financial planning",
+  "context_a": [
+   "From portfolio review and capital allocation processes to financial planning analytics and decision support, we have the people, analytics and tools to better allocate capital.",
+   "We help corporates, private equity, governments, sovereign wealth funds, private and family businesses, and educational institutions with their key financial issues.",
+   "Our team helps clients manage their risk/return trade-offs to support them with better decision-making around financing and capital efficiency.",
+   "Analyst - SaT - GOV - SaT - TCF - Infrastructure Advisory - Chandigarh"
+  ],
+  "concept_b": "financial forecasting",
+  "description_b": "The tool used in performing fiscal financial management to identify revenue trends and estimated financial conditions."
+ },
+ {
+  "n": 22,
+  "case_id": "bm1-035",
+  "concept_a": "attention to detail",
+  "context_a": [
+   "Strong attention to detail, time management, and ability to follow creative briefs and feedback.",
+   "Familiarity with video editing software (e.g., Adobe Premiere Pro, DaVinci Resolve, Final Cut Pro) and graphic tools (e.g., After Effects, Photoshop) is beneficial.",
+   "Effective communication skills and ability to collaborate in a remote, cross-functional team environment.",
+   "Video Editor Intern"
+  ],
+  "concept_b": "attend to detail",
+  "description_b": "Accomplish a task with concern for all the areas involved, no matter how small."
+ },
+ {
+  "n": 23,
+  "case_id": "bm1-037",
+  "concept_a": "cloud computing",
+  "context_a": [
+   "You will be a critical part of a team of software engineers, building Seller and AM GenAI Tools and transformative solutions powered by cloud computing and AI.",
+   "Key job responsibilities",
+   "This role offers an opportunity to work at the forefront of agentic AI and distributed systems, building new products and services from the ground up and enhancing existing tools.",
+   "Software Development Engineer III, Seller and AM GenAI Tools"
+  ],
+  "concept_b": "cloud technologies",
+  "description_b": "The technologies which enable access to hardware, software, data and services through remote servers and software networks irrespective of their location and architecture."
+ },
+ {
+  "n": 24,
+  "case_id": "bm1-038",
+  "concept_a": "decision-making",
+  "context_a": [
+   "We power decision-making for Venture Capital firms, Private Equity, Investment Banks, and Corporates with deep data and insights.",
+   "Tracxn is a leading global market-intelligence platform covering millions of private companies.",
+   "ABOUT THE ROLE",
+   "Technical Program Manager - API Support (EMEA Shift)"
+  ],
+  "concept_b": "make decisions",
+  "description_b": "Make a choice from several alternative possibilities."
+ },
+ {
+  "n": 25,
+  "case_id": "bm1-043",
+  "concept_a": "Information Management",
+  "context_a": [
+   "7+ years of relevant experience** in PIM / Product Information Management.",
+   "Preferred Candidate Profile",
+   "Hands-on experience with Syndigo PIM is mandatory.",
+   "PIM Functional Technical Consultant Syndigo"
+  ],
+  "concept_b": "knowledge management",
+  "description_b": "The process of collecting, structuring and sharing information and knowledge within an organisation, which allows for a more efficient distribution of expertise and increased collaboration."
+ },
+ {
+  "n": 26,
+  "case_id": "bm1-045",
+  "concept_a": "ml",
+  "context_a": [
+   "Hands-on experience with AI-intensive technologies, such as LLMs, AI coding assistants, or integrating AI/ML capabilities into applications.",
+   "Senior Mobile Developer (Native — iOS & Android)"
+  ],
+  "concept_b": "machine learning",
+  "description_b": "The principles, methods and algorithms of machine learning, a subfield of artificial intelligence. Common machine learning models such as supervised or unsupervised models, semi- supervised models and reinforcement learning models."
+ },
+ {
+  "n": 27,
+  "case_id": "bm1-046",
+  "concept_a": "ml",
+  "context_a": [
+   "Hands-on experience with AI-intensive technologies, such as LLMs, AI coding assistants, or integrating AI/ML capabilities into applications.",
+   "Senior Mobile Developer (Native — iOS & Android)"
+  ],
+  "concept_b": "ML (computer programming)",
+  "description_b": "The techniques and principles of software development, such as analysis, algorithms, coding, testing and compiling of programming paradigms in ML."
+ },
+ {
+  "n": 28,
+  "case_id": "bm1-050",
+  "concept_a": "ppc",
+  "context_a": [
+   "Coordinate with Quality, Maintenance, PPC, Stores, and other departments.",
+   "Head Forging Plant",
+   "Work closely with Purchase, Vendor Development, Production, Engineering, PPC, and Internal Quality teams to resolve supplier-related issues.",
+   "Supplier Quality Manager"
+  ],
+  "concept_b": "pay-per-click",
+  "description_b": "Internet advertising model where an advert is place in a website directing traffic to some other website. The publisher gets paid by every click on the banner."
+ },
+ {
+  "n": 29,
+  "case_id": "bm1-052",
+  "concept_a": "ict",
+  "context_a": [
+   "ICT tools",
+   "Infrastructure for Smart Cities"
+  ],
+  "concept_b": "computer technology",
+  "description_b": "Computers, computer networks and other information technologies and equipment that can store, retrieve, transmit and manipulate data."
+ },
+ {
+  "n": 30,
+  "case_id": "bm1-053",
+  "concept_a": "quality management",
+  "context_a": [
+   "Knowledge of ISO 9001 and quality management systems",
+   "Supplier Quality Manager"
+  ],
+  "concept_b": "quality assurance procedures",
+  "description_b": "The procedures to inspect a product or system to ensure that it is according to specifications and requirements."
+ },
+ {
+  "n": 31,
+  "case_id": "bm1-057",
+  "concept_a": "conflict resolution",
+  "context_a": [
+   "Employee Relations:** Act as the first point of contact for employee queries, fostering a positive workplace culture and assisting with conflict resolution",
+   "Admin cum HR Executive"
+  ],
+  "concept_b": "resolve conflicts",
+  "description_b": "Mediate in conflicts and tense situations by acting between parties, striving to effect an agreement, reconciliate, and resolve problems. Settle a conflict in such a way that none of the victims feels badly treated and avoid arguments in advance."
+ },
+ {
+  "n": 32,
+  "case_id": "bm1-058",
+  "concept_a": "conflict resolution",
+  "context_a": [
+   "Employee Relations:** Act as the first point of contact for employee queries, fostering a positive workplace culture and assisting with conflict resolution",
+   "Admin cum HR Executive"
+  ],
+  "concept_b": "conflict management",
+  "description_b": "The practices concerning the resolution of conflicts or disputes in an organisation or institution. It encompasses reducing the negative aspects of a conflict and increasing the positive outcomes of it by learning from the errors made."
+ },
+ {
+  "n": 33,
+  "case_id": "bm1-059",
+  "concept_a": "google docs",
+  "context_a": [
+   "Google Docs",
+   "IDEA Lab Workshop"
+  ],
+  "concept_b": "office software",
+  "description_b": "The characteristics and functioning of software programs for office tasks such as word processing, spreadsheets, presentation, email and database."
+ },
+ {
+  "n": 34,
+  "case_id": "bm1-060",
+  "concept_a": "collaborate with colleagues",
+  "context_a": [
+   "The faculty member will contribute to curriculum improvement, participate in departmental meetings, support co-curricular activities, and collaborate with colleagues to enhance student outcomes.",
+   "Assistant Professor of English"
+  ],
+  "concept_b": "liaise with colleagues",
+  "description_b": "Liaise with fellow colleagues to ensure common understanding on work related affairs and agree on the necessary compromises the parties might need to face. Negotiate compromises between parties as to ensure that work in general run efficiently towards the achievement of the objectives."
+ },
+ {
+  "n": 35,
+  "case_id": "bm1-061",
+  "concept_a": "core maintenance",
+  "context_a": [
+   "Minimum 36 years of core maintenance experience in a manufacturing plant or mechanical engineering factory.",
+   "Maintenance Engineer"
+  ],
+  "concept_b": "maintain cores",
+  "description_b": "Clean and repair cores, e.g. by smoothing out imperfections on the surface."
+ },
+ {
+  "n": 36,
+  "case_id": "bm1-063",
+  "concept_a": "vector",
+  "context_a": [
+   "vector",
+   "Linear Algebra and Calculus",
+   "Unit II",
+   "Directional derivative"
+  ],
+  "concept_b": "vector line integrals",
+  "description_b": "[SOURCE_TEXT] vector line integrals | [COURSE_TITLE] Mathematics-I | [UNIT_TITLE] Module 5 | [SOURCE_TEXT] Gradient | [SOURCE_TEXT] integrals | [SOURCE_TEXT] change of order of integration in double integrals | [SOURCE_TEXT] Applications: areas and volumes"
+ },
+ {
+  "n": 37,
+  "case_id": "bm1-066",
+  "concept_a": "Incremental Development of Code",
+  "context_a": [
+   "Incremental Development of Code",
+   "Software Engineering",
+   "Unit IV",
+   "Coding Principles and guidelines"
+  ],
+  "concept_b": "Development",
+  "description_b": "[SOURCE_TEXT] Development | [COURSE_TITLE] Complier Design | [UNIT_TITLE] Module 8 | [SOURCE_TEXT] Generating assembly code from three address codes using simple register allocation and instruction selection | [SOURCE_TEXT] Register allocation using graph colouring | [SOURCE_TEXT] TACoC is a subset of MMC such that code is in a form similar to three address code | [SOURCE_TEXT] Lab/Assignment Details"
+ },
+ {
+  "n": 38,
+  "case_id": "bm1-069",
+  "concept_a": "meaning of Prosperity in detail",
+  "context_a": [
+   "meaning of Prosperity in detail",
+   "UNIVERSAL HUMAN VALUES-II: UNDERSTANDING HARMONY",
+   "Module 2",
+   "program for ensuring health vs dealing with disease"
+  ],
+  "concept_b": "K Means",
+  "description_b": "[SOURCE_TEXT] K Means | [COURSE_TITLE] Machine Learning | [UNIT_TITLE] Module 8 | [SOURCE_TEXT] linear transformations | [SOURCE_TEXT] Motivation and role of machine learning in computer science and problem- solving (ii) Representation (features) | [SOURCE_TEXT] Appreciate linear transformations and matrix vector operations in the | [SOURCE_TEXT] Bayes Rule. such as agriculture"
+ },
+ {
+  "n": 39,
+  "case_id": "bm1-070",
+  "concept_a": "Equations",
+  "context_a": [
+   "Equations",
+   "Differential Equations and Numerical Methods",
+   "Unit I",
+   "Equations Reducible to Exact"
+  ],
+  "concept_b": "equations solvable for y",
+  "description_b": "[SOURCE_TEXT] equations solvable for y | [COURSE_TITLE] Mathematics-II | [UNIT_TITLE] Module 2 | [SOURCE_TEXT] equations solvable for x and Clairaut’s type | [SOURCE_TEXT] Exact | [SOURCE_TEXT] Equations not of first degree: equations solvable for p | [SOURCE_TEXT] linear and Bernoulli’s equations"
+ },
+ {
+  "n": 40,
+  "case_id": "bm1-071",
+  "concept_a": "Irrotational fields and Solenoidal fields",
+  "context_a": [
+   "Irrotational fields and Solenoidal fields",
+   "Linear Algebra and Calculus",
+   "Unit II",
+   "Directional derivative"
+  ],
+  "concept_b": "Field",
+  "description_b": "[SOURCE_TEXT] Field | [COURSE_TITLE] Discrete Mathematics | [UNIT_TITLE] Module 7 | [SOURCE_TEXT] Ring | [SOURCE_TEXT] Permutation Groups | [SOURCE_TEXT] Normal Subgroups | [SOURCE_TEXT] Group"
+ },
+ {
+  "n": 41,
+  "case_id": "bm1-072",
+  "concept_a": "Irrotational fields and Solenoidal fields",
+  "context_a": [
+   "Irrotational fields and Solenoidal fields",
+   "Linear Algebra and Calculus",
+   "Unit II",
+   "Directional derivative"
+  ],
+  "concept_b": "field",
+  "description_b": "[SOURCE_TEXT] field | [COURSE_TITLE] Physics-I | [UNIT_TITLE] Module I | [SOURCE_TEXT] like Faraday’s cage and coffee-ring effect | [SOURCE_TEXT] Divergence and curl | [SOURCE_TEXT] method of images | [SOURCE_TEXT] their solution and connection with steady state diffusion and thermal conduction"
+ },
+ {
+  "n": 42,
+  "case_id": "bm1-075",
+  "concept_a": "Angular momentum about a point of a rigid body in",
+  "context_a": [
+   "Angular momentum about a point of a rigid body in",
+   "Physics-I",
+   "Module V",
+   "equivalence of Faraday’s law"
+  ],
+  "concept_b": "Angular",
+  "description_b": "The techniques and principles of software development, such as analysis, algorithms, coding, testing and compiling of programming paradigms in Angular."
+ },
+ {
+  "n": 43,
+  "case_id": "bm1-076",
+  "concept_a": "Angular",
+  "context_a": [
+   "Overall minimum 5 years and 3+ years of hands-on experience building custom web and mobile applications using Microsoft .NET, modern JavaScript frameworks (React, Vue, or Angular), and SQL Server.",
+   "Bachelor''s degree in Computer Science, Management Information Systems, Engineering, or equivalent professional experience.",
+   "Demonstrated ability to independently manage client relationships and drive technical conversations with business stakeholders.",
+   "Sr. Associate, Custom Applications"
+  ],
+  "concept_b": "Angular",
+  "description_b": "The techniques and principles of software development, such as analysis, algorithms, coding, testing and compiling of programming paradigms in Angular."
+ },
+ {
+  "n": 44,
+  "case_id": "bm1-078",
+  "concept_a": "Neural Network models",
+  "context_a": [
+   "Neural Network models",
+   "BIOINFORMATICS",
+   "Unit V",
+   "Protein structure basics, protein structure"
+  ],
+  "concept_b": "artificial neural networks",
+  "description_b": "A network of artificial neurons composed for solving artificial intelligence problems. These computing systems are inspired by the biological neural networks that constitute brains. Understanding of its general model and its elements. Knowledge of its use possibilities for automation."
+ },
+ {
+  "n": 45,
+  "case_id": "bm1-080",
+  "concept_a": "Database Management Systems",
+  "context_a": [
+   "Database Management Systems",
+   "Introduction to Database Systems",
+   "Module 8",
+   "Lemahieu"
+  ],
+  "concept_b": "database",
+  "description_b": "The classification of databases, that includes their purpose, characteristics, terminology, models and use such as XML databases, document-oriented databases and full text databases."
+ },
+ {
+  "n": 46,
+  "case_id": "bm1-084",
+  "concept_a": "Convolutional Neural Network: The Convolution Operation",
+  "context_a": [
+   "Convolutional Neural Network: The Convolution Operation",
+   "DEEP LEARNING FOR COMPUTER VISION",
+   "Unit III",
+   "Pooling as an Inﬁnitely Strong Prior"
+  ],
+  "concept_b": "deep learning",
+  "description_b": "The principles, methods and algorithms of deep learning, a subfield of artificial intelligence and machine learning. Common neural networks like perceptrons, feed-forward, backpropagation, and convolutional and recurrent neural networks."
+ },
+ {
+  "n": 47,
+  "case_id": "bm1-086",
+  "concept_a": "Python for Data Science",
+  "context_a": [
+   "Python for Data Science",
+   "Object Oriented Programming",
+   "Unit V",
+   "O′Reilly"
+  ],
+  "concept_b": "Python (computer programming)",
+  "description_b": "The techniques and principles of software development, such as analysis, algorithms, coding, testing and compiling of programming paradigms in Python."
+ },
+ {
+  "n": 48,
+  "case_id": "bm1-087",
+  "concept_a": "Influence of AI and ML in Clinical and Genomic Diagnostics",
+  "context_a": [
+   "Influence of AI and ML in Clinical and Genomic Diagnostics",
+   "INDUSTRY 5.0: APPLICATIONS OF AI",
+   "Unit II",
+   "Medical Machine Learning"
+  ],
+  "concept_b": "machine learning",
+  "description_b": "The principles, methods and algorithms of machine learning, a subfield of artificial intelligence. Common machine learning models such as supervised or unsupervised models, semi- supervised models and reinforcement learning models."
+ }
+]

@@ -1,0 +1,106 @@
+{
+ "case_ids": [
+  "bm1-001",
+  "bm1-002",
+  "bm1-003",
+  "bm1-006",
+  "bm1-007",
+  "bm1-009",
+  "bm1-010",
+  "bm1-013",
+  "bm1-014",
+  "bm1-015",
+  "bm1-018",
+  "bm1-019",
+  "bm1-020",
+  "bm1-021",
+  "bm1-022",
+  "bm1-023",
+  "bm1-026",
+  "bm1-027",
+  "bm1-029",
+  "bm1-031",
+  "bm1-034",
+  "bm1-035",
+  "bm1-037",
+  "bm1-038",
+  "bm1-043",
+  "bm1-045",
+  "bm1-046",
+  "bm1-050",
+  "bm1-052",
+  "bm1-053",
+  "bm1-057",
+  "bm1-058",
+  "bm1-059",
+  "bm1-060",
+  "bm1-061",
+  "bm1-063",
+  "bm1-066",
+  "bm1-069",
+  "bm1-070",
+  "bm1-071",
+  "bm1-072",
+  "bm1-075",
+  "bm1-076",
+  "bm1-078",
+  "bm1-080",
+  "bm1-084",
+  "bm1-086",
+  "bm1-087"
+ ],
+ "size": 48,
+ "seed": "semantic-validation-v1",
+ "method": "Stratified, proportional, deterministic:\n      1. strata = case kind (the benchmark's candidate families); quotas proportional to the benchmark\n         (largest remainder), so the subset mirrors the benchmark instead of forcing equal classes;\n      2. inside a kind, cases are spread over the assistant's development labels proportionally, and every label that\n         occurs in the benchmark is represented at least once (rare classes such as PARENT stay testable);\n      3. failure-mode tags (lexical collision, acronym, hierarchy, abbreviation, alias, paraphrase) that the proportional\n         pass missed are added by swapping within the same kind+label cell when possible;\n      4. inside a cell, order = SHA-256(seed + case id): reproducible and independent of any model output.\n    Reviewers never see the development labels; they are used only to keep the class mix representative.",
+ "kind_quotas": {
+  "ALIAS_SENSE": 25,
+  "AMBIGUOUS_TAXONOMY_LABEL": 10,
+  "AMBIGUOUS_TOPIC_MAPPING": 6,
+  "DIAGNOSTIC": 7
+ },
+ "distribution": {
+  "kind": {
+   "ALIAS_SENSE": 25,
+   "AMBIGUOUS_TAXONOMY_LABEL": 10,
+   "AMBIGUOUS_TOPIC_MAPPING": 6,
+   "DIAGNOSTIC": 7
+  },
+  "development_label (never shown to reviewers)": {
+   "CHILD": 7,
+   "PARTIAL_OVERLAP": 2,
+   "UNRELATED": 14,
+   "SAME_CONCEPT": 11,
+   "RELATED": 11,
+   "PARENT": 2,
+   "INSUFFICIENT_EVIDENCE": 1
+  },
+  "tags": {
+   "acronym": 10,
+   "hierarchy": 9,
+   "esco": 33,
+   "paraphrase": 10,
+   "lexical_collision": 14,
+   "abbreviation": 5,
+   "alias": 3,
+   "topic_mapping": 6,
+   "hard_case": 7
+  }
+ },
+ "benchmark_distribution": {
+  "kind": {
+   "ALIAS_SENSE": 45,
+   "AMBIGUOUS_TAXONOMY_LABEL": 18,
+   "AMBIGUOUS_TOPIC_MAPPING": 12,
+   "DIAGNOSTIC": 13
+  },
+  "development_label": {
+   "CHILD": 12,
+   "PARTIAL_OVERLAP": 4,
+   "UNRELATED": 28,
+   "SAME_CONCEPT": 18,
+   "RELATED": 23,
+   "PARENT": 2,
+   "INSUFFICIENT_EVIDENCE": 1
+  }
+ }
+}

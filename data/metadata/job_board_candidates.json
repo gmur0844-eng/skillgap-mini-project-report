@@ -1,0 +1,386 @@
+{
+ "_comment": "CANDIDATE employer job boards to TRY. None of these is verified: the board names are guesses from the employer's name. `python3 scripts/acquisition/fetch_official_sources.py --discover` asks each documented public API and reports which answer with postings located in India; `--add-verified` adds only those to official_sources.json with today's date as verified_on. Wrong guesses simply fail (NOT_A_BOARD).",
+ "version": "1",
+ "candidates": [
+  {
+   "provider": "greenhouse",
+   "board": "postman",
+   "employer": "Postman"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "razorpay",
+   "employer": "Razorpay"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "phonepe",
+   "employer": "PhonePe"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "browserstack",
+   "employer": "BrowserStack"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "hackerrank",
+   "employer": "HackerRank"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "chargebee",
+   "employer": "Chargebee"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "thoughtspot",
+   "employer": "ThoughtSpot"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "nutanix",
+   "employer": "Nutanix"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "cohesity",
+   "employer": "Cohesity"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "confluent",
+   "employer": "Confluent"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "elastic",
+   "employer": "Elastic"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "gitlab",
+   "employer": "GitLab"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "hashicorp",
+   "employer": "HashiCorp"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "datadog",
+   "employer": "Datadog"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "okta",
+   "employer": "Okta"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "cloudflare",
+   "employer": "Cloudflare"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "airbnb",
+   "employer": "Airbnb"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "pinterest",
+   "employer": "Pinterest"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "dropbox",
+   "employer": "Dropbox"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "zscaler",
+   "employer": "Zscaler"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "sprinklr",
+   "employer": "Sprinklr"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "mindtickle",
+   "employer": "MindTickle"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "innovaccer",
+   "employer": "Innovaccer"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "hevodata",
+   "employer": "Hevo Data"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "whatfix",
+   "employer": "Whatfix"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "cleartax",
+   "employer": "ClearTax"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "navi",
+   "employer": "Navi"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "dunzo",
+   "employer": "Dunzo"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "swiggy",
+   "employer": "Swiggy"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "zomato",
+   "employer": "Zomato"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "flipkart",
+   "employer": "Flipkart"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "uber",
+   "employer": "Uber"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "salesforce",
+   "employer": "Salesforce"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "intuit",
+   "employer": "Intuit"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "visa",
+   "employer": "Visa"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "wise",
+   "employer": "Wise"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "canva",
+   "employer": "Canva"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "figma",
+   "employer": "Figma"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "snowflake",
+   "employer": "Snowflake"
+  },
+  {
+   "provider": "greenhouse",
+   "board": "servicenow",
+   "employer": "ServiceNow"
+  },
+  {
+   "provider": "lever",
+   "board": "paytm",
+   "employer": "Paytm"
+  },
+  {
+   "provider": "lever",
+   "board": "upstox",
+   "employer": "Upstox"
+  },
+  {
+   "provider": "lever",
+   "board": "jupiter",
+   "employer": "Jupiter"
+  },
+  {
+   "provider": "lever",
+   "board": "slice",
+   "employer": "slice"
+  },
+  {
+   "provider": "lever",
+   "board": "dream11",
+   "employer": "Dream11"
+  },
+  {
+   "provider": "lever",
+   "board": "sharechat",
+   "employer": "ShareChat"
+  },
+  {
+   "provider": "lever",
+   "board": "unacademy",
+   "employer": "Unacademy"
+  },
+  {
+   "provider": "lever",
+   "board": "cars24",
+   "employer": "CARS24"
+  },
+  {
+   "provider": "lever",
+   "board": "zepto",
+   "employer": "Zepto"
+  },
+  {
+   "provider": "lever",
+   "board": "rapido",
+   "employer": "Rapido"
+  },
+  {
+   "provider": "lever",
+   "board": "spotdraft",
+   "employer": "SpotDraft"
+  },
+  {
+   "provider": "lever",
+   "board": "hasura",
+   "employer": "Hasura"
+  },
+  {
+   "provider": "lever",
+   "board": "plivo",
+   "employer": "Plivo"
+  },
+  {
+   "provider": "lever",
+   "board": "leadsquared",
+   "employer": "LeadSquared"
+  },
+  {
+   "provider": "lever",
+   "board": "practo",
+   "employer": "Practo"
+  },
+  {
+   "provider": "lever",
+   "board": "udaan",
+   "employer": "udaan"
+  },
+  {
+   "provider": "lever",
+   "board": "pharmeasy",
+   "employer": "PharmEasy"
+  },
+  {
+   "provider": "lever",
+   "board": "khatabook",
+   "employer": "Khatabook"
+  },
+  {
+   "provider": "lever",
+   "board": "acko",
+   "employer": "ACKO"
+  },
+  {
+   "provider": "lever",
+   "board": "vedantu",
+   "employer": "Vedantu"
+  },
+  {
+   "provider": "ashby",
+   "board": "sarvam",
+   "employer": "Sarvam AI"
+  },
+  {
+   "provider": "ashby",
+   "board": "deel",
+   "employer": "Deel"
+  },
+  {
+   "provider": "ashby",
+   "board": "ramp",
+   "employer": "Ramp"
+  },
+  {
+   "provider": "ashby",
+   "board": "notion",
+   "employer": "Notion"
+  },
+  {
+   "provider": "ashby",
+   "board": "linear",
+   "employer": "Linear"
+  },
+  {
+   "provider": "ashby",
+   "board": "vercel",
+   "employer": "Vercel"
+  },
+  {
+   "provider": "ashby",
+   "board": "supabase",
+   "employer": "Supabase"
+  },
+  {
+   "provider": "ashby",
+   "board": "posthog",
+   "employer": "PostHog"
+  },
+  {
+   "provider": "smartrecruiters",
+   "board": "Visa",
+   "employer": "Visa"
+  },
+  {
+   "provider": "smartrecruiters",
+   "board": "Bosch",
+   "employer": "Bosch"
+  },
+  {
+   "provider": "smartrecruiters",
+   "board": "Wipro",
+   "employer": "Wipro"
+  },
+  {
+   "provider": "smartrecruiters",
+   "board": "ServiceNow",
+   "employer": "ServiceNow"
+  },
+  {
+   "provider": "smartrecruiters",
+   "board": "Infosys",
+   "employer": "Infosys"
+  },
+  {
+   "provider": "smartrecruiters",
+   "board": "TataConsultancyServices",
+   "employer": "Tata Consultancy Services"
+  },
+  {
+   "provider": "smartrecruiters",
+   "board": "Accenture",
+   "employer": "Accenture"
+  },
+  {
+   "provider": "smartrecruiters",
+   "board": "Capgemini",
+   "employer": "Capgemini"
+  }
+ ]
+}

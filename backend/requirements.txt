@@ -1,0 +1,34 @@
+# Direct dependencies with compatible ranges. The exact environment that passed final validation is pinned in
+# requirements.lock (generated with `pip freeze` on the validation machine); install that for reproducibility:
+#   pip install -r requirements.lock
+# System tools (not pip): poppler `pdftotext` (curriculum PDF text layer), PostgreSQL client `psql`/`pg_dump`.
+
+# --- API ---
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+httpx>=0.27
+
+# --- Database ---
+sqlalchemy>=2.0.35,<2.1
+psycopg2-binary>=2.9.9
+alembic>=1.13,<2
+
+# --- Settings ---
+pydantic>=2.9,<3
+pydantic-settings>=2.5,<3
+python-dotenv>=1.0
+
+# --- Pipeline / analytics ---
+pandas>=2.2,<4
+numpy>=1.26
+openpyxl>=3.1            # .xlsx job-posting exports (read through pandas)
+pdfplumber==0.11.9
+scikit-learn>=1.5,<2
+psutil>=5.9              # memory sampling in the semantic runner (optional elsewhere)
+
+# --- Tests ---
+pytest>=8.3
+
+# Optional, not installed by default (the engine detects them and reports when absent):
+# sentence-transformers, transformers   (local embedding / LLM backends)

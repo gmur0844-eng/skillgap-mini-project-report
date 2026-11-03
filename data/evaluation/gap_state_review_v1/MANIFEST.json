@@ -1,0 +1,16 @@
+{
+ "run_id": "c066b227857f9eaf",
+ "items": 58,
+ "states": [
+  "NO_GAP",
+  "LIMITED_COVERAGE",
+  "DEPTH_GAP",
+  "STRUCTURAL_GAP",
+  "INSUFFICIENT_EVIDENCE",
+  "REVIEW_REQUIRED",
+  "OUTDATED_COVERAGE"
+ ],
+ "instructions": "Read the syllabus for each skill and choose the state you would assign; do not open system_states.jsonl before finishing. Two reviewers, independently.",
+ "system_states_sha256": "3e65e887831113c3979facc251f8fea587f59ad070700ff5c19ef3167991c6bc",
+ "label_source": "none yet (human labels pending, Phase 11)"
+}

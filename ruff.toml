@@ -1,0 +1,19 @@
+# Lint configuration (ruff). Run: ruff check backend scripts
+# Selected: pycodestyle errors/warnings (E, W), pyflakes (F), bugbear (B).
+line-length = 120
+target-version = "py310"
+extend-exclude = ["flutter_app", "data", "artifacts", ".venv", "backend/migrations/versions"]
+
+[lint]
+select = ["E", "F", "W", "B"]
+ignore = [
+  "E501",  # line length: ~1,500 existing lines exceed 120; not enforced until a formatter pass is agreed
+  "B008",  # FastAPI's Depends()/Query() in argument defaults is the framework's documented idiom
+  "B905",  # zip(strict=...) would change behaviour for unequal lengths; reviewed case by case instead
+  "E731",  # named lambdas are used deliberately for small local helpers
+  "E741",  # short loop names such as `l` in parsing code; renaming is churn without a behaviour change
+]
+
+[lint.per-file-ignores]
+"backend/tests/*" = ["B011", "E402"]  # assert False is intentional; sys.path set up before imports
+"scripts/frontend/deconst_tokens.py" = ["E702"]  # one-off code transformer kept as written

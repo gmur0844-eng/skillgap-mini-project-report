@@ -1,0 +1,4 @@
+{
+  "_comment": "Human review decisions, applied on every pipeline run. One entry per reviewed item: {\"review_item_uid\": \"concept:...\", \"review_decision\": \"ACCEPT\" | \"REJECT\" | \"RENAME\", \"new_name\": \"(RENAME only)\", \"reviewer\": \"name\", \"decided_at\": \"YYYY-MM-DD\", \"notes\": \"...\"}. Empty until a person reviews the queue -- the pipeline never fabricates approval.",
+  "decisions": []
+}

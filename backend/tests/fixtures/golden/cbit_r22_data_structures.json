@@ -1,0 +1,55 @@
+{
+ "fixture_id": "cbit_r22_data_structures",
+ "doc_id": "cbit-be-cse-r22",
+ "source_sha256": "bc14c2f0e51703675a1ca47b1b6836a140313a77c27c69debf220183d26783a2",
+ "parser_fingerprint_at_snapshot": "a7f6801a5ad88f49",
+ "pages": {
+  "34": "\n22CSC05\n                                     DATA STRUCTURES\n                        (Common to CSE, CSE-AIML, AIML, CET, IT, AIDS)\n\nSEE                                                                                        60 Marks\nCIE                                                                                        40 Marks\n\nPRE-REQUISITES: Basic knowledge of programming language such as python.\n\n1. Study various linear and non-linear data structures.\n2. Understand the performance of operations on data structures.\n3. Explore various searching and sorting techniques.\n\nCOURSE OUTCOMES: After completion of this course, students will be able to\n1. Understand the basic concepts and types of data structures.\n2. Analyse various linear and nonlinear data structures.\n3. Identify the applications of linear and nonlinear data structures and significance of balanced search trees,\n   hashing .\n4. Evaluate various searching and sorting techniques.\n5. Use appropriate data structures to design efficient algorithms.\n                                     CO-PO ARTICULATION MATRIX\n CO 1   3          3      -      -     -    -   -   -    -   -                    -      -      1   1   -\n CO 2   3          3      -      -     -    -   -   -    -   -                    -      -      1   1   -\n CO 3   3          2      -      -     -    -   -   -    -   -                    -      -      1   1   -\n CO 4   3          2      -      -     -    -   -   -    -   -                    -      -      1   1   -\n CO 5   3          3      1      -     -    -   -   -    -   -                    -      -      1   1   -\n\nUNIT-I\nIntroduction: Data structures, Classification of data structures, Abstract Data Types, Analysis of Algorithms;\nRecursion: Examples illustrating Recursion (Factorial, Binary Search), Analyzing Recursive Algorithms;\nSorting: Quick sort, Merge Sort, Selection Sort, Radix sort, Comparison of Sorting Algorithms.\n\nUNIT–II\nStacks: Stack ADT, Applications of stack, Array based stack implementation; Queues: Queue ADT, applications\nof queues, Array based queue implementation, Double Ended Queues, Circular queues.\n\nUNIT-III\nLinked Lists: Introduction, Linked lists, Representation of linked list, types of linked list, singly linked lists,\nimplementing stack with a singly linked list and Queue, Circular linked lists, doubly linked lists, Applications\nof linked lists.\n\nUNIT-IV\nTrees: General Trees, Binary Trees, Implementing Trees, Tree traversals; Search Trees: Binary Search Trees,\nBalanced search trees- AVL trees, B- trees; Priority Queue and Heaps: Priority queue ADT, Priority queue\napplications, Heap Trees, implementing a priority queue with a Heap, Heap Sort.\nUNIT-V\nGraphs: Introduction, Applications of graphs, Graph representations, graph traversals.\nHashing: Introduction, Hash Functions-Modulo, Middle of Square, Folding, Collision Resolution Techniques-\nSeparate Chaining, Open addressing,- LinearProbing, Quadratic Probing, Double Hashing.\n\n\n\n\nChaitanya Bharathi Institute Of Technology (A)                                                                33\n"
+ },
+ "extraction_methods": {
+  "34": "pdftotext_layout"
+ },
+ "expectations": {
+  "fixture_id": "cbit_r22_data_structures",
+  "course_code": "22CSC05",
+  "course_title": "Data Structures",
+  "prerequisite_contains": "Basic knowledge of programming language such as python",
+  "unit_labels": [
+   "UNIT-I",
+   "UNIT-II",
+   "UNIT-III",
+   "UNIT-IV",
+   "UNIT-V"
+  ],
+  "expected_topics": [
+   "Abstract Data Types",
+   "Quick sort",
+   "Merge Sort",
+   "Radix sort",
+   "Stack ADT",
+   "Circular queues",
+   "singly linked lists",
+   "doubly linked lists",
+   "AVL trees",
+   "Binary Search Trees",
+   "Heap Sort",
+   "graph traversals",
+   "Hash Functions",
+   "Quadratic Probing",
+   "Double Hashing"
+  ],
+  "unit_of_topic": {
+   "Stack ADT": "UNIT-II",
+   "AVL trees": "UNIT-IV",
+   "Double Hashing": "UNIT-V"
+  },
+  "must_not_be_topics": [
+   "60 Marks",
+   "CO 1",
+   "Analyse various linear and nonlinear data structures"
+  ]
+ },
+ "labelled_by": "assistant",
+ "human_validated": false,
+ "caveat": "Expectations were written by the assistant from the page text, not by a curriculum expert. They are a regression baseline for known-good pages, not ground truth for the whole corpus. expected_topics lists a representative subset of each page's topics, so 'precision' here only counts extracted topics that match one of the listed items and is a lower bound."
+}

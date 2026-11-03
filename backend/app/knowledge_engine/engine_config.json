@@ -1,0 +1,254 @@
+{
+  "_comment": "Knowledge-engine configuration. Every value is a documented, UNCALIBRATED default (no labelled benchmark large enough to calibrate against exists yet). The whole file is hashed into every run manifest so a result can always be reproduced with the exact configuration that produced it.",
+  "config_version": "2.0.0",
+  "semantic_backend": "tfidf",
+  "topics": {
+    "min_alpha_chars": 4,
+    "max_words": 25
+  },
+  "families": {
+    "k_min": 4,
+    "k_max": 24,
+    "random_state": 42
+  },
+  "concepts": {
+    "distance_threshold": 0.55,
+    "min_support": 2
+  },
+  "mapping": {
+    "min_similarity": 0.35,
+    "ambiguous_gap": 0.03,
+    "top_k_candidates": 3,
+    "generic_word_course_share": 0.1,
+    "_comment_context_gate": "course_context_min_similarity is NOT duplicated here: the topic mapping uses peers.course_context_min_similarity (the calibrated value); generic_word_course_share = a word in the topics of >= this share of courses is generic (data-driven)"
+  },
+  "drift": {
+    "expansion_ratio": 1.5,
+    "reduction_ratio": 0.667,
+    "min_support": 2,
+    "lineage": {
+      "min_topics": 5,
+      "topic_match_min": 0.5,
+      "related_min_share": 0.25,
+      "renamed_min_share": 0.6
+    }
+  },
+  "review": {
+    "high_min_support": 5,
+    "medium_min_support": 3,
+    "max_high_items": 40
+  },
+  "health": {
+    "max_ocr_required_page_ratio": 0.05,
+    "min_valid_courses": 5,
+    "min_titled_course_ratio": 0.9,
+    "max_topic_noise_ratio": 0.5,
+    "max_quarantine_ratio": 0.05,
+    "min_provenance_completeness": 1.0,
+    "max_baseline_drop_ratio": 0.2,
+    "min_industry_postings": 30
+  },
+  "industry": {
+    "_comment": "Industry/ESCO layer. Declared BEFORE the first run over the real postings; not tuned on results. Gap/trend/high-demand/partial-coverage thresholds are NOT here: they are the project's existing values in app.core.config (hashed into the run as existing_settings).",
+    "esco_semantic_min_similarity": 0.5,
+    "ambiguous_gap": 0.03,
+    "support": {
+      "observed_min_postings": 3,
+      "supported_min_postings": 5,
+      "supported_min_companies": 3,
+      "high_support_min_postings": 10,
+      "high_support_min_companies": 5
+    },
+    "recommendation": {
+      "min_support_states": [
+        "SUPPORTED",
+        "HIGH_SUPPORT"
+      ]
+    },
+    "segments": {
+      "k_min": 2,
+      "k_max": 8,
+      "random_state": 42,
+      "min_segment_postings_for_gaps": 30
+    },
+    "health": {
+      "min_postings": 30,
+      "max_duplicate_rate": 0.2,
+      "max_missing_description_ratio": 0.05,
+      "min_eligible_postings": 30,
+      "min_skill_extraction_yield": 0.5,
+      "min_unique_normalized_skills": 10,
+      "min_esco_mapping_yield": 0.2,
+      "max_ambiguous_skill_ratio": 0.2,
+      "min_provenance_completeness": 1.0,
+      "max_baseline_drop_ratio": 0.2,
+      "min_esco_skill_concepts": 1
+    },
+    "employer_boilerplate": {
+      "_comment": "jobs.employer_boilerplate. REPEATED: a sentence (>= min_words words) in >= min_share of one employer's postings, under >= min_titles different titles, when the employer has >= min_employer_postings postings (about-us, values, benefits). STATEMENT (statements true): equal-opportunity, accommodation or follow-us wording in any posting (jobs.EMPLOYER_STATEMENT). Such text describes the employer, not the job, and is not read for skills. Checked on the 2026-10 job-board postings (1,148): a sample of removed sentences of six employers, every removed sentence that held a technology skill and a random sample of statement sentences were employer text or section headings. Declared before the analysis was re-run; not tuned on gap results.",
+      "enabled": true,
+      "statements": true,
+      "min_employer_postings": 5,
+      "min_share": 0.8,
+      "min_titles": 3,
+      "min_words": 3
+    },
+    "alias_orthographic_min_ratio": 0.9,
+    "esco_taxonomy_mode": "full_with_delta"
+  },
+  "intelligence": {
+    "_comment": "Engine 2.0 additive analyses. Thresholds declared before the first run on real data; heuristics, not calibrated.",
+    "hierarchy": {
+      "max_head_words": 8,
+      "max_item_words": 6,
+      "structural_head_min_courses": 5,
+      "_comment": "structural_head_min_courses was set after inspecting the head-frequency distribution of this corpus (module/topics labels in 8-16 courses, real topic heads in <= 3); not tuned on labels"
+    },
+    "coverage": {
+      "max_item_words": 8,
+      "substantial_min_topics": 3,
+      "substantial_min_units": 2
+    },
+    "occupations": {
+      "min_postings_per_group": 10
+    },
+    "adjudication_limit": 300
+  },
+  "curriculum_scope": {
+    "_comment": "Curriculum scope (curriculum_scope.py): the expected programme span is the largest last semester reached by at least min_agreeing_documents other curricula of the analysis (same discipline, semester labels from semester 1). A TARGET that lacks some of those semesters is INCOMPLETE and its MISSING/PARTIAL gaps are marked for review (not actionable); classifications are unchanged.",
+    "min_agreeing_documents": 2
+  },
+  "semantic_ai": {
+    "_comment": "Ollama + qwen2.5:7b-instruct (Q4_K_M) verified on the project owner's Mac (M5, 16 GB). The endpoint is the Mac's localhost: runs that call the model must execute on that Mac; elsewhere the probe fails and the deterministic fallback records AI_PROVIDER_UNAVAILABLE. API keys only via named environment variables.",
+    "max_retries": 2,
+    "providers": [
+      {
+        "kind": "ollama",
+        "base_url_env": "OLLAMA_HOST",
+        "base_url": "http://127.0.0.1:11434",
+        "model": "qwen2.5:7b-instruct",
+        "timeout": 180,
+        "quantization": "Q4_K_M",
+        "runtime_version_verified": "Ollama 0.34.4"
+      },
+      {
+        "kind": "openai_compatible",
+        "base_url_env": "OPENAI_COMPATIBLE_BASE_URL",
+        "base_url": "http://127.0.0.1:1234",
+        "model": "",
+        "api_key_env": "OPENAI_COMPATIBLE_API_KEY",
+        "timeout": 60
+      },
+      {
+        "kind": "local_transformers",
+        "model_dir_env": "LOCAL_LLM_MODEL_DIR",
+        "model_dir": null
+      }
+    ],
+    "schema_version": "decision-schema-v2",
+    "prompt_version": "adjudicate-v3",
+    "replay": {
+      "_comment": "verified model decisions recorded on the machine that hosts the model; replayed by exact (prompt, schema, model, input_hash, context_hash) when the endpoint is not reachable from the pipeline host",
+      "runs": []
+    },
+    "promotion": {
+      "_comment": "DECLARED 2026-09-27 BEFORE any V3 output existed. Only MODEL_SUPPORTED decisions (evidence validator v2 passed) can have an effect, and only if the V3 run passes this gate on the frozen development benchmark. Effects never create ESCO mappings; they only decide whether an alias mention's sense is established.",
+      "benchmark": "data/evaluation/semantic_benchmark_v1/benchmark.json",
+      "benchmark_sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+      "effects": {
+        "ALIAS_SENSE": {
+          "SAME_CONCEPT": "ESTABLISHED_BY_MODEL",
+          "UNRELATED": "REJECTED_BY_MODEL"
+        }
+      },
+      "gate": {
+        "min_supported_same_concept_alias_predictions": 8,
+        "min_precision_same_concept_alias": 0.85,
+        "max_lexical_collisions_supported_as_same_concept": 0,
+        "min_unrelated_precision_alias": 0.85,
+        "min_schema_valid_rate": 0.98,
+        "max_metadata_only_supported": 0
+      }
+    }
+  },
+  "semantic_replay": {
+    "_comment": "Recorded, hash-verified model runs the pipeline may replay when no live provider is reachable. A run's decisions are replayed by exact cache key; its promotion gate decides whether any decision may have an effect.",
+    "runs": [
+      {
+        "name": "qwen-270-v3+replay-misses-1",
+        "cache_file": "data/cache/semantic_decisions/ollama-8b81c19ed450357b.jsonl",
+        "cache_sha256": "1aa874736648fe46140fbee876621618776a91c996bf3e7ea053d689934c3a25",
+        "gate_file": "data/semantic_runs/qwen-270-v3/analysis/promotion_gate.json",
+        "gate_sha256": "d403f8ef638a00e8890aaef663883f090787ea0612a59b2b7add217607419acb",
+        "prompt_version": "adjudicate-v3",
+        "components": [
+          {
+            "run": "qwen-270-v3",
+            "cache": "data/semantic_runs/qwen-270-v3/out/cache/ollama-8b81c19ed450357b.jsonl",
+            "sha256": "ddcfc4ac8d9cb3101288fa99fdcd98232f204c425f11cf7ead85594b49889aac",
+            "decisions": 283
+          },
+          {
+            "run": "qwen-v3-replay-misses-1",
+            "cache": "data/semantic_runs/qwen-v3-replay-misses-1/out/cache/ollama-8b81c19ed450357b.jsonl",
+            "sha256": "f12f699688857d1e7d61eb60f20e2b5363f3e5b1ba6fe7190838582e030a9440",
+            "decisions": 30
+          }
+        ],
+        "gate_note": "same model, prompt and schema as qwen-270-v3; that run's pre-declared gate (FAILED) governs every decision"
+      }
+    ]
+  },
+  "peers": {
+    "_comment": "Semantic peer benchmarking (peer_stage.py). Similarity only proposes candidates; a relationship needs course context plus equality/ESCO evidence. candidate/related minimum = mapping.min_similarity (0.35, the engine's existing topic-mapping threshold). course_context_min_similarity 0.12 = calibrated by scripts/evaluation/calibrate_peer_context.py (rule: lowest threshold with <= 0.1% false positives on 18,075 title-disjoint course pairs; TPR 0.74 on 31 equal-title pairs; the first peer trial run (context threshold 0.25, uncalibrated) had been inspected before this calibration, which is why the threshold is set by a stated rule on course pairs of known identity rather than by the concept results; artifacts/calibration/peer_course_context.json). same_member_share 0.5 = at least half of the smaller concept's specific topics are equal after normalisation.",
+    "candidate_min_similarity": 0.35,
+    "related_min_similarity": 0.35,
+    "course_context_min_similarity": 0.12,
+    "same_member_share": 0.5,
+    "top_k": 3,
+    "list_limit": 40
+  },
+  "industry_v2": {
+    "_comment": "industry_intel.py. Trend gate = the project's existing settings (min_periods_for_trend, min_eligible_postings_per_period, min_skill_postings_for_trend). min_pp_change 5 pp and min_relative_change 25% are declared before any multi-period data exists; persistent_min_pct 10% = present in at least one posting in ten in every period. Dimension groups below min_group_postings (= intelligence.occupations.min_postings_per_group) are not ranked. Clusters: co-occurrence in >= 3 postings with lift >= 2 among skills with >= 3 postings (= industry.support.observed_min_postings).",
+    "min_group_postings": 10,
+    "top_n": 10,
+    "temporal": {
+      "min_pp_change": 5.0,
+      "min_relative_change": 0.25,
+      "persistent_min_pct": 10.0,
+      "require_monotonic": true,
+      "segment_dimensions": [
+        "occupation_group",
+        "location_region",
+        "seniority",
+        "industry_domain"
+      ]
+    },
+    "clusters": {
+      "min_skill_postings": 3,
+      "min_cooccurring_postings": 3,
+      "min_lift": 2.0
+    }
+  },
+  "occupations_v2": {
+    "_comment": "occupation_resolution.py. A posting's context = its established ESCO skill mentions. min_context_skills 3: fewer skills cannot contradict or confirm a title. min_context_overlap 2: at least two of the posting's skills in the occupation's ESCO essential/optional profile (one shared skill is too weak for a transversal-heavy profile).",
+    "min_context_skills": 3,
+    "min_context_overlap": 2,
+    "max_profile_candidates": 3,
+    "min_postings_per_group": 10,
+    "top_n": 10
+  },
+  "semantic_validation": {
+    "gate_file": "data/evaluation/semantic_gate_v3.json",
+    "gate_sha256": "399b4cfad540ab9bf20fb9353b687bd5ce9075fffbda042f904fd1dd6c922306",
+    "packages_root": "data/evaluation/semantic_gold",
+    "_comment": "human validation of the 48-case stratified subset (scripts/evaluation/semantic_validation.py); gate v3 was declared before any independent label existed and supersedes v2 only when a package's metrics.json reports INDEPENDENTLY_EVALUATED for this exact gate file. Top-level (outside semantic_ai) so the replay cache key is unchanged."
+  },
+  "semantic_promotion_v2": {
+    "gate_file": "data/evaluation/semantic_gate_v2.json",
+    "gate_sha256": "d16871cffa28bbb867549f153359dfb808a9b67c57445ca6c8f86d80c9825f82",
+    "result_file": "data/evaluation/semantic_benchmark_v1/results/semantic_ai_evaluation.json",
+    "note": "supersedes the v1 gate only when an independent evaluation result exists for this exact gate file; until then the v1 result (FAILED) keeps SAFE_MODE",
+    "_comment": "kept OUTSIDE semantic_ai on purpose: every semantic_ai key except providers is part of the replay cache key; adding a key there would invalidate the recorded Qwen decisions"
+  }
+}

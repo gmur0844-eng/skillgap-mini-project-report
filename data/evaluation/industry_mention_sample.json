@@ -1,0 +1,330 @@
+{
+ "description": "Random sample of 60 skill mentions extracted from the 100 supplied job postings (seed 20260927), each read in its context window. Labels: is_skill_requirement = the posting states this as a skill/knowledge the job needs or uses (education requirements, role titles, taglines, generic verbs and audiences are not); mapped_sense_correct = for mentions with an ESCO concept or a curated technical token, whether that concept/token is the sense the posting uses (null when there is no mapping).",
+ "labelled_by": "assistant",
+ "human_validated": false,
+ "caveat": "Assistant labels from reading the context, not expert ground truth; 60 mentions give wide uncertainty. The labels were written before one rule change: after labelling, the manual evidence-chain test showed the capitalised single-word ESCO label 'Angular' matching 'Angular momentum' in a physics syllabus, and the single-word rule was widened from lower-case words to all ordinary single words. Metrics are computed for the final rules, so this sample is not fully independent of rule development. No numeric threshold was changed.",
+ "sampling": {
+  "seed": 20260927,
+  "size": 60,
+  "population": "all posting skill mentions of the run, every ESCO status and mention role"
+ },
+ "items": [
+  {
+   "mention_uid": "mention:615bd5f45e843c7b",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:c06418560bc360dd",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:82c842cdefec1f61",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:25f95ec95b590be0",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:16dd20ac032aa047",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null,
+   "note": "real skill (accounting work) excluded by the single-lowercase-word rule"
+  },
+  {
+   "mention_uid": "mention:1921144b79c4e425",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:c54d36b2f7a23f2c",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null,
+   "note": "role/title domain, not a stated skill requirement"
+  },
+  {
+   "mention_uid": "mention:a37bd8da22a25bad",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:94a41ab06426a9e4",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:2181936cdc828e70",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null,
+   "note": "education requirement"
+  },
+  {
+   "mention_uid": "mention:826f56984f4a92ef",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:4878722ab0435d0b",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:b644d4f5d2318299",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null,
+   "note": "'Mass Communication students' is an audience, not a skill"
+  },
+  {
+   "mention_uid": "mention:78282ed014060059",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:67c0da4dc3bd2da7",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:03c6fa8d4735ba74",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": false,
+   "note": "'GCP' here is Good Clinical Practice, not the cloud platform the curated token denotes"
+  },
+  {
+   "mention_uid": "mention:2943e145ae7e2f02",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:914ca3e5b29a189a",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:da39bd2db9592db5",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:f608991cfad26b77",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true,
+   "note": "ESCO lists 'Ethernet' as an altLabel of the broader concept 'transmission technology'"
+  },
+  {
+   "mention_uid": "mention:ef62d8d90d651f48",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:4d2518bd4c2e033e",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null,
+   "note": "real soft skill excluded by the single-lowercase-word rule"
+  },
+  {
+   "mention_uid": "mention:fa3b8209c9767530",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:0503cf66eacaf793",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": false,
+   "note": "'build trust' is part of a company tagline, not a job requirement"
+  },
+  {
+   "mention_uid": "mention:c834f34e94822c32",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:2aecd514aa6117d9",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null,
+   "note": "real soft skill excluded by the single-lowercase-word rule"
+  },
+  {
+   "mention_uid": "mention:d431998df953973c",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:16dbcd9ef7c0780c",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null,
+   "note": "education requirement"
+  },
+  {
+   "mention_uid": "mention:7265046a22e3cc1b",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:519f9ac71feeda32",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:f24a35d6958bdf9e",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null,
+   "note": "education requirement"
+  },
+  {
+   "mention_uid": "mention:aa49aab5d1487da0",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:226576e5f0d27a6f",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:a89a5a24e90f29f8",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:25b1d6b0894a8a31",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:1192d677c0f4c6af",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:ef1f0582aaca4d32",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:0bcf4c28e87d063d",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:0c56a00c2eedb816",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:270ba2c8d42c65c8",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": false,
+   "note": "ESCO 'architectural design' is building architecture; the posting means IT/platform architecture"
+  },
+  {
+   "mention_uid": "mention:688d641b7ba5b7d0",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null,
+   "note": "values encouraged in pupils, not a job requirement"
+  },
+  {
+   "mention_uid": "mention:ed39a23c88550ceb",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:840c97cac60276c0",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:08af2c23cbd9a6f2",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:469e34758529d87c",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:c545b2832136037a",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:2a3dcebc675e2013",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null,
+   "note": "real skill excluded by the single-lowercase-word rule"
+  },
+  {
+   "mention_uid": "mention:e8652360303de100",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:293bbabb6d8d9f3f",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null,
+   "note": "Chef the tool; excluded because only the qualifier-stripped label matched"
+  },
+  {
+   "mention_uid": "mention:2884dd947f5a48b7",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:574665d6cd5c7f18",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": false,
+   "note": "'control systems' matched inside 'version control systems'; ESCO concept is engineering control systems"
+  },
+  {
+   "mention_uid": "mention:090288fe33342b89",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:0deb5046832f46a5",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:3a0d17f41c1d4545",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:d6f21b50313ebbce",
+   "is_skill_requirement": false,
+   "mapped_sense_correct": null,
+   "note": "education requirement"
+  },
+  {
+   "mention_uid": "mention:0e5afed9239ceaac",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:ec8924cfbc0d37ac",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  },
+  {
+   "mention_uid": "mention:af7f249d8ee31e95",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:1ab4d6cfc422e74c",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": true
+  },
+  {
+   "mention_uid": "mention:ad464fcf35024087",
+   "is_skill_requirement": true,
+   "mapped_sense_correct": null
+  }
+ ]
+}

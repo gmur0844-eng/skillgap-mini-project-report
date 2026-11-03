@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "scope": "Same code, same inputs, different machine: the Mac release build against the container reference build of the same run id. Not used for the release-vs-c066 comparison.",
+  "principle": "Every GOLD file must be identical after run-id normalisation. The only exceptions are the outputs listed here, each limited to named fields or bounded counts. Every allowed difference is reported; anything else fails the gate.",
+  "rules": [
+    {
+      "file": "concept_families.jsonl",
+      "kind": "label_fields",
+      "key": "family_uid",
+      "fields": ["name"],
+      "why": "A family name is a descriptive label: the top TF-IDF terms of its member courses. Exact ties are broken by term since 2026-10-09; a near-tie whose last bit differs between libm/BLAS builds can still swap two terms. Membership, uids and evidence must be identical."
+    },
+    {
+      "file": "review_queue.jsonl",
+      "kind": "label_fields",
+      "key": "review_item_uid",
+      "fields": ["concept_family"],
+      "why": "Carries the family name above. Every other field, including candidate_related_concepts (deterministically ordered since 2026-10-09), must be identical."
+    },
+    {
+      "file": "review_queue_high_priority.json",
+      "kind": "label_fields",
+      "key": "review_item_uid",
+      "fields": ["concept_family"],
+      "why": "The HIGH-priority subset of the review queue; same reason."
+    },
+    {
+      "file": "industry/segments.json",
+      "kind": "label_fields",
+      "list_path": "segments",
+      "key": "segment_uid",
+      "fields": ["label"],
+      "why": "A segment label is the top TF-IDF terms of its postings (descriptive). Segment membership, sizes and demand must be identical."
+    },
+    {
+      "file": "peers/peer_relations.jsonl",
+      "kind": "peer_relations",
+      "variable_relationships": ["AMBIGUOUS", "RELATED"],
+      "count_tolerance": {"abs": 10, "rel": 0.05},
+      "churn_tolerance": 0.25,
+      "why": "Peer comparison ranks cosine similarities between thousands of topic pairs and keeps those above a threshold. Similarities within a few ulps of the threshold or of each other resolve differently on OpenBLAS and Apple Accelerate. Only review-required AMBIGUOUS and context-only RELATED relations may move, within the count tolerance per peer curriculum, and at most a quarter of their records may differ (records differing / reference count; observed 2026-10-09: at most 16%). SAME_CONCEPT, PARTIAL_OVERLAP and every other relation must be identical record for record."
+    },
+    {
+      "file": "peers/peer_review_candidates.jsonl",
+      "kind": "peer_relations",
+      "variable_relationships": ["AMBIGUOUS"],
+      "count_tolerance": {"abs": 10, "rel": 0.05},
+      "churn_tolerance": 0.25,
+      "why": "The review-required subset of peer_relations; same reason."
+    },
+    {
+      "file": "peers/peer_benchmark.json",
+      "kind": "json_paths",
+      "count_tolerance": {"abs": 5, "rel": 0.05},
+      "pct_tolerance": 0.5,
+      "allowed": [
+        {"path": "comparisons[*].coverage_levels.semantic_concept.by_relationship.AMBIGUOUS_REVIEW_REQUIRED", "type": "count"},
+        {"path": "comparisons[*].coverage_levels.semantic_concept.by_relationship.RELATED", "type": "count"},
+        {"path": "comparisons[*].coverage_levels.semantic_concept.by_relationship.SAME_CONCEPT_REVIEW_REQUIRED", "type": "count"},
+        {"path": "comparisons[*].coverage_levels.review_required.count", "type": "count"},
+        {"path": "comparisons[*].coverage_levels.review_required.pct", "type": "pct"},
+        {"path": "comparisons[*].coverage_levels.semantic_related.count", "type": "count"},
+        {"path": "comparisons[*].coverage_levels.semantic_related.pct", "type": "pct"},
+        {"path": "comparisons[*].scope.concepts", "type": "count"},
+        {"path": "comparisons[*].scope.single_topic_units", "type": "count"},
+        {"path": "comparisons[*].differences.ambiguous", "type": "list"},
+        {"path": "comparisons[*].differences.related_not_equivalent", "type": "list"},
+        {"path": "comparisons[*].differences.same_concept_review_required", "type": "list"},
+        {"path": "comparisons[*].differences.comparison_concepts_absent_from_target", "type": "list"},
+        {"path": "comparisons[*].differences.target_concepts_absent_from_comparison", "type": "list"}
+      ],
+      "why": "Summaries of the peer relations above: review-required and related counts, their percentages, the capped example lists, and the peer curriculum's concept count (peer concepts are clustered on the same similarities). Supported SAME_CONCEPT coverage, ABSENT_IN_COMPARISON, lexical coverage, depth, skill rows and industry alignment must be identical."
+    }
+  ]
+}
