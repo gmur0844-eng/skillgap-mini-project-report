@@ -1,0 +1,18 @@
+{
+ "source_run_id": "438ec2c0d5182dd4",
+ "source_content_digest": "70c46d9bb4de89b8be0b0ad4a9a58a66288476e353aa7cd57930ea1375215807",
+ "source_code_fingerprint": "9da5e152b40604b3",
+ "source_config_hash": "7415d76e48170ea2fdf91e6b09affbe0de6dc84be538a7bef6e368d9dcf1a237",
+ "candidates": 270,
+ "distinct_candidate_ids": 270,
+ "by_kind": {
+  "ALIAS_SENSE": 212,
+  "AMBIGUOUS_TAXONOMY_LABEL": 36,
+  "AMBIGUOUS_TOPIC_MAPPING": 22
+ },
+ "candidates_sha256": "e871862e65e7d54d98bf3d27c0416456858b092c1b76256cbf730c71b6f03d6f",
+ "generator": "app.knowledge_engine.intelligence.adjudication_candidates (unchanged)",
+ "verification": "every regenerated (input_hash, context_hash) equals a recorded decision of the source run",
+ "prompt_version": "adjudicate-v2",
+ "schema_version": "decision-schema-v1"
+}

@@ -1,0 +1,45 @@
+{
+ "run": "qwen-270-v3",
+ "benchmark_sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+ "declared_in": "engine_config.json semantic_ai.promotion (before V3 outputs)",
+ "checks": {
+  "min_supported_same_concept_alias_predictions": {
+   "value": 1,
+   "threshold": 8,
+   "pass": false
+  },
+  "min_precision_same_concept_alias": {
+   "value": 0.0,
+   "threshold": 0.85,
+   "pass": false
+  },
+  "max_lexical_collisions_supported_as_same_concept": {
+   "value": 2,
+   "threshold": 0,
+   "pass": false
+  },
+  "min_unrelated_precision_alias": {
+   "value": 0.8462,
+   "threshold": 0.85,
+   "pass": false
+  },
+  "min_schema_valid_rate": {
+   "value": 1.0,
+   "threshold": 0.98,
+   "pass": true
+  },
+  "max_metadata_only_supported": {
+   "value": 0,
+   "threshold": 0,
+   "pass": true
+  }
+ },
+ "passed": false,
+ "effects_if_passed": {
+  "ALIAS_SENSE": {
+   "SAME_CONCEPT": "ESTABLISHED_BY_MODEL",
+   "UNRELATED": "REJECTED_BY_MODEL"
+  }
+ },
+ "label_source": "DEVELOPMENT GOLD (assistant-labelled); not independent human labels"
+}

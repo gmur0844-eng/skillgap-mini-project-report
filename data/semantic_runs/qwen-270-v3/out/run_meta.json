@@ -1,0 +1,124 @@
+{
+ "started": "2026-09-27T14:02:53+0530",
+ "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+ "python": "3.14.7",
+ "freeze_manifest": {
+  "pool": "data/semantic_runs/qwen-270-v1",
+  "pool_candidates": 270,
+  "pool_rebuilt": 270,
+  "pool_missing": [],
+  "diagnostics": 13,
+  "diagnostics_skipped": [],
+  "diagnostics_not_available": [
+   {
+    "hard_case": "React / chemical reaction",
+    "reason": "no curriculum topic or posting in the supplied data contains 'chemical reaction'"
+   },
+   {
+    "hard_case": "Python / python snake",
+    "reason": "no supplied text uses 'python' in the animal sense"
+   },
+   {
+    "hard_case": "C (language) as an ESCO concept",
+    "reason": "no ESCO v1.2.1 English concept has 'C' as a label"
+   }
+  ],
+  "source_run_id": "438ec2c0d5182dd4",
+  "total": 283,
+  "distinct_ids": 283,
+  "candidates_sha256": "a889097d1884fe61461ba1f21a8a9b6026f4ef051bbbfe8a6febdce9b94d7ab1",
+  "prompt_version": "adjudicate-v3",
+  "schema_version": "decision-schema-v2",
+  "builder": "app.knowledge_engine.intelligence.v3_from_pool + semantic_v3 (production code)",
+  "metadata_never_evidence": "taxonomy/normalization facts are shown only as M-items; the validator rejects them as evidence"
+ },
+ "config_sha256": "814a77f3016aafe3243693901fea29b64383817890c1fde3a084414b4713d010",
+ "semantic_provider_sha256": "82fd566ca9c0fccc08a5b034daac7fad73386731386e0a53bdecb579196d50e4",
+ "runner_sha256": "f4db319845b37eccf99f44e75393adce8abd9055156693dbe910de99c0e94325",
+ "provider": {
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "model_version": "qwen2.5:7b-instruct",
+  "base_url": "http://127.0.0.1:11434",
+  "temperature": 0.0
+ },
+ "probes": [
+  {
+   "available": true,
+   "kind": "ollama",
+   "provider": "ollama",
+   "model": "qwen2.5:7b-instruct",
+   "model_version": "qwen2.5:7b-instruct",
+   "temperature": 0.0
+  },
+  {
+   "available": false,
+   "reason": "URLError: <urlopen error [Errno 61] Connection refused>",
+   "kind": "openai_compatible",
+   "provider": "openai_compatible",
+   "model": "",
+   "model_version": "",
+   "temperature": 0.0
+  },
+  {
+   "available": false,
+   "reason": "python package 'transformers' is not installed",
+   "kind": "local_transformers",
+   "provider": "local_transformers",
+   "model": null,
+   "model_version": null
+  }
+ ],
+ "prompt_version": "adjudicate-v3",
+ "schema_version": "decision-schema-v2",
+ "engine_config_version": "2.0.0",
+ "concurrency": 1,
+ "model_details": {
+  "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "size": 4683087332,
+  "parent_model": "",
+  "format": "gguf",
+  "family": "qwen2",
+  "families": [
+   "qwen2"
+  ],
+  "parameter_size": "7.6B",
+  "quantization_level": "Q4_K_M"
+ },
+ "runtime_version": "0.34.4",
+ "adjudicator": {
+  "status": "AI_PROVIDER_AVAILABLE",
+  "model_key": "8b81c19ed450357b"
+ },
+ "finished": "2026-09-27T14:52:55+0530",
+ "total_runtime_s": 3001.1,
+ "adjudicator_stats": {
+  "requested": 283,
+  "cache_hits": 0,
+  "model_calls": 283,
+  "invalid_outputs": 0,
+  "review_required": 0
+ },
+ "cache_hits": 0,
+ "cache_misses": 283,
+ "latency_s_uncached": {
+  "n": 283,
+  "mean": 10.603,
+  "median": 10.457,
+  "p95": 15.099,
+  "min": 4.571,
+  "max": 18.416
+ },
+ "tokens": {
+  "prompt": 221152,
+  "output": 32097
+ },
+ "decisions_file_sha256": "7184b0a81f365cc506e11522edaf0e53e3453e6768c83bb3db5e4ceac36e2fda",
+ "output_hashes_sha256": "199976b427d6e756194d7a1215ac824a2a523d43e4c8597d02d637e69b05395a",
+ "consistency": {
+  "n": 20,
+  "same_relationship": 20,
+  "same_output_hash": 17
+ },
+ "diagnostics": 0
+}

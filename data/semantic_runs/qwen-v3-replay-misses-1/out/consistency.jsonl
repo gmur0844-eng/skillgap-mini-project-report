@@ -1,0 +1,5 @@
+{"candidate_id": "pend:0a21c9778d71b7446e30429e", "first": "SAME_CONCEPT", "second": "SAME_CONCEPT", "same_relationship": true, "same_output_hash": true, "second_state": "MODEL_SUGGESTED"}
+{"candidate_id": "pend:118f774a4a3636d0a629b9af", "first": "RELATED", "second": "RELATED", "same_relationship": true, "same_output_hash": true, "second_state": "MODEL_SUGGESTED"}
+{"candidate_id": "pend:12e4761a8aca2d477635167d", "first": "UNRELATED", "second": "UNRELATED", "same_relationship": true, "same_output_hash": true, "second_state": "MODEL_SUGGESTED"}
+{"candidate_id": "pend:298c3235d2d91124d725104c", "first": "RELATED", "second": "RELATED", "same_relationship": true, "same_output_hash": true, "second_state": "MODEL_SUGGESTED"}
+{"candidate_id": "pend:2f228aa08a13ec79d160ddcc", "first": "UNRELATED", "second": "UNRELATED", "same_relationship": true, "same_output_hash": true, "second_state": "MODEL_SUGGESTED"}

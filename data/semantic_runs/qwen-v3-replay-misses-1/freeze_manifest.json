@@ -1,0 +1,13 @@
+{
+ "source_run_id": "827248edcd4c21c2",
+ "source_file": "data/gold/knowledge/827248edcd4c21c2/intelligence/semantic_pending_candidates.jsonl",
+ "total": 30,
+ "distinct_ids": 30,
+ "by_kind": {
+  "AMBIGUOUS_TOPIC_MAPPING": 30
+ },
+ "candidates_sha256": "12d10de07f13857bac85b98b389905ca904974efc97d9a0a82e88b901f60fa35",
+ "prompt_version": "adjudicate-v3",
+ "schema_version": "decision-schema-v2",
+ "reason": "replay misses: these inputs changed after qwen-270-v3 was frozen (silver attribution fix), so no recorded decision exists; decided fresh by the same model and protocol"
+}

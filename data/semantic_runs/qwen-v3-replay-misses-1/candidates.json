@@ -1,0 +1,3092 @@
+[
+ {
+  "candidate_entity": "topic:7d4b0811a237e78a",
+  "candidate_id": "pend:0a21c9778d71b7446e30429e",
+  "context_hash": "6e30429ee0d2da5dc8b5bc0314881b9467dc32d9a386141465b0dd0575b56666",
+  "input_hash": "0a21c9778d71b7442979a1bb64784c5ae32e45cec84ad4c232d0d619d206a90a",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "binary .sorting algorithms-bubble sort",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "binary .sorting algorithms-bubble sort"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Problem Solving and Programming using C"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit IV"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Pointers: Declaring a Pointer"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "selection sort"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Indirection Operator and Dereferencing"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Search and Sorting: searching algorithms-linear"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "Bubble sort",
+  "right_concept": {
+   "topic_uid": "topic:7d4b0811a237e78a"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Bubble sort"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Data Structure and Algorithms"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 6"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "insertion sort"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "randomized quicksort (intuitive explanation)"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "selection sort. (ii) Merge sort and divide and conquer paradigm (iii) Quick sort: average and worst case analysis"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Selection based on partitioning ideas used in Quick Sort"
+   }
+  ],
+  "source_entity": "map:1d07a4fcede2972e"
+ },
+ {
+  "candidate_entity": "topic:8ba6beae1d5aac82",
+  "candidate_id": "pend:118f774a4a3636d0a629b9af",
+  "context_hash": "a629b9af06c1c1044102b2498a22c6dc4784c94d493cabb0e63fff93e3653804",
+  "input_hash": "118f774a4a3636d046d36efd4286a55cb764f502fa7159e9ddc321c5d2e2eb9a",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Sorting: Selection Sort",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Sorting: Selection Sort"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "DATA STRUCTURES USING C++"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit II"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Insertion Sort"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Asymptotic"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Asymptotic notation"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Linear-Time Sorting: Bucket-Sort and Radix-Sort"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "selection sort. (ii) Merge sort and divide and conquer paradigm (iii) Quick sort: average and worst case analysis",
+  "right_concept": {
+   "topic_uid": "topic:8ba6beae1d5aac82"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "selection sort. (ii) Merge sort and divide and conquer paradigm (iii) Quick sort: average and worst case analysis"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Data Structure and Algorithms"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 6"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "insertion sort"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "randomized quicksort (intuitive explanation)"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Bubble sort"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Selection based on partitioning ideas used in Quick Sort"
+   }
+  ],
+  "source_entity": "map:44c5b2f16d7fb6c2"
+ },
+ {
+  "candidate_entity": "topic:879d56e8369886a1",
+  "candidate_id": "pend:12e4761a8aca2d477635167d",
+  "context_hash": "7635167dddf71cea23a3ac9e15856cdf26ec73417fd63e9481ccc98a3db79975",
+  "input_hash": "12e4761a8aca2d47386a47bac74aa776a1b2a4e221903aa744ffeb4f3465864c",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "System Testing",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "System Testing"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "testing",
+  "right_concept": {
+   "topic_uid": "topic:879d56e8369886a1"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "testing"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:20d448f9576ca00d"
+ },
+ {
+  "candidate_entity": "topic:879d56e8369886a1",
+  "candidate_id": "pend:298c3235d2d91124d725104c",
+  "context_hash": "d725104c885a5f02b604ae1e49be6a718a348bfb6de350eecab47aac2b03bb80",
+  "input_hash": "298c3235d2d911244bd9ffe4a68b5660aeb33526936fd4c6fbc6d197c6ab489c",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Validation Testing",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Validation Testing"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "testing",
+  "right_concept": {
+   "topic_uid": "topic:879d56e8369886a1"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "testing"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:d335cad8e01804b0"
+ },
+ {
+  "candidate_entity": "topic:abb9ea3db9031f7d",
+  "candidate_id": "pend:2f228aa08a13ec79d160ddcc",
+  "context_hash": "d160ddcc2bfb85b3f276ea3924aa92dd1b3f5a006e87e4a4f7fa600bf1a921bc",
+  "input_hash": "2f228aa08a13ec7931f844f11eb5d9adcf24317f6de27b4b5f9e045cb8376b52",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Finding",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Finding"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Nature Inspired Algorithms"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit III"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Clustering"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Image Processing"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Pheromone Updating"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Swarm Intelligence Algorithms: Particle Swarm Optimization (PSO)"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Design and Develop hybrid and memetic algorithms for optimization solutions and assess their"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Apply swarm intelligence techniques such as PSO, ACO, and ABC to solve optimization problems"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "Applications to cycle finding",
+  "right_concept": {
+   "topic_uid": "topic:abb9ea3db9031f7d"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Applications to cycle finding"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Data Structure and Algorithms"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 7"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "connected components"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "shortest path tree property"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "cycles"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "spanning trees"
+   }
+  ],
+  "source_entity": "map:ccd115e5ab34eca2"
+ },
+ {
+  "candidate_entity": "topic:879d56e8369886a1",
+  "candidate_id": "pend:3520ff344e08faab7ae35351",
+  "context_hash": "7ae35351fce3197281c7e0f20ccce27309428f71a1c2c906546c1587f84872d9",
+  "input_hash": "3520ff344e08faabb3babc1745d8a353cc44a94bd9342b5658265fdf2faf7ca8",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Testing - Testing Concepts",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing - Testing Concepts"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "testing",
+  "right_concept": {
+   "topic_uid": "topic:879d56e8369886a1"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "testing"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:5f55209c791a40ba"
+ },
+ {
+  "candidate_entity": "topic:879d56e8369886a1",
+  "candidate_id": "pend:46223517efbb0e5422fd8b55",
+  "context_hash": "22fd8b558df6f875be87161e915b3593e79b6f93ef775408a784ca4421f501b0",
+  "input_hash": "46223517efbb0e5426dc4472c72c51a4de37c9d4fe87b1fb61ceffb7d87a27cf",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "testing",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "testing"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "testing",
+  "right_concept": {
+   "topic_uid": "topic:879d56e8369886a1"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "testing"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:9bffdbef44b05e5a"
+ },
+ {
+  "candidate_entity": "topic:64e64584d4c19731",
+  "candidate_id": "pend:6c5bfdb28f4b786a0fc140bc",
+  "context_hash": "0fc140bcefccd157955b32c7dcdd414f1875699a2682c3ae0e269cf620065e4d",
+  "input_hash": "6c5bfdb28f4b786ad855753dda75f06752196bde8fd83b359a91977e7bbb047d",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Binary Search Trees",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Binary Search Trees"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "DATA STRUCTURES USING C++"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit IV"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Representing General Trees with Binary Trees"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Searching, Update Operations, AVL Trees: Insertion"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "A Linked Structure for Binary Trees"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Heap Sort"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "Searching",
+  "right_concept": {
+   "topic_uid": "topic:64e64584d4c19731"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Searching"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Programming for Problem Solving"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module V"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Finding roots of equations"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "notion of order of complexity through example programs (no"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Basic Sorting Algorithms (Bubble"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Selection)"
+   }
+  ],
+  "source_entity": "map:b682eaa22ffb208d"
+ },
+ {
+  "candidate_entity": "topic:33ade2689900a285",
+  "candidate_id": "pend:8281adae74559de3de6e4645",
+  "context_hash": "de6e4645362506b29d2b39f5e5cc203aee0bcb8de46451f816fa4275007f82b1",
+  "input_hash": "8281adae74559de3ab6f0e5feaa724b566f81f49cb4610088529bcc027a91da7",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Manual Testing",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Manual Testing"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "To test",
+  "right_concept": {
+   "topic_uid": "topic:33ade2689900a285"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "To test"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Theory of Computation"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 3"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Equivalent models"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Cook-Levin Theorem without proof"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Compulsory - Topics that should be covered"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "EXP. -(suggested) Post’s correspondence problem and other undecidable problems -(suggested) Polytime reductions"
+   }
+  ],
+  "source_entity": "map:589700ac2cf0525a"
+ },
+ {
+  "candidate_entity": "topic:33ade2689900a285",
+  "candidate_id": "pend:84af7f0d5a32107a7c6165c3",
+  "context_hash": "7c6165c39bae1cb76911a5dd2c2386f3341c619c0cd8ce08bf393207d7c41a51",
+  "input_hash": "84af7f0d5a32107ad2b27271f0c6db9504681b77b47db28dca4e0c49a3e2575d",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "System Testing",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "System Testing"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "To test",
+  "right_concept": {
+   "topic_uid": "topic:33ade2689900a285"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "To test"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Theory of Computation"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 3"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Equivalent models"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Cook-Levin Theorem without proof"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Compulsory - Topics that should be covered"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "EXP. -(suggested) Post’s correspondence problem and other undecidable problems -(suggested) Polytime reductions"
+   }
+  ],
+  "source_entity": "map:20d448f9576ca00d"
+ },
+ {
+  "candidate_entity": "topic:91aeebe7db3c59d5",
+  "candidate_id": "pend:8681a294d6c45ba6a4ddf769",
+  "context_hash": "a4ddf76968258eeabee2f512c5d71e5fd49077ef9fdcd68aaefd457dd801ae1b",
+  "input_hash": "8681a294d6c45ba6ffdb2e0454a813ae6b02f1bbbd07d2f9a1c8e62dcbd4aed7",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Finding",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Finding"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Nature Inspired Algorithms"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit III"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Clustering"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Image Processing"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Pheromone Updating"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Swarm Intelligence Algorithms: Particle Swarm Optimization (PSO)"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Design and Develop hybrid and memetic algorithms for optimization solutions and assess their"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Apply swarm intelligence techniques such as PSO, ACO, and ABC to solve optimization problems"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "finding connected components",
+  "right_concept": {
+   "topic_uid": "topic:91aeebe7db3c59d5"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "finding connected components"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Data Structure and Algorithms"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 7"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "connected components"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "shortest path tree property"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "cycles"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "spanning trees"
+   }
+  ],
+  "source_entity": "map:ccd115e5ab34eca2"
+ },
+ {
+  "candidate_entity": "topic:1a63b148e06680a0",
+  "candidate_id": "pend:8d38bbfe348c524ebdb885f5",
+  "context_hash": "bdb885f5ba7789803bb87ee5752a2209cbf326bea1e7029030a3e533d70d35e6",
+  "input_hash": "8d38bbfe348c524eb9e550fb02a639e37598811833e371064001d8cb4777232c",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "design",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "design"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "USER INTERFACE AND USER EXPERIENCE DESIGN"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit III"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Usability and User Testing: Understanding usability principles"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Usability testing methods (moderated vs"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "conducting heuristic evaluations of UI designs"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "unmoderated"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "tools."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Gain an understanding of accessibility guidelines and principles, designing interfaces that are"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "architecture and design",
+  "right_concept": {
+   "topic_uid": "topic:1a63b148e06680a0"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "architecture and design"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:57f47a6d708aaa4d"
+ },
+ {
+  "candidate_entity": "topic:1a63b148e06680a0",
+  "candidate_id": "pend:8d38bbfe348c524ec7d7972a",
+  "context_hash": "c7d7972a04f69a757445d66e3d06c68ba17df15b3c28b1e1d713084aecde1bbd",
+  "input_hash": "8d38bbfe348c524eb9e550fb02a639e37598811833e371064001d8cb4777232c",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "design",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "design"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "USER INTERFACE AND USER EXPERIENCE DESIGN"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit I"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "User-Centered Design Principles: Principles of user-centered design"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "research methods (interviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Difference between UI and UX"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Conducting user journey mapping exercises"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "tools."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Gain an understanding of accessibility guidelines and principles, designing interfaces that are"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "architecture and design",
+  "right_concept": {
+   "topic_uid": "topic:1a63b148e06680a0"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "architecture and design"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:80682ea5ef3f0098"
+ },
+ {
+  "candidate_entity": "topic:33ade2689900a285",
+  "candidate_id": "pend:910a28356ed1548e8bd076af",
+  "context_hash": "8bd076afaa45a315072d3da2986b6b889eadf610bca248ba31d87ce9b1b6c714",
+  "input_hash": "910a28356ed1548e2154067acb4893b9074a1385fbabffe579c70503b6536e83",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Validation Testing",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Validation Testing"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "To test",
+  "right_concept": {
+   "topic_uid": "topic:33ade2689900a285"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "To test"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Theory of Computation"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 3"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Equivalent models"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Cook-Levin Theorem without proof"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Compulsory - Topics that should be covered"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "EXP. -(suggested) Post’s correspondence problem and other undecidable problems -(suggested) Polytime reductions"
+   }
+  ],
+  "source_entity": "map:d335cad8e01804b0"
+ },
+ {
+  "candidate_entity": "topic:a96b7a483fd06cf0",
+  "candidate_id": "pend:9325e42209517886ccd3bdf5",
+  "context_hash": "ccd3bdf5779ce8de4f2d98eb0a800417e76bd4ca199f57afab32127ee7e5ea1a",
+  "input_hash": "9325e422095178869f86f2a96971f65685ff3af456e58ca35b60b32cf5298159",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Applications of AR/VR/XR in",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Applications of AR/VR/XR in"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "EXTENDED REALITY"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit IV"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Use of immersive technology in patient education"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Simulations and training"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Immersive learning environment"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Education: Introduction"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "experience design."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Choose the creation of immersive experiences, from 3D modelling to user interface design."
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "5G potential and applications",
+  "right_concept": {
+   "topic_uid": "topic:a96b7a483fd06cf0"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "5G potential and applications"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 2"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating a lexical analyzer using LEX/Flex"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Token, lexemes, and token codes"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "The role of lexical analysis"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Regular Expressions (RE) to represent tokens, Deterministic finite automata (DFA),Traversing a DFA for recognising tokens"
+   }
+  ],
+  "source_entity": "map:2fb33c0aeacd709f"
+ },
+ {
+  "candidate_entity": "topic:33ade2689900a285",
+  "candidate_id": "pend:9b1203cc64ba37380cd0d1e7",
+  "context_hash": "0cd0d1e78fd7e0d1aa924fff840f3c5fc3eb1dcc8934097e03d79d3bfd62ee8d",
+  "input_hash": "9b1203cc64ba3738d23b8152798d2acaa3b7df97b83816c4dbe632718e173286",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Testing - Testing Concepts",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing - Testing Concepts"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "To test",
+  "right_concept": {
+   "topic_uid": "topic:33ade2689900a285"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "To test"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Theory of Computation"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 3"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Equivalent models"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Cook-Levin Theorem without proof"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Compulsory - Topics that should be covered"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "EXP. -(suggested) Post’s correspondence problem and other undecidable problems -(suggested) Polytime reductions"
+   }
+  ],
+  "source_entity": "map:5f55209c791a40ba"
+ },
+ {
+  "candidate_entity": "topic:a96b7a483fd06cf0",
+  "candidate_id": "pend:a46d3990f5c517635b8a9fc1",
+  "context_hash": "5b8a9fc1c6eea031c6e79b3dbd6d4692385c7148e4d3641094f21bea31f8d045",
+  "input_hash": "a46d3990f5c51763724e2734dd2812c98ecbe6f6199acbb7761f8ffe485ca5f2",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "AI applications",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "AI applications"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "INDUSTRY 5.0: APPLICATIONS OF AI"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "AI in Intensity-modulated Radiotherapy"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "protection"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Present ATP techniques"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "outcome and plan deliverability"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Evaluate the foundational elements and impacts of AI within machine learning paradigms."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Analyze AI's effectiveness in diagnosing diseases and enhancing assistive technology."
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "5G potential and applications",
+  "right_concept": {
+   "topic_uid": "topic:a96b7a483fd06cf0"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "5G potential and applications"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 2"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating a lexical analyzer using LEX/Flex"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Token, lexemes, and token codes"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "The role of lexical analysis"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Regular Expressions (RE) to represent tokens, Deterministic finite automata (DFA),Traversing a DFA for recognising tokens"
+   }
+  ],
+  "source_entity": "map:012bd3223589a32b"
+ },
+ {
+  "candidate_entity": "topic:879d56e8369886a1",
+  "candidate_id": "pend:bd356d064e8df7b7bd0e4c58",
+  "context_hash": "bd0e4c58f16ad96e8b574359ebb076978da08c152c36483db5aa757100a53849",
+  "input_hash": "bd356d064e8df7b713c7d30bb75d1df273acc40ab074f28c36b25856b95afaac",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Manual Testing",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Manual Testing"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "testing",
+  "right_concept": {
+   "topic_uid": "topic:879d56e8369886a1"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "testing"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:589700ac2cf0525a"
+ },
+ {
+  "candidate_entity": "topic:c9c5271ff47138a9",
+  "candidate_id": "pend:c631d1813d454692fda22ceb",
+  "context_hash": "fda22ceba5df4eb92bb64e85cf9956e2db218c5a367a930c47f63bc453ad24d7",
+  "input_hash": "c631d1813d454692ca2383953611fb60fb86cec38ac24f160b9d19e9fe7380b6",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "AI applications",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "AI applications"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "INDUSTRY 5.0: APPLICATIONS OF AI"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "AI in Intensity-modulated Radiotherapy"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "protection"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Present ATP techniques"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "outcome and plan deliverability"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Evaluate the foundational elements and impacts of AI within machine learning paradigms."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Analyze AI's effectiveness in diagnosing diseases and enhancing assistive technology."
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "Multimedia applications",
+  "right_concept": {
+   "topic_uid": "topic:c9c5271ff47138a9"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Multimedia applications"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Introductory Cyber Security"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Detailed Contents for Desirable Learning Outcomes"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "HTTP. Adaptive streaming"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Audio and video streaming over UDP"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Data center network design and topology"
+   }
+  ],
+  "source_entity": "map:012bd3223589a32b"
+ },
+ {
+  "candidate_entity": "topic:c9c5271ff47138a9",
+  "candidate_id": "pend:c7813226285b91582a91c700",
+  "context_hash": "2a91c700efc576a587e97eaef7c5bcdcc6becff3cd9d6a78d9ba5005f4d0103f",
+  "input_hash": "c7813226285b915861b8a67c955e1f45f7df3267b5f9f8e3c2b481b0b5b435d4",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Applications of AR/VR/XR in",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Applications of AR/VR/XR in"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "EXTENDED REALITY"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit IV"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Use of immersive technology in patient education"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Simulations and training"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Immersive learning environment"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Education: Introduction"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "experience design."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Choose the creation of immersive experiences, from 3D modelling to user interface design."
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "Multimedia applications",
+  "right_concept": {
+   "topic_uid": "topic:c9c5271ff47138a9"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Multimedia applications"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Introductory Cyber Security"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Detailed Contents for Desirable Learning Outcomes"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "HTTP. Adaptive streaming"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Audio and video streaming over UDP"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Data center network design and topology"
+   }
+  ],
+  "source_entity": "map:2fb33c0aeacd709f"
+ },
+ {
+  "candidate_entity": "topic:8b96d71ba282cc3f",
+  "candidate_id": "pend:c833abcd356710bb3764121a",
+  "context_hash": "3764121ac6656e6875749c444b2f8829de5b481c8e16085e20ca8d261b2aef13",
+  "input_hash": "c833abcd356710bb4b63efc8b411ec9a31784e6ba761c42060f56dbb96e632cf",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "User",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "User"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "EXTENDED REALITY"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Case studies. 3D Modeling and User Interface"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Ethics in Immersive Technologies: Introduction to ethics in immersive technologies"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "physical health Psychological and emotional impact"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Modelling technique"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "experience design."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Choose the creation of immersive experiences, from 3D modelling to user interface design."
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "requirements including user interface",
+  "right_concept": {
+   "topic_uid": "topic:8b96d71ba282cc3f"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "requirements including user interface"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:b0a302c1738c25c1"
+ },
+ {
+  "candidate_entity": "topic:8b96d71ba282cc3f",
+  "candidate_id": "pend:c833abcd356710bb9bdaad10",
+  "context_hash": "9bdaad107a2ce313550c112704c2e2f3003fe63ee66b838b19e2d9636bcc98d1",
+  "input_hash": "c833abcd356710bb4b63efc8b411ec9a31784e6ba761c42060f56dbb96e632cf",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "User",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "User"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "EXTENDED REALITY"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit III"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "AI and its usage in VR/AR"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Graphic rendering"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Case studies"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "AI in AR/VR/XR: -Introduction"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "experience design."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Choose the creation of immersive experiences, from 3D modelling to user interface design."
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "requirements including user interface",
+  "right_concept": {
+   "topic_uid": "topic:8b96d71ba282cc3f"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "requirements including user interface"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Complier Design"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 8"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Generating assembly code from three address codes using simple register allocation and instruction selection"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Register allocation using graph colouring"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "TACoC is a subset of MMC such that code is in a form similar to three address code"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Lab/Assignment Details"
+   }
+  ],
+  "source_entity": "map:094f52f9f270adf8"
+ },
+ {
+  "candidate_entity": "topic:3f29ea3a1bdc94e1",
+  "candidate_id": "pend:cbc7ec6eb8eb79ff409c7e80",
+  "context_hash": "409c7e8064fe8c9b021924814e23a5e3071a2dbd25181217d30771d548b66692",
+  "input_hash": "cbc7ec6eb8eb79ff7378edf38792799b9d312b8dc325bb7b729c0c2cf1ae5d7b",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "binary .sorting algorithms-bubble sort",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "binary .sorting algorithms-bubble sort"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Problem Solving and Programming using C"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit IV"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Pointers: Declaring a Pointer"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "selection sort"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Indirection Operator and Dereferencing"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Search and Sorting: searching algorithms-linear"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "Basic Sorting Algorithms (Bubble",
+  "right_concept": {
+   "topic_uid": "topic:3f29ea3a1bdc94e1"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Basic Sorting Algorithms (Bubble"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Programming for Problem Solving"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module V"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Finding roots of equations"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "notion of order of complexity through example programs (no"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Selection)"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Searching"
+   }
+  ],
+  "source_entity": "map:1d07a4fcede2972e"
+ },
+ {
+  "candidate_entity": "topic:4869e262511b3ce7",
+  "candidate_id": "pend:d2342d611b134212c32d4d71",
+  "context_hash": "c32d4d7128d9eabdceb6500c2d7afa72049551d2ae6c276ba0759cfd614206b3",
+  "input_hash": "d2342d611b134212cc2c6cfc5da71bd447691c1c93a621165de515406d01eb7a",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Sorting: Selection Sort",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Sorting: Selection Sort"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "DATA STRUCTURES USING C++"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit II"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Insertion Sort"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Asymptotic"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Asymptotic notation"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Linear-Time Sorting: Bucket-Sort and Radix-Sort"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "Selection)",
+  "right_concept": {
+   "topic_uid": "topic:4869e262511b3ce7"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Selection)"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Programming for Problem Solving"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module V"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Finding roots of equations"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "notion of order of complexity through example programs (no"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Basic Sorting Algorithms (Bubble"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Searching"
+   }
+  ],
+  "source_entity": "map:44c5b2f16d7fb6c2"
+ },
+ {
+  "candidate_entity": "topic:33ade2689900a285",
+  "candidate_id": "pend:e13ab3e37631583fb5c1790f",
+  "context_hash": "b5c1790fbbe409ac2e771e07861b1eb1b2d0dfe5660e80b7791282a1017a66c4",
+  "input_hash": "e13ab3e37631583f777a48c2749f738b21a2da55b6360ba09502044cd16615bb",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "testing",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "testing"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "Software Engineering"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Automatic vs"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Reviews Formal Technical Reviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "HP)Deployment overview"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Testing Process"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Develop test cases and acquire skills necessary for independently developing a complete software"
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Acquire a working knowledge of software processes and models for each phase of software"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "To test",
+  "right_concept": {
+   "topic_uid": "topic:33ade2689900a285"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "To test"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Theory of Computation"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 3"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Equivalent models"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Cook-Levin Theorem without proof"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Compulsory - Topics that should be covered"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "EXP. -(suggested) Post’s correspondence problem and other undecidable problems -(suggested) Polytime reductions"
+   }
+  ],
+  "source_entity": "map:9bffdbef44b05e5a"
+ },
+ {
+  "candidate_entity": "topic:c338c0fb83fbe48b",
+  "candidate_id": "pend:e8f88b2ea85f84fd0b4f13d3",
+  "context_hash": "0b4f13d38f0aec34044262cf5ced6096efcefcb2958d818891616f3e7fd1c626",
+  "input_hash": "e8f88b2ea85f84fda874691bb69fa59a6d497435886220aa80f61ab7d2978909",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "User",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "User"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "EXTENDED REALITY"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit V"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Case studies. 3D Modeling and User Interface"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Ethics in Immersive Technologies: Introduction to ethics in immersive technologies"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "physical health Psychological and emotional impact"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Modelling technique"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "experience design."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Choose the creation of immersive experiences, from 3D modelling to user interface design."
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "PCB elements to user",
+  "right_concept": {
+   "topic_uid": "topic:c338c0fb83fbe48b"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "PCB elements to user"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Operating Systems"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 7"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "teaching assignment / practice"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Module Topics Pedagogy Nature of lab /"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Detailed Contents for Desirable Learning Outcomes"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "caching optimizations File System case study (the Unix file system etc.)"
+   }
+  ],
+  "source_entity": "map:b0a302c1738c25c1"
+ },
+ {
+  "candidate_entity": "topic:c338c0fb83fbe48b",
+  "candidate_id": "pend:e8f88b2ea85f84fd518d370e",
+  "context_hash": "518d370e6e8ac92d4e974dc60e44b9764d047e39820def3a1f6cbb4ea2bf2fd5",
+  "input_hash": "e8f88b2ea85f84fda874691bb69fa59a6d497435886220aa80f61ab7d2978909",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "User",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "User"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "EXTENDED REALITY"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit III"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "AI and its usage in VR/AR"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Graphic rendering"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Case studies"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "AI in AR/VR/XR: -Introduction"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "experience design."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Choose the creation of immersive experiences, from 3D modelling to user interface design."
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "PCB elements to user",
+  "right_concept": {
+   "topic_uid": "topic:c338c0fb83fbe48b"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "PCB elements to user"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Operating Systems"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 7"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "teaching assignment / practice"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Module Topics Pedagogy Nature of lab /"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Detailed Contents for Desirable Learning Outcomes"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "caching optimizations File System case study (the Unix file system etc.)"
+   }
+  ],
+  "source_entity": "map:094f52f9f270adf8"
+ },
+ {
+  "candidate_entity": "topic:6eb0d12e8330fdc6",
+  "candidate_id": "pend:f93529aeac5a1eb93373e244",
+  "context_hash": "3373e244abdcb9e4333c3219dc278c5ed6e46c6193597b7253c3ef0bd2211981",
+  "input_hash": "f93529aeac5a1eb95678559b1dcb916aaba83585deb2e4873c8140d5fa6c740e",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "Binary Search Trees",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "Binary Search Trees"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "DATA STRUCTURES USING C++"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit IV"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Representing General Trees with Binary Trees"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Searching, Update Operations, AVL Trees: Insertion"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "A Linked Structure for Binary Trees"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Heap Sort"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "trees",
+  "right_concept": {
+   "topic_uid": "topic:6eb0d12e8330fdc6"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "trees"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Data Structure and Algorithms"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 7"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "connected components"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "shortest path tree property"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "cycles"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "spanning trees"
+   }
+  ],
+  "source_entity": "map:b682eaa22ffb208d"
+ },
+ {
+  "candidate_entity": "topic:5a38b0c8b001e82d",
+  "candidate_id": "pend:ff26781084cf1d049c5c8910",
+  "context_hash": "9c5c8910f9fdd1137124a66559bd470ee3810d9b8809ddeda545f8a91a0fbaa2",
+  "input_hash": "ff26781084cf1d04c6b1e475f2eaa815cedadeb056a303024cacb782fa0c1602",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "design",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "design"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "USER INTERFACE AND USER EXPERIENCE DESIGN"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit I"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "User-Centered Design Principles: Principles of user-centered design"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "research methods (interviews"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Difference between UI and UX"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "Conducting user journey mapping exercises"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "tools."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Gain an understanding of accessibility guidelines and principles, designing interfaces that are"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "design examples",
+  "right_concept": {
+   "topic_uid": "topic:5a38b0c8b001e82d"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "design examples"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Theory of Computation"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 3"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Equivalent models"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Cook-Levin Theorem without proof"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Compulsory - Topics that should be covered"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "EXP. -(suggested) Post’s correspondence problem and other undecidable problems -(suggested) Polytime reductions"
+   }
+  ],
+  "source_entity": "map:80682ea5ef3f0098"
+ },
+ {
+  "candidate_entity": "topic:5a38b0c8b001e82d",
+  "candidate_id": "pend:ff26781084cf1d04c1d1946d",
+  "context_hash": "c1d1946d94a9926ba0d068666473394d429aebeb749f89c8368db32d1b1bb97a",
+  "input_hash": "ff26781084cf1d04c6b1e475f2eaa815cedadeb056a303024cacb782fa0c1602",
+  "kind": "AMBIGUOUS_TOPIC_MAPPING",
+  "left": "design",
+  "left_items": [
+   {
+    "id": "L1",
+    "source_type": "SOURCE_TEXT",
+    "text": "design"
+   },
+   {
+    "id": "L2",
+    "source_type": "COURSE_TITLE",
+    "text": "USER INTERFACE AND USER EXPERIENCE DESIGN"
+   },
+   {
+    "id": "L3",
+    "source_type": "UNIT_TITLE",
+    "text": "Unit III"
+   },
+   {
+    "id": "L4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Usability and User Testing: Understanding usability principles"
+   },
+   {
+    "id": "L5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Usability testing methods (moderated vs"
+   },
+   {
+    "id": "L6",
+    "source_type": "SOURCE_TEXT",
+    "text": "conducting heuristic evaluations of UI designs"
+   },
+   {
+    "id": "L7",
+    "source_type": "SOURCE_TEXT",
+    "text": "unmoderated"
+   },
+   {
+    "id": "L8",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "tools."
+   },
+   {
+    "id": "L9",
+    "source_type": "LEARNING_OUTCOME",
+    "text": "Gain an understanding of accessibility guidelines and principles, designing interfaces that are"
+   }
+  ],
+  "metadata_items": [
+   {
+    "id": "M1",
+    "source_type": "NORMALIZATION_METADATA",
+    "text": "two reference topics had near-equal lexical (TF-IDF) similarity to the LEFT topic; this is one of them"
+   }
+  ],
+  "question": "Does the LEFT curriculum topic, in its course context, teach the same thing as the RIGHT topic?",
+  "right": "design examples",
+  "right_concept": {
+   "topic_uid": "topic:5a38b0c8b001e82d"
+  },
+  "right_items": [
+   {
+    "id": "R1",
+    "source_type": "SOURCE_TEXT",
+    "text": "design examples"
+   },
+   {
+    "id": "R2",
+    "source_type": "COURSE_TITLE",
+    "text": "Theory of Computation"
+   },
+   {
+    "id": "R3",
+    "source_type": "UNIT_TITLE",
+    "text": "Module 3"
+   },
+   {
+    "id": "R4",
+    "source_type": "SOURCE_TEXT",
+    "text": "Equivalent models"
+   },
+   {
+    "id": "R5",
+    "source_type": "SOURCE_TEXT",
+    "text": "Cook-Levin Theorem without proof"
+   },
+   {
+    "id": "R6",
+    "source_type": "SOURCE_TEXT",
+    "text": "Compulsory - Topics that should be covered"
+   },
+   {
+    "id": "R7",
+    "source_type": "SOURCE_TEXT",
+    "text": "EXP. -(suggested) Post’s correspondence problem and other undecidable problems -(suggested) Polytime reductions"
+   }
+  ],
+  "source_entity": "map:57f47a6d708aaa4d"
+ }
+]

@@ -1,0 +1,1352 @@
+{
+ "source_run_id": "438ec2c0d5182dd4",
+ "invocations": 2,
+ "population": {
+  "frozen": 270,
+  "decided": 270,
+  "distinct": 270,
+  "missing": 0,
+  "missing_sample": [],
+  "unknown": [],
+  "input_hash_mismatch": 0
+ },
+ "decision_states": {
+  "MODEL_SUGGESTED": 270
+ },
+ "relationships": {
+  "UNRELATED": 24,
+  "SAME_CONCEPT": 187,
+  "RELATED": 25,
+  "INSUFFICIENT_EVIDENCE": 2,
+  "AMBIGUOUS": 17,
+  "PARENT": 15
+ },
+ "relationships_by_kind": {
+  "ALIAS_SENSE": {
+   "SAME_CONCEPT": 169,
+   "UNRELATED": 16,
+   "AMBIGUOUS": 17,
+   "PARENT": 7,
+   "RELATED": 3
+  },
+  "AMBIGUOUS_TAXONOMY_LABEL": {
+   "UNRELATED": 5,
+   "RELATED": 11,
+   "INSUFFICIENT_EVIDENCE": 1,
+   "SAME_CONCEPT": 15,
+   "PARENT": 4
+  },
+  "AMBIGUOUS_TOPIC_MAPPING": {
+   "RELATED": 11,
+   "SAME_CONCEPT": 3,
+   "PARENT": 4,
+   "UNRELATED": 3,
+   "INSUFFICIENT_EVIDENCE": 1
+  }
+ },
+ "schema": {
+  "stored_decisions_failing_schema": 0,
+  "model_outputs_rejected": 0,
+  "decisions_with_rejected_outputs": 0,
+  "review_required": 0,
+  "model_failures": 0,
+  "retries": 0,
+  "schema_success_rate_first_attempt": 1.0
+ },
+ "human_validated": 0,
+ "transitions": [
+  {
+   "kind": "ALIAS_SENSE",
+   "before": "AMBIGUOUS",
+   "after": "AMBIGUOUS",
+   "n": 17
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "before": "AMBIGUOUS",
+   "after": "PARENT",
+   "n": 7
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "before": "AMBIGUOUS",
+   "after": "RELATED",
+   "n": 3
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "before": "AMBIGUOUS",
+   "after": "SAME_CONCEPT",
+   "n": 169
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "before": "AMBIGUOUS",
+   "after": "UNRELATED",
+   "n": 16
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "before": "AMBIGUOUS",
+   "after": "INSUFFICIENT_EVIDENCE",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "before": "AMBIGUOUS",
+   "after": "PARENT",
+   "n": 4
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "before": "AMBIGUOUS",
+   "after": "RELATED",
+   "n": 11
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "before": "AMBIGUOUS",
+   "after": "SAME_CONCEPT",
+   "n": 15
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "before": "AMBIGUOUS",
+   "after": "UNRELATED",
+   "n": 5
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "before": "AMBIGUOUS",
+   "after": "INSUFFICIENT_EVIDENCE",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "before": "AMBIGUOUS",
+   "after": "PARENT",
+   "n": 4
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "before": "AMBIGUOUS",
+   "after": "RELATED",
+   "n": 11
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "before": "AMBIGUOUS",
+   "after": "SAME_CONCEPT",
+   "n": 3
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "before": "AMBIGUOUS",
+   "after": "UNRELATED",
+   "n": 3
+  }
+ ],
+ "transition_summary": {
+  "unchanged": 17,
+  "changed": 253,
+  "newly_resolved_definite": 251,
+  "newly_ambiguous": 0,
+  "still_ambiguous": 17,
+  "insufficient_evidence": 2,
+  "newly_rejected_unrelated": 24,
+  "newly_review_required": 0,
+  "baseline_relationships": {
+   "AMBIGUOUS": 270
+  }
+ },
+ "evidence_validation": {
+  "by_status": {
+   "ALL_GROUNDED": 267,
+   "UNGROUNDED": 1,
+   "PARTLY_GROUNDED": 1,
+   "NO_EVIDENCE_FOR_DEFINITE_RELATIONSHIP": 1
+  },
+  "by_status_model_suggested_definite": {
+   "ALL_GROUNDED": 249,
+   "UNGROUNDED": 1,
+   "NO_EVIDENCE_FOR_DEFINITE_RELATIONSHIP": 1
+  },
+  "failures": 2,
+  "ungrounded_examples": [
+   {
+    "candidate_id": "cand:19c4a3876306af17",
+    "left": "ict",
+    "right": "computer technology",
+    "relationship": "SAME_CONCEPT",
+    "not_found_in_inputs": [
+     "ICT is commonly used as an abbreviation for information and communication technology, which encompasses computer technology."
+    ]
+   },
+   {
+    "candidate_id": "cand:652ac17f56c5eacc",
+    "left": "meaning of Prosperity in detail",
+    "right": "K Means",
+    "relationship": "INSUFFICIENT_EVIDENCE",
+    "not_found_in_inputs": [
+     "(none)"
+    ]
+   }
+  ]
+ },
+ "promotion": {
+  "promoted_above_model_suggested": 0,
+  "reason": "each candidate exists because the deterministic rule was NOT satisfied; a model answer does not satisfy that rule, so nothing is promoted (RULE_SUPPORTED requires the rule itself)"
+ },
+ "model_consistency_resample": {
+  "n": 20,
+  "same_relationship": 20,
+  "same_output_hash": 16
+ },
+ "rerun_consistency": {
+  "invocations_with_decisions": 2,
+  "identical_output_hashes_across_invocations": true,
+  "cache_hits_by_invocation": [
+   0,
+   270
+  ],
+  "cache_misses_by_invocation": [
+   270,
+   0
+  ]
+ },
+ "performance": {
+  "total_runtime_s": 1709.5,
+  "uncached_decisions": 270,
+  "mean_s": 6.33,
+  "median_s": 6.403,
+  "p95_s": 8.522,
+  "min_s": 3.077,
+  "max_s": 11.854,
+  "tokens": {
+   "prompt": 104434,
+   "output": 24723
+  },
+  "model_calls": 270
+ },
+ "memory": {
+  "samples": 0,
+  "system_free_pct_min": null,
+  "system_free_pct_max": null,
+  "swapusage_first": null,
+  "swapusage_last": null,
+  "ollama_model_bytes": null
+ },
+ "model": {
+  "provider": {
+   "provider": "ollama",
+   "model": "qwen2.5:7b-instruct",
+   "model_version": "qwen2.5:7b-instruct",
+   "base_url": "http://127.0.0.1:11434",
+   "temperature": 0.0
+  },
+  "model_details": {
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "size": 4683087332,
+   "parent_model": "",
+   "format": "gguf",
+   "family": "qwen2",
+   "families": [
+    "qwen2"
+   ],
+   "parameter_size": "7.6B",
+   "quantization_level": "Q4_K_M"
+  },
+  "runtime_version": "0.34.4",
+  "prompt_version": "adjudicate-v2",
+  "schema_version": "decision-schema-v1",
+  "engine_config_version": "2.0.0",
+  "config_sha256": "2ba1198d9b092087c06dc4e2b159fef82c015c3e90280ee6fdee937d02b50d59",
+  "semantic_provider_sha256": "0630876f030cbb3164aa17d5668de0a0b5101b1f894dbbf7cf58692d46698a2e",
+  "runner_sha256": "eb26a73f772b4e865c2bbfa74c444f78d35c15700e4c37155f2f7466954b7e80",
+  "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.7",
+  "concurrency": 1,
+  "started": "2026-09-27T13:04:04+0530",
+  "finished": "2026-09-27T13:32:34+0530"
+ },
+ "freeze": {
+  "source_run_id": "438ec2c0d5182dd4",
+  "source_content_digest": "70c46d9bb4de89b8be0b0ad4a9a58a66288476e353aa7cd57930ea1375215807",
+  "source_code_fingerprint": "9da5e152b40604b3",
+  "source_config_hash": "7415d76e48170ea2fdf91e6b09affbe0de6dc84be538a7bef6e368d9dcf1a237",
+  "candidates": 270,
+  "distinct_candidate_ids": 270,
+  "by_kind": {
+   "ALIAS_SENSE": 212,
+   "AMBIGUOUS_TAXONOMY_LABEL": 36,
+   "AMBIGUOUS_TOPIC_MAPPING": 22
+  },
+  "candidates_sha256": "e871862e65e7d54d98bf3d27c0416456858b092c1b76256cbf730c71b6f03d6f",
+  "generator": "app.knowledge_engine.intelligence.adjudication_candidates (unchanged)",
+  "verification": "every regenerated (input_hash, context_hash) equals a recorded decision of the source run",
+  "prompt_version": "adjudicate-v2",
+  "schema_version": "decision-schema-v1"
+ },
+ "graph_safety": {
+  "candidate_edges": 251,
+  "by_relationship": {
+   "NOT_RELATED": 24,
+   "SAME_AS": 187,
+   "RELATED_TO": 25,
+   "PARENT_OF": 15
+  },
+  "problems": {
+   "EVIDENCE_NOT_GROUNDED": 2
+  },
+  "edges_without_problems": 249,
+  "two_cycles_parent_child": 0,
+  "persisted": 0
+ },
+ "esco_safety": {
+  "alias_sense_model_same_concept": 169,
+  "alias_sense_model_unrelated": 16,
+  "demand_rows_changed": 0,
+  "note": "this run writes only to the frozen run's out/ and analysis/; GOLD is read-only here",
+  "gold_industry_files_sha256": "98b38e819321ab3d9a3d371a4c121e4e776546289a26cb61dd50a74d56611a5f"
+ },
+ "categories": {
+  "A_context_changes_meaning": [
+   {
+    "candidate_id": "cand:00a9e92cd743b7bc",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "remote sensing",
+    "right": "geographic information systems",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The terms 'remote sensing' and 'geographic information systems' are not directly related in the given context.",
+    "evidence": [
+     "ESCO label kinds ['altLabel']"
+    ],
+    "left_context": "remote sensing",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:00ddb5e7ee7ccf01",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "MS Excel",
+    "right": "use spreadsheets software",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "MS Excel is an English ESCO altLabel of use spreadsheets software",
+    "evidence": [
+     "'MS Excel' is an English ESCO altLabel of 'use spreadsheets software'"
+    ],
+    "left_context": "rol, MIS Reporting, Cash Flow, and ROI Analysis.\n- Advanced MS Excel skills (Pivot Tables, VLOOKUP/XLOOKUP, Dashboards, Data Ana",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:071995b93da0a3eb",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "quality management",
+    "right": "manage quality",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "quality management and manage quality are related concepts but not the same",
+    "evidence": [
+     "quality management",
+     "manage quality"
+    ],
+    "left_context": "quality management",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:07a5f3e80c5b0f83",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "Technical Skills",
+    "right": "apply knowledge of science, technology and engineering",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Technical Skills and apply knowledge of science, technology and engineering refer to different concepts.",
+    "evidence": [
+     "Technical Skills: Proficiency in MS Office (Excel, Word, PowerPoint).",
+     "'Technical Skills' is an English ESCO hiddenLabel of 'apply knowledge of science, technology and engineering' (full ESCO v1.2.1 classification)"
+    ],
+    "left_context": "in the chemical industry or industrial sales is a plus.\n\n5. Technical Skills: Proficiency in MS Office (Excel, Word, PowerPoint).\n\n6. Ex",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:13f8115331cd5da5",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": "Equations",
+    "right": "equations solvable for y",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "equations and equations solvable for y are related as the latter is a specific type of the former",
+    "evidence": [
+     "equations",
+     "equations solvable for y"
+    ],
+    "left_context": "Unit I",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:146341dffcbd1db0",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "call",
+    "right": "Computer Assisted Language Learning",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context does not relate the term 'call' to 'Computer Assisted Language Learning'.",
+    "evidence": [
+     "'call' is an English ESCO altLabel of 'Computer Assisted Language Learning'"
+    ],
+    "left_context": "ure seamless handoff.\n- Participate in weekly team huddles, call reviews, and skill-development sessions.\n\n**Operations & Re",
+    "grounding": "ALL_GROUNDED"
+   }
+  ],
+  "B_same_concept_different_wording": [
+   {
+    "candidate_id": "cand:00ddb5e7ee7ccf01",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "MS Excel",
+    "right": "use spreadsheets software",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "MS Excel is an English ESCO altLabel of use spreadsheets software",
+    "evidence": [
+     "'MS Excel' is an English ESCO altLabel of 'use spreadsheets software'"
+    ],
+    "left_context": "rol, MIS Reporting, Cash Flow, and ROI Analysis.\n- Advanced MS Excel skills (Pivot Tables, VLOOKUP/XLOOKUP, Dashboards, Data Ana",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:047f80e8d89e33ca",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "resolve technical issues",
+    "right": "solve technical problems",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context indicates that 'resolve technical issues' is an altLabel of 'solve technical problems' in the ESCO classification.",
+    "evidence": [
+     "'resolve technical issues' is an English ESCO altLabel of 'solve technical problems'"
+    ],
+    "left_context": "hnical documentation for Axiom projects.\n- Troubleshoot and resolve technical issues related to Axiom development.\n- Participate in code reviews",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:055dcccaf6641937",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "sales techniques",
+    "right": "sales argumentation",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context indicates that 'sales techniques' is an altLabel of 'sales argumentation' in the ESCO classification.",
+    "evidence": [
+     "'sales techniques' is an English ESCO altLabel of 'sales argumentation'"
+    ],
+    "left_context": "ts to dealerships to provide training on product knowledge, sales techniques, and customer service standards.\n- Analyze market trends an",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:058e2d316142c3b3",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "CRM",
+    "right": "customer relationship management",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context explicitly states that 'CRM' is an English altLabel of 'customer relationship management'.",
+    "evidence": [
+     "'CRM' is an English ESCO altLabel of 'customer relationship management'"
+    ],
+    "left_context": "rdinate with QA/QC, Site Engineers, Store, Contractors, and CRM teams for smooth project execution.\nEnsure execution is car",
+    "grounding": "ALL_GROUNDED"
+   }
+  ],
+  "C_parent_child": [
+   {
+    "candidate_id": "cand:1c34e6ea5e65473e",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "BIM",
+    "right": "building information modelling",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "BIM is a broader term that encompasses building information modelling",
+    "evidence": [
+     "'BIM' is an English ESCO altLabel of 'building information modelling'"
+    ],
+    "left_context": "**Job Summary**\n\nWe are seeking highly skilled\n**BIM Technicians, BIM Coordinators, and Senior BIM Coordinators*",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:2df8b05eb4196ab0",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": " Understanding the meaning of Trust",
+    "right": "Meaning",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Understanding the meaning of Trust is a more specific concept than just Meaning.",
+    "evidence": [
+     "Understanding the meaning of Trust"
+    ],
+    "left_context": "Module 3",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:33df6bede98af4b6",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "MS Excel",
+    "right": "use spreadsheets software",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "MS Excel is a specific instance of spreadsheets software.",
+    "evidence": [
+     "MS Excel",
+     "use spreadsheets software"
+    ],
+    "left_context": "relevant subject.\n\n**Required Skills:-**\n\n- Intermediate in MS Excel\n- Good Communication Skills\n\n**Experience:-**\n\n1 or more ye",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:389d64eedb7c5c1f",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "process control",
+    "right": "control engineering",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Process Control is a broader concept that can include control engineering.",
+    "evidence": [
+     "Process Control"
+    ],
+    "left_context": "Process Control",
+    "grounding": "ALL_GROUNDED"
+   }
+  ],
+  "D_partial_overlap": [],
+  "E_unrelated_lexical_collision": [
+   {
+    "candidate_id": "cand:6613f9bedc643283",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": "vector",
+    "right": "vector surface integrals",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The terms 'vector' and 'vector surface integrals' refer to different mathematical concepts.",
+    "evidence": [
+     "vector",
+     "vector surface integrals"
+    ],
+    "left_context": "Unit II",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:6d07408122255a07",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": "User",
+    "right": "PCB elements to user",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The terms 'User' and 'PCB elements to user' do not share a clear relationship in the given context.",
+    "evidence": [
+     "User",
+     "PCB elements to user"
+    ],
+    "left_context": "Unit I",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:7fb7890efe150d14",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "ml",
+    "right": "ML (computer programming)",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context provided does not relate 'ml' to 'ML (computer programming)' directly.",
+    "evidence": [],
+    "left_context": "ML",
+    "grounding": "NO_EVIDENCE_FOR_DEFINITE_RELATIONSHIP"
+   }
+  ],
+  "F_ambiguous_or_insufficient": [
+   {
+    "candidate_id": "cand:0b0ff534ae8b7b11",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "ppc",
+    "right": "make strategic business decisions",
+    "relationship": "INSUFFICIENT_EVIDENCE",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context does not provide enough information to determine the relationship between 'ppc' and 'make strategic business decisions'.",
+    "evidence": [
+     "PPC",
+     "make strategic business decisions"
+    ],
+    "left_context": "PPC",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:176e19bc9185706c",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "It",
+    "right": "computer technology",
+    "relationship": "AMBIGUOUS",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context does not provide enough information to determine if 'It' refers to 'computer technology'.",
+    "evidence": [
+     "'It' is an English ESCO altLabel of 'computer technology'"
+    ],
+    "left_context": "arch environments, and meaningful healthcare initiatives.\n\n\nIt is well suited to an experienced clinical research professi",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:2b3af259dd408cd8",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "It",
+    "right": "computer technology",
+    "relationship": "AMBIGUOUS",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context does not provide enough information to determine if 'It' refers to 'computer technology' or not.",
+    "evidence": [
+     "'It' is an English ESCO altLabel of 'computer technology' (full ESCO v1.2.1 classification)"
+    ],
+    "left_context": ".\n\n\nCohesity Data Platform is a limitless scale out system. It is the industry’s only hyperconverged platform crafted to c",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:314ae48e48966f96",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "Environmental Science",
+    "right": "environmental engineering",
+    "relationship": "AMBIGUOUS",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context does not clearly indicate whether 'Environmental Science' refers to 'environmental engineering' or not.",
+    "evidence": [
+     "'Environmental Science' is an English ESCO altLabel of 'environmental engineering' (full ESCO v1.2.1 classification)"
+    ],
+    "left_context": "nataka is a pioneering college offering Commerce, Arts, BSc Environmental Science, BA, B.Com, and BA.LLB (5 Years), integrated with coaching ",
+    "grounding": "ALL_GROUNDED"
+   }
+  ],
+  "G_alias_sense": [
+   {
+    "candidate_id": "cand:00ddb5e7ee7ccf01",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "MS Excel",
+    "right": "use spreadsheets software",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "MS Excel is an English ESCO altLabel of use spreadsheets software",
+    "evidence": [
+     "'MS Excel' is an English ESCO altLabel of 'use spreadsheets software'"
+    ],
+    "left_context": "rol, MIS Reporting, Cash Flow, and ROI Analysis.\n- Advanced MS Excel skills (Pivot Tables, VLOOKUP/XLOOKUP, Dashboards, Data Ana",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:047f80e8d89e33ca",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "resolve technical issues",
+    "right": "solve technical problems",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context indicates that 'resolve technical issues' is an altLabel of 'solve technical problems' in the ESCO classification.",
+    "evidence": [
+     "'resolve technical issues' is an English ESCO altLabel of 'solve technical problems'"
+    ],
+    "left_context": "hnical documentation for Axiom projects.\n- Troubleshoot and resolve technical issues related to Axiom development.\n- Participate in code reviews",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:055dcccaf6641937",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "sales techniques",
+    "right": "sales argumentation",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context indicates that 'sales techniques' is an altLabel of 'sales argumentation' in the ESCO classification.",
+    "evidence": [
+     "'sales techniques' is an English ESCO altLabel of 'sales argumentation'"
+    ],
+    "left_context": "ts to dealerships to provide training on product knowledge, sales techniques, and customer service standards.\n- Analyze market trends an",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:058e2d316142c3b3",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "CRM",
+    "right": "customer relationship management",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context explicitly states that 'CRM' is an English altLabel of 'customer relationship management'.",
+    "evidence": [
+     "'CRM' is an English ESCO altLabel of 'customer relationship management'"
+    ],
+    "left_context": "rdinate with QA/QC, Site Engineers, Store, Contractors, and CRM teams for smooth project execution.\nEnsure execution is car",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:07a5f3e80c5b0f83",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "Technical Skills",
+    "right": "apply knowledge of science, technology and engineering",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Technical Skills and apply knowledge of science, technology and engineering refer to different concepts.",
+    "evidence": [
+     "Technical Skills: Proficiency in MS Office (Excel, Word, PowerPoint).",
+     "'Technical Skills' is an English ESCO hiddenLabel of 'apply knowledge of science, technology and engineering' (full ESCO v1.2.1 classification)"
+    ],
+    "left_context": "in the chemical industry or industrial sales is a plus.\n\n5. Technical Skills: Proficiency in MS Office (Excel, Word, PowerPoint).\n\n6. Ex",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:0c618473e82202c0",
+    "candidate_kind": "ALIAS_SENSE",
+    "left": "negotiation skills",
+    "right": "negotiate compromises",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context indicates that 'negotiation skills' is an English ESCO hiddenLabel of 'negotiate compromises', suggesting they are the same concept.",
+    "evidence": [
+     "'negotiation skills' is an English ESCO hiddenLabel of 'negotiate compromises'"
+    ],
+    "left_context": "nglish and regional languages.\n\n2. Excellent persuasive and negotiation skills.\n\n3. Self-motivated, result-oriented, and able to handle ob",
+    "grounding": "ALL_GROUNDED"
+   }
+  ],
+  "H_esco_mapping": [
+   {
+    "candidate_id": "cand:00a9e92cd743b7bc",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "remote sensing",
+    "right": "geographic information systems",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The terms 'remote sensing' and 'geographic information systems' are not directly related in the given context.",
+    "evidence": [
+     "ESCO label kinds ['altLabel']"
+    ],
+    "left_context": "remote sensing",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:071995b93da0a3eb",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "quality management",
+    "right": "manage quality",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "quality management and manage quality are related concepts but not the same",
+    "evidence": [
+     "quality management",
+     "manage quality"
+    ],
+    "left_context": "quality management",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:07eb71bebd81b4fe",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "google docs",
+    "right": "use word processing software",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Google Docs is a specific instance of word processing software.",
+    "evidence": [
+     "Google Docs",
+     "use word processing software"
+    ],
+    "left_context": "Google Docs",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:0b0ff534ae8b7b11",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "ppc",
+    "right": "make strategic business decisions",
+    "relationship": "INSUFFICIENT_EVIDENCE",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The context does not provide enough information to determine the relationship between 'ppc' and 'make strategic business decisions'.",
+    "evidence": [
+     "PPC",
+     "make strategic business decisions"
+    ],
+    "left_context": "PPC",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:157f3c19a7c490e6",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "self-reflection",
+    "right": "reflexion",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "The terms 'self-reflection' and 'reflexion' are used to denote the same concept in the context provided.",
+    "evidence": [
+     "ESCO label kinds ['altLabel']"
+    ],
+    "left_context": "self-reflection",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:16f1baf406896fe6",
+    "candidate_kind": "AMBIGUOUS_TAXONOMY_LABEL",
+    "left": "google docs",
+    "right": "office software",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Google Docs is a specific type of office software.",
+    "evidence": [
+     "Google Docs"
+    ],
+    "left_context": "Google Docs",
+    "grounding": "ALL_GROUNDED"
+   }
+  ],
+  "I_topic_to_concept": [
+   {
+    "candidate_id": "cand:13f8115331cd5da5",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": "Equations",
+    "right": "equations solvable for y",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "equations and equations solvable for y are related as the latter is a specific type of the former",
+    "evidence": [
+     "equations",
+     "equations solvable for y"
+    ],
+    "left_context": "Unit I",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:1ad9202ddbe9c394",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": "Irrotational fields and Solenoidal fields",
+    "right": "field",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Irrotational fields and solenoidal fields are terms used in the context of fields, indicating they are types of fields.",
+    "evidence": [
+     "Irrotational fields and Solenoidal fields"
+    ],
+    "left_context": "Unit II",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:2df8b05eb4196ab0",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": " Understanding the meaning of Trust",
+    "right": "Meaning",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Understanding the meaning of Trust is a more specific concept than just Meaning.",
+    "evidence": [
+     "Understanding the meaning of Trust"
+    ],
+    "left_context": "Module 3",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:458e9f88b41741f3",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": "Irrotational fields and Solenoidal fields",
+    "right": "Field",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Irrotational fields and solenoidal fields are terms used in the context of fields, indicating they are types of fields.",
+    "evidence": [
+     "Irrotational fields and Solenoidal fields"
+    ],
+    "left_context": "Unit II",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:47c0d254df7a7013",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": "Theory of NP-Completeness: Polynomial time",
+    "right": "Memory Hierarchy etc. (ii) Notion of polynomial time computation. (iii) Polynomial time reductions",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Both contexts discuss concepts related to polynomial time computation.",
+    "evidence": [
+     "Polynomial time",
+     "Notion of polynomial time computation"
+    ],
+    "left_context": "Unit V",
+    "grounding": "ALL_GROUNDED"
+   },
+   {
+    "candidate_id": "cand:48a3af10fdf94762",
+    "candidate_kind": "AMBIGUOUS_TOPIC_MAPPING",
+    "left": "Array.Functions: Concept",
+    "right": "Arrays",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Array.Functions: Concept is related to Arrays in the context of a unit.",
+    "evidence": [
+     "Unit III"
+    ],
+    "left_context": "Unit III",
+    "grounding": "ALL_GROUNDED"
+   }
+  ],
+  "context_dependent_surfaces": [
+   "aws",
+   "call",
+   "conflict resolution",
+   "core maintenance",
+   "data processing",
+   "equations",
+   "gimp",
+   "google ads",
+   "ict",
+   "incremental development of code",
+   "it",
+   "loops",
+   "ml",
+   "ms excel",
+   "ocr",
+   "process control",
+   "quality management",
+   "re",
+   "remote sensing",
+   "self-reflection",
+   "technical skills",
+   "theory of np-completeness: polynomial time",
+   "user",
+   "vector",
+   " understanding the meaning of trust"
+  ]
+ },
+ "hard_cases_in_270": {
+  ".net": {
+   "n": 5,
+   "relationships": {
+    "AMBIGUOUS": 5
+   },
+   "examples": [
+    {
+     "left": ".NET",
+     "right": "Visual Basic",
+     "relationship": "AMBIGUOUS",
+     "state": "MODEL_SUGGESTED",
+     "context": "Job Description .NET Developer\n\n**Experience:** 25 Years\n**Location:** Hyderabad",
+     "reason": "The context does not clearly indicate whether '.NET' refers to the ESCO concept 'Visual Basic' or not."
+    },
+    {
+     "left": ".NET",
+     "right": "Visual Basic",
+     "relationship": "AMBIGUOUS",
+     "state": "MODEL_SUGGESTED",
+     "context": "code using D365 tools and languages like X++(for F&O) or C#/.NET (for CE/CRM) to meet business needs.\nBuild, monitor, and ma",
+     "reason": "The context does not clearly indicate whether '.NET' refers to the programming framework or the ESCO concept 'Visual Basic'."
+    },
+    {
+     "left": ".NET",
+     "right": "Visual Basic",
+     "relationship": "AMBIGUOUS",
+     "state": "MODEL_SUGGESTED",
+     "context": "Job description\n\nHiring for .NET core with experience range 5years & above\n\nMandatory Skills",
+     "reason": "The context does not clearly indicate whether '.NET' refers to the ESCO concept 'Visual Basic' or not."
+    }
+   ]
+  },
+  "visual basic": {
+   "n": 5,
+   "relationships": {
+    "AMBIGUOUS": 5
+   },
+   "examples": [
+    {
+     "left": ".NET",
+     "right": "Visual Basic",
+     "relationship": "AMBIGUOUS",
+     "state": "MODEL_SUGGESTED",
+     "context": "Job Description .NET Developer\n\n**Experience:** 25 Years\n**Location:** Hyderabad",
+     "reason": "The context does not clearly indicate whether '.NET' refers to the ESCO concept 'Visual Basic' or not."
+    },
+    {
+     "left": ".NET",
+     "right": "Visual Basic",
+     "relationship": "AMBIGUOUS",
+     "state": "MODEL_SUGGESTED",
+     "context": "code using D365 tools and languages like X++(for F&O) or C#/.NET (for CE/CRM) to meet business needs.\nBuild, monitor, and ma",
+     "reason": "The context does not clearly indicate whether '.NET' refers to the programming framework or the ESCO concept 'Visual Basic'."
+    },
+    {
+     "left": ".NET",
+     "right": "Visual Basic",
+     "relationship": "AMBIGUOUS",
+     "state": "MODEL_SUGGESTED",
+     "context": "Job description\n\nHiring for .NET core with experience range 5years & above\n\nMandatory Skills",
+     "reason": "The context does not clearly indicate whether '.NET' refers to the ESCO concept 'Visual Basic' or not."
+    }
+   ]
+  },
+  "excel": {
+   "n": 6,
+   "relationships": {
+    "SAME_CONCEPT": 5,
+    "PARENT": 1
+   },
+   "examples": [
+    {
+     "left": "MS Excel",
+     "right": "use spreadsheets software",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "rol, MIS Reporting, Cash Flow, and ROI Analysis.\n- Advanced MS Excel skills (Pivot Tables, VLOOKUP/XLOOKUP, Dashboards, Data Ana",
+     "reason": "MS Excel is an English ESCO altLabel of use spreadsheets software"
+    },
+    {
+     "left": "MS Excel",
+     "right": "use spreadsheets software",
+     "relationship": "PARENT",
+     "state": "MODEL_SUGGESTED",
+     "context": "relevant subject.\n\n**Required Skills:-**\n\n- Intermediate in MS Excel\n- Good Communication Skills\n\n**Experience:-**\n\n1 or more ye",
+     "reason": "MS Excel is a specific instance of spreadsheets software."
+    },
+    {
+     "left": "MS Excel",
+     "right": "use spreadsheets software",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "S / CP Performance**, preferably in Real Estate.\n- Strong **MS Excel & data analysis** skills.\n- Good understanding of **real es",
+     "reason": "MS Excel is an English ESCO altLabel of use spreadsheets software"
+    }
+   ]
+  },
+  "spreadsheet": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "statistics": {
+   "n": 4,
+   "relationships": {
+    "SAME_CONCEPT": 4
+   },
+   "examples": [
+    {
+     "left": "data analysis",
+     "right": "statistics",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "e performance and condition of electrical equipment through data analysis, alarms, and control systems, identifying potential issues,",
+     "reason": "data analysis is described as an altLabel of statistics in the ESCO classification"
+    },
+    {
+     "left": "data collection",
+     "right": "statistics",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "e\n\n🎯 Relevant Experience\n\n✔ PI Data Archive administration, data collection & performance optimization\n\n✔ PI AF structures, templates, ",
+     "reason": "data collection is an English ESCO altLabel of statistics"
+    },
+    {
+     "left": "Data Analysis",
+     "right": "statistics",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "MS Excel skills (Pivot Tables, VLOOKUP/XLOOKUP, Dashboards, Data Analysis).\n- Strong analytical, reporting, and communication skills.",
+     "reason": "Data Analysis is an English ESCO altLabel of statistics"
+    }
+   ]
+  },
+  "data collection": {
+   "n": 1,
+   "relationships": {
+    "SAME_CONCEPT": 1
+   },
+   "examples": [
+    {
+     "left": "data collection",
+     "right": "statistics",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "e\n\n🎯 Relevant Experience\n\n✔ PI Data Archive administration, data collection & performance optimization\n\n✔ PI AF structures, templates, ",
+     "reason": "data collection is an English ESCO altLabel of statistics"
+    }
+   ]
+  },
+  "aws": {
+   "n": 5,
+   "relationships": {
+    "SAME_CONCEPT": 2,
+    "PARENT": 2,
+    "RELATED": 1
+   },
+   "examples": [
+    {
+     "left": "AWS",
+     "right": "cloud technologies",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "risma Access, Zscaler (ZIA/ZPA), F5 WAF, and public clouds (AWS/Azure).\n- Complex Migrations Deployments: Lead high-risk gr",
+     "reason": "AWS is explicitly stated to be an English ESCO hiddenLabel of 'cloud technologies'"
+    },
+    {
+     "left": "AWS",
+     "right": "cloud technologies",
+     "relationship": "PARENT",
+     "state": "MODEL_SUGGESTED",
+     "context": "pport EY’s global and local enablement teams. Markets, BMC, AWS, Finance and Accounting, Risk Management, Procurement, Peop",
+     "reason": "AWS is a specific cloud technology provider"
+    },
+    {
+     "left": "AWS",
+     "right": "cloud technologies",
+     "relationship": "RELATED",
+     "state": "MODEL_SUGGESTED",
+     "context": "eeking a highly skilled\n**L3 Cloud Engineer specializing in AWS Cloud Service Provider (CSP) environments**\n. This role req",
+     "reason": "AWS is described as an ESCO concept of 'cloud technologies'"
+    }
+   ]
+  },
+  "gcp": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "angular": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "network": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "version control": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "control systems": {
+   "n": 2,
+   "relationships": {
+    "SAME_CONCEPT": 2
+   },
+   "examples": [
+    {
+     "left": "quality systems",
+     "right": "quality control systems",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "- Perform supplier audits covering manufacturing processes, quality systems, inspection methods, process controls, calibration, and tra",
+     "reason": "The context explicitly states that 'quality systems' is an altLabel of 'quality control systems' in the ESCO classification."
+    },
+    {
+     "left": "quality systems",
+     "right": "quality control systems",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "d.\n- Strong knowledge of plant operations, production KPIs, quality systems, and lean manufacturing.\n- Good understanding of IATF 16949",
+     "reason": "the context indicates that 'quality systems' is an altLabel of 'quality control systems'"
+    }
+   ]
+  },
+  "communication": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "accounting": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "java": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "python": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "sql": {
+   "n": 0,
+   "note": "not among the 270 candidates"
+  },
+  "ml": {
+   "n": 2,
+   "relationships": {
+    "UNRELATED": 1,
+    "SAME_CONCEPT": 1
+   },
+   "examples": [
+    {
+     "left": "ml",
+     "right": "ML (computer programming)",
+     "relationship": "UNRELATED",
+     "state": "MODEL_SUGGESTED",
+     "context": "ML",
+     "reason": "The context provided does not relate 'ml' to 'ML (computer programming)' directly."
+    },
+    {
+     "left": "ml",
+     "right": "machine learning",
+     "relationship": "SAME_CONCEPT",
+     "state": "MODEL_SUGGESTED",
+     "context": "ML",
+     "reason": "ML is an abbreviation for machine learning."
+    }
+   ]
+  }
+ },
+ "hard_case_diagnostics": {
+  "n": 16,
+  "agree_with_specification_expectation": 8,
+  "rows": [
+   {
+    "case_id": "hc01",
+    "left": "Angular",
+    "right": "angular momentum",
+    "expected_by_specification": "UNRELATED",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "angular momentum is a specific form of angular",
+    "latency_s": 4.419
+   },
+   {
+    "case_id": "hc02",
+    "left": "Java",
+    "right": "JavaScript",
+    "expected_by_specification": "UNRELATED",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Java and JavaScript are different programming languages",
+    "latency_s": 5.604
+   },
+   {
+    "case_id": "hc03",
+    "left": "Git",
+    "right": "GitHub",
+    "expected_by_specification": "RELATED",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Git is a version control system, while GitHub is a web-based platform for version control using Git.",
+    "latency_s": 6.003
+   },
+   {
+    "case_id": "hc04",
+    "left": "C",
+    "right": "C++",
+    "expected_by_specification": "RELATED",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "C and C++ are both programming languages, suggesting they are the same concept in this context",
+    "latency_s": 5.26
+   },
+   {
+    "case_id": "hc05",
+    "left": "Python",
+    "right": "python snake",
+    "expected_by_specification": "UNRELATED",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Python refers to the programming language, while python snake refers to a type of reptile.",
+    "latency_s": 7.087
+   },
+   {
+    "case_id": "hc06",
+    "left": "SQL",
+    "right": "SQL injection",
+    "expected_by_specification": "RELATED",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "SQL injection is a specific type of attack that can be performed using SQL.",
+    "latency_s": 5.584
+   },
+   {
+    "case_id": "hc07",
+    "left": "cloud",
+    "right": "cloud computing",
+    "expected_by_specification": "PARENT",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "cloud computing is a specific application of cloud technology",
+    "latency_s": 3.979
+   },
+   {
+    "case_id": "hc08",
+    "left": "AI",
+    "right": "artificial intelligence",
+    "expected_by_specification": "SAME_CONCEPT",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "AI and artificial intelligence refer to the same concept",
+    "latency_s": 4.254
+   },
+   {
+    "case_id": "hc09",
+    "left": "ML",
+    "right": "machine learning",
+    "expected_by_specification": "SAME_CONCEPT",
+    "relationship": "SAME_CONCEPT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "ML and machine learning refer to the same concept in this context",
+    "latency_s": 4.535
+   },
+   {
+    "case_id": "hc10",
+    "left": "CNN",
+    "right": "convolutional neural network",
+    "expected_by_specification": "SAME_CONCEPT",
+    "relationship": "UNRELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "CNN is often used to refer to Cable News Network, not a convolutional neural network.",
+    "latency_s": 6.722
+   },
+   {
+    "case_id": "hc11",
+    "left": "database",
+    "right": "database management system",
+    "expected_by_specification": "RELATED",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "database is a broader concept than database management system",
+    "latency_s": 4.857
+   },
+   {
+    "case_id": "hc12",
+    "left": ".NET",
+    "right": "Visual Basic",
+    "expected_by_specification": "RELATED",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "Visual Basic is a programming language that can be used with the .NET framework.",
+    "latency_s": 5.847
+   },
+   {
+    "case_id": "hc13",
+    "left": "React",
+    "right": "chemical reaction",
+    "expected_by_specification": "UNRELATED",
+    "relationship": "RELATED",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "React can refer to a chemical reaction in some contexts.",
+    "latency_s": 4.608
+   },
+   {
+    "case_id": "hc14",
+    "left": "network",
+    "right": "neural network",
+    "expected_by_specification": "UNRELATED",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "neural network is a specific type of network",
+    "latency_s": 5.347
+   },
+   {
+    "case_id": "hc15",
+    "left": "model",
+    "right": "mathematical model",
+    "expected_by_specification": "PARENT",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "model is a broader term that can include mathematical model",
+    "latency_s": 5.788
+   },
+   {
+    "case_id": "hc16",
+    "left": "testing",
+    "right": "statistical testing",
+    "expected_by_specification": "PARENT",
+    "relationship": "PARENT",
+    "decision_state": "MODEL_SUGGESTED",
+    "reason": "statistical testing is a specific type of testing",
+    "latency_s": 5.408
+   }
+  ],
+  "note": "16 fixed pairs WITHOUT context; expectations transcribed from the specification, not human labels"
+ }
+}

@@ -1,0 +1,3299 @@
+{
+ "benchmark": {
+  "path": "/home/claude/skill-gap-intelligence/data/evaluation/semantic_benchmark_v1/benchmark.json",
+  "sha256": "94b4e79c49bc2c7a0c5bce0234298f9ebada568c1e767ee8651aac19ac3722b7",
+  "cases": 88,
+  "label_source": "DEVELOPMENT GOLD (assistant-labelled); not independent human labels"
+ },
+ "overall": {
+  "BASELINE": {
+   "n": 75,
+   "agreement_with_dev_gold": 0.0,
+   "per_class": {
+    "SAME_CONCEPT": {
+     "support_gold": 15,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "PARENT": {
+     "support_gold": 2,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "CHILD": {
+     "support_gold": 9,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "RELATED": {
+     "support_gold": 19,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "PARTIAL_OVERLAP": {
+     "support_gold": 4,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "UNRELATED": {
+     "support_gold": 25,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "AMBIGUOUS": {
+     "support_gold": 0,
+     "predicted": 75,
+     "precision": 0.0,
+     "recall": null,
+     "f1": null
+    },
+    "INSUFFICIENT_EVIDENCE": {
+     "support_gold": 1,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    }
+   },
+   "confusion": {
+    "SAME_CONCEPT": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 15,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "PARENT": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 2,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "CHILD": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 9,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "RELATED": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 19,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "PARTIAL_OVERLAP": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 4,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "UNRELATED": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 25,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "AMBIGUOUS": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "INSUFFICIENT_EVIDENCE": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 1,
+     "INSUFFICIENT_EVIDENCE": 0
+    }
+   }
+  },
+  "V2_RAW": {
+   "n": 75,
+   "agreement_with_dev_gold": 0.3467,
+   "per_class": {
+    "SAME_CONCEPT": {
+     "support_gold": 15,
+     "predicted": 45,
+     "precision": 0.3333,
+     "recall": 1.0,
+     "f1": 0.5
+    },
+    "PARENT": {
+     "support_gold": 2,
+     "predicted": 6,
+     "precision": 0.1667,
+     "recall": 0.5,
+     "f1": 0.25
+    },
+    "CHILD": {
+     "support_gold": 9,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "RELATED": {
+     "support_gold": 19,
+     "predicted": 11,
+     "precision": 0.3636,
+     "recall": 0.2105,
+     "f1": 0.2667
+    },
+    "PARTIAL_OVERLAP": {
+     "support_gold": 4,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "UNRELATED": {
+     "support_gold": 25,
+     "predicted": 7,
+     "precision": 0.8571,
+     "recall": 0.24,
+     "f1": 0.375
+    },
+    "AMBIGUOUS": {
+     "support_gold": 0,
+     "predicted": 4,
+     "precision": 0.0,
+     "recall": null,
+     "f1": null
+    },
+    "INSUFFICIENT_EVIDENCE": {
+     "support_gold": 1,
+     "predicted": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "confusion": {
+    "SAME_CONCEPT": {
+     "SAME_CONCEPT": 15,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "PARENT": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 1,
+     "CHILD": 0,
+     "RELATED": 1,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "CHILD": {
+     "SAME_CONCEPT": 3,
+     "PARENT": 1,
+     "CHILD": 0,
+     "RELATED": 4,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 1,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "RELATED": {
+     "SAME_CONCEPT": 11,
+     "PARENT": 2,
+     "CHILD": 0,
+     "RELATED": 4,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 2,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "PARTIAL_OVERLAP": {
+     "SAME_CONCEPT": 3,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 1,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "UNRELATED": {
+     "SAME_CONCEPT": 13,
+     "PARENT": 1,
+     "CHILD": 0,
+     "RELATED": 1,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 6,
+     "AMBIGUOUS": 2,
+     "INSUFFICIENT_EVIDENCE": 2
+    },
+    "AMBIGUOUS": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "INSUFFICIENT_EVIDENCE": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 1,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    }
+   }
+  },
+  "V3_RAW": {
+   "n": 88,
+   "agreement_with_dev_gold": 0.5114,
+   "per_class": {
+    "SAME_CONCEPT": {
+     "support_gold": 18,
+     "predicted": 38,
+     "precision": 0.3947,
+     "recall": 0.8333,
+     "f1": 0.5357
+    },
+    "PARENT": {
+     "support_gold": 2,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "CHILD": {
+     "support_gold": 12,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "RELATED": {
+     "support_gold": 23,
+     "predicted": 18,
+     "precision": 0.4444,
+     "recall": 0.3478,
+     "f1": 0.3902
+    },
+    "PARTIAL_OVERLAP": {
+     "support_gold": 4,
+     "predicted": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "UNRELATED": {
+     "support_gold": 28,
+     "predicted": 30,
+     "precision": 0.7333,
+     "recall": 0.7857,
+     "f1": 0.7586
+    },
+    "AMBIGUOUS": {
+     "support_gold": 0,
+     "predicted": 0,
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "INSUFFICIENT_EVIDENCE": {
+     "support_gold": 1,
+     "predicted": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "confusion": {
+    "SAME_CONCEPT": {
+     "SAME_CONCEPT": 15,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 2,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 1,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "PARENT": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 2,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "CHILD": {
+     "SAME_CONCEPT": 10,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 1,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 1,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "RELATED": {
+     "SAME_CONCEPT": 9,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 8,
+     "PARTIAL_OVERLAP": 1,
+     "UNRELATED": 5,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "PARTIAL_OVERLAP": {
+     "SAME_CONCEPT": 2,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 2,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "UNRELATED": {
+     "SAME_CONCEPT": 2,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 3,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 22,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 1
+    },
+    "AMBIGUOUS": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "INSUFFICIENT_EVIDENCE": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 1,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    }
+   }
+  },
+  "V3_VALIDATED": {
+   "n": 88,
+   "agreement_with_dev_gold": 0.3182,
+   "per_class": {
+    "SAME_CONCEPT": {
+     "support_gold": 18,
+     "predicted": 13,
+     "precision": 0.3077,
+     "recall": 0.2222,
+     "f1": 0.2581
+    },
+    "PARENT": {
+     "support_gold": 2,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "CHILD": {
+     "support_gold": 12,
+     "predicted": 0,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "RELATED": {
+     "support_gold": 23,
+     "predicted": 9,
+     "precision": 0.3333,
+     "recall": 0.1304,
+     "f1": 0.1875
+    },
+    "PARTIAL_OVERLAP": {
+     "support_gold": 4,
+     "predicted": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "UNRELATED": {
+     "support_gold": 28,
+     "predicted": 29,
+     "precision": 0.7241,
+     "recall": 0.75,
+     "f1": 0.7368
+    },
+    "AMBIGUOUS": {
+     "support_gold": 0,
+     "predicted": 4,
+     "precision": 0.0,
+     "recall": null,
+     "f1": null
+    },
+    "INSUFFICIENT_EVIDENCE": {
+     "support_gold": 1,
+     "predicted": 32,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "confusion": {
+    "SAME_CONCEPT": {
+     "SAME_CONCEPT": 4,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 1,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 1,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 12
+    },
+    "PARENT": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 2,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "CHILD": {
+     "SAME_CONCEPT": 3,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 1,
+     "AMBIGUOUS": 1,
+     "INSUFFICIENT_EVIDENCE": 7
+    },
+    "RELATED": {
+     "SAME_CONCEPT": 3,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 3,
+     "PARTIAL_OVERLAP": 1,
+     "UNRELATED": 5,
+     "AMBIGUOUS": 1,
+     "INSUFFICIENT_EVIDENCE": 10
+    },
+    "PARTIAL_OVERLAP": {
+     "SAME_CONCEPT": 1,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 1,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 1,
+     "INSUFFICIENT_EVIDENCE": 1
+    },
+    "UNRELATED": {
+     "SAME_CONCEPT": 2,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 2,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 21,
+     "AMBIGUOUS": 1,
+     "INSUFFICIENT_EVIDENCE": 2
+    },
+    "AMBIGUOUS": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 0,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    },
+    "INSUFFICIENT_EVIDENCE": {
+     "SAME_CONCEPT": 0,
+     "PARENT": 0,
+     "CHILD": 0,
+     "RELATED": 0,
+     "PARTIAL_OVERLAP": 0,
+     "UNRELATED": 1,
+     "AMBIGUOUS": 0,
+     "INSUFFICIENT_EVIDENCE": 0
+    }
+   }
+  }
+ },
+ "by_kind": {
+  "ALIAS_SENSE": {
+   "BASELINE": {
+    "n": 45,
+    "agreement_with_dev_gold": 0.0,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 10,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "PARENT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 5,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 13,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 2,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 15,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 45,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 10,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 5,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 13,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 2,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 15,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V2_RAW": {
+    "n": 45,
+    "agreement_with_dev_gold": 0.3111,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 10,
+      "predicted": 34,
+      "precision": 0.2941,
+      "recall": 1.0,
+      "f1": 0.4545
+     },
+     "PARENT": {
+      "support_gold": 0,
+      "predicted": 2,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 5,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 13,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 2,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 15,
+      "predicted": 4,
+      "precision": 1.0,
+      "recall": 0.2667,
+      "f1": 0.4211
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 4,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 10,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 3,
+      "PARENT": 1,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 10,
+      "PARENT": 1,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 2,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 9,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 4,
+      "AMBIGUOUS": 2,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V3_RAW": {
+    "n": 45,
+    "agreement_with_dev_gold": 0.5778,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 10,
+      "predicted": 18,
+      "precision": 0.4444,
+      "recall": 0.8,
+      "f1": 0.5714
+     },
+     "PARENT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 5,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 13,
+      "predicted": 12,
+      "precision": 0.5,
+      "recall": 0.4615,
+      "f1": 0.48
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 2,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 15,
+      "predicted": 14,
+      "precision": 0.8571,
+      "recall": 0.8,
+      "f1": 0.8276
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 8,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 2,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 4,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 5,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 6,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 2,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 2,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 12,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V3_VALIDATED": {
+    "n": 45,
+    "agreement_with_dev_gold": 0.2667,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 10,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "PARENT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 5,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 13,
+      "predicted": 4,
+      "precision": 0.25,
+      "recall": 0.0769,
+      "f1": 0.1176
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 2,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 15,
+      "predicted": 13,
+      "precision": 0.8462,
+      "recall": 0.7333,
+      "f1": 0.7857
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 3,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 24,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 9
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 4
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 2,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 8
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 11,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 2
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   }
+  },
+  "AMBIGUOUS_TAXONOMY_LABEL": {
+   "BASELINE": {
+    "n": 18,
+    "agreement_with_dev_gold": 0.0,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 5,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "PARENT": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 4,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 6,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 18,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 5,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 4,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 6,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V2_RAW": {
+    "n": 18,
+    "agreement_with_dev_gold": 0.5,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 5,
+      "predicted": 9,
+      "precision": 0.5556,
+      "recall": 1.0,
+      "f1": 0.7143
+     },
+     "PARENT": {
+      "support_gold": 1,
+      "predicted": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "CHILD": {
+      "support_gold": 4,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 1,
+      "predicted": 4,
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1": 0.4
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 6,
+      "predicted": 3,
+      "precision": 0.6667,
+      "recall": 0.3333,
+      "f1": 0.4444
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 5,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 1,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 3,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 3,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 2,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V3_RAW": {
+    "n": 18,
+    "agreement_with_dev_gold": 0.4444,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 5,
+      "predicted": 12,
+      "precision": 0.4167,
+      "recall": 1.0,
+      "f1": 0.5882
+     },
+     "PARENT": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 4,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 1,
+      "predicted": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 6,
+      "predicted": 4,
+      "precision": 0.75,
+      "recall": 0.5,
+      "f1": 0.6
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 5,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 3,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 3,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V3_VALIDATED": {
+    "n": 18,
+    "agreement_with_dev_gold": 0.3333,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 5,
+      "predicted": 7,
+      "precision": 0.4286,
+      "recall": 0.6,
+      "f1": 0.5
+     },
+     "PARENT": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 4,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 1,
+      "predicted": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 6,
+      "predicted": 4,
+      "precision": 0.75,
+      "recall": 0.5,
+      "f1": 0.6
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 5,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 3,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 2
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 2
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 3,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   }
+  },
+  "AMBIGUOUS_TOPIC_MAPPING": {
+   "BASELINE": {
+    "n": 12,
+    "agreement_with_dev_gold": 0.0,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "PARENT": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 5,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 4,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 12,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 5,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 4,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V2_RAW": {
+    "n": 12,
+    "agreement_with_dev_gold": 0.25,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 0,
+      "predicted": 2,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "PARENT": {
+      "support_gold": 1,
+      "predicted": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "CHILD": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 5,
+      "predicted": 6,
+      "precision": 0.5,
+      "recall": 0.6,
+      "f1": 0.5455
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 4,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 1,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 1,
+      "CHILD": 0,
+      "RELATED": 3,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 1,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 1,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V3_RAW": {
+    "n": 12,
+    "agreement_with_dev_gold": 0.4167,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 0,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "PARENT": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 5,
+      "predicted": 3,
+      "precision": 0.3333,
+      "recall": 0.2,
+      "f1": 0.25
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 1,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "UNRELATED": {
+      "support_gold": 4,
+      "predicted": 7,
+      "precision": 0.5714,
+      "recall": 1.0,
+      "f1": 0.7273
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 1,
+      "UNRELATED": 2,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 4,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V3_VALIDATED": {
+    "n": 12,
+    "agreement_with_dev_gold": 0.4167,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 0,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "PARENT": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 5,
+      "predicted": 2,
+      "precision": 0.5,
+      "recall": 0.2,
+      "f1": 0.2857
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 1,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "UNRELATED": {
+      "support_gold": 4,
+      "predicted": 7,
+      "precision": 0.5714,
+      "recall": 1.0,
+      "f1": 0.7273
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 1,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 1,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 1,
+      "UNRELATED": 2,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 1,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 4,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   }
+  },
+  "DIAGNOSTIC": {
+   "BASELINE": {
+    "n": 0,
+    "agreement_with_dev_gold": null,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "PARENT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V2_RAW": {
+    "n": 0,
+    "agreement_with_dev_gold": null,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "PARENT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V3_RAW": {
+    "n": 13,
+    "agreement_with_dev_gold": 0.4615,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 3,
+      "predicted": 7,
+      "precision": 0.2857,
+      "recall": 0.6667,
+      "f1": 0.4
+     },
+     "PARENT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 3,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 4,
+      "predicted": 1,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 3,
+      "predicted": 5,
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.75
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 3,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 3,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   },
+   "V3_VALIDATED": {
+    "n": 13,
+    "agreement_with_dev_gold": 0.3846,
+    "per_class": {
+     "SAME_CONCEPT": {
+      "support_gold": 3,
+      "predicted": 4,
+      "precision": 0.25,
+      "recall": 0.3333,
+      "f1": 0.2857
+     },
+     "PARENT": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "CHILD": {
+      "support_gold": 3,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null
+     },
+     "RELATED": {
+      "support_gold": 4,
+      "predicted": 1,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4
+     },
+     "PARTIAL_OVERLAP": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "UNRELATED": {
+      "support_gold": 3,
+      "predicted": 5,
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.75
+     },
+     "AMBIGUOUS": {
+      "support_gold": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "support_gold": 0,
+      "predicted": 3,
+      "precision": 0.0,
+      "recall": null,
+      "f1": null
+     }
+    },
+    "confusion": {
+     "SAME_CONCEPT": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1
+     },
+     "PARENT": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "CHILD": {
+      "SAME_CONCEPT": 2,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1
+     },
+     "RELATED": {
+      "SAME_CONCEPT": 1,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 1,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 1,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 1
+     },
+     "PARTIAL_OVERLAP": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "UNRELATED": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 3,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "AMBIGUOUS": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     },
+     "INSUFFICIENT_EVIDENCE": {
+      "SAME_CONCEPT": 0,
+      "PARENT": 0,
+      "CHILD": 0,
+      "RELATED": 0,
+      "PARTIAL_OVERLAP": 0,
+      "UNRELATED": 0,
+      "AMBIGUOUS": 0,
+      "INSUFFICIENT_EVIDENCE": 0
+     }
+    }
+   }
+  }
+ },
+ "special": {
+  "V2_RAW": {
+   "lexical_collision_rejection_rate": 0.24,
+   "lexical_collisions_n": 25,
+   "lexical_collisions_called_same_concept": 13,
+   "alias_sense_agreement": 0.3111,
+   "alias_n": 45,
+   "alias_same_concept_predicted": 34,
+   "alias_same_concept_precision": 0.2941,
+   "alias_unrelated_predicted": 4,
+   "alias_unrelated_precision": 1.0,
+   "hierarchy_predictions_on_hierarchy_gold": 2,
+   "hierarchy_direction_correct": 1,
+   "hierarchy_direction_reversed": 1
+  },
+  "V3_RAW": {
+   "lexical_collision_rejection_rate": 0.7857,
+   "lexical_collisions_n": 28,
+   "lexical_collisions_called_same_concept": 2,
+   "alias_sense_agreement": 0.5778,
+   "alias_n": 45,
+   "alias_same_concept_predicted": 18,
+   "alias_same_concept_precision": 0.4444,
+   "alias_unrelated_predicted": 14,
+   "alias_unrelated_precision": 0.8571,
+   "hierarchy_predictions_on_hierarchy_gold": 0,
+   "hierarchy_direction_correct": 0,
+   "hierarchy_direction_reversed": 0
+  },
+  "V3_VALIDATED": {
+   "lexical_collision_rejection_rate": 0.75,
+   "lexical_collisions_n": 28,
+   "lexical_collisions_called_same_concept": 2,
+   "alias_sense_agreement": 0.2667,
+   "alias_n": 45,
+   "alias_same_concept_predicted": 1,
+   "alias_same_concept_precision": 0.0,
+   "alias_unrelated_predicted": 13,
+   "alias_unrelated_precision": 0.8462,
+   "hierarchy_predictions_on_hierarchy_gold": 0,
+   "hierarchy_direction_correct": 0,
+   "hierarchy_direction_reversed": 0
+  }
+ },
+ "population": {
+  "decisions": 283,
+  "frozen_candidates": 283,
+  "missing": [],
+  "model_states": {
+   "MODEL_SUGGESTED": 283
+  },
+  "raw_relationships": {
+   "SAME_CONCEPT": 113,
+   "RELATED": 94,
+   "UNRELATED": 67,
+   "INSUFFICIENT_EVIDENCE": 4,
+   "PARENT": 3,
+   "PARTIAL_OVERLAP": 2
+  },
+  "validated_states": {
+   "MODEL_SUPPORTED": 133,
+   "INSUFFICIENT_EVIDENCE": 135,
+   "REVIEW_REQUIRED": 11,
+   "MODEL_SUGGESTED": 4
+  },
+  "validated_states_by_kind": {
+   "ALIAS_SENSE": {
+    "MODEL_SUPPORTED": 75,
+    "INSUFFICIENT_EVIDENCE": 123,
+    "REVIEW_REQUIRED": 10,
+    "MODEL_SUGGESTED": 4
+   },
+   "AMBIGUOUS_TAXONOMY_LABEL": {
+    "MODEL_SUPPORTED": 27,
+    "INSUFFICIENT_EVIDENCE": 9
+   },
+   "AMBIGUOUS_TOPIC_MAPPING": {
+    "MODEL_SUPPORTED": 21,
+    "REVIEW_REQUIRED": 1
+   },
+   "DIAGNOSTIC": {
+    "MODEL_SUPPORTED": 10,
+    "INSUFFICIENT_EVIDENCE": 3
+   }
+  },
+  "findings": {
+   "NO_CONCEPT_EVIDENCE": 121,
+   "METADATA_CITED": 20,
+   "NO_SOURCE_EVIDENCE": 47,
+   "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT": 31,
+   "QUOTE_NOT_IN_ITEM": 11,
+   "NON_DEFINITE_RELATIONSHIP": 4,
+   "SOURCE_TYPE_MISLABELLED": 1
+  },
+  "definite_decisions": 279,
+  "evidence_grounding_rate": 0.9606,
+  "source_evidence_rate": 0.8315,
+  "metadata_cited_rate": 0.0717,
+  "metadata_only_supported": 0,
+  "schema_valid_rate": 1.0
+ },
+ "run": {
+  "model": "qwen2.5:7b-instruct",
+  "model_details": {
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "size": 4683087332,
+   "parent_model": "",
+   "format": "gguf",
+   "family": "qwen2",
+   "families": [
+    "qwen2"
+   ],
+   "parameter_size": "7.6B",
+   "quantization_level": "Q4_K_M"
+  },
+  "runtime_version": "0.34.4",
+  "prompt_version": "adjudicate-v3",
+  "schema_version": "decision-schema-v2",
+  "total_runtime_s": 3001.1,
+  "adjudicator_stats": {
+   "requested": 283,
+   "cache_hits": 0,
+   "model_calls": 283,
+   "invalid_outputs": 0,
+   "review_required": 0
+  },
+  "tokens": {
+   "prompt": 221152,
+   "output": 32097
+  },
+  "consistency": {
+   "n": 20,
+   "same_relationship": 20,
+   "same_output_hash": 17
+  },
+  "started": "2026-09-27T14:02:53+0530",
+  "finished": "2026-09-27T14:52:55+0530",
+  "latency_s": {
+   "mean": 10.6021,
+   "median": 10.456,
+   "p95": 15.102,
+   "min": 4.57,
+   "max": 18.413
+  }
+ },
+ "transitions_v2_raw_to_v3_validated": [
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "AMBIGUOUS",
+   "v3_validated": "INSUFFICIENT_EVIDENCE",
+   "n": 5
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "AMBIGUOUS",
+   "v3_validated": "RELATED",
+   "n": 2
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "AMBIGUOUS",
+   "v3_validated": "UNRELATED",
+   "n": 10
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "PARENT",
+   "v3_validated": "INSUFFICIENT_EVIDENCE",
+   "n": 5
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "PARENT",
+   "v3_validated": "SAME_CONCEPT",
+   "n": 1
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "PARENT",
+   "v3_validated": "UNRELATED",
+   "n": 1
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "RELATED",
+   "v3_validated": "AMBIGUOUS",
+   "n": 1
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "RELATED",
+   "v3_validated": "INSUFFICIENT_EVIDENCE",
+   "n": 2
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "AMBIGUOUS",
+   "n": 8
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "INSUFFICIENT_EVIDENCE",
+   "n": 113
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "RELATED",
+   "n": 21
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "SAME_CONCEPT",
+   "n": 12
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "UNRELATED",
+   "n": 15
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "UNRELATED",
+   "v3_validated": "AMBIGUOUS",
+   "n": 1
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "UNRELATED",
+   "v3_validated": "INSUFFICIENT_EVIDENCE",
+   "n": 2
+  },
+  {
+   "kind": "ALIAS_SENSE",
+   "v2": "UNRELATED",
+   "v3_validated": "UNRELATED",
+   "n": 13
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "INSUFFICIENT_EVIDENCE",
+   "v3_validated": "UNRELATED",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "PARENT",
+   "v3_validated": "RELATED",
+   "n": 2
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "PARENT",
+   "v3_validated": "SAME_CONCEPT",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "PARENT",
+   "v3_validated": "UNRELATED",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "RELATED",
+   "v3_validated": "INSUFFICIENT_EVIDENCE",
+   "n": 4
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "RELATED",
+   "v3_validated": "RELATED",
+   "n": 3
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "RELATED",
+   "v3_validated": "SAME_CONCEPT",
+   "n": 2
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "RELATED",
+   "v3_validated": "UNRELATED",
+   "n": 2
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "INSUFFICIENT_EVIDENCE",
+   "n": 3
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "SAME_CONCEPT",
+   "n": 10
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "UNRELATED",
+   "n": 2
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "UNRELATED",
+   "v3_validated": "INSUFFICIENT_EVIDENCE",
+   "n": 2
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "UNRELATED",
+   "v3_validated": "RELATED",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "v2": "UNRELATED",
+   "v3_validated": "UNRELATED",
+   "n": 2
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "INSUFFICIENT_EVIDENCE",
+   "v3_validated": "UNRELATED",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "PARENT",
+   "v3_validated": "SAME_CONCEPT",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "PARENT",
+   "v3_validated": "UNRELATED",
+   "n": 3
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "RELATED",
+   "v3_validated": "AMBIGUOUS",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "RELATED",
+   "v3_validated": "RELATED",
+   "n": 4
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "RELATED",
+   "v3_validated": "SAME_CONCEPT",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "RELATED",
+   "v3_validated": "UNRELATED",
+   "n": 5
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "PARTIAL_OVERLAP",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "SAME_CONCEPT",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "SAME_CONCEPT",
+   "v3_validated": "UNRELATED",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "UNRELATED",
+   "v3_validated": "PARTIAL_OVERLAP",
+   "n": 1
+  },
+  {
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "v2": "UNRELATED",
+   "v3_validated": "UNRELATED",
+   "n": 2
+  }
+ ]
+}

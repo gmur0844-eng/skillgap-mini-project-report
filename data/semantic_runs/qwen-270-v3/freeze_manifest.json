@@ -1,0 +1,30 @@
+{
+ "pool": "data/semantic_runs/qwen-270-v1",
+ "pool_candidates": 270,
+ "pool_rebuilt": 270,
+ "pool_missing": [],
+ "diagnostics": 13,
+ "diagnostics_skipped": [],
+ "diagnostics_not_available": [
+  {
+   "hard_case": "React / chemical reaction",
+   "reason": "no curriculum topic or posting in the supplied data contains 'chemical reaction'"
+  },
+  {
+   "hard_case": "Python / python snake",
+   "reason": "no supplied text uses 'python' in the animal sense"
+  },
+  {
+   "hard_case": "C (language) as an ESCO concept",
+   "reason": "no ESCO v1.2.1 English concept has 'C' as a label"
+  }
+ ],
+ "source_run_id": "438ec2c0d5182dd4",
+ "total": 283,
+ "distinct_ids": 283,
+ "candidates_sha256": "a889097d1884fe61461ba1f21a8a9b6026f4ef051bbbfe8a6febdce9b94d7ab1",
+ "prompt_version": "adjudicate-v3",
+ "schema_version": "decision-schema-v2",
+ "builder": "app.knowledge_engine.intelligence.v3_from_pool + semantic_v3 (production code)",
+ "metadata_never_evidence": "taxonomy/normalization facts are shown only as M-items; the validator rejects them as evidence"
+}

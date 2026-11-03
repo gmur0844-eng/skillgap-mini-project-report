@@ -1,0 +1,107 @@
+{
+ "started": "2026-09-27T18:06:24+0530",
+ "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+ "python": "3.14.7",
+ "freeze_manifest": {
+  "source_run_id": "827248edcd4c21c2",
+  "source_file": "data/gold/knowledge/827248edcd4c21c2/intelligence/semantic_pending_candidates.jsonl",
+  "total": 30,
+  "distinct_ids": 30,
+  "by_kind": {
+   "AMBIGUOUS_TOPIC_MAPPING": 30
+  },
+  "candidates_sha256": "12d10de07f13857bac85b98b389905ca904974efc97d9a0a82e88b901f60fa35",
+  "prompt_version": "adjudicate-v3",
+  "schema_version": "decision-schema-v2",
+  "reason": "replay misses: these inputs changed after qwen-270-v3 was frozen (silver attribution fix), so no recorded decision exists; decided fresh by the same model and protocol"
+ },
+ "config_sha256": "a9166c83a2d1f960b9ee7faefde4e4f2cf84937bd6310857dc7ddf2acf50fdf0",
+ "semantic_provider_sha256": "2537ba23dd9b13bb82d113a029a002c300c8c1236d15755701f3d7068b5f3ebc",
+ "runner_sha256": "f86a7d6b73fbfe6bfefec0bc76f11baac61a20a09a9427fbed2837f6298965b8",
+ "provider": {
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "model_version": "qwen2.5:7b-instruct",
+  "base_url": "http://127.0.0.1:11434",
+  "temperature": 0.0
+ },
+ "probes": [
+  {
+   "available": true,
+   "kind": "ollama",
+   "provider": "ollama",
+   "model": "qwen2.5:7b-instruct",
+   "model_version": "qwen2.5:7b-instruct",
+   "temperature": 0.0
+  },
+  {
+   "available": false,
+   "reason": "URLError: <urlopen error [Errno 61] Connection refused>",
+   "kind": "openai_compatible",
+   "provider": "openai_compatible",
+   "model": "",
+   "model_version": "",
+   "temperature": 0.0
+  },
+  {
+   "available": false,
+   "reason": "python package 'transformers' is not installed",
+   "kind": "local_transformers",
+   "provider": "local_transformers",
+   "model": null,
+   "model_version": null
+  }
+ ],
+ "prompt_version": "adjudicate-v3",
+ "schema_version": "decision-schema-v2",
+ "engine_config_version": "2.0.0",
+ "concurrency": 1,
+ "model_details": {
+  "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "size": 4683087332,
+  "parent_model": "",
+  "format": "gguf",
+  "family": "qwen2",
+  "families": [
+   "qwen2"
+  ],
+  "parameter_size": "7.6B",
+  "quantization_level": "Q4_K_M"
+ },
+ "runtime_version": "0.34.4",
+ "adjudicator": {
+  "status": "AI_PROVIDER_AVAILABLE",
+  "model_key": "8b81c19ed450357b"
+ },
+ "finished": "2026-09-27T18:09:18+0530",
+ "total_runtime_s": 173.6,
+ "adjudicator_stats": {
+  "requested": 30,
+  "cache_hits": 1,
+  "model_calls": 29,
+  "invalid_outputs": 0,
+  "review_required": 0
+ },
+ "cache_hits": 1,
+ "cache_misses": 29,
+ "latency_s_uncached": {
+  "n": 29,
+  "mean": 5.985,
+  "median": 5.978,
+  "p95": 6.937,
+  "min": 4.989,
+  "max": 7.558
+ },
+ "tokens": {
+  "prompt": 23788,
+  "output": 3120
+ },
+ "decisions_file_sha256": "68528b8729e5c45e49b40f8e326e540c0e0beab29dfbfe9f2f0a41a11cd65572",
+ "output_hashes_sha256": "97a0838cd57a17d42c143ef0937aa5faa656da4d75ecdca96d1ae5ba890ce294",
+ "consistency": {
+  "n": 5,
+  "same_relationship": 5,
+  "same_output_hash": 5
+ },
+ "diagnostics": 0
+}

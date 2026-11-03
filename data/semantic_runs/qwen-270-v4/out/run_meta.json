@@ -1,0 +1,126 @@
+{
+ "started": "2026-10-22T15:41:40+0530",
+ "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+ "python": "3.14.7",
+ "freeze_manifest": {
+  "pool": "data/semantic_runs/qwen-270-v1",
+  "pool_candidates": 270,
+  "pool_rebuilt": 270,
+  "pool_missing": [],
+  "diagnostics": 13,
+  "diagnostics_skipped": [],
+  "diagnostics_not_available": [
+   {
+    "hard_case": "React / chemical reaction",
+    "reason": "no curriculum topic or posting in the supplied data contains 'chemical reaction'"
+   },
+   {
+    "hard_case": "Python / python snake",
+    "reason": "no supplied text uses 'python' in the animal sense"
+   },
+   {
+    "hard_case": "C (language) as an ESCO concept",
+    "reason": "no ESCO v1.2.1 English concept has 'C' as a label"
+   }
+  ],
+  "source_run_id": "438ec2c0d5182dd4",
+  "total": 283,
+  "distinct_ids": 283,
+  "candidates_sha256": "a889097d1884fe61461ba1f21a8a9b6026f4ef051bbbfe8a6febdce9b94d7ab1",
+  "prompt_version": "adjudicate-v3",
+  "schema_version": "decision-schema-v2",
+  "builder": "app.knowledge_engine.intelligence.v3_from_pool + semantic_v3 (production code)",
+  "metadata_never_evidence": "taxonomy/normalization facts are shown only as M-items; the validator rejects them as evidence"
+ },
+ "config_sha256": "f1bd4462896d109a604dbb4b6fccf75dc25b13e513b70a97fb2f76cfc948f370",
+ "semantic_provider_sha256": "defd47efca8a4be598e1b2c70a80a29557a843f6f0df37ac306b12379948bc84",
+ "runner_sha256": "39ad006aaf1f6855c5183adf805af97e39723463cf060e53a6bc176067854c7b",
+ "provider": {
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "model_version": "qwen2.5:7b-instruct",
+  "base_url": "http://127.0.0.1:11434",
+  "temperature": 0.0,
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e"
+ },
+ "probes": [
+  {
+   "available": true,
+   "kind": "ollama",
+   "provider": "ollama",
+   "model": "qwen2.5:7b-instruct",
+   "model_version": "qwen2.5:7b-instruct",
+   "temperature": 0.0,
+   "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e"
+  },
+  {
+   "available": false,
+   "reason": "URLError: <urlopen error [Errno 61] Connection refused>",
+   "kind": "openai_compatible",
+   "provider": "openai_compatible",
+   "model": "",
+   "model_version": "",
+   "temperature": 0.0
+  },
+  {
+   "available": false,
+   "reason": "model directory not found: None",
+   "kind": "local_transformers",
+   "provider": "local_transformers",
+   "model": null,
+   "model_version": null
+  }
+ ],
+ "prompt_version": "adjudicate-v4",
+ "schema_version": "decision-schema-v2",
+ "engine_config_version": "2.0.0",
+ "concurrency": 1,
+ "model_details": {
+  "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "size": 4683087332,
+  "parent_model": "",
+  "format": "gguf",
+  "family": "qwen2",
+  "families": [
+   "qwen2"
+  ],
+  "parameter_size": "7.6B",
+  "quantization_level": "Q4_K_M"
+ },
+ "runtime_version": "0.34.4",
+ "adjudicator": {
+  "status": "AI_PROVIDER_AVAILABLE",
+  "model_key": "350cdcd7e1eb3fca"
+ },
+ "finished": "2026-10-22T15:55:50+0530",
+ "total_runtime_s": 850.2,
+ "adjudicator_stats": {
+  "requested": 88,
+  "cache_hits": 0,
+  "model_calls": 88,
+  "invalid_outputs": 0,
+  "review_required": 0
+ },
+ "cache_hits": 0,
+ "cache_misses": 88,
+ "latency_s_uncached": {
+  "n": 88,
+  "mean": 9.66,
+  "median": 9.873,
+  "p95": 13.271,
+  "min": 4.9,
+  "max": 17.397
+ },
+ "tokens": {
+  "prompt": 91843,
+  "output": 11901
+ },
+ "decisions_file_sha256": "4f9a1770a5da1f22e7c454cb50b0baa59cb2fa3ea3f4b03f62ff76945f523168",
+ "output_hashes_sha256": "984c637594915f8987f034d556f7472d4e9c98c783dd14d41afd0cabc0042fbe",
+ "consistency": {
+  "n": 20,
+  "same_relationship": 20,
+  "same_output_hash": 16
+ },
+ "diagnostics": 0
+}

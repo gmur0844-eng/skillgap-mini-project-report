@@ -1,0 +1,112 @@
+{
+ "started": "2026-09-27T13:04:04+0530",
+ "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+ "python": "3.14.7",
+ "freeze_manifest": {
+  "source_run_id": "438ec2c0d5182dd4",
+  "source_content_digest": "70c46d9bb4de89b8be0b0ad4a9a58a66288476e353aa7cd57930ea1375215807",
+  "source_code_fingerprint": "9da5e152b40604b3",
+  "source_config_hash": "7415d76e48170ea2fdf91e6b09affbe0de6dc84be538a7bef6e368d9dcf1a237",
+  "candidates": 270,
+  "distinct_candidate_ids": 270,
+  "by_kind": {
+   "ALIAS_SENSE": 212,
+   "AMBIGUOUS_TAXONOMY_LABEL": 36,
+   "AMBIGUOUS_TOPIC_MAPPING": 22
+  },
+  "candidates_sha256": "e871862e65e7d54d98bf3d27c0416456858b092c1b76256cbf730c71b6f03d6f",
+  "generator": "app.knowledge_engine.intelligence.adjudication_candidates (unchanged)",
+  "verification": "every regenerated (input_hash, context_hash) equals a recorded decision of the source run",
+  "prompt_version": "adjudicate-v2",
+  "schema_version": "decision-schema-v1"
+ },
+ "config_sha256": "2ba1198d9b092087c06dc4e2b159fef82c015c3e90280ee6fdee937d02b50d59",
+ "semantic_provider_sha256": "0630876f030cbb3164aa17d5668de0a0b5101b1f894dbbf7cf58692d46698a2e",
+ "runner_sha256": "eb26a73f772b4e865c2bbfa74c444f78d35c15700e4c37155f2f7466954b7e80",
+ "provider": {
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "model_version": "qwen2.5:7b-instruct",
+  "base_url": "http://127.0.0.1:11434",
+  "temperature": 0.0
+ },
+ "probes": [
+  {
+   "available": true,
+   "kind": "ollama",
+   "provider": "ollama",
+   "model": "qwen2.5:7b-instruct",
+   "model_version": "qwen2.5:7b-instruct",
+   "temperature": 0.0
+  },
+  {
+   "available": false,
+   "reason": "URLError: <urlopen error [Errno 61] Connection refused>",
+   "kind": "openai_compatible",
+   "provider": "openai_compatible",
+   "model": "",
+   "model_version": "",
+   "temperature": 0.0
+  },
+  {
+   "available": false,
+   "reason": "python package 'transformers' is not installed",
+   "kind": "local_transformers",
+   "provider": "local_transformers",
+   "model": null,
+   "model_version": null
+  }
+ ],
+ "prompt_version": "adjudicate-v2",
+ "schema_version": "decision-schema-v1",
+ "engine_config_version": "2.0.0",
+ "concurrency": 1,
+ "model_details": {
+  "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "size": 4683087332,
+  "parent_model": "",
+  "format": "gguf",
+  "family": "qwen2",
+  "families": [
+   "qwen2"
+  ],
+  "parameter_size": "7.6B",
+  "quantization_level": "Q4_K_M"
+ },
+ "runtime_version": "0.34.4",
+ "adjudicator": {
+  "status": "AI_PROVIDER_AVAILABLE",
+  "model_key": "e5275cd91bd35cc6"
+ },
+ "finished": "2026-09-27T13:32:34+0530",
+ "total_runtime_s": 1709.5,
+ "adjudicator_stats": {
+  "requested": 270,
+  "cache_hits": 0,
+  "model_calls": 270,
+  "invalid_outputs": 0,
+  "review_required": 0
+ },
+ "cache_hits": 0,
+ "cache_misses": 270,
+ "latency_s_uncached": {
+  "n": 270,
+  "mean": 6.331,
+  "median": 6.404,
+  "p95": 8.523,
+  "min": 3.078,
+  "max": 11.855
+ },
+ "tokens": {
+  "prompt": 104434,
+  "output": 24723
+ },
+ "decisions_file_sha256": "13b955a09e61fbf07bf6bd153451a6638c7295879d18a2f2760ef7526cbc9cd1",
+ "output_hashes_sha256": "e6a11d354bdbbf4c9b53a1c820a15bd796002112b8c4e7b84391458fde9cefbf",
+ "consistency": {
+  "n": 20,
+  "same_relationship": 20,
+  "same_output_hash": 17
+ },
+ "diagnostics": 16
+}
