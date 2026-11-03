@@ -1,0 +1,42 @@
+\chapter{INTRODUCTION}
+\label{ch:intro}
+
+\section{Background}
+\label{sec:background}
+
+The project SKILL-GAP \& CURRICULUM DRIFT INTELLIGENCE FOR UNIVERSITIES (referred to below as the Curriculum Intelligence project) analyses how far a university curriculum covers the skills that employers ask for, and how the curriculum changes between versions. It reads curriculum PDFs (the target curriculum, its previous version, a reference curriculum such as the AICTE model curriculum, and peer curricula), job-posting exports, and the European Skills, Competences, Qualifications and Occupations (ESCO) classification~\cite{esco2024model}. The pipeline extracts courses, units and topics, groups topics into concepts, finds skill mentions in postings, maps them to ESCO, and classifies each demanded skill as covered, partially covered or missing in the curriculum. Every result is written to versioned files with its evidence, and a set of analytics gates blocks any output whose evidence is unusable.
+
+Many of these steps rest on one recurring question: \emph{how are two terms related?} A posting asks for ``AWS''; ESCO has the concept ``cloud technologies''. A syllabus unit is titled ``Python for Data Science''; ESCO has ``Python (computer programming)''. A job advertisement says ``CRM''; ESCO has ``customer relationship management''. The answer can be that the two terms denote the same thing, that one is a narrower kind or part of the other, that they share part of their meaning, that they are merely associated, or that they are unrelated because a word is used in a different sense. A wrong answer has consequences downstream. If a narrower skill is treated as identical to its broader parent, coverage is overstated. If an acronym is matched to the wrong sense, demand is counted for a skill nobody asked for.
+
+The project's deterministic layer handles this conservatively. It applies ESCO label precedence, alias-sense and acronym-sense rules, a containment rule (a phrase contained in a longer label is never treated as the same concept), and lexical TF-IDF similarity for clustering. Pairs that these rules cannot settle are kept open rather than guessed. To help with the open pairs, the project added a model-adjudication layer: a local instruction-tuned language model, Qwen2.5 7B Instruct~\cite{qwen2024} served by Ollama, receives each open pair with its context and returns one of eight relationship labels, a reason and cited evidence. A deterministic evidence validator then checks every answer, and a promotion gate declared in advance decides whether any model decision may affect a result.
+
+This report concerns that module: how semantic relationships are defined, how the model's decisions are checked, how they were compared with human reviewer responses, what the comparison shows, and why the model currently remains advisory.
+
+\section{Objectives}
+\label{sec:objectives}
+
+The objectives of the semantic relationship validation work are:
+
+\begin{enumerate}
+    \item \textbf{Define the relationship task precisely.} Use one label schema with eight classes (\SC, \PA, \CH, \RE, \PO, \UN, \AM, \IE) for the model, the reviewers and the evaluation, so that every comparison measures the same thing.
+    \item \textbf{Evaluate model predictions against reviewer judgements.} Compare the model's raw answers, and the answers that survive the evidence validator, with stored reviewer responses on a fixed set of cases, reporting every denominator.
+    \item \textbf{Identify classification errors.} Determine which relationship classes the model confuses, how often, and with what evidence. In particular, separate equivalence from hierarchy, partial overlap and general relatedness.
+    \item \textbf{Measure the effect of the safety checks.} Quantify how often the validator withholds an answer (abstention), how often the remaining answers are correct, and which validator rules are responsible.
+    \item \textbf{Maintain reliable safety controls.} Keep the model's decisions advisory until the pre-declared promotion gate is met on independent human labels, without relaxing the gate after results are known.
+    \item \textbf{Plan defensible improvement.} Propose changes to decision rules and prompts that are tuned on development cases and judged on cases not used for tuning.
+\end{enumerate}
+
+\section{Scope of the Project}
+\label{sec:scope}
+
+\paragraph{Scope of this report.} The title SKILL-GAP \& CURRICULUM DRIFT INTELLIGENCE FOR UNIVERSITIES names the whole platform. This report describes the platform only as far as needed for context (Sections~\ref{sec:background} and~\ref{sec:projectdesign}) and evaluates one of its modules in detail: semantic relationship validation. All results in Chapters~\ref{ch:design} to~\ref{ch:conclusion} concern that module. The platform's other components (curriculum extraction, skill mapping, coverage and gap analysis, curriculum drift comparison and the application) are not evaluated in this report.
+
+\paragraph{Implemented system.} The scope of the evaluation is the semantic adjudication module of the existing project: the candidate builder, the model provider layer, the prompt (\code{adjudicate-v3}, the production version, and \code{adjudicate-v4}, an experiment), the decision schema, the deterministic evidence validator, the replay cache, the promotion gates, the human-validation package with its blinded form, and the scripts that score model runs against reviewer responses. The rest of the Curriculum Intelligence pipeline is described only where it supplies inputs to this module or consumes its outputs.
+
+\paragraph{Validation dataset.} The data are a frozen benchmark of 88 candidate pairs (\code{semantic\_benchmark\_v1}, frozen on 2026-09-27) and a stratified 48-case subset of it, selected for human validation. All cases come from Computer Science and Engineering curricula, job postings and ESCO concepts.
+
+\paragraph{Reviewers and records actually available.} One workbook of reviewer responses exists, with five rows (R01--R05), each answering all 48 cases. The project owner stated that R02 and R03 read about the topics with an AI assistant before choosing their answers. How R01, R04 and R05 answered was not stated. The project therefore stores all five as research records and none as an independent label set. No independent human label set exists at the time of writing.
+
+\paragraph{Evaluation scope.} Model answers are scored against the 45 cases on which R02 and R03 agree. This is a \emph{development} reference: it is AI-assisted, and the v4 prompt was designed with these cases in view. Results on it are reported as development estimates. No accuracy figure in this report is a validated accuracy.
+
+\paragraph{Limitations.} The sample is small (45 scored cases). Four classes have fewer than five reference cases. Agreement between two AI-assisted reviewers is not an independently adjudicated gold standard. Only one model size (7B, 4-bit quantised) was run. The benchmark's own development labels were produced by an AI assistant and are used only for stratification and development diagnostics. No model weights were trained or fine-tuned in this work; all changes were to prompts and deterministic rules.

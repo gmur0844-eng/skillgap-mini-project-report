@@ -1,0 +1,299 @@
+[
+ {
+  "id": "A.1",
+  "title": "Relationship label schema",
+  "file": "backend/app/knowledge_engine/semantic_provider.py",
+  "ranges": [
+   [
+    33,
+    44
+   ]
+  ],
+  "text": "The eight labels and the definitions given to the model (Section 2.2, Table 2.1). The reviewer form uses the same eight labels.",
+  "lines": [
+   "RELATIONSHIPS = (\"SAME_CONCEPT\", \"PARENT\", \"CHILD\", \"RELATED\", \"PARTIAL_OVERLAP\", \"UNRELATED\", \"AMBIGUOUS\",",
+   "                 \"INSUFFICIENT_EVIDENCE\")",
+   "RELATIONSHIP_DEFINITIONS = {",
+   "    \"SAME_CONCEPT\": \"LEFT and RIGHT denote the same thing in this context\",",
+   "    \"PARENT\": \"LEFT is broader than RIGHT (RIGHT is a kind or part of LEFT)\",",
+   "    \"CHILD\": \"LEFT is narrower than RIGHT (LEFT is a kind or part of RIGHT)\",",
+   "    \"RELATED\": \"clearly associated, neither contains the other\",",
+   "    \"PARTIAL_OVERLAP\": \"they share part of their meaning\",",
+   "    \"UNRELATED\": \"different meanings (for example a different word sense)\",",
+   "    \"AMBIGUOUS\": \"the context supports more than one reading\",",
+   "    \"INSUFFICIENT_EVIDENCE\": \"the text does not allow a judgement\",",
+   "}"
+  ],
+  "range_text": "33-44",
+  "file_sha256": "defd47efca8a4be598e1b2c70a80a29557a843f6f0df37ac306b12379948bc84"
+ },
+ {
+  "id": "A.2",
+  "title": "Ordered decision procedure of the v4 prompt experiment",
+  "file": "backend/app/knowledge_engine/semantic_v3.py",
+  "ranges": [
+   [
+    203,
+    213
+   ]
+  ],
+  "text": "The decision procedure added in prompt adjudicate-v4 (Section 4.1.2). It was evaluated and not adopted; production uses adjudicate-v3.",
+  "lines": [
+   "DECISION_PROCEDURE_V4 = (",
+   "    \"Decide in this order:\\n\"",
+   "    \"1. Does LEFT, as used in the SOURCE CONTEXT, mean the RIGHT concept or something connected to it? If the source \"",
+   "    \"uses LEFT in another sense, answer UNRELATED. If the source does not let you tell, answer AMBIGUOUS (several \"",
+   "    \"readings fit) or INSUFFICIENT_EVIDENCE (nothing decides it).\\n\"",
+   "    \"2. SAME_CONCEPT only if LEFT and RIGHT are interchangeable here: the same thing at the same breadth.\\n\"",
+   "    \"3. CHILD if LEFT is one specific kind, instance, part, product, platform, vendor or tool of RIGHT. A named \"",
+   "    \"product or provider of a technology category is CHILD of that category, not SAME_CONCEPT.\\n\"",
+   "    \"4. PARENT if LEFT is a broader area or category that includes RIGHT as one of its kinds or parts.\\n\"",
+   "    \"5. PARTIAL_OVERLAP if they share part of their meaning but each also covers things the other does not.\\n\"",
+   "    \"6. RELATED if they are associated (used together, a tool for, a prerequisite of) without sharing meaning.\\n\")"
+  ],
+  "range_text": "203-213",
+  "file_sha256": "67ba1453c3208d25ccfa8b1bb116e29bc4f8f772525381e167aaabeb010ddb69"
+ },
+ {
+  "id": "A.3",
+  "title": "Deterministic evidence validator",
+  "file": "backend/app/knowledge_engine/semantic_v3.py",
+  "ranges": [
+   [
+    28,
+    30
+   ],
+   [
+    280,
+    354
+   ]
+  ],
+  "text": "The rules every model answer must pass before it can reach the analysis (Section 4.1.1). Lines 31 to 279 of the file are omitted.",
+  "lines": [
+   "METADATA_TYPES = (\"TAXONOMY_METADATA\", \"NORMALIZATION_METADATA\")",
+   "DEFINITE = (\"SAME_CONCEPT\", \"PARENT\", \"CHILD\", \"RELATED\", \"PARTIAL_OVERLAP\", \"UNRELATED\")",
+   "MEANING_RELATIONS = (\"SAME_CONCEPT\", \"PARENT\", \"CHILD\", \"RELATED\", \"PARTIAL_OVERLAP\")",
+   "# ... lines 31-279 omitted ...",
+   "DIRECTIONAL_TYPES = (\"ESCO_HIERARCHY\", \"ESCO_RELATION\", \"COURSE_TITLE\", \"UNIT_TITLE\", \"LEARNING_OUTCOME\")",
+   "",
+   "",
+   "def validate_decision(out, c):",
+   "    \"\"\"",
+   "    Deterministic gate over a model decision. Returns (final_state, findings).",
+   "",
+   "    final_state:",
+   "      MODEL_SUPPORTED        definite relationship whose evidence passes every rule",
+   "      MODEL_SUGGESTED        AMBIGUOUS / INSUFFICIENT_EVIDENCE answered by the model (kept for review, no effect)",
+   "      REVIEW_REQUIRED        schema failure or evidence that cannot be traced to the inputs",
+   "      INSUFFICIENT_EVIDENCE  definite relationship without the required source evidence (downgraded)",
+   "    Rules: evidence present; each cited ref exists; the quote occurs in that item; the source type is OUR item's type",
+   "    (a model-claimed type that differs is recorded); metadata items never count; any definite relationship needs a",
+   "    SOURCE-side item; meaning relations (SAME/PARENT/CHILD/RELATED/PARTIAL) also need a CONCEPT-side item;",
+   "    PARENT/CHILD need a direction justification AND a cited directional item (DIRECTIONAL_TYPES); SAME_CONCEPT on alias/label candidates needs SOURCE_TEXT or JOB_TITLE.",
+   "    \"\"\"",
+   "    findings = []",
+   "    schema = validate_output(out)",
+   "    if schema:",
+   "        return \"REVIEW_REQUIRED\", [f\"SCHEMA: {e}\" for e in schema]",
+   "    rel = out[\"relationship\"]",
+   "    if rel not in DEFINITE:",
+   "        return \"MODEL_SUGGESTED\", [\"NON_DEFINITE_RELATIONSHIP\"]",
+   "    items = {it[\"id\"]: (\"LEFT\", it) for it in c[\"left_items\"]}",
+   "    items.update({it[\"id\"]: (\"RIGHT\", it) for it in c[\"right_items\"]})",
+   "    items.update({it[\"id\"]: (\"META\", it) for it in c[\"metadata_items\"]})",
+   "    valid = []",
+   "    for e in out.get(\"evidence\", []):",
+   "        side_it = items.get(e[\"ref\"])",
+   "        if side_it is None:",
+   "            findings.append(f\"UNKNOWN_REF:{e['ref']}\")",
+   "            continue",
+   "        side, it = side_it",
+   "        if len(_norm(e[\"quote\"])) < 2:",
+   "            findings.append(f\"EMPTY_QUOTE:{e['ref']}\")",
+   "            continue",
+   "        if _norm(e[\"quote\"]) not in _norm(it[\"text\"]):",
+   "            findings.append(f\"QUOTE_NOT_IN_ITEM:{e['ref']}\")",
+   "            continue",
+   "        if e.get(\"source_type\") and e.get(\"source_type\") != it[\"source_type\"]:",
+   "            findings.append(f\"SOURCE_TYPE_MISLABELLED:{e['ref']}:{e.get('source_type')}->{it['source_type']}\")",
+   "        if side == \"META\" or it[\"source_type\"] in METADATA_TYPES:",
+   "            findings.append(f\"METADATA_CITED:{e['ref']}\")",
+   "            continue",
+   "        valid.append((side, it[\"source_type\"]))",
+   "    untraceable = any(f.startswith((\"UNKNOWN_REF\", \"QUOTE_NOT_IN_ITEM\")) for f in findings)  # invented evidence",
+   "    has_left = any(s == \"LEFT\" for s, _ in valid)",
+   "    has_right = any(s == \"RIGHT\" for s, _ in valid)",
+   "    if not out.get(\"evidence\"):",
+   "        findings.append(\"NO_EVIDENCE\")",
+   "    if not has_left:",
+   "        findings.append(\"NO_SOURCE_EVIDENCE\")",
+   "    if rel in MEANING_RELATIONS and not has_right:",
+   "        findings.append(\"NO_CONCEPT_EVIDENCE\")",
+   "    if rel == \"SAME_CONCEPT\" and c[\"kind\"] in (\"ALIAS_SENSE\", \"AMBIGUOUS_TAXONOMY_LABEL\") \\",
+   "            and not any(s == \"LEFT\" and t in (\"SOURCE_TEXT\", \"JOB_TITLE\") for s, t in valid):",
+   "        findings.append(\"ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT\")",
+   "    if rel in (\"PARENT\", \"CHILD\") and not (out.get(\"direction_justification\") or \"\").strip():",
+   "        findings.append(\"NO_DIRECTION_JUSTIFICATION\")",
+   "    if rel in (\"PARENT\", \"CHILD\") and not any(t in DIRECTIONAL_TYPES for _, t in valid):",
+   "        # a shared word or one string inside another is never hierarchy: direction needs a structural fact",
+   "        findings.append(\"NO_DIRECTIONAL_EVIDENCE\")",
+   "    blocking = {\"NO_EVIDENCE\", \"NO_SOURCE_EVIDENCE\", \"NO_CONCEPT_EVIDENCE\", \"ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT\",",
+   "                \"NO_DIRECTION_JUSTIFICATION\", \"NO_DIRECTIONAL_EVIDENCE\"}",
+   "    if untraceable:",
+   "        return \"REVIEW_REQUIRED\", findings",
+   "    if any(f in blocking for f in findings):",
+   "        return \"INSUFFICIENT_EVIDENCE\", findings",
+   "    return \"MODEL_SUPPORTED\", findings",
+   "",
+   "",
+   "def effective_relationship(out, final_state):",
+   "    \"\"\"What downstream may read: the model's relationship only when MODEL_SUPPORTED.\"\"\"",
+   "    return out[\"relationship\"] if final_state == \"MODEL_SUPPORTED\" else final_state"
+  ],
+  "range_text": "28-30, 280-354",
+  "file_sha256": "67ba1453c3208d25ccfa8b1bb116e29bc4f8f772525381e167aaabeb010ddb69"
+ },
+ {
+  "id": "A.4",
+  "title": "Reading a model decision as downstream would",
+  "file": "scripts/semantic/score_against_reviewers.py",
+  "ranges": [
+   [
+    42,
+    53
+   ]
+  ],
+  "text": "How a recorded decision becomes the validated answer that is scored in Chapters 4 and 5 (Section 3.2.2).",
+  "lines": [
+   "def validated(d, cand):",
+   "    \"\"\"What downstream may read (same rule as scripts/semantic/evaluate_v3.py `effective`).\"\"\"",
+   "    if d is None:",
+   "        return None, [\"NO_DECISION\"]",
+   "    if d.get(\"decision_state\") not in (\"MODEL_SUGGESTED\", \"MODEL_SUPPORTED\", \"INSUFFICIENT_EVIDENCE\", \"REVIEW_REQUIRED\"):",
+   "        return \"AMBIGUOUS\", [f\"DECISION_STATE:{d.get('decision_state')}\"]",
+   "    out = {k: d.get(k) for k in (\"relationship\", \"reason\", \"evidence\", \"direction_justification\", \"alternatives\",",
+   "                                 \"uncertainty\")}",
+   "    state, findings = v3.validate_decision(out, cand)",
+   "    if state in (\"MODEL_SUPPORTED\", \"MODEL_SUGGESTED\"):",
+   "        return d[\"relationship\"], findings",
+   "    return (\"INSUFFICIENT_EVIDENCE\" if state == \"INSUFFICIENT_EVIDENCE\" else \"AMBIGUOUS\"), findings"
+  ],
+  "range_text": "42-53",
+  "file_sha256": "9efba7c6d992420e17c3cc53ce01f498956fc5fcd5459b6b0471b54cdd453a7d"
+ },
+ {
+  "id": "A.5",
+  "title": "Cohen's kappa between two reviewers",
+  "file": "backend/app/knowledge_engine/semantic_eval.py",
+  "ranges": [
+   [
+    47,
+    54
+   ]
+  ],
+  "text": "The agreement statistic of Equation 3.4, used for Table 5.6.",
+  "lines": [
+   "def cohen_kappa(a, b):",
+   "    n = len(a)",
+   "    if not n:",
+   "        return None",
+   "    po = sum(x == y for x, y in zip(a, b)) / n",
+   "    ca, cb = Counter(a), Counter(b)",
+   "    pe = sum(ca[k] * cb[k] for k in set(ca) | set(cb)) / (n * n)",
+   "    return None if pe == 1 else round((po - pe) / (1 - pe), 4)"
+  ],
+  "range_text": "47-54",
+  "file_sha256": "3aa464e205c41f12d4a84533cde61950a07fc343b94e3b0bc652f2ed350deac1"
+ },
+ {
+  "id": "A.6",
+  "title": "Applying the promotion gate",
+  "file": "backend/app/knowledge_engine/semantic_eval.py",
+  "ranges": [
+   [
+    257,
+    292
+   ]
+  ],
+  "text": "Every criterion of semantic-gate-v3 (Table 3.3) is checked; any failure leaves the system in SAFE_MODE (Section 3.2.5).",
+  "lines": [
+   "def apply_gate(gate, gold_rows, reviewers_agreement, system_result, label_sets):",
+   "    \"\"\"Every check with its value and threshold; promotable classes only when the whole gate passes.\"\"\"",
+   "    gold_cases = sum(1 for r in gold_rows if r[\"gold\"])",
+   "    c = gate[\"criteria\"]",
+   "    checks = {}",
+   "",
+   "    def check(name, value, ok, threshold):",
+   "        checks[name] = {\"value\": value, \"threshold\": threshold, \"pass\": bool(ok)}",
+   "    check(\"independent_reviewers\", len(label_sets), len(label_sets) >= c[\"min_independent_reviewers\"], c[\"min_independent_reviewers\"])",
+   "    check(\"gold_cases\", gold_cases, gold_cases >= c[\"min_gold_cases\"], c[\"min_gold_cases\"])",
+   "    k = reviewers_agreement.get(\"kappa\")",
+   "    if len(label_sets) >= 2:",
+   "        check(\"inter_rater_kappa\", k, k is not None and k >= c[\"min_kappa_when_two_or_more_reviewers\"],",
+   "              c[\"min_kappa_when_two_or_more_reviewers\"])",
+   "    s = system_result",
+   "    check(\"accuracy\", s[\"accuracy\"], (s[\"accuracy\"] or 0) >= c[\"min_accuracy\"], c[\"min_accuracy\"])",
+   "    check(\"macro_f1\", s[\"macro_f1\"], (s[\"macro_f1\"] or 0) >= c[\"min_macro_f1\"], c[\"min_macro_f1\"])",
+   "    e = s[\"critical_errors\"]",
+   "    check(\"false_same_concept\", e.get(\"FALSE_SAME_CONCEPT\", 0), e.get(\"FALSE_SAME_CONCEPT\", 0) <= c[\"max_false_same_concept\"], c[\"max_false_same_concept\"])",
+   "    check(\"wrong_hierarchy_direction\", e.get(\"WRONG_HIERARCHY_DIRECTION\", 0),",
+   "          e.get(\"WRONG_HIERARCHY_DIRECTION\", 0) <= c[\"max_wrong_hierarchy_direction\"], c[\"max_wrong_hierarchy_direction\"])",
+   "    fh = e.get(\"FALSE_PARENT\", 0) + e.get(\"FALSE_CHILD\", 0)",
+   "    check(\"false_parent_or_child\", fh, fh <= c[\"max_false_parent_or_child\"], c[\"max_false_parent_or_child\"])",
+   "    check(\"unsupported_taxonomy_evidence\", e.get(\"UNSUPPORTED_TAXONOMY_EVIDENCE\", 0),",
+   "          e.get(\"UNSUPPORTED_TAXONOMY_EVIDENCE\", 0) <= c[\"max_unsupported_taxonomy_evidence\"], c[\"max_unsupported_taxonomy_evidence\"])",
+   "    check(\"lexical_collision\", e.get(\"LEXICAL_COLLISION\", 0), e.get(\"LEXICAL_COLLISION\", 0) <= c[\"max_lexical_collision\"], c[\"max_lexical_collision\"])",
+   "    passed = all(v[\"pass\"] for v in checks.values())",
+   "    promotable = []",
+   "    if passed:",
+   "        for cls in gate[\"promotable_classes\"]:",
+   "            pc = s[\"per_class\"][cls]",
+   "            if pc[\"precision\"] is not None and pc[\"predicted\"] >= c[\"min_predictions_per_promoted_class\"] \\",
+   "                    and pc[\"precision\"] >= c[\"min_precision_per_promoted_class\"]:",
+   "                promotable.append(cls)",
+   "    return {\"passed\": passed, \"checks\": checks, \"promotable_classes\": promotable,",
+   "            \"mode\": \"PROMOTE_VALIDATED_CLASSES\" if passed and promotable else \"SAFE_MODE\"}"
+  ],
+  "range_text": "257-292",
+  "file_sha256": "3aa464e205c41f12d4a84533cde61950a07fc343b94e3b0bc652f2ed350deac1"
+ },
+ {
+  "id": "A.7",
+  "title": "Storing an independent label set only with an attestation",
+  "file": "scripts/evaluation/semantic_validation.py",
+  "ranges": [
+   [
+    709,
+    731
+   ]
+  ],
+  "text": "An independent label set cannot be created without a statement that the reviewer answered alone and without AI tools (Section 4.3.4).",
+  "lines": [
+   "def _store_labels(pkg, man, reviewer, rows, source_file, meta=None, attestation=None):",
+   "    \"\"\"An INDEPENDENT_HUMAN_REVIEWER label set: it counts for agreement, gold and the gate, so it is stored only with",
+   "    a statement that the reviewer answered alone, from the case text, without AI tools and without seeing system",
+   "    output or another reviewer's answers (attestation: who confirmed it, and how). Responses that do not meet this go",
+   "    through import-responses instead.\"\"\"",
+   "    try:",
+   "        name = se.check_reviewer(reviewer)",
+   "    except ValueError as exc:",
+   "        raise SystemExit(str(exc)) from exc",
+   "    if not (attestation or \"\").strip():",
+   "        raise SystemExit(\"an independent label set needs --attestation: who confirmed that the reviewer answered alone, \"",
+   "                         \"without AI tools, and how; otherwise import the responses with import-responses\")",
+   "    out = pkg / \"labels\" / f\"labels_{slug(name)}_v1.json\"",
+   "    if out.exists():",
+   "        raise SystemExit(f\"{out.name} exists; label sets are immutable\")",
+   "    doc = {\"benchmark\": man[\"benchmark_version\"], \"benchmark_sha256\": man[\"benchmark\"][\"sha256\"], \"package\": man[\"package\"],",
+   "           \"reviewer\": name, \"reviewer_background\": meta or {}, \"label_version\": \"v1\", \"label_schema_version\": man[\"label_schema_version\"],",
+   "           \"independent\": True, \"model_blind\": True, \"label_source\": \"INDEPENDENT_HUMAN_REVIEWER\",",
+   "           \"attestation\": {\"statement\": attestation.strip(), \"recorded_at\": now()},",
+   "           \"ingested_at\": now(), \"source_file_sha256\": sha(Path(source_file).read_bytes()),",
+   "           \"labels\": rows, \"labelled\": sum(1 for r in rows if r[\"label\"])}",
+   "    out.write_text(json.dumps(doc, indent=1, ensure_ascii=False))",
+   "    return out, doc"
+  ],
+  "range_text": "709-731",
+  "file_sha256": "4420272003c0a18bc23c108bc58448e04a432284e9d846d072423371028f987c"
+ }
+]

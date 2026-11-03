@@ -1,0 +1,116 @@
+\chapter{LITERATURE REVIEW}
+\label{ch:lit}
+
+\section{Previous Work}
+\label{sec:previous}
+
+\subsection{Semantic similarity between texts}
+
+A large body of work measures how similar two pieces of text are. The SemEval-2012 pilot on Semantic Textual Similarity framed the task as assigning a graded score to sentence pairs, with annotators rating similarity on a scale rather than choosing a relation type~\cite{agirre2012}. Sentence-BERT made such comparisons practical at scale. It fine-tunes BERT in a siamese arrangement so that sentences are mapped to fixed vectors that can be compared with cosine similarity~\cite{reimers2019}.
+
+These methods answer \emph{how close} two texts are. They do not answer \emph{which way} two terms are related: a narrower concept and its broader parent can be very similar in vector space while standing in an asymmetric relation. The Curriculum Intelligence project uses lexical TF-IDF similarity for concept clustering and treats its score as uncalibrated similarity, never as a confidence or a relation label. Its relationship task is closer to the typed relations of taxonomies discussed next.
+
+\subsection{Ontology and taxonomy relationships}
+
+Lexical and knowledge-organisation resources encode typed relations explicitly. WordNet groups English words into synonym sets connected by relations such as hypernymy (``is a kind of'') and meronymy (``is a part of'')~\cite{miller1995}. The W3C Simple Knowledge Organization System (SKOS) standardises hierarchical links (\code{skos:broader}, \code{skos:narrower}) and associative links (\code{skos:related}) between concepts, and provides mapping properties between schemes (\code{exactMatch}, \code{closeMatch}, \code{broadMatch}, \code{narrowMatch}, \code{relatedMatch})~\cite{miles2009skos}. ESCO, the taxonomy used by this project, is published as an ontology that reuses SKOS, and places skills in a hierarchy through \code{skos:broader} and \code{skos:narrower}~\cite{esco2024model}.
+
+Ontology matching studies the problem of finding correspondences between entities of two schemes. Its correspondences carry a relation (equivalence, subsumption in either direction, or disjointness) rather than only a similarity score~\cite{euzenat2013}. The project's task is a small instance of this problem. It matches a term found in a posting or syllabus to an ESCO concept or another curriculum topic, and it must say whether the match is equivalence, subsumption or something weaker.
+
+Recent skills-intelligence research applies these resources to labour-market text. Sun matches job text to ESCO skills with contrastive bi-encoders for multi-label skill extraction~\cite{sun2026}. Rosenberger et al.\ embed resumes and ESCO occupations in a shared space for job recommendation~\cite{rosenberger2025}. Gonzalez-Gomez et al.\ generate a skills taxonomy dynamically with a named-entity recognition and relation-extraction pipeline~\cite{gonzalezgomez2025}. These works support the project's choice of ESCO as the reference vocabulary. They address extraction, retrieval and taxonomy construction rather than the verification of a single typed relation between two given terms.
+
+\subsection{Hierarchical classification}
+
+When labels are organised in a hierarchy, errors are not all equal: confusing a class with its parent is a different mistake from confusing two unrelated classes. Silla and Freitas survey hierarchical classification across application domains. They distinguish flat, local and global approaches and discuss evaluation measures that account for the hierarchy~\cite{silla2011}. The project's label set is not a class hierarchy in that sense. It does, however, contain an ordered notion of breadth (\SC{} versus \PA/\CH{} versus \PO{} versus \RE), and the gate treats a hierarchy error in the wrong direction as a severe error of its own.
+
+\subsection{Human evaluation and agreement}
+
+Human labels are the usual reference for semantic judgements, and their reliability must be measured before they are used. Cohen's $\kappa$ corrects the observed agreement of two raters for the agreement expected by chance~\cite{cohen1960}. Landis and Koch proposed verbal bands for $\kappa$ that are widely used, for example 0.61--0.80 as ``substantial'' and 0.81--1.00 as ``almost perfect'' agreement~\cite{landis1977}.
+
+Large language models have changed the conditions under which human labels are collected. Gilardi et al.\ reported that zero-shot ChatGPT annotations exceeded crowd workers' accuracy on several text-annotation tasks~\cite{gilardi2023}. Veselovsky et al.\ estimated that a substantial share of crowd workers on a summarisation task used language models to produce their answers~\cite{veselovsky2023}. Zheng et al.\ showed that strong language models used as judges can agree well with human preferences, but also documented position, verbosity and self-enhancement biases~\cite{zheng2023}. Together these results show both that model assistance is attractive to annotators and that answers produced with it can no longer be treated as independent human evidence about a model.
+
+\subsection{Trustworthy AI, abstention and evaluation integrity}
+
+Chow formalised the trade-off between recognition error and rejection: a classifier that may decline to decide can lower its error rate on the cases it does decide~\cite{chow1970}. Geifman and El-Yaniv carried this idea to deep networks as selective classification, controlling risk at a chosen coverage~\cite{geifman2017}. The NIST AI Risk Management Framework lists validity and reliability, safety, accountability and transparency among the characteristics of trustworthy AI, and organises risk management into the functions Govern, Map, Measure and Manage~\cite{tabassi2023}. On evaluation integrity, Cawley and Talbot showed that selecting or tuning a model on the same data used to estimate its performance produces optimistically biased estimates~\cite{cawley2010}.
+
+The project draws on each of these strands. The validator implements a reject option, the gate sets risk thresholds in advance, and the evaluation separates development cases from the cases that decide promotion.
+
+\section{Theoretical Framework}
+\label{sec:framework}
+
+\subsection{The relationship label schema}
+
+The project uses one schema, \code{relationship-labels-v1}, for the model prompt, the reviewer form and every metric. Each label is read from Concept A (the term found in a posting or syllabus) towards Concept B (the ESCO concept or curriculum topic). Table~\ref{tab:labels} gives the definitions exactly as shown to reviewers, and the model prompt's wording for the same label.
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}p{4.1cm}X X@{}}
+\toprule
+\textbf{Label} & \textbf{Reviewer form definition} & \textbf{Model prompt definition} \\
+\midrule
+\SC & Concept A and Concept B denote the same thing in this context & LEFT and RIGHT denote the same thing in this context \\
+\PA & Concept A is a broader concept that includes Concept B & LEFT is broader than RIGHT (RIGHT is a kind or part of LEFT) \\
+\CH & Concept A is a narrower concept, a kind or part of Concept B & LEFT is narrower than RIGHT (LEFT is a kind or part of RIGHT) \\
+\RE & clearly connected, but neither equal nor one inside the other & clearly associated, neither contains the other \\
+\PO & they share part of their meaning & they share part of their meaning \\
+\UN & different things (e.g.\ a shared word with a different sense) & different meanings (for example a different word sense) \\
+\AM & the context allows more than one reading & the context supports more than one reading \\
+\IE & the context does not decide it & the text does not allow a judgement \\
+\bottomrule
+\end{tabularx}
+\caption[{The eight relationship labels (\code{relationship-labels-v1})}]{The eight relationship labels (\code{relationship-labels-v1}). Sources: \code{docs/\allowbreak{}SEMANTIC\_HUMAN\_VALIDATION\_FORM.md} and \code{semantic\_provider.RELATIONSHIP\_DEFINITIONS}.}
+\label{tab:labels}
+\end{table}
+
+\subsection{Conceptual distinctions}
+
+The labels fall into three groups that matter for the analysis.
+
+\paragraph{Definite meaning relations.} \SC, \PA, \CH, \PO{} and \RE{} assert that the two terms are connected in meaning, with decreasing strength of commitment:
+\begin{itemize}
+    \item \SC{} is equivalence in context. The terms are interchangeable for the purpose at hand. The pair ``CRM'' and ``customer relationship management'' is an example.
+    \item \PA{} and \CH{} are subsumption. One term is a kind or part of the other, and the direction matters. ``MS Excel'' is a kind of ``use spreadsheets software'', so the pair is \CH{} from Concept A, and the reverse pair would be \PA. In SKOS terms, A~\CH~B corresponds to A \code{skos:broader} B~\cite{miles2009skos}.
+    \item \PO{} is overlap without containment. Each term covers something the other does not, as ``data privacy'' and ``data protection'' do.
+    \item \RE{} is association without shared meaning or containment: the two concepts tend to occur together or support each other.
+\end{itemize}
+SKOS keeps associative and hierarchical links apart: two concepts linked by \code{skos:related} should not also be linked hierarchically~\cite{miles2009skos}. The project's schema follows the same principle, so a pair is never both \RE{} and \PA/\CH.
+
+\paragraph{Definite non-relation.} \UN{} asserts that the terms differ in meaning, typically because a shared surface form has a different sense. The abbreviation ``call'' in a posting and ESCO's ``Computer Assisted Language Learning'' are an example.
+
+\paragraph{Non-definite outcomes.} \AM{} (several readings are supported) and \IE{} (the text does not decide) are explicit statements that no definite relation can be justified from the context. They are legitimate answers, not failures. For a reviewer, choosing one is a judgement about the evidence. For the system, producing one is an abstention.
+
+\paragraph{The ordering problem.} The distinctions between \SC, \CH{} or \PA, \PO{} and \RE{} form a scale of breadth. Similarity-based methods tend to place closely related terms near each other without separating these cases, and an over-confident classifier tends to collapse the scale towards \SC. The analysis in Chapter~\ref{ch:results} shows that this is the main failure of the evaluated model.
+
+\section{Key Findings}
+\label{sec:keyfindings}
+
+\paragraph{From published research.}
+\begin{itemize}
+    \item Similarity scores and typed relations are different targets. Graded similarity and embedding distance~\cite{agirre2012,reimers2019} do not by themselves give the direction of a hierarchical relation, which taxonomies encode explicitly~\cite{miller1995,miles2009skos,euzenat2013}.
+    \item Errors in hierarchical label spaces should be evaluated with the hierarchy in mind~\cite{silla2011}.
+    \item Inter-rater agreement must be measured and corrected for chance before human labels serve as a reference~\cite{cohen1960,landis1977}.
+    \item Language-model assistance is common among human annotators, and model judges carry systematic biases~\cite{veselovsky2023,zheng2023}. Answers produced with AI assistance are therefore not independent evidence about an AI model.
+    \item Allowing a classifier to abstain trades coverage for lower error on the decided cases~\cite{chow1970,geifman2017}.
+    \item Tuning and estimating performance on the same data biases the estimate upwards~\cite{cawley2010}.
+\end{itemize}
+
+\paragraph{From this project's experiments} (reported in detail in Chapters~\ref{ch:design} and~\ref{ch:results}; development estimates only):
+\begin{itemize}
+    \item On 45 development cases, the raw model answer matched the AI-assisted reviewer consensus in 15 cases. The validated answer matched in 9 cases; all 9 were among its 25 commitments.
+    \item The model never answered \PA{} or \CH{}, although 16 of the 45 reference answers are hierarchical.
+    \item The three most frequent confusions all collapse breadth: narrower concepts labelled \SC{} (7), partial overlap labelled \SC{} (5) and broader concepts labelled \RE{} (4).
+    \item A prompt revision that described the decision procedure step by step removed most of the over-use of \SC{} but moved the errors to other classes. It did not improve the validated score.
+\end{itemize}
+
+\section{Methodology}
+\label{sec:methodology}
+
+The work follows an evaluate-before-trust methodology with four principles. Chapter~\ref{ch:research} gives the procedures.
+
+\begin{enumerate}
+    \item \textbf{Freeze inputs before outputs exist.} The benchmark, the candidate inputs and their hashes, and the promotion gates were frozen or declared before the model outputs they govern were seen. Any change creates a new version instead of editing the old one.
+    \item \textbf{Separate the roles of labels.} Development labels (written by an AI assistant), AI-assisted reviewer responses, and independent human labels are stored apart, carry their source, and serve different purposes. Only independent human labels can decide promotion.
+    \item \textbf{Evaluate what downstream would read.} Each model answer is scored twice: as returned (raw), and after the deterministic evidence validator (validated), which is the only form that could ever reach the analysis. Abstentions are reported, not hidden.
+    \item \textbf{Keep the system advisory until the gate passes.} The gate's thresholds are fixed in advance, and failing them keeps the model in Safe Mode, where decisions are recorded and shown but never applied.
+\end{enumerate}

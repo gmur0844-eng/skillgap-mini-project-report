@@ -1,0 +1,178 @@
+\chapter{PRESENTATION OF RESULTS}
+\label{ch:results}
+
+\section{Analysis of Findings}
+\label{sec:analysisfindings}
+
+All results in this chapter use the 45-case development reference described in Section~\ref{sec:analysis}. The tables are generated directly from the recomputed results file. They describe how the model behaves relative to two AI-assisted reviewers who agree with each other. They do not establish how accurate the model is.
+
+\subsection{Overall picture}
+
+Figure~\ref{fig:headline} summarises Table~\ref{tab:headline}. The validated v3 system and the bracket-corrected v4 system reach the same 9 of 45. The raw v4 answers are less accurate than the raw v3 answers, and on this sample the confidence intervals of all model variants overlap widely.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar, bar width=9pt, width=0.95\textwidth, height=6.2cm,
+    ymin=0, ymax=1, ylabel={Proportion},
+    symbolic x coords={v3 raw, v3 validated, v4 raw, v4 validated, v4 val. (diag.)},
+    xtick=data, x tick label style={font=\footnotesize},
+    legend style={at={(0.5,1.03)}, anchor=south, legend columns=3, font=\footnotesize, draw=none},
+    ymajorgrids, grid style={gray!25},
+    enlarge x limits=0.13]
+\addplot[fill=blue!45] coordinates {(v3 raw,0.333) (v3 validated,0.2) (v4 raw,0.267) (v4 validated,0.044) (v4 val. (diag.),0.2)};
+\addplot[fill=gray!45] coordinates {(v3 raw,0.978) (v3 validated,0.556) (v4 raw,1.0) (v4 validated,0.067) (v4 val. (diag.),0.578)};
+\addplot[fill=orange!55] coordinates {(v3 raw,0.341) (v3 validated,0.36) (v4 raw,0.267) (v4 validated,0.667) (v4 val. (diag.),0.346)};
+\legend{Exact-match accuracy, Coverage, Right when committing}
+\end{axis}
+\end{tikzpicture}
+\caption[{Accuracy, coverage and conditional accuracy on the 45 development cases}]{Accuracy, coverage and conditional accuracy on the 45 development cases (values in Table~\ref{tab:headline}). ``v4 val.\ (diag.)'' is the diagnostic with citation brackets removed. The 0.67 of v4 validated rests on only 3 commitments.}
+\label{fig:headline}
+\end{figure}
+
+\subsection{Confusion between equivalence, hierarchy, overlap and relatedness}
+
+Table~\ref{tab:confraw} is the confusion matrix of the v3 raw answers. Three patterns stand out.
+
+\begin{table}[H]
+\centering
+\small
+\resizebox{\textwidth}{!}{\input{generated/confusion_v3_raw}}
+\caption[{Confusion matrix, v3 raw answers (45 cases)}]{Confusion matrix, v3 raw answers against the R02/R03 agreement (45 cases). Diagonal in green, errors shaded by count.}
+\label{tab:confraw}
+\end{table}
+
+\paragraph{Hierarchy is not recognised.} The \PA{} and \CH{} columns are empty: the model never asserted a hierarchical relation, although the reviewers gave one in 16 cases (12 \CH, 4 \PA). Narrower concepts were mostly called the same as their broader concept, and broader concepts were all called merely related.
+
+\paragraph{\SC{} absorbs neighbouring classes.} Of the 21 raw \SC{} answers, 8 match the reference. The other 13 are 7 narrower concepts, 5 partial overlaps and 1 related pair. The model treats ``closely related'' as ``the same''.
+
+\paragraph{Insufficient context is not recognised.} In the three cases where both reviewers judged that the context does not decide the relation, all short forms (``re'' twice, ``it''), the model answered \UN. That is a definite claim of a different sense rather than an admission that the text is insufficient.
+
+Table~\ref{tab:errorcases} lists the three most frequent error categories, case by case. Because each case has exactly one reference and one raw answer, the categories do not overlap: together they account for 16 of the 30 raw errors. The remaining 14 errors are spread thinly: \CH~$\rightarrow$~\RE{} (3), \IE~$\rightarrow$~\UN{} (3), \SC~$\rightarrow$~\UN{} (2), and six single cases.
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.1}
+\input{generated/error_cases}
+\caption[{The three most frequent error categories of the v3 raw answers}]{The three most frequent error categories of the v3 raw answers. The counts 7, 5 and 4 reproduce the figures reported during development.}
+\label{tab:errorcases}
+\end{table}
+
+Two of the narrower-as-same cases appear twice under different case identifiers (``MS Excel'' in bm1-010 and bm1-020). The benchmark contains separate candidates for the same surface pair in different postings, so the 7 cases correspond to 6 distinct term pairs.
+
+\subsection{Per-class behaviour}
+
+Table~\ref{tab:prf} gives per-class precision, recall and F1. With 2 to 12 reference cases per class these values are very imprecise and are reported only to show the pattern. The pattern is consistent with the confusion matrix. \UN{} and \SC{} have the highest recall. \PA, \CH{} and \PO{} have zero recall. Validation lowers recall for \SC{} (0.80 to 0.30) without raising precision much (0.38 to 0.43), and moves 18 answers to \IE, none of which matches an \IE{} reference.
+
+\begin{table}[H]
+\centering
+\small
+\resizebox{\textwidth}{!}{\input{generated/prf_v3}}
+\caption[{Per-class precision, recall and F1, v3 raw and validated answers}]{Per-class precision (P), recall (R) and F1 for v3 raw and validated answers. ``--'': undefined because the class was never predicted, or never in the reference. Macro-F1 averages over the 7 classes present in the reference, counting undefined F1 as 0.}
+\label{tab:prf}
+\end{table}
+
+For orientation only, and not as an evaluation (the gate applies to independent gold, which does not exist): among the validated system's 7 \SC{} commitments, 4 differ from the reviewers' answer (2 \PO, 1 \CH, 1 \RE). Gate v3 allows at most one false \SC.
+
+\subsection{Effect of the v4 prompt}
+
+Table~\ref{tab:confv4} shows the raw v4 answers. The ordered decision procedure reduced \SC{} answers from 21 to 6, and the model began to use \PA. But the errors moved instead of disappearing:
+\begin{itemize}
+    \item 6 narrower concepts were called \RE;
+    \item 4 narrower concepts were called \PA, a reversal of direction. The narrower ``cloud computing'' was called broader than ``cloud technologies'' (bm1-037).
+    \item 4 partial overlaps were called \RE.
+\end{itemize}
+Raw accuracy fell from 15 to 12. With the citation defect neutralised, the validated score equalled v3's 9. This is consistent with the project's conclusion that breadth and direction judgements are a limit of the 7B model rather than of the wording alone. The evidence for that conclusion is limited to one prompt revision, one model and 45 cases.
+
+\begin{table}[H]
+\centering
+\small
+\resizebox{\textwidth}{!}{\input{generated/confusion_v4_raw}}
+\caption[{Confusion matrix, v4 raw answers (45 cases)}]{Confusion matrix, v4 raw answers (45 cases).}
+\label{tab:confv4}
+\end{table}
+
+\subsection{Results by case kind}
+
+Table~\ref{tab:bykind} breaks the results down by case kind. All six correct answers that validation withheld are alias cases (9 raw to 3 validated). Four of them were withheld only for a missing concept-side citation. The numbers per kind are too small for comparison between kinds.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Case kind} & \textbf{Cases} & \textbf{v3 raw} & \textbf{v3 validated} & \textbf{v4 raw} \\
+\midrule
+\inputrows{generated/by_kind.tex}
+\bottomrule
+\end{tabular}
+\caption[{Correct answers by case kind (45 development cases)}]{Correct answers by case kind (45 development cases).}
+\label{tab:bykind}
+\end{table}
+
+\subsection{Reviewer agreement}
+
+Table~\ref{tab:pairwise} gives Cohen's $\kappa$ and the number of agreements for every pair of the five reviewer records over the 48 cases. R02 and R03 agree far more closely ($\kappa=0.92$, 45 of 48) than any other pair ($\kappa$ between 0.56 and 0.76). This is consistent with their shared process of consulting an AI assistant first, but does not by itself establish it. The three R02/R03 disagreements concern ``Information Management'' versus ``knowledge management'' (\RE{} vs \PO) and the abbreviation ``ml'' in two cases, where R02 judged the context ambiguous.
+
+\begin{table}[H]
+\centering
+\small
+\input{generated/pairwise}
+\caption[{Pairwise Cohen's $\kappa$ between the five reviewer records}]{Pairwise Cohen's $\kappa$ (number of agreements out of 48) between the five reviewer records. None of the records is an independent label set (Table~\ref{tab:reviewers}).}
+\label{tab:pairwise}
+\end{table}
+
+The benchmark's development labels, written by an AI assistant, match the R02/R03 consensus in only 25 of the 45 cases. This supports the project's rule that development labels are for stratification and diagnostics only. It also shows that even two AI-informed sources can differ widely on these distinctions.
+
+\subsection{Case-level record}
+
+Table~\ref{tab:percase} lists every scored case so that each figure in this chapter can be traced. A bold label marks agreement with the reference.
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}p{1.45cm}p{3.9cm}p{3.45cm}cccc@{}}
+\caption[{All 45 development cases: reference and system answers}]{All 45 development cases: reference (R02 = R03) and system answers. SC = \SC, PA = \PA, CH = \CH, PO = \PO, RE = \RE, UN = \UN, AM = \AM, IE = \IE.}\label{tab:percase}\\
+\toprule
+\textbf{Case} & \textbf{Concept A} & \textbf{Concept B} & \textbf{Ref.} & \textbf{v3 raw} & \textbf{v3 val.} & \textbf{v4 raw} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Case} & \textbf{Concept A} & \textbf{Concept B} & \textbf{Ref.} & \textbf{v3 raw} & \textbf{v3 val.} & \textbf{v4 raw} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\inputrows{generated/per_case.tex}
+\end{longtable}
+}
+
+\section{Comparison with Existing Work}
+\label{sec:comparison}
+
+No published study evaluates the same task on the same data, so a numerical comparison would be misleading. Table~\ref{tab:comparison} instead sets out how the related work differs from this project in task, data, method and metric. It identifies what each body of work contributes and what it does not settle for this project. No superiority is claimed in either direction.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}p{2.6cm}XXX@{}}
+\toprule
+\textbf{Work} & \textbf{Task and data} & \textbf{Method and metric} & \textbf{Difference from this project} \\
+\midrule
+STS pilot~\cite{agirre2012} & Graded similarity of sentence pairs & Human similarity scores; correlation with system scores & Scalar similarity, no relation type or direction; sentences, not terms with taxonomy context \\
+Sentence-BERT~\cite{reimers2019} & Sentence embeddings for similarity search & Siamese fine-tuning; cosine similarity & Provides closeness, not the distinctions between \SC, \PA, \CH, \PO{} and \RE; the project uses TF-IDF and does not run an embedding model by default \\
+Ontology matching~\cite{euzenat2013} & Correspondences between two ontologies & Typed correspondences (equivalence, subsumption, disjointness) & Closest in task; here one side is free text from postings and syllabi, with an explicit abstention option \\
+Hierarchical classification~\cite{silla2011} & Assigning items to classes in a hierarchy & Hierarchy-aware evaluation & The project's labels are relation types, but its gate likewise treats direction errors as severe \\
+Skill extraction and matching~\cite{sun2026,rosenberger2025,gonzalezgomez2025} & Skills in job text matched to ESCO; resume--job matching; taxonomy generation & Contrastive bi-encoders; shared embedding spaces; NER and relation extraction & Extraction and retrieval at scale; this project verifies a single typed relation for pairs the rules left open \\
+LLM as judge~\cite{zheng2023} & Model judges compared with human preferences on chat answers & Agreement with human judgements; bias analysis & Same concern with model judgement reliability; here the model's labels gate data analysis and are kept advisory \\
+LLM-assisted annotation~\cite{gilardi2023,veselovsky2023} & Annotation by models, and model use by crowd workers & Accuracy against expert labels; detection of model use & Explains why AI-assisted reviewer answers here are not treated as independent \\
+Selective classification~\cite{chow1970,geifman2017} & Classifiers that may reject & Risk--coverage trade-off & The validator is a rule-based reject option; its thresholds are not learned, and coverage is reported alongside accuracy \\
+\bottomrule
+\end{tabularx}
+\caption[{Comparison with related work by task, data, method and metric}]{Comparison with related work by task, data, method and metric.}
+\label{tab:comparison}
+\end{table}
+
+Three differences matter most. First, this project evaluates a \emph{typed, directional} relation where much related work measures \emph{similarity}, so a high similarity score elsewhere says nothing about the hierarchy errors observed here. Second, the project scores what downstream would read after a deterministic validator, and reports abstention. Most published evaluations score raw outputs. Third, the project's reference is small and AI-assisted, while the cited studies rest on larger human-labelled datasets. Until independent labels exist, the project's figures cannot be placed on the same footing as published results.

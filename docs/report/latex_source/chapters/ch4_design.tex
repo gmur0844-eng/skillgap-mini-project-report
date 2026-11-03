@@ -1,0 +1,193 @@
+\chapter{DESIGN SPECIFICATIONS}
+\label{ch:design}
+
+\section{Implementation Steps}
+\label{sec:impl}
+
+Table~\ref{tab:impl} lists the steps confirmed by the repository, in the order they were carried out, with their status. ``Implemented'' means the code and its outputs exist in the repository. ``Experiment'' means it was run and recorded but is not used in production. ``Proposed'' means it has not been built.
+
+\begin{table}[p]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}p{0.4cm}X p{4.6cm} p{1.9cm}@{}}
+\toprule
+\textbf{\#} & \textbf{Step} & \textbf{Where (repository)} & \textbf{Status} \\
+\midrule
+1 & Build adjudication candidates from the pairs the rules leave open, and freeze them with hashes & \code{intelligence.py}, \code{scripts/\allowbreak{}semantic/\allowbreak{}freeze\_v3\_candidates.py} & Implemented \\
+2 & Provider layer (Ollama, OpenAI-compatible, local transformers, deterministic fallback), decision schema v2, replay cache & \code{semantic\_provider.py} & Implemented \\
+3 & Production prompt \code{adjudicate-v3} with label definitions and evidence items & \code{semantic\_v3.py} & Implemented \\
+4 & Deterministic evidence validator & \code{semantic\_v3.validate\_decision} & Implemented \\
+5 & Freeze the 88-case development benchmark; evaluate baseline, v2 and v3; apply the development gate & \code{evaluate\_v3.py}, \code{promotion\_gate.json} & Implemented (gate failed) \\
+6 & Declare human-validation gates v2 (88 cases) and v3 (48-case subset) before any independent label & \code{semantic\_gate\_v2.json}, \code{semantic\_gate\_v3.json} & Implemented \\
+7 & Build the validation package: stratified subset, blinded form generator, integrity check & \code{scripts/\allowbreak{}evaluation/\allowbreak{}semantic\_validation.py} & Implemented \\
+8 & Independent-label import (requires an attestation), agreement, adjudication, gold freeze, gate evaluation & \code{semantic\_validation.py}, \code{semantic\_eval.py} & Implemented, not yet run \\
+9 & Import reviewer responses as research records; compare; API and screen & \code{semantic\_responses.py}, \code{/\allowbreak{}api/\allowbreak{}v1/\allowbreak{}semantic-validation/\allowbreak{}} & Implemented \\
+10 & Score recorded runs against reviewer responses (development and independent references) & \code{scripts/\allowbreak{}semantic/\allowbreak{}score\_against\_reviewers.py} & Implemented \\
+11 & Prompt \code{adjudicate-v4} with the validator's rules and an ordered decision procedure & \code{semantic\_v3.build\_prompt\_v4} & Experiment, not adopted \\
+12 & Independent human labels; refined decision rules; separate tuning and held-out sets; larger model & --- & Proposed \\
+\bottomrule
+\end{tabularx}
+\caption[{Implementation steps and their status}]{Implementation steps and their status.}
+\label{tab:impl}
+\end{table}
+
+\subsection{The evidence validator}
+
+The validator, \code{validate\_decision}, is deterministic and is the main safety mechanism. For every model answer it checks the cited evidence against the inputs:
+\begin{enumerate}
+    \item each cited identifier must exist (otherwise \code{UNKNOWN\_REF}), and the quoted text must occur in that item (otherwise \code{QUOTE\_NOT\_IN\_ITEM});
+    \item metadata items (taxonomy or normalisation facts) never count as evidence (\code{METADATA\_CITED});
+    \item every definite relationship needs a cited item from the source side, i.e.\ the posting or syllabus (\code{NO\_SOURCE\_EVIDENCE});
+    \item the meaning relations \SC, \PA, \CH, \RE{} and \PO{} also need a cited item from the concept side (\code{NO\_CONCEPT\_EVIDENCE});
+    \item \PA{} and \CH{} need a direction justification and a cited directional item: an ESCO hierarchy or relation, or a course title, unit title or learning outcome (\code{NO\_DIRECTIONAL\_EVIDENCE});
+    \item \SC{} on an alias or taxonomy-label case needs source text or a job title (\code{ALIAS\_SAME\_CONCEPT\_WITHOUT\_SOURCE\_TEXT}).
+\end{enumerate}
+Evidence that cannot be traced to the inputs leads to \code{REVIEW\_REQUIRED}, read downstream as \AM. Missing required evidence leads to \code{INSUFFICIENT\_EVIDENCE}, read as \IE. Only a decision that passes every rule is \code{MODEL\_SUPPORTED}. When the model itself answers \AM{} or \IE, the result is \code{MODEL\_SUGGESTED}, kept for review without effect.
+
+\subsection{The v4 prompt experiment}
+
+After the v3 results were compared with the reviewer responses, one prompt revision was tried. \code{adjudicate-v4} states the validator's evidence rules in the prompt and gives an ordered procedure: decide the sense; choose \SC{} only if the terms are interchangeable; a specific kind, product or provider is \CH; a broader area is \PA; shared meaning is \PO; association is \RE. Nothing else changed: the inputs, schema, validator, model and production configuration stayed the same. The project recorded the decision not to try further prompt variants against the same 45 cases, because each further attempt would be tuned on the same development answers.
+
+\section{Tools and Technologies Used}
+\label{sec:tools}
+
+Only components verified in the repository, its configuration or its recorded runs are listed in Table~\ref{tab:tools}.
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}p{3.4cm}X@{}}
+\toprule
+\textbf{Area} & \textbf{Technology (as verified)} \\
+\midrule
+Language and runtime & Python (3.14.7 on the run host, per \code{run\_meta.json}) \\
+Language model & \code{qwen2.5:7b-instruct}, 7.6B parameters, Q4\_K\_M quantisation~\cite{qwen2024}; served by Ollama 0.34.4 on the project owner's Apple-silicon Mac; temperature 0 \\
+Model interfaces & Ollama HTTP API; an OpenAI-compatible endpoint and a local \code{transformers} provider are configured but were unavailable in the recorded runs \\
+Taxonomy & ESCO v1.2.1 (English classification and delta files); ESCO ontology with SKOS hierarchy~\cite{esco2024model} \\
+Text processing & pdfplumber and poppler \code{pdftotext} (curriculum PDFs); scikit-learn TF-IDF (lexical similarity, concept clustering); pandas, NumPy; openpyxl (workbooks) \\
+Back end and storage & FastAPI, Uvicorn, Pydantic; SQLAlchemy and Alembic over PostgreSQL; validation records kept as hash-identified JSON files \\
+Front end & Flutter (Dart), including the \emph{Semantic decisions} and \emph{Reviewer validation} screens \\
+Human validation & Google Forms (blinded form generated from the package); Excel export of responses \\
+Testing & pytest (back end), \code{flutter test}; ruff (linting). The back-end suite reported 1{,}108 passed and 5 skipped on the project machine on 2026-10-22 \\
+Report & \LaTeX{} with the CBIT template, biblatex, TikZ and pgfplots \\
+\bottomrule
+\end{tabularx}
+\caption[{Tools and technologies verified in the project}]{Tools and technologies verified in the project.}
+\label{tab:tools}
+\end{table}
+
+No embedding model or other neural model is part of the default configuration; the semantic backend is \code{tfidf}. No model weights were trained or fine-tuned.
+
+\section{Results and Discussion}
+\label{sec:results}
+
+\subsection{Headline results on the development reference}
+
+All figures in this section were recomputed for this report from the stored files by re-running the project's scoring code (\code{score\_against\_reviewers.py}) and an independent recalculation script, which agreed on every value. Table~\ref{tab:headline} gives the results on the 45 cases where R02 and R03 agree.
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{System} & \textbf{Correct} & \textbf{Accuracy} & \textbf{95\% CI} & \textbf{Commits} & \textbf{Right when committing} \\
+\midrule
+Fixed rules (baseline) & 0 / 45 & 0.00 & --- & 0 & --- \\
+v3 raw & 15 / 45 & 0.33 & 0.21--0.48 & 44 & 15 / 44 (0.34) \\
+v3 validated & 9 / 45 & 0.20 & 0.11--0.34 & 25 & 9 / 25 (0.36) \\
+v4 raw & 12 / 45 & 0.27 & 0.16--0.41 & 45 & 12 / 45 (0.27) \\
+v4 validated (as run) & 2 / 45 & 0.04 & 0.01--0.15 & 3 & 2 / 3 (0.67) \\
+v4 validated, brackets removed$^{\dagger}$ & 9 / 45 & 0.20 & 0.11--0.34 & 26 & 9 / 26 (0.35) \\
+\bottomrule
+\end{tabular}}
+
+\vspace{0.2cm}
+{\footnotesize $^{\dagger}$Diagnostic only: the v4 model wrote cited identifiers as \code{[L1]}. Removing the brackets before validation shows what the prompt defect cost. The validator itself was not changed.}
+\caption[{Results against the R02/R03 agreement (45 development cases)}]{Results against the R02/R03 agreement (45 cases, development reference, AI-assisted). Intervals are 95\% Wilson intervals.}
+\label{tab:headline}
+\end{table}
+
+The provisional figures reported earlier in the project's discussions were checked against these results:
+\begin{itemize}
+    \item \textbf{R02 and R03 agree on 45 cases:} confirmed. They answered all 48 cases and disagree on 3 (bm1-043, bm1-045, bm1-046).
+    \item \textbf{Model alone, 15/45:} confirmed.
+    \item \textbf{Model with safety checks, 9/45:} confirmed.
+    \item \textbf{Checked model, 9 of 25 answers:} confirmed. All 9 correct validated answers are commitments, since no abstention matched a reference.
+    \item \textbf{Fixed rules, 0/45, ``always ambiguous'':} confirmed as 0/45. One detail differs. The fixed rules returned \AM{} for the 38 agreed cases on which they were run. The other 7 agreed cases are \code{DIAGNOSTIC} cases, for which the stored predictions contain no baseline output. On the whole benchmark, the baseline is \AM{} on all 75 non-diagnostic cases.
+\end{itemize}
+
+\subsection{The validator and abstention}
+
+The validator withheld 20 of the 45 v3 answers (coverage 0.56, abstention rate 0.44). Of these, 14 were wrong raw answers and 6 were correct raw answers. It turned no wrong answer into a right one. It let through 25 answers, of which 9 were right and 16 wrong. Conditional accuracy therefore barely changed: 0.34 for raw answers, 0.36 for validated commitments. On this reference, the validator's main effect was to reduce the number of answers rather than to select the correct ones.
+
+Table~\ref{tab:findings} shows which rules triggered. A case can trigger several rules. The most frequent finding was the absence of a cited concept-side item (17 cases). In 4 correct \SC{} answers (bm1-015, bm1-018, bm1-023, bm1-035), this was the only finding, so a correct answer was withheld only because the model did not cite the ESCO side. The v3 prompt asked for source-side evidence only and did not state this rule, which was the motivation for v4.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Validator finding} & \textbf{v3 (cases)} & \textbf{v4 (occurrences)} \\
+\midrule
+\code{NO\_CONCEPT\_EVIDENCE} & 17 & 30 \\
+\code{NO\_SOURCE\_EVIDENCE} & 7 & 41 \\
+\code{ALIAS\_SAME\_CONCEPT\_WITHOUT\_SOURCE\_TEXT} & 5 & 4 \\
+\code{METADATA\_CITED} & 4 & 0 \\
+\code{QUOTE\_NOT\_IN\_ITEM} & 2 & 1 \\
+\code{NON\_DEFINITE\_RELATIONSHIP} & 1 & 0 \\
+\code{UNKNOWN\_REF} & 0 & 73 \\
+\code{NO\_DIRECTIONAL\_EVIDENCE} & 0 & 7 \\
+\bottomrule
+\end{tabular}
+\caption[{Validator findings on the 45 cases}]{Validator findings on the 45 cases. For v3 each finding is counted once per case. For v4 the project's scoring script counts occurrences (one case can cite several unknown identifiers).}
+\label{tab:findings}
+\end{table}
+
+The v4 collapse to 2/45 has a mechanical cause. The prompt displays context items as \code{[L1]}, and v4 dropped v3's example \code{"ref": "<id>"}, so the model wrote the brackets into its citations. That produced 73 references to identifiers that do not exist. The validator correctly treated invented references as untraceable. With the brackets stripped for diagnosis only, v4 reaches the same 9/45 as v3.
+
+\subsection{Why abstaining everywhere scores zero, and why that is not the whole story}
+
+The fixed rules score 0/45 because exact-match accuracy counts an abstention as an error whenever the abstention label differs from the reference. Forty-two of the 45 references are definite relationships. The other three are \IE, and on those the baseline answered \AM, which is a different label. By construction, though, the baseline asserts no relationship at all: it makes no false \SC{} claim, no false hierarchy claim, and no claim without evidence. Its risk on committed answers is undefined, because it never commits. Its coverage is zero.
+
+Exact-match accuracy therefore cannot rank these systems on its own. A system that commits often and is often wrong (v3 raw: 44 commitments, 29 wrong) can score higher than one that never commits, yet be more harmful downstream. The relevant view is the pair (coverage, conditional accuracy) together with the count of severe errors, which is exactly the view the gate takes~\cite{chow1970,geifman2017}. On this reference, the validated v3 system commits in 56\% of cases and is right in 36\% of its commitments. For comparison, the gate requires an overall accuracy of 0.80 and a precision of 0.90 for any class to be promoted.
+
+\subsection{Strengths, weaknesses and safety mechanisms}
+
+\paragraph{Strengths.} The model always produced schema-valid output (0 invalid outputs in 283 + 88 calls). Its answers were stable on repetition (20 of 20 identical relationships in both runs). Every decision is traceable through hashes to its exact inputs and prompt. The validator reliably caught evidence that did not exist in the inputs. The development gate, declared before the v3 outputs existed, failed on four of six checks (Table~\ref{tab:devgate}), and the system responded as designed by staying in Safe Mode.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+\textbf{Check (88-case benchmark, development labels)} & \textbf{Value} & \textbf{Threshold} & \textbf{Pass} \\
+\midrule
+Supported \SC{} alias predictions & 1 & $\geq 8$ & no \\
+Precision of \SC{} on alias cases & 0.00 & $\geq 0.85$ & no \\
+Lexical collisions supported as \SC & 2 & $0$ & no \\
+Precision of \UN{} on alias cases & 0.846 & $\geq 0.85$ & no \\
+Schema-valid rate & 1.00 & $\geq 0.98$ & yes \\
+Metadata-only supported decisions & 0 & $0$ & yes \\
+\bottomrule
+\end{tabular}
+\caption[{The development gate applied to the v3 run}]{The development gate applied to the v3 run (\code{qwen-270-v3/\allowbreak{}analysis/\allowbreak{}promotion\_gate.json}). The labels are the assistant's development labels, so this is a development check, not a validation.}
+\label{tab:devgate}
+\end{table}
+
+\paragraph{Weaknesses.} The model did not recognise hierarchy. It never answered \PA{} or \CH{} on the 45 cases, although 16 references are hierarchical, and it over-used \SC{} (21 raw \SC{} answers against 10 \SC{} references). The validated system's 7 \SC{} commitments include 4 that the reviewers did not support. The v3 prompt did not tell the model the validator's evidence rules, so some correct answers were withheld for missing citations. The single prompt revision redistributed the errors instead of removing them (Chapter~\ref{ch:results}).
+
+\paragraph{Safety mechanisms in place.} The mechanisms are:
+\begin{itemize}
+    \item the deterministic validator;
+    \item pre-declared, versioned and hash-pinned gates;
+    \item Safe Mode as the default outcome of any failure;
+    \item replay only by exact cache key;
+    \item strict separation of development labels, research records and independent labels;
+    \item a mandatory attestation for independent labels.
+\end{itemize}
+
+The requirement for \emph{two independent reviewers} is encoded in the gate file (\code{min\_independent\_reviewers: 2}) and enforced by \code{apply\_gate}, which counts only label files marked \code{independent} and \code{model\_blind}. Such files can be created only through \code{import-form} or \code{import-sheet}, which refuse to run without a non-empty \code{--attestation}. The requirement that those reviewers \emph{did not use AI} is documented policy (\code{docs/\allowbreak{}INDEPENDENT\_REVIEWER\_BRIEF.md}). It is recorded through the attestation and enforced only to that extent: code can require the statement but cannot verify that it is true.

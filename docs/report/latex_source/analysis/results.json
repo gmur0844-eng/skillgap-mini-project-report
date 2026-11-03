@@ -1,0 +1,1765 @@
+{
+ "files": [
+  {
+   "reviewer_id": "R01",
+   "reviewer_source": "NOT_STATED",
+   "counts_as_independent_label": null
+  },
+  {
+   "reviewer_id": "R02",
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "counts_as_independent_label": null
+  },
+  {
+   "reviewer_id": "R03",
+   "reviewer_source": "HUMAN_AI_ASSISTED",
+   "counts_as_independent_label": null
+  },
+  {
+   "reviewer_id": "R04",
+   "reviewer_source": "NOT_STATED",
+   "counts_as_independent_label": null
+  },
+  {
+   "reviewer_id": "R05",
+   "reviewer_source": "NOT_STATED",
+   "counts_as_independent_label": null
+  }
+ ],
+ "subset_size": 48,
+ "benchmark_size": 88,
+ "status_counts": {
+  "R01|COMPLETED": 48,
+  "R02|COMPLETED": 48,
+  "R03|COMPLETED": 48,
+  "R04|COMPLETED": 48,
+  "R05|COMPLETED": 48
+ },
+ "completed_per_reviewer": {
+  "R01": 48,
+  "R02": 48,
+  "R03": 48,
+  "R04": 48,
+  "R05": 48
+ },
+ "label_dist": {
+  "R01": {
+   "CHILD": 8,
+   "PARENT": 3,
+   "UNRELATED": 6,
+   "RELATED": 10,
+   "INSUFFICIENT_EVIDENCE": 3,
+   "SAME_CONCEPT": 11,
+   "PARTIAL_OVERLAP": 3,
+   "AMBIGUOUS": 4
+  },
+  "R02": {
+   "CHILD": 12,
+   "PARTIAL_OVERLAP": 7,
+   "UNRELATED": 7,
+   "INSUFFICIENT_EVIDENCE": 3,
+   "SAME_CONCEPT": 10,
+   "RELATED": 3,
+   "PARENT": 4,
+   "AMBIGUOUS": 2
+  },
+  "R03": {
+   "CHILD": 12,
+   "PARTIAL_OVERLAP": 8,
+   "UNRELATED": 8,
+   "INSUFFICIENT_EVIDENCE": 3,
+   "SAME_CONCEPT": 11,
+   "RELATED": 2,
+   "PARENT": 4
+  },
+  "R04": {
+   "CHILD": 11,
+   "PARENT": 9,
+   "RELATED": 4,
+   "INSUFFICIENT_EVIDENCE": 3,
+   "SAME_CONCEPT": 11,
+   "AMBIGUOUS": 3,
+   "UNRELATED": 4,
+   "PARTIAL_OVERLAP": 3
+  },
+  "R05": {
+   "CHILD": 10,
+   "PARENT": 5,
+   "RELATED": 3,
+   "PARTIAL_OVERLAP": 8,
+   "INSUFFICIENT_EVIDENCE": 2,
+   "UNRELATED": 6,
+   "SAME_CONCEPT": 10,
+   "AMBIGUOUS": 4
+  }
+ },
+ "pairwise": {
+  "R01-R02": {
+   "n": 48,
+   "agree": 34,
+   "po": 0.7083,
+   "pe": 0.1424,
+   "kappa": 0.6599
+  },
+  "R01-R03": {
+   "n": 48,
+   "agree": 33,
+   "po": 0.6875,
+   "pe": 0.1432,
+   "kappa": 0.6353
+  },
+  "R01-R04": {
+   "n": 48,
+   "agree": 30,
+   "po": 0.625,
+   "pe": 0.1432,
+   "kappa": 0.5623
+  },
+  "R01-R05": {
+   "n": 48,
+   "agree": 31,
+   "po": 0.6458,
+   "pe": 0.1376,
+   "kappa": 0.5893
+  },
+  "R02-R03": {
+   "n": 48,
+   "agree": 45,
+   "po": 0.9375,
+   "pe": 0.1723,
+   "kappa": 0.9245
+  },
+  "R02-R04": {
+   "n": 48,
+   "agree": 33,
+   "po": 0.6875,
+   "pe": 0.1536,
+   "kappa": 0.6308
+  },
+  "R02-R05": {
+   "n": 48,
+   "agree": 38,
+   "po": 0.7917,
+   "pe": 0.1567,
+   "kappa": 0.753
+  },
+  "R03-R04": {
+   "n": 48,
+   "agree": 34,
+   "po": 0.7083,
+   "pe": 0.1571,
+   "kappa": 0.654
+  },
+  "R03-R05": {
+   "n": 48,
+   "agree": 37,
+   "po": 0.7708,
+   "pe": 0.1623,
+   "kappa": 0.7264
+  },
+  "R04-R05": {
+   "n": 48,
+   "agree": 38,
+   "po": 0.7917,
+   "pe": 0.1489,
+   "kappa": 0.7552
+  }
+ },
+ "agreed_n": 45,
+ "agreed_dist": {
+  "CHILD": 12,
+  "PARTIAL_OVERLAP": 7,
+  "UNRELATED": 7,
+  "INSUFFICIENT_EVIDENCE": 3,
+  "SAME_CONCEPT": 10,
+  "RELATED": 2,
+  "PARENT": 4
+ },
+ "disagreements_R02_R03": [
+  {
+   "q": "bm1-043",
+   "R02": "RELATED",
+   "R03": "PARTIAL_OVERLAP",
+   "left": "Information Management",
+   "right": "knowledge management"
+  },
+  {
+   "q": "bm1-045",
+   "R02": "AMBIGUOUS",
+   "R03": "SAME_CONCEPT",
+   "left": "ml",
+   "right": "machine learning"
+  },
+  {
+   "q": "bm1-046",
+   "R02": "AMBIGUOUS",
+   "R03": "UNRELATED",
+   "left": "ml",
+   "right": "ML (computer programming)"
+  }
+ ],
+ "pkg_compare": {
+  "AGREE": 45,
+  "DISAGREE": 3
+ },
+ "assistant_vs_agreed": 25,
+ "consistency_pred_file": 45,
+ "metrics": {
+  "BASELINE": {
+   "n": 45,
+   "correct": 0,
+   "acc": 0.0,
+   "commits": 7,
+   "coverage": 0.1556,
+   "abstain": 38,
+   "correct_when_committed": 0,
+   "cond_acc": 0.0,
+   "correct_abstentions": 0,
+   "dist": {
+    "AMBIGUOUS": 38,
+    "null": 7
+   }
+  },
+  "V3_RAW": {
+   "n": 45,
+   "correct": 15,
+   "acc": 0.3333,
+   "commits": 44,
+   "coverage": 0.9778,
+   "abstain": 1,
+   "correct_when_committed": 15,
+   "cond_acc": 0.3409,
+   "correct_abstentions": 0,
+   "dist": {
+    "RELATED": 9,
+    "SAME_CONCEPT": 21,
+    "UNRELATED": 13,
+    "INSUFFICIENT_EVIDENCE": 1,
+    "PARTIAL_OVERLAP": 1
+   }
+  },
+  "V3_VAL": {
+   "n": 45,
+   "correct": 9,
+   "acc": 0.2,
+   "commits": 25,
+   "coverage": 0.5556,
+   "abstain": 20,
+   "correct_when_committed": 9,
+   "cond_acc": 0.36,
+   "correct_abstentions": 0,
+   "dist": {
+    "AMBIGUOUS": 2,
+    "INSUFFICIENT_EVIDENCE": 18,
+    "UNRELATED": 12,
+    "RELATED": 5,
+    "SAME_CONCEPT": 7,
+    "PARTIAL_OVERLAP": 1
+   }
+  },
+  "V4_RAW": {
+   "n": 45,
+   "correct": 12,
+   "acc": 0.2667,
+   "commits": 45,
+   "coverage": 1.0,
+   "abstain": 0,
+   "correct_when_committed": 12,
+   "cond_acc": 0.2667,
+   "correct_abstentions": 0,
+   "dist": {
+    "PARENT": 7,
+    "UNRELATED": 15,
+    "RELATED": 15,
+    "SAME_CONCEPT": 6,
+    "PARTIAL_OVERLAP": 2
+   }
+  },
+  "V4_VAL": {
+   "n": 45,
+   "correct": 2,
+   "acc": 0.0444,
+   "commits": 3,
+   "coverage": 0.0667,
+   "abstain": 42,
+   "correct_when_committed": 2,
+   "cond_acc": 0.6667,
+   "correct_abstentions": 0,
+   "dist": {
+    "AMBIGUOUS": 41,
+    "UNRELATED": 3,
+    "INSUFFICIENT_EVIDENCE": 1
+   }
+  },
+  "V4_VAL_STRIP": {
+   "n": 45,
+   "correct": 9,
+   "acc": 0.2,
+   "commits": 26,
+   "coverage": 0.5778,
+   "abstain": 19,
+   "correct_when_committed": 9,
+   "cond_acc": 0.3462,
+   "correct_abstentions": 0,
+   "dist": {
+    "INSUFFICIENT_EVIDENCE": 17,
+    "PARENT": 1,
+    "UNRELATED": 13,
+    "RELATED": 6,
+    "SAME_CONCEPT": 4,
+    "AMBIGUOUS": 2,
+    "PARTIAL_OVERLAP": 2
+   }
+  }
+ },
+ "prf": {
+  "V3_RAW": {
+   "SAME_CONCEPT": {
+    "support": 10,
+    "pred": 21,
+    "tp": 8,
+    "p": 0.381,
+    "r": 0.8,
+    "f1": 0.516
+   },
+   "PARENT": {
+    "support": 4,
+    "pred": 0,
+    "tp": 0,
+    "p": null,
+    "r": 0.0,
+    "f1": null
+   },
+   "CHILD": {
+    "support": 12,
+    "pred": 0,
+    "tp": 0,
+    "p": null,
+    "r": 0.0,
+    "f1": null
+   },
+   "PARTIAL_OVERLAP": {
+    "support": 7,
+    "pred": 1,
+    "tp": 0,
+    "p": 0.0,
+    "r": 0.0,
+    "f1": 0.0
+   },
+   "RELATED": {
+    "support": 2,
+    "pred": 9,
+    "tp": 1,
+    "p": 0.111,
+    "r": 0.5,
+    "f1": 0.182
+   },
+   "UNRELATED": {
+    "support": 7,
+    "pred": 13,
+    "tp": 6,
+    "p": 0.462,
+    "r": 0.857,
+    "f1": 0.6
+   },
+   "AMBIGUOUS": {
+    "support": 0,
+    "pred": 0,
+    "tp": 0,
+    "p": null,
+    "r": null,
+    "f1": null
+   },
+   "INSUFFICIENT_EVIDENCE": {
+    "support": 3,
+    "pred": 1,
+    "tp": 0,
+    "p": 0.0,
+    "r": 0.0,
+    "f1": 0.0
+   },
+   "_macro_f1_over_reference_classes": 0.185
+  },
+  "V3_VAL": {
+   "SAME_CONCEPT": {
+    "support": 10,
+    "pred": 7,
+    "tp": 3,
+    "p": 0.429,
+    "r": 0.3,
+    "f1": 0.353
+   },
+   "PARENT": {
+    "support": 4,
+    "pred": 0,
+    "tp": 0,
+    "p": null,
+    "r": 0.0,
+    "f1": null
+   },
+   "CHILD": {
+    "support": 12,
+    "pred": 0,
+    "tp": 0,
+    "p": null,
+    "r": 0.0,
+    "f1": null
+   },
+   "PARTIAL_OVERLAP": {
+    "support": 7,
+    "pred": 1,
+    "tp": 0,
+    "p": 0.0,
+    "r": 0.0,
+    "f1": 0.0
+   },
+   "RELATED": {
+    "support": 2,
+    "pred": 5,
+    "tp": 1,
+    "p": 0.2,
+    "r": 0.5,
+    "f1": 0.286
+   },
+   "UNRELATED": {
+    "support": 7,
+    "pred": 12,
+    "tp": 5,
+    "p": 0.417,
+    "r": 0.714,
+    "f1": 0.526
+   },
+   "AMBIGUOUS": {
+    "support": 0,
+    "pred": 2,
+    "tp": 0,
+    "p": 0.0,
+    "r": null,
+    "f1": null
+   },
+   "INSUFFICIENT_EVIDENCE": {
+    "support": 3,
+    "pred": 18,
+    "tp": 0,
+    "p": 0.0,
+    "r": 0.0,
+    "f1": 0.0
+   },
+   "_macro_f1_over_reference_classes": 0.166
+  }
+ },
+ "confusion": {
+  "V3_RAW": {
+   "SAME_CONCEPT->SAME_CONCEPT": 8,
+   "CHILD->SAME_CONCEPT": 7,
+   "UNRELATED->UNRELATED": 6,
+   "PARTIAL_OVERLAP->SAME_CONCEPT": 5,
+   "PARENT->RELATED": 4,
+   "CHILD->RELATED": 3,
+   "INSUFFICIENT_EVIDENCE->UNRELATED": 3,
+   "SAME_CONCEPT->UNRELATED": 2,
+   "PARTIAL_OVERLAP->RELATED": 1,
+   "PARTIAL_OVERLAP->UNRELATED": 1,
+   "RELATED->RELATED": 1,
+   "UNRELATED->INSUFFICIENT_EVIDENCE": 1,
+   "CHILD->UNRELATED": 1,
+   "CHILD->PARTIAL_OVERLAP": 1,
+   "RELATED->SAME_CONCEPT": 1
+  },
+  "V3_VAL": {
+   "CHILD->INSUFFICIENT_EVIDENCE": 8,
+   "UNRELATED->UNRELATED": 5,
+   "SAME_CONCEPT->INSUFFICIENT_EVIDENCE": 5,
+   "PARTIAL_OVERLAP->INSUFFICIENT_EVIDENCE": 3,
+   "INSUFFICIENT_EVIDENCE->UNRELATED": 3,
+   "PARENT->RELATED": 3,
+   "SAME_CONCEPT->SAME_CONCEPT": 3,
+   "SAME_CONCEPT->UNRELATED": 2,
+   "PARTIAL_OVERLAP->SAME_CONCEPT": 2,
+   "CHILD->AMBIGUOUS": 1,
+   "PARTIAL_OVERLAP->RELATED": 1,
+   "PARTIAL_OVERLAP->UNRELATED": 1,
+   "RELATED->RELATED": 1,
+   "UNRELATED->INSUFFICIENT_EVIDENCE": 1,
+   "UNRELATED->AMBIGUOUS": 1,
+   "PARENT->INSUFFICIENT_EVIDENCE": 1,
+   "CHILD->UNRELATED": 1,
+   "CHILD->PARTIAL_OVERLAP": 1,
+   "CHILD->SAME_CONCEPT": 1,
+   "RELATED->SAME_CONCEPT": 1
+  },
+  "V4_RAW": {
+   "UNRELATED->UNRELATED": 7,
+   "CHILD->RELATED": 6,
+   "CHILD->PARENT": 4,
+   "PARTIAL_OVERLAP->RELATED": 4,
+   "SAME_CONCEPT->SAME_CONCEPT": 4,
+   "INSUFFICIENT_EVIDENCE->UNRELATED": 3,
+   "SAME_CONCEPT->RELATED": 2,
+   "PARENT->RELATED": 2,
+   "SAME_CONCEPT->PARENT": 2,
+   "SAME_CONCEPT->UNRELATED": 2,
+   "PARENT->PARTIAL_OVERLAP": 2,
+   "CHILD->UNRELATED": 2,
+   "PARTIAL_OVERLAP->PARENT": 1,
+   "PARTIAL_OVERLAP->UNRELATED": 1,
+   "RELATED->RELATED": 1,
+   "PARTIAL_OVERLAP->SAME_CONCEPT": 1,
+   "RELATED->SAME_CONCEPT": 1
+  },
+  "BASELINE": {
+   "CHILD->AMBIGUOUS": 9,
+   "SAME_CONCEPT->AMBIGUOUS": 8,
+   "PARTIAL_OVERLAP->AMBIGUOUS": 7,
+   "UNRELATED->AMBIGUOUS": 6,
+   "PARENT->AMBIGUOUS": 4,
+   "INSUFFICIENT_EVIDENCE->AMBIGUOUS": 3,
+   "CHILD->None": 3,
+   "SAME_CONCEPT->None": 2,
+   "RELATED->AMBIGUOUS": 1,
+   "UNRELATED->None": 1,
+   "RELATED->None": 1
+  }
+ },
+ "findings_cases_v3": {
+  "NO_CONCEPT_EVIDENCE": 17,
+  "NO_SOURCE_EVIDENCE": 7,
+  "QUOTE_NOT_IN_ITEM": 2,
+  "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT": 5,
+  "METADATA_CITED": 4,
+  "NON_DEFINITE_RELATIONSHIP": 1
+ },
+ "no_concept_right_raw": 5,
+ "raw_right_val_wrong_v3": [
+  "bm1-015",
+  "bm1-018",
+  "bm1-023",
+  "bm1-029",
+  "bm1-035",
+  "bm1-038"
+ ],
+ "raw_wrong_val_right_v3": [],
+ "kind_v3": {
+  "ALIAS_SENSE": {
+   "n": 24,
+   "raw": 9,
+   "val": 3
+  },
+  "AMBIGUOUS_TAXONOMY_LABEL": {
+   "n": 8,
+   "raw": 2,
+   "val": 2
+  },
+  "AMBIGUOUS_TOPIC_MAPPING": {
+   "n": 6,
+   "raw": 2,
+   "val": 2
+  },
+  "DIAGNOSTIC": {
+   "n": 7,
+   "raw": 2,
+   "val": 2
+  }
+ },
+ "error_cases": {
+  "narrower_as_same": [
+   [
+    "bm1-010",
+    "MS Excel",
+    "use spreadsheets software"
+   ],
+   [
+    "bm1-020",
+    "MS Excel",
+    "use spreadsheets software"
+   ],
+   [
+    "bm1-037",
+    "cloud computing",
+    "cloud technologies"
+   ],
+   [
+    "bm1-059",
+    "google docs",
+    "office software"
+   ],
+   [
+    "bm1-080",
+    "Database Management Systems",
+    "database"
+   ],
+   [
+    "bm1-084",
+    "Convolutional Neural Network: The Convolution Operation",
+    "deep learning"
+   ],
+   [
+    "bm1-086",
+    "Python for Data Science",
+    "Python (computer programming)"
+   ]
+  ],
+  "overlap_as_same": [
+   [
+    "bm1-002",
+    "quality systems",
+    "quality control systems"
+   ],
+   [
+    "bm1-031",
+    "data privacy",
+    "data protection"
+   ],
+   [
+    "bm1-052",
+    "ict",
+    "computer technology"
+   ],
+   [
+    "bm1-058",
+    "conflict resolution",
+    "conflict management"
+   ],
+   [
+    "bm1-060",
+    "collaborate with colleagues",
+    "liaise with colleagues"
+   ]
+  ],
+  "broader_as_related": [
+   [
+    "bm1-034",
+    "financial planning",
+    "financial forecasting"
+   ],
+   [
+    "bm1-053",
+    "quality management",
+    "quality assurance procedures"
+   ],
+   [
+    "bm1-063",
+    "vector",
+    "vector line integrals"
+   ],
+   [
+    "bm1-070",
+    "Equations",
+    "equations solvable for y"
+   ]
+  ]
+ },
+ "v3_raw_same_concept_count": 21,
+ "v4_raw_same_concept_count": 6,
+ "systems": {
+  "bm1-001": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "AMBIGUOUS",
+   "V4_RAW": "PARENT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "QUOTE_NOT_IN_ITEM",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "NO_DIRECTIONAL_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "AWS",
+   "right": "cloud technologies",
+   "tags": [
+    "acronym",
+    "hierarchy",
+    "esco"
+   ],
+   "pred_file_v3_validated": "AMBIGUOUS",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-002": {
+   "gold": "PARTIAL_OVERLAP",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "PARENT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "NO_DIRECTIONAL_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "quality systems",
+   "right": "quality control systems",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "PARENT"
+  },
+  "bm1-003": {
+   "gold": "UNRELATED",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "repair processes",
+   "right": "types of metal manufacturing processes",
+   "tags": [
+    "lexical_collision",
+    "esco"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-006": {
+   "gold": "PARTIAL_OVERLAP",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "RELATED",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "IT",
+   "right": "computer technology",
+   "tags": [
+    "abbreviation",
+    "esco"
+   ],
+   "pred_file_v3_validated": "RELATED",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-007": {
+   "gold": "INSUFFICIENT_EVIDENCE",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "re",
+   "right": "reverse engineering",
+   "tags": [
+    "lexical_collision",
+    "abbreviation"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-009": {
+   "gold": "INSUFFICIENT_EVIDENCE",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "re",
+   "right": "reverse engineering",
+   "tags": [
+    "lexical_collision",
+    "abbreviation"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-010": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "METADATA_CITED",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "MS Excel",
+   "right": "use spreadsheets software",
+   "tags": [
+    "alias",
+    "hierarchy",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "RELATED"
+  },
+  "bm1-013": {
+   "gold": "INSUFFICIENT_EVIDENCE",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "it",
+   "right": "computer technology",
+   "tags": [
+    "lexical_collision",
+    "abbreviation"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-014": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "HR",
+   "right": "human resource management",
+   "tags": [
+    "abbreviation",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-015": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "CRM",
+   "right": "customer relationship management",
+   "tags": [
+    "acronym",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-018": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "SAME_CONCEPT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "CRM",
+   "right": "customer relationship management",
+   "tags": [
+    "acronym",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "SAME_CONCEPT"
+  },
+  "bm1-019": {
+   "gold": "UNRELATED",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "UNRELATED",
+   "f3": [],
+   "f4": [],
+   "kind": "ALIAS_SENSE",
+   "left": "call",
+   "right": "Computer Assisted Language Learning",
+   "tags": [
+    "lexical_collision",
+    "acronym"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-020": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "MS Excel",
+   "right": "use spreadsheets software",
+   "tags": [
+    "alias",
+    "hierarchy",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-021": {
+   "gold": "PARTIAL_OVERLAP",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "UNRELATED",
+   "f3": [],
+   "f4": [],
+   "kind": "ALIAS_SENSE",
+   "left": "Technical Skills",
+   "right": "apply knowledge of science, technology and engineering",
+   "tags": [
+    "lexical_collision",
+    "esco"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-022": {
+   "gold": "RELATED",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "RELATED",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "electrical equipment",
+   "right": "maintain electronic equipment",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "RELATED",
+   "V4_VAL_STRIP": "RELATED"
+  },
+  "bm1-023": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "SAME_CONCEPT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "PLC",
+   "right": "programmable logic controller",
+   "tags": [
+    "acronym",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-026": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "Data Analysis",
+   "right": "statistics",
+   "tags": [
+    "alias",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-027": {
+   "gold": "UNRELATED",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "INSUFFICIENT_EVIDENCE",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NON_DEFINITE_RELATIONSHIP"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "JSON",
+   "right": "Open source model",
+   "tags": [
+    "lexical_collision",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-029": {
+   "gold": "UNRELATED",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "AMBIGUOUS",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "QUOTE_NOT_IN_ITEM",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "f4": [
+    "QUOTE_NOT_IN_ITEM",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "SEM",
+   "right": "search engine optimisation",
+   "tags": [
+    "acronym",
+    "lexical_collision",
+    "esco"
+   ],
+   "pred_file_v3_validated": "AMBIGUOUS",
+   "V4_VAL_STRIP": "AMBIGUOUS"
+  },
+  "bm1-031": {
+   "gold": "PARTIAL_OVERLAP",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "METADATA_CITED",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "data privacy",
+   "right": "data protection",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-034": {
+   "gold": "PARENT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "financial planning",
+   "right": "financial forecasting",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "RELATED"
+  },
+  "bm1-035": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "SAME_CONCEPT",
+   "V4_VAL": "INSUFFICIENT_EVIDENCE",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "attention to detail",
+   "right": "attend to detail",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-037": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "PARENT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "METADATA_CITED",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "NO_DIRECTIONAL_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "cloud computing",
+   "right": "cloud technologies",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-038": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "PARENT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "METADATA_CITED",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "NO_DIRECTIONAL_EVIDENCE"
+   ],
+   "kind": "ALIAS_SENSE",
+   "left": "decision-making",
+   "right": "make decisions",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-050": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "left": "ppc",
+   "right": "pay-per-click",
+   "tags": [
+    "acronym",
+    "lexical_collision",
+    "esco"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-052": {
+   "gold": "PARTIAL_OVERLAP",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "left": "ict",
+   "right": "computer technology",
+   "tags": [
+    "acronym",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "RELATED"
+  },
+  "bm1-053": {
+   "gold": "PARENT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "RELATED",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "left": "quality management",
+   "right": "quality assurance procedures",
+   "tags": [
+    "hierarchy",
+    "esco"
+   ],
+   "pred_file_v3_validated": "RELATED",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-057": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "SAME_CONCEPT",
+   "V4_RAW": "SAME_CONCEPT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "left": "conflict resolution",
+   "right": "resolve conflicts",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "SAME_CONCEPT",
+   "V4_VAL_STRIP": "SAME_CONCEPT"
+  },
+  "bm1-058": {
+   "gold": "PARTIAL_OVERLAP",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "SAME_CONCEPT",
+   "V4_RAW": "SAME_CONCEPT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "left": "conflict resolution",
+   "right": "conflict management",
+   "tags": [
+    "hierarchy",
+    "esco"
+   ],
+   "pred_file_v3_validated": "SAME_CONCEPT",
+   "V4_VAL_STRIP": "SAME_CONCEPT"
+  },
+  "bm1-059": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "PARENT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_SOURCE_EVIDENCE",
+    "ALIAS_SAME_CONCEPT_WITHOUT_SOURCE_TEXT"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "NO_DIRECTIONAL_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "left": "google docs",
+   "right": "office software",
+   "tags": [
+    "hierarchy",
+    "esco"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-060": {
+   "gold": "PARTIAL_OVERLAP",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "SAME_CONCEPT",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "left": "collaborate with colleagues",
+   "right": "liaise with colleagues",
+   "tags": [
+    "paraphrase",
+    "esco"
+   ],
+   "pred_file_v3_validated": "SAME_CONCEPT",
+   "V4_VAL_STRIP": "RELATED"
+  },
+  "bm1-061": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "SAME_CONCEPT",
+   "V4_RAW": "PARENT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "NO_DIRECTIONAL_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TAXONOMY_LABEL",
+   "left": "core maintenance",
+   "right": "maintain cores",
+   "tags": [
+    "lexical_collision",
+    "esco"
+   ],
+   "pred_file_v3_validated": "SAME_CONCEPT",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-063": {
+   "gold": "PARENT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "RELATED",
+   "V4_RAW": "PARTIAL_OVERLAP",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "left": "vector",
+   "right": "vector line integrals",
+   "tags": [
+    "topic_mapping"
+   ],
+   "pred_file_v3_validated": "RELATED",
+   "V4_VAL_STRIP": "PARTIAL_OVERLAP"
+  },
+  "bm1-066": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "left": "Incremental Development of Code",
+   "right": "Development",
+   "tags": [
+    "topic_mapping"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "AMBIGUOUS"
+  },
+  "bm1-069": {
+   "gold": "UNRELATED",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "left": "meaning of Prosperity in detail",
+   "right": "K Means",
+   "tags": [
+    "topic_mapping",
+    "lexical_collision"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-070": {
+   "gold": "PARENT",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "RELATED",
+   "V3_VAL": "RELATED",
+   "V4_RAW": "PARTIAL_OVERLAP",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "left": "Equations",
+   "right": "equations solvable for y",
+   "tags": [
+    "topic_mapping",
+    "hierarchy"
+   ],
+   "pred_file_v3_validated": "RELATED",
+   "V4_VAL_STRIP": "PARTIAL_OVERLAP"
+  },
+  "bm1-071": {
+   "gold": "UNRELATED",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "left": "Irrotational fields and Solenoidal fields",
+   "right": "Field",
+   "tags": [
+    "topic_mapping",
+    "lexical_collision"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-072": {
+   "gold": "CHILD",
+   "BASELINE": "AMBIGUOUS",
+   "V3_RAW": "PARTIAL_OVERLAP",
+   "V3_VAL": "PARTIAL_OVERLAP",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "AMBIGUOUS_TOPIC_MAPPING",
+   "left": "Irrotational fields and Solenoidal fields",
+   "right": "field",
+   "tags": [
+    "topic_mapping"
+   ],
+   "pred_file_v3_validated": "PARTIAL_OVERLAP",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-075": {
+   "gold": "UNRELATED",
+   "BASELINE": null,
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "UNRELATED",
+   "f3": [],
+   "f4": [],
+   "kind": "DIAGNOSTIC",
+   "left": "Angular momentum about a point of a rigid body in",
+   "right": "Angular",
+   "tags": [
+    "hard_case",
+    "lexical_collision"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-076": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": null,
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "SAME_CONCEPT",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "DIAGNOSTIC",
+   "left": "Angular",
+   "right": "Angular",
+   "tags": [
+    "hard_case",
+    "esco"
+   ],
+   "pred_file_v3_validated": "SAME_CONCEPT",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-078": {
+   "gold": "SAME_CONCEPT",
+   "BASELINE": null,
+   "V3_RAW": "UNRELATED",
+   "V3_VAL": "UNRELATED",
+   "V4_RAW": "UNRELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE"
+   ],
+   "kind": "DIAGNOSTIC",
+   "left": "Neural Network models",
+   "right": "artificial neural networks",
+   "tags": [
+    "hard_case",
+    "esco"
+   ],
+   "pred_file_v3_validated": "UNRELATED",
+   "V4_VAL_STRIP": "UNRELATED"
+  },
+  "bm1-080": {
+   "gold": "CHILD",
+   "BASELINE": null,
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "PARENT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE",
+    "NO_DIRECTIONAL_EVIDENCE"
+   ],
+   "kind": "DIAGNOSTIC",
+   "left": "Database Management Systems",
+   "right": "database",
+   "tags": [
+    "hard_case"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-084": {
+   "gold": "CHILD",
+   "BASELINE": null,
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "INSUFFICIENT_EVIDENCE",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "DIAGNOSTIC",
+   "left": "Convolutional Neural Network: The Convolution Operation",
+   "right": "deep learning",
+   "tags": [
+    "hard_case",
+    "hierarchy"
+   ],
+   "pred_file_v3_validated": "INSUFFICIENT_EVIDENCE",
+   "V4_VAL_STRIP": "RELATED"
+  },
+  "bm1-086": {
+   "gold": "CHILD",
+   "BASELINE": null,
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "SAME_CONCEPT",
+   "V4_RAW": "RELATED",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "DIAGNOSTIC",
+   "left": "Python for Data Science",
+   "right": "Python (computer programming)",
+   "tags": [
+    "hard_case",
+    "hierarchy"
+   ],
+   "pred_file_v3_validated": "SAME_CONCEPT",
+   "V4_VAL_STRIP": "INSUFFICIENT_EVIDENCE"
+  },
+  "bm1-087": {
+   "gold": "RELATED",
+   "BASELINE": null,
+   "V3_RAW": "SAME_CONCEPT",
+   "V3_VAL": "SAME_CONCEPT",
+   "V4_RAW": "SAME_CONCEPT",
+   "V4_VAL": "AMBIGUOUS",
+   "f3": [],
+   "f4": [
+    "UNKNOWN_REF",
+    "UNKNOWN_REF",
+    "NO_SOURCE_EVIDENCE",
+    "NO_CONCEPT_EVIDENCE"
+   ],
+   "kind": "DIAGNOSTIC",
+   "left": "Influence of AI and ML in Clinical and Genomic Diagnostics",
+   "right": "machine learning",
+   "tags": [
+    "hard_case"
+   ],
+   "pred_file_v3_validated": "SAME_CONCEPT",
+   "V4_VAL_STRIP": "SAME_CONCEPT"
+  }
+ }
+}

@@ -1,0 +1,56 @@
+\chapter{CONCLUSION}
+\label{ch:conclusion}
+
+\section{Summary of Findings}
+\label{sec:summary}
+
+This report evaluated the semantic relationship module of the Curriculum Intelligence project. The module asks a local language model to classify the relation between a term found in a posting or syllabus and an ESCO concept or curriculum topic, checks every answer with a deterministic evidence validator, and lets a pre-declared gate decide whether any answer may affect the analysis.
+
+\begin{itemize}
+    \item \textbf{Reference available.} Five reviewer records exist for the 48-case subset, but none is an independent label set. R02 and R03 consulted an AI assistant, and the process of the other three was not stated. The 45 cases on which R02 and R03 agree ($\kappa=0.92$) serve as a development reference only.
+    \item \textbf{Verified results.} Every provisional figure was reproduced from the stored files:
+    \begin{itemize}
+        \item v3 raw: 15/45 (0.33);
+        \item v3 validated: 9/45 (0.20), with 25 commitments of which 9 were right (0.36);
+        \item fixed rules: 0/45. They abstained on every case they were run on; 7 diagnostic cases have no baseline output.
+    \end{itemize}
+    The 95\% intervals are wide (e.g.\ 0.11--0.34 for 9/45).
+    \item \textbf{Main weakness.} The model does not separate equivalence from hierarchy, overlap and relatedness:
+    \begin{itemize}
+        \item it never answered \PA{} or \CH;
+        \item it called narrower concepts the same (7 cases) and partial overlaps the same (5);
+        \item it called broader concepts related (4);
+        \item it answered \UN{} where the reviewers found the context insufficient (3).
+    \end{itemize}
+    \item \textbf{Safety checks.} The validator withheld 20 answers, 6 of them correct, and passed 25, of which 16 were wrong. It reliably rejects untraceable evidence, but on this reference it does not raise the proportion of correct commitments materially.
+    \item \textbf{Prompt revision.} The v4 prompt reduced over-use of \SC{} but introduced direction reversals and more \RE{} answers, and it did not improve the validated score. It was not adopted.
+    \item \textbf{Operating status.} The model remains in Safe Mode. The development gate failed for the v3 run, and gate v3 cannot be evaluated until two independent label sets exist. Model decisions are recorded and shown, never applied.
+\end{itemize}
+
+\section{Contributions to the Field}
+\label{sec:contributions}
+
+The contributions are practical and specific to this project. They do not establish general findings about language models.
+\begin{enumerate}
+    \item \textbf{An evidence-gated adjudication design.} A model's typed-relation decision reaches the analysis only after deterministic checks that its evidence exists in the inputs, covers both sides of the pair, and, for hierarchy, includes a structural directional fact. The design is implemented and tested.
+    \item \textbf{A reproducible evaluation chain.} Frozen, hashed inputs; a stratified, blinded human-validation package; recorded model runs replayable by exact key; and scoring code that reports raw and validated answers, coverage and abstention with explicit denominators. Every number in this report was regenerated from these files.
+    \item \textbf{A label-provenance discipline.} Development labels, AI-assisted research records and independent labels are stored apart and used for different purposes. Independent labels require an attestation, and AI-assisted answers can never count towards the gate.
+    \item \textbf{A documented negative result.} The model's systematic failure on breadth and direction, and the failure of a targeted prompt revision to fix it, are recorded with case-level evidence, together with the decision not to keep tuning on the same development cases.
+\end{enumerate}
+
+\section{Future Work}
+\label{sec:future}
+
+The following stages are proposed. None of them has been carried out. They keep the existing label taxonomy and leave the gate unchanged.
+
+\paragraph{Stage A --- Error diagnosis.} Classify every error with the existing labels. Separate breadth errors (\SC{} versus \CH/\PA/\PO) from association errors (\RE{} versus \PO) and sense errors (\UN). For each withheld answer, record which validator rule fired and whether the answer was right. Treat the three \IE{} references as a distinct question: when should the system say the text does not decide?
+
+\paragraph{Stage B --- Rule and prompt refinement.} Make the hierarchy check explicit before \SC{} is allowed. For example, require the model to state whether either term names a kind, product, provider or part of the other, and to cite an ESCO hierarchy item or a course, unit or outcome when it claims a direction. Write explicit abstention criteria for short forms whose sense the context does not fix. Keep the validator at least as strict as now. Changes to the label taxonomy should be made only with a documented reason and a new schema version.
+
+\paragraph{Stage C --- Development evaluation.} Tune only on designated development cases, such as cases of the 88-case benchmark that are \emph{not} in the 48-case subset, scored against their development labels as diagnostics. Record each change and its reason. Do not tune again on the 45 R02/R03 cases, which have already shaped v4.
+
+\paragraph{Stage D --- Held-out evaluation.} Evaluate each revision once on cases not used to tune it. With 48 cases, a further split would leave too few cases per class to support conclusions, so a new frozen set drawn from the pipeline's candidates by the same stratified procedure is needed. Until then, any improvement should be described as a development observation, not as generalisation~\cite{cawley2010}.
+
+\paragraph{Stage E --- Independent human validation.} Recruit at least two qualified reviewers who are not among R01--R05 and have not seen any model output or development label. Have them answer the existing blinded form without AI tools, following \code{docs/\allowbreak{}INDEPENDENT\_REVIEWER\_BRIEF.md}, and collect each reviewer's confirmation as the attestation. Then run the predefined procedure: agreement, adjudication by a named human, gold freeze, and evaluation against semantic-gate-v3 exactly as declared. If the gate fails, the model stays in Safe Mode. Any changed gate must be declared as a new version before the results it is applied to are seen.
+
+\paragraph{Further experiments.} Run the same frozen candidates with a larger local model, to test whether breadth and direction errors are a limit of model size. Compare against a reference that uses ESCO's own hierarchy, where it exists, as a structural check on direction. Report coverage and conditional accuracy for every variant, not exact-match accuracy alone.
